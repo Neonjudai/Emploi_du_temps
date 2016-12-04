@@ -1,0 +1,34 @@
+# Project: EdT
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = main.o horaire.o listeDHoraire.o
+LINKOBJ  = main.o horaire.o listeDHoraire.o
+LIBS     = -L"D:/p/Dev-Cpp/MinGW64/gcc-6-win64/lib" -L"D:/p/Dev-Cpp/MinGW64/gcc-6-win64/x86_64-w64-mingw32/lib" -static-libstdc++ -static-libgcc
+INCS     = -I"D:/p/Dev-Cpp/MinGW64/gcc-6-win64/include" -I"D:/p/Dev-Cpp/MinGW64/gcc-6-win64/x86_64-w64-mingw32/include" -I"D:/p/Dev-Cpp/MinGW64/gcc-6-win64/lib/gcc/x86_64-w64-mingw32/6.2.1/include"
+CXXINCS  = -I"D:/p/Dev-Cpp/MinGW64/gcc-6-win64/include" -I"D:/p/Dev-Cpp/MinGW64/gcc-6-win64/x86_64-w64-mingw32/include" -I"D:/p/Dev-Cpp/MinGW64/gcc-6-win64/lib/gcc/x86_64-w64-mingw32/6.2.1/include"
+BIN      = EdT.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
+
+horaire.o: horaire.cpp
+	$(CPP) -c horaire.cpp -o horaire.o $(CXXFLAGS)
+
+listeDHoraire.o: listeDHoraire.cpp
+	$(CPP) -c listeDHoraire.cpp -o listeDHoraire.o $(CXXFLAGS)
