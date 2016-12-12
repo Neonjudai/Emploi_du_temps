@@ -1,12 +1,13 @@
 #ifndef PROFESSEUR_H
 #define PROFESSEUR_H
 
-#include "listeDHoraire.h"
+#include "ressource.h"
 
 using std::string;
 
-class professeur{
+class professeur : public ressource{
 	public:
+		professeur(const string & nom);
 		
 	private:
 };

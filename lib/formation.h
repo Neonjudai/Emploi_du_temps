@@ -1,7 +1,7 @@
 #ifndef FORMATION_H
 #define FORMATION_H
 
-#include "listeDHoraire.h"
+#include "ressource.h"
 
 using std::string;
 

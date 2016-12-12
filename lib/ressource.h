@@ -2,7 +2,7 @@
 #define RESSOURCE_H
 
 #include <iostream>
-#include "../lib/listeDHoraire.h"
+#include "listeDHoraire.h"
 
 using std::string;
 

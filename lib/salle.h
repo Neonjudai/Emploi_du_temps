@@ -1,7 +1,7 @@
 #ifndef SALLE_H
 #define SALLE_H
 
-#include "listeDHoraire.h"
+#include "ressource.h"
 
 using std::string;
 
