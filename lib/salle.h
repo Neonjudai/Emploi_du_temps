@@ -5,15 +5,12 @@
 
 using std::string;
 
-class salle{
+class salle : public ressource{
 	public:
 		salle(const string & nom, int nombreDePlace);
-		string nom() const;
 		int nombreDePlace() const;
 	private:
-		string d_nomSalle;
 		int d_nombreDePlace;
-		listeDHoraire d_listeDesCours;
 };
 
 #endif

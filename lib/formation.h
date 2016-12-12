@@ -5,15 +5,12 @@
 
 using std::string;
 
-class formation{
+class formation : public ressource{
 	public:
-		formation(const string & nom, int nombreDEtudiants);
-		string nom() const;
-		int nombreDEtudiants() const;
+		formation(const string & nom, int nombreDEtudiant);
+		int nombreDEtudiant() const;
 	private:
-		string d_nomFormation;								//Le nom de la formation
-		int d_nombreDEtudiants;									//Nombre d'Etudiants dans la formation
-		listeDHoraire d_listeDesCours;							//Liste des cours suivit par la formation
+		int d_nombreDEtudiant;
 };
 
 #endif

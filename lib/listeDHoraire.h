@@ -10,10 +10,10 @@ class listeDHoraire{
 		~listeDHoraire();
 		void ajouterUnHoraire(const horaire & horaireAAjouter);
 		horaire operator[](int placeDeLHoraire) const;
-		void supprimerUnHoraire(int placeDeLHoraire);
+		void supprimerUnHoraire(int placeDeLHoraire);//A faire
 	private:
 		std::vector<horaire*> d_listeDHoraire;
-		void trierLaListe();
+		void trierLaListe();//A faire
 };
 
 #endif
