@@ -1,0 +1,46 @@
+# Project: Emploi_du_temps
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = horaire.o ressource.o main.o professeur.o cours.o listeCours.o listeRessources.o
+LINKOBJ  = horaire.o ressource.o main.o professeur.o cours.o listeCours.o listeRessources.o
+LIBS     = -L"D:/p/Dev-Cpp/MinGW64/gcc-6-win64/lib" -L"D:/p/Dev-Cpp/MinGW64/gcc-6-win64/x86_64-w64-mingw32/lib" -static-libstdc++ -static-libgcc
+INCS     = -I"D:/p/Dev-Cpp/MinGW64/gcc-6-win64/include" -I"D:/p/Dev-Cpp/MinGW64/gcc-6-win64/x86_64-w64-mingw32/include" -I"D:/p/Dev-Cpp/MinGW64/gcc-6-win64/lib/gcc/x86_64-w64-mingw32/6.2.1/include"
+CXXINCS  = -I"D:/p/Dev-Cpp/MinGW64/gcc-6-win64/include" -I"D:/p/Dev-Cpp/MinGW64/gcc-6-win64/x86_64-w64-mingw32/include" -I"D:/p/Dev-Cpp/MinGW64/gcc-6-win64/lib/gcc/x86_64-w64-mingw32/6.2.1/include"
+BIN      = Emploi_du_temps.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+horaire.o: horaire.cpp
+	$(CPP) -c horaire.cpp -o horaire.o $(CXXFLAGS)
+
+ressource.o: ressource.cpp
+	$(CPP) -c ressource.cpp -o ressource.o $(CXXFLAGS)
+
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
+
+professeur.o: professeur.cpp
+	$(CPP) -c professeur.cpp -o professeur.o $(CXXFLAGS)
+
+cours.o: cours.cpp
+	$(CPP) -c cours.cpp -o cours.o $(CXXFLAGS)
+
+listeCours.o: listeCours.cpp
+	$(CPP) -c listeCours.cpp -o listeCours.o $(CXXFLAGS)
+
+listeRessources.o: listeRessources.cpp
+	$(CPP) -c listeRessources.cpp -o listeRessources.o $(CXXFLAGS)
