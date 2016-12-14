@@ -1,28 +1,27 @@
 #include "horaire.h"
 
-horaire::horaire(int numeroSemaine, int numeroHeure):d_numeroSemaine{numeroSemaine},d_numeroHeure{numeroHeure}
-{}
-
-horaire::horaire(const horaire & unHoraire):d_numeroSemaine{unHoraire.d_numeroSemaine},d_numeroHeure{unHoraire.d_numeroHeure}
-{}
+horaire::horaire(int semaine,int jour, int heure):d_semaine{semaine},d_jour{jour},d_heure{heure}								{}
+horaire::horaire(const horaire & unHoraire):d_semaine{unHoraire.d_semaine},d_jour{unHoraire.d_jour},d_heure{unHoraire.d_heure}	{}
 
 //SET
-void horaire::changerSemaine(int numeroSemaine)		{d_numeroSemaine=numeroSemaine;}
-void horaire::changernumeroHeure(int numeroHeure) 	{d_numeroHeure=numeroHeure;}
+void horaire::changerSemaine(int semaine){d_semaine=semaine;}
+void horaire::changerJour(int jour)		 {d_jour=jour;}
+void horaire::changerHeure(int heure) 	 {d_heure=heure;}
 
 //GET
-int 		horaire::numeroSemaine()const {return d_numeroSemaine;}
-int 		horaire::numeroHeure() 	const {return d_numeroHeure;}
+int 		horaire::semaine()	const {return d_semaine;}
+int 		horaire::jour() 	const {return d_jour;}
+int 		horaire::heure() 	const {return d_heure;}
 
 //OPERATION
 bool horaire::operator< (const horaire & unHoraire) const
 {
-	if (d_numeroSemaine<unHoraire.numeroSemaine()) return true;
-	if (d_numeroSemaine>unHoraire.numeroSemaine()) return false;
-	return d_numeroHeure<unHoraire.numeroHeure();
+	if (d_semaine<unHoraire.semaine()) return true;
+	if (d_semaine>unHoraire.semaine()) return false;
+	return d_heure<unHoraire.heure();
 }
 
 bool horaire::operator<=(const horaire & unHoraire) const {return *this<unHoraire || *this==unHoraire;}
-bool horaire::operator==(const horaire & unHoraire) const {return d_numeroSemaine==unHoraire.numeroSemaine() && d_numeroHeure==unHoraire.numeroHeure();}
+bool horaire::operator==(const horaire & unHoraire) const {return d_semaine==unHoraire.semaine() && d_heure==unHoraire.heure();}
 bool horaire::operator>=(const horaire & unHoraire) const {return !(*this<unHoraire);}
 bool horaire::operator> (const horaire & unHoraire) const {return !(*this<=unHoraire);}

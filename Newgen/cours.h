@@ -9,7 +9,7 @@
 class cours{	
 	public:
 		cours(const horaire & h, professeur p);			// OK
-		cours(int semaine, int heure, professeur p);	// OK
+		cours(int semaine,int jour, int heure, professeur p);	// OK
 		cours(const cours & c);							// OK
 		~cours();										//inutile, listeRessource s'occupe des deletes.
 		
