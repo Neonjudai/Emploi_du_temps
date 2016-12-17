@@ -6,8 +6,6 @@ const int NUM_SEMAINE=2;
 const int NUM_HEURE=8;
 
 
-//Suites de tests
-
 TEST_CASE ("Les horaires sont bien construites", "[horaire]")
 {
 	horaire h1{NUM_SEMAINE, NUM_HEURE};

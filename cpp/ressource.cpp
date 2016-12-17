@@ -1,5 +1,5 @@
 #include "../lib/ressource.h"
 
-ressource::ressource(const string & nom):d_nomDeLaRessource{nom} {}
+ressource::ressource(const string nom):d_nom{nom} {}
 
-string ressource::nomDeLaRessource() const {return d_nomDeLaRessource;}
+string ressource::nom() const {return d_nom;}

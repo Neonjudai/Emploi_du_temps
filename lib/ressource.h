@@ -2,17 +2,17 @@
 #define RESSOURCE_H
 
 #include <iostream>
-#include "listeDHoraire.h"
-
 using std::string;
 
 class ressource{
 	public:
-		ressource(const string & nom);
-		string nomDeLaRessource() const;
+		ressource(string nom);
+		ressource(const ressource & r) =default;
+		//virtual ~ressource()=default;
+		string nom() const;
 
+		//virtual std::ostream& operator<<(std::ostream & ost)=0; //, const ressource & r
 	private:
-		string d_nomDeLaRessource;								//Le nom de la formation
-		listeDHoraire d_listeDesCours;							//Liste des cours dans laquelle la ressource est utilisée
+		string d_nom;								//Le nom de la ressource
 };
 #endif

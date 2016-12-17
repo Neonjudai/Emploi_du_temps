@@ -1,15 +1,15 @@
-# Project: Emploi_du_temps
+# Project: EmploiDuTemps
 # Makefile created by Dev-C++ 5.11
 
 CPP      = g++.exe
 CC       = gcc.exe
 WINDRES  = windres.exe
-OBJ      = cpp/horaire.o cpp/listeDHoraire.o cpp/main.o cpp/ressource.o cpp/professeur.o
-LINKOBJ  = cpp/horaire.o cpp/listeDHoraire.o cpp/main.o cpp/ressource.o cpp/professeur.o
-LIBS     = -L"U:/Documents/gcc-6-win64/lib" -L"U:/Documents/gcc-6-win64/x86_64-w64-mingw32/lib" -static-libstdc++ -static-libgcc
-INCS     = -I"U:/Documents/gcc-6-win64/include" -I"U:/Documents/gcc-6-win64/x86_64-w64-mingw32/include" -I"U:/Documents/gcc-6-win64/lib/gcc/x86_64-w64-mingw32/6.2.1/include"
-CXXINCS  = -I"U:/Documents/gcc-6-win64/include" -I"U:/Documents/gcc-6-win64/x86_64-w64-mingw32/include" -I"U:/Documents/gcc-6-win64/lib/gcc/x86_64-w64-mingw32/6.2.1/include"
-BIN      = Emploi_du_temps.exe
+OBJ      = cpp/cours.o cpp/horaire.o cpp/listeCours.o cpp/listeRessources.o cpp/professeur.o cpp/ressource.o cpp/main.o
+LINKOBJ  = cpp/cours.o cpp/horaire.o cpp/listeCours.o cpp/listeRessources.o cpp/professeur.o cpp/ressource.o cpp/main.o
+LIBS     = -L"D:/p/Dev-Cpp/MinGW64/gcc-6-win64/lib" -L"D:/p/Dev-Cpp/MinGW64/gcc-6-win64/x86_64-w64-mingw32/lib" -static-libstdc++ -static-libgcc
+INCS     = -I"D:/p/Dev-Cpp/MinGW64/gcc-6-win64/include" -I"D:/p/Dev-Cpp/MinGW64/gcc-6-win64/x86_64-w64-mingw32/include" -I"D:/p/Dev-Cpp/MinGW64/gcc-6-win64/lib/gcc/x86_64-w64-mingw32/6.2.1/include"
+CXXINCS  = -I"D:/p/Dev-Cpp/MinGW64/gcc-6-win64/include" -I"D:/p/Dev-Cpp/MinGW64/gcc-6-win64/x86_64-w64-mingw32/include" -I"D:/p/Dev-Cpp/MinGW64/gcc-6-win64/lib/gcc/x86_64-w64-mingw32/6.2.1/include"
+BIN      = EmploiDuTemps.exe
 CXXFLAGS = $(CXXINCS) 
 CFLAGS   = $(INCS) 
 RM       = rm.exe -f
@@ -24,17 +24,23 @@ clean: clean-custom
 $(BIN): $(OBJ)
 	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
 
+cpp/cours.o: cpp/cours.cpp
+	$(CPP) -c cpp/cours.cpp -o cpp/cours.o $(CXXFLAGS)
+
 cpp/horaire.o: cpp/horaire.cpp
 	$(CPP) -c cpp/horaire.cpp -o cpp/horaire.o $(CXXFLAGS)
 
-cpp/listeDHoraire.o: cpp/listeDHoraire.cpp
-	$(CPP) -c cpp/listeDHoraire.cpp -o cpp/listeDHoraire.o $(CXXFLAGS)
+cpp/listeCours.o: cpp/listeCours.cpp
+	$(CPP) -c cpp/listeCours.cpp -o cpp/listeCours.o $(CXXFLAGS)
 
-cpp/main.o: cpp/main.cpp
-	$(CPP) -c cpp/main.cpp -o cpp/main.o $(CXXFLAGS)
+cpp/listeRessources.o: cpp/listeRessources.cpp
+	$(CPP) -c cpp/listeRessources.cpp -o cpp/listeRessources.o $(CXXFLAGS)
+
+cpp/professeur.o: cpp/professeur.cpp
+	$(CPP) -c cpp/professeur.cpp -o cpp/professeur.o $(CXXFLAGS)
 
 cpp/ressource.o: cpp/ressource.cpp
 	$(CPP) -c cpp/ressource.cpp -o cpp/ressource.o $(CXXFLAGS)
 
-cpp/professeur.o: cpp/professeur.cpp
-	$(CPP) -c cpp/professeur.cpp -o cpp/professeur.o $(CXXFLAGS)
+cpp/main.o: cpp/main.cpp
+	$(CPP) -c cpp/main.cpp -o cpp/main.o $(CXXFLAGS)
