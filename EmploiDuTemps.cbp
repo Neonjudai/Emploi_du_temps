@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="EmploiDuTemps" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="default">
+				<Option output="EmploiDuTemps" prefix_auto="1" extension_auto="1" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+			</Target>
+		</Build>
+		<Unit filename="cpp/afficheur.cpp" />
+		<Unit filename="cpp/afficheurConsole.cpp" />
+		<Unit filename="cpp/cours.cpp" />
+		<Unit filename="cpp/horaire.cpp" />
+		<Unit filename="cpp/listeCours.cpp" />
+		<Unit filename="cpp/listeRessources.cpp" />
+		<Unit filename="cpp/main.cpp" />
+		<Unit filename="cpp/professeur.cpp" />
+		<Unit filename="cpp/ressource.cpp" />
+		<Unit filename="lib/afficheur.h" />
+		<Unit filename="lib/afficheurConsole.h" />
+		<Unit filename="lib/cours.h" />
+		<Unit filename="lib/formation.h" />
+		<Unit filename="lib/horaire.h" />
+		<Unit filename="lib/listeCours.h" />
+		<Unit filename="lib/listeRessources.h" />
+		<Unit filename="lib/professeur.h" />
+		<Unit filename="lib/ressource.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,9 +1,10 @@
 #include "../lib/listeCours.h"
+#include <cstdlib>
 
 listeCours::listeCours()
 {
 }
-		
+
 void listeCours::ajouterUnCours(const cours & c)
 {
 	d_listeDesCours.push_back(c);
@@ -26,5 +27,5 @@ std::ostream& operator<<(std::ostream & ost, const listeCours & l)
 
 void listeCours::trier()
 {
-	
+
 }

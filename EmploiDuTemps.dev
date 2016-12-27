@@ -29,7 +29,7 @@ IncludeVersionInfo=0
 SupportXPThemes=0
 CompilerSet=6
 CompilerSettings=0000000000000000000000000
-UnitCount=14
+UnitCount=18
 
 [VersionInfo]
 Major=1
@@ -151,7 +151,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit15]
-FileName=cpp\professeur.cpp
+FileName=cpp\afficheur.cpp
 CompileCpp=1
 Folder=
 Compile=1
@@ -161,7 +161,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit16]
-FileName=cpp\ressource.cpp
+FileName=cpp\afficheurConsole.cpp
 CompileCpp=1
 Folder=
 Compile=1
@@ -171,7 +171,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit17]
-FileName=cpp\main.cpp
+FileName=lib\afficheur.h
 CompileCpp=1
 Folder=
 Compile=1
@@ -191,7 +191,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit18]
-FileName=cpp\main.cpp
+FileName=lib\afficheurConsole.h
 CompileCpp=1
 Folder=
 Compile=1

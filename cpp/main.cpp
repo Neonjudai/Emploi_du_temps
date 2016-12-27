@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstdlib>
 
 #include "../lib/listeCours.h"
 #include "../lib/listeRessources.h"

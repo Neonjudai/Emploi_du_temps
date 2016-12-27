@@ -1,4 +1,5 @@
 #include "../lib/listeRessources.h"
+#include <cstdlib>
 
 listeRessources::listeRessources()
 {}

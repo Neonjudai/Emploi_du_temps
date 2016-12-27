@@ -1,58 +1,49 @@
-[Editor_10]
-CursorCol=10
-CursorRow=12
-TopLine=1
-LeftChar=1
-[Editor_4]
-CursorCol=14
-CursorRow=15
-TopLine=1
-LeftChar=1
-[Editor_12]
-CursorCol=41
-CursorRow=5
-TopLine=1
-LeftChar=1
-[Editor_6]
-CursorCol=5
-CursorRow=14
-TopLine=1
-LeftChar=1
-[Editor_11]
-CursorCol=1
-CursorRow=1
-TopLine=1
-LeftChar=1
-[Editor_5]
-CursorCol=1
-CursorRow=1
-TopLine=1
-LeftChar=1
-[Editor_7]
-CursorCol=2
-CursorRow=16
-TopLine=1
-LeftChar=1
-[Editor_3]
-CursorCol=40
-CursorRow=12
-TopLine=1
-LeftChar=1
-[Editor_0]
-CursorCol=44
-CursorRow=17
-TopLine=1
-LeftChar=1
-[Editor_9]
-CursorCol=36
-CursorRow=18
-TopLine=1
-LeftChar=1
-[Editors]
-Order=13,4,10,0,7
-Focused=13
-[Editor_13]
-CursorCol=38
-CursorRow=60
-TopLine=1
-LeftChar=1
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="default" />
+	<File name="lib\professeur.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="293" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="cpp\afficheurConsole.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1124" topLine="40" />
+		</Cursor>
+	</File>
+	<File name="cpp\horaire.cpp" open="1" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1567" topLine="15" />
+		</Cursor>
+	</File>
+	<File name="cpp\main.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1589" topLine="94" />
+		</Cursor>
+	</File>
+	<File name="cpp\professeur.cpp" open="1" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="322" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="cpp\cours.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="358" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="lib\afficheurConsole.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="837" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="lib\formation.h" open="1" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="lib\horaire.h" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="347" topLine="3" />
+		</Cursor>
+	</File>
+</CodeBlocks_layout_file>
