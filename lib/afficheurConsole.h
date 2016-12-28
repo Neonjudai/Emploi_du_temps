@@ -1,5 +1,6 @@
 #ifndef AFFICHEURCONSOLE_H
 #define AFFICHEURCONSOLE_H
+
 #include "horaire.h"
 #include "cours.h"
 #include "professeur.h"

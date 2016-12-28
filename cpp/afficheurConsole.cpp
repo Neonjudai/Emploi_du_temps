@@ -1,13 +1,28 @@
 #include "../lib/afficheurConsole.h"
 
+/**
+ *\file afficheurConsole.h
+ *\brief Classe virtuelle permettant l'affichage en console
+ *\author Olivier Ettlin
+ *\version 1.0
+ */
 
+/**
+@brief Destructeur virtuel de l'objet afficheurConsole
+ */
 afficheurConsole::~afficheurConsole()
 {}
 
+/**
+@brief Renvoie dans ost le numero de la semaine de l'horaire h
+@param[in] h - un objet de type horaire
+@param[out] ost - flux de sortie
+ */
 void afficheurConsole::afficheSemaine(const horaire * h, ostream & ost)
 {
     ost<<h->semaine();
 }
+
 
 void afficheurConsole::afficheHeure(const horaire * h, ostream & ost)
 {

@@ -1,0 +1,162 @@
+\hypertarget{struct_catch_1_1_matchers_1_1_impl_1_1_matcher}{}\section{Catch\+:\+:Matchers\+:\+:Impl\+:\+:Matcher$<$ ExpressionT $>$ Struct Template Reference}
+\label{struct_catch_1_1_matchers_1_1_impl_1_1_matcher}\index{Catch\+::\+Matchers\+::\+Impl\+::\+Matcher$<$ Expression\+T $>$@{Catch\+::\+Matchers\+::\+Impl\+::\+Matcher$<$ Expression\+T $>$}}
+
+
+{\ttfamily \#include $<$catch.\+hpp$>$}
+
+
+
+Inheritance diagram for Catch\+:\+:Matchers\+:\+:Impl\+:\+:Matcher$<$ ExpressionT $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_catch_1_1_matchers_1_1_impl_1_1_matcher__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Catch\+:\+:Matchers\+:\+:Impl\+:\+:Matcher$<$ ExpressionT $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{struct_catch_1_1_matchers_1_1_impl_1_1_matcher__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef ExpressionT \hyperlink{struct_catch_1_1_matchers_1_1_impl_1_1_matcher_a7f5068cbacd1eed06cf243e63446e7e1}{Expression\+Type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{struct_catch_1_1_matchers_1_1_impl_1_1_matcher_a55e537214a78bbba59f53d3e30336a61}{$\sim$\+Matcher} ()
+\item 
+virtual \hyperlink{class_catch_1_1_ptr}{Ptr}$<$ \hyperlink{struct_catch_1_1_matchers_1_1_impl_1_1_matcher}{Matcher} $>$ \hyperlink{struct_catch_1_1_matchers_1_1_impl_1_1_matcher_a9d31e5018fea24efa08c3cbf5aa4475d}{clone} () const =0
+\item 
+virtual bool \hyperlink{struct_catch_1_1_matchers_1_1_impl_1_1_matcher_a8c1c5511ce1f3738a45e6901b558f583}{match} (ExpressionT const \&expr) const =0
+\item 
+virtual std\+::string \hyperlink{struct_catch_1_1_matchers_1_1_impl_1_1_matcher_a091bcc37e589967d7e10fc7790d820e2}{to\+String} () const =0
+\item 
+\hyperlink{class_catch_1_1_matchers_1_1_impl_1_1_generic_1_1_all_of}{Generic\+::\+All\+Of}$<$ ExpressionT $>$ \hyperlink{struct_catch_1_1_matchers_1_1_impl_1_1_matcher_adb060f348e3ed404b80209fbc62174e1}{operator\&\&} (\hyperlink{struct_catch_1_1_matchers_1_1_impl_1_1_matcher}{Matcher}$<$ ExpressionT $>$ const \&other) const
+\item 
+\hyperlink{class_catch_1_1_matchers_1_1_impl_1_1_generic_1_1_any_of}{Generic\+::\+Any\+Of}$<$ ExpressionT $>$ \hyperlink{struct_catch_1_1_matchers_1_1_impl_1_1_matcher_a55b1e12315e7a5daf7ce7a11ddfaa295}{operator$\vert$$\vert$} (\hyperlink{struct_catch_1_1_matchers_1_1_impl_1_1_matcher}{Matcher}$<$ ExpressionT $>$ const \&other) const
+\item 
+\hyperlink{class_catch_1_1_matchers_1_1_impl_1_1_generic_1_1_not}{Generic\+::\+Not}$<$ ExpressionT $>$ \hyperlink{struct_catch_1_1_matchers_1_1_impl_1_1_matcher_a7ecd56842090611c9dbfc325b42fa942}{operator!} () const
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename ExpressionT$>$\newline
+struct Catch\+::\+Matchers\+::\+Impl\+::\+Matcher$<$ Expression\+T $>$}
+
+
+
+Definition at line 904 of file catch.\+hpp.
+
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{struct_catch_1_1_matchers_1_1_impl_1_1_matcher_a7f5068cbacd1eed06cf243e63446e7e1}{}\label{struct_catch_1_1_matchers_1_1_impl_1_1_matcher_a7f5068cbacd1eed06cf243e63446e7e1} 
+\index{Catch\+::\+Matchers\+::\+Impl\+::\+Matcher@{Catch\+::\+Matchers\+::\+Impl\+::\+Matcher}!Expression\+Type@{Expression\+Type}}
+\index{Expression\+Type@{Expression\+Type}!Catch\+::\+Matchers\+::\+Impl\+::\+Matcher@{Catch\+::\+Matchers\+::\+Impl\+::\+Matcher}}
+\subsubsection{\texorpdfstring{Expression\+Type}{ExpressionType}}
+{\footnotesize\ttfamily template$<$typename ExpressionT$>$ \\
+typedef ExpressionT \hyperlink{struct_catch_1_1_matchers_1_1_impl_1_1_matcher}{Catch\+::\+Matchers\+::\+Impl\+::\+Matcher}$<$ ExpressionT $>$\+::\hyperlink{struct_catch_1_1_matchers_1_1_impl_1_1_matcher_a7f5068cbacd1eed06cf243e63446e7e1}{Expression\+Type}}
+
+
+
+Definition at line 906 of file catch.\+hpp.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{struct_catch_1_1_matchers_1_1_impl_1_1_matcher_a55e537214a78bbba59f53d3e30336a61}{}\label{struct_catch_1_1_matchers_1_1_impl_1_1_matcher_a55e537214a78bbba59f53d3e30336a61} 
+\index{Catch\+::\+Matchers\+::\+Impl\+::\+Matcher@{Catch\+::\+Matchers\+::\+Impl\+::\+Matcher}!````~Matcher@{$\sim$\+Matcher}}
+\index{````~Matcher@{$\sim$\+Matcher}!Catch\+::\+Matchers\+::\+Impl\+::\+Matcher@{Catch\+::\+Matchers\+::\+Impl\+::\+Matcher}}
+\subsubsection{\texorpdfstring{$\sim$\+Matcher()}{~Matcher()}}
+{\footnotesize\ttfamily template$<$typename ExpressionT$>$ \\
+virtual \hyperlink{struct_catch_1_1_matchers_1_1_impl_1_1_matcher}{Catch\+::\+Matchers\+::\+Impl\+::\+Matcher}$<$ ExpressionT $>$\+::$\sim$\hyperlink{struct_catch_1_1_matchers_1_1_impl_1_1_matcher}{Matcher} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 908 of file catch.\+hpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{struct_catch_1_1_matchers_1_1_impl_1_1_matcher_a9d31e5018fea24efa08c3cbf5aa4475d}{}\label{struct_catch_1_1_matchers_1_1_impl_1_1_matcher_a9d31e5018fea24efa08c3cbf5aa4475d} 
+\index{Catch\+::\+Matchers\+::\+Impl\+::\+Matcher@{Catch\+::\+Matchers\+::\+Impl\+::\+Matcher}!clone@{clone}}
+\index{clone@{clone}!Catch\+::\+Matchers\+::\+Impl\+::\+Matcher@{Catch\+::\+Matchers\+::\+Impl\+::\+Matcher}}
+\subsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily template$<$typename ExpressionT$>$ \\
+virtual \hyperlink{class_catch_1_1_ptr}{Ptr}$<$\hyperlink{struct_catch_1_1_matchers_1_1_impl_1_1_matcher}{Matcher}$>$ \hyperlink{struct_catch_1_1_matchers_1_1_impl_1_1_matcher}{Catch\+::\+Matchers\+::\+Impl\+::\+Matcher}$<$ ExpressionT $>$\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{struct_catch_1_1_matchers_1_1_impl_1_1_matcher_impl_af7cf4b7b730145d4455dc356490e6b77}{Catch\+::\+Matchers\+::\+Impl\+::\+Matcher\+Impl$<$ Derived\+T, Expression\+T $>$}, \hyperlink{struct_catch_1_1_matchers_1_1_impl_1_1_matcher_impl_af7cf4b7b730145d4455dc356490e6b77}{Catch\+::\+Matchers\+::\+Impl\+::\+Matcher\+Impl$<$ Equals, std\+::string $>$}, \hyperlink{struct_catch_1_1_matchers_1_1_impl_1_1_matcher_impl_af7cf4b7b730145d4455dc356490e6b77}{Catch\+::\+Matchers\+::\+Impl\+::\+Matcher\+Impl$<$ Contains, std\+::string $>$}, \hyperlink{struct_catch_1_1_matchers_1_1_impl_1_1_matcher_impl_af7cf4b7b730145d4455dc356490e6b77}{Catch\+::\+Matchers\+::\+Impl\+::\+Matcher\+Impl$<$ Any\+Of$<$ Expression\+T $>$, Expression\+T $>$}, \hyperlink{struct_catch_1_1_matchers_1_1_impl_1_1_matcher_impl_af7cf4b7b730145d4455dc356490e6b77}{Catch\+::\+Matchers\+::\+Impl\+::\+Matcher\+Impl$<$ Ends\+With, std\+::string $>$}, \hyperlink{struct_catch_1_1_matchers_1_1_impl_1_1_matcher_impl_af7cf4b7b730145d4455dc356490e6b77}{Catch\+::\+Matchers\+::\+Impl\+::\+Matcher\+Impl$<$ Not$<$ Expression\+T $>$, Expression\+T $>$}, \hyperlink{struct_catch_1_1_matchers_1_1_impl_1_1_matcher_impl_af7cf4b7b730145d4455dc356490e6b77}{Catch\+::\+Matchers\+::\+Impl\+::\+Matcher\+Impl$<$ All\+Of$<$ Expression\+T $>$, Expression\+T $>$}, and \hyperlink{struct_catch_1_1_matchers_1_1_impl_1_1_matcher_impl_af7cf4b7b730145d4455dc356490e6b77}{Catch\+::\+Matchers\+::\+Impl\+::\+Matcher\+Impl$<$ Starts\+With, std\+::string $>$}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_catch_1_1_matchers_1_1_impl_1_1_matcher_a9d31e5018fea24efa08c3cbf5aa4475d_icgraph}
+\end{center}
+\end{figure}
+\hypertarget{struct_catch_1_1_matchers_1_1_impl_1_1_matcher_a8c1c5511ce1f3738a45e6901b558f583}{}\label{struct_catch_1_1_matchers_1_1_impl_1_1_matcher_a8c1c5511ce1f3738a45e6901b558f583} 
+\index{Catch\+::\+Matchers\+::\+Impl\+::\+Matcher@{Catch\+::\+Matchers\+::\+Impl\+::\+Matcher}!match@{match}}
+\index{match@{match}!Catch\+::\+Matchers\+::\+Impl\+::\+Matcher@{Catch\+::\+Matchers\+::\+Impl\+::\+Matcher}}
+\subsubsection{\texorpdfstring{match()}{match()}}
+{\footnotesize\ttfamily template$<$typename ExpressionT$>$ \\
+virtual bool \hyperlink{struct_catch_1_1_matchers_1_1_impl_1_1_matcher}{Catch\+::\+Matchers\+::\+Impl\+::\+Matcher}$<$ ExpressionT $>$\+::match (\begin{DoxyParamCaption}\item[{ExpressionT const \&}]{expr }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{struct_catch_1_1_matchers_1_1_impl_1_1_std_string_1_1_ends_with_aff66fb5af2d4f6161627cb20899b2c1b}{Catch\+::\+Matchers\+::\+Impl\+::\+Std\+String\+::\+Ends\+With}, \hyperlink{struct_catch_1_1_matchers_1_1_impl_1_1_std_string_1_1_starts_with_ab8f8d15e06d7ec13fee7d9ec4075dafa}{Catch\+::\+Matchers\+::\+Impl\+::\+Std\+String\+::\+Starts\+With}, \hyperlink{struct_catch_1_1_matchers_1_1_impl_1_1_std_string_1_1_contains_a2248f3d0d1eb5cf5a1059c183b811a7c}{Catch\+::\+Matchers\+::\+Impl\+::\+Std\+String\+::\+Contains}, \hyperlink{struct_catch_1_1_matchers_1_1_impl_1_1_std_string_1_1_equals_abf0a94b4e66dbd586268d9983f867e68}{Catch\+::\+Matchers\+::\+Impl\+::\+Std\+String\+::\+Equals}, \hyperlink{class_catch_1_1_matchers_1_1_impl_1_1_generic_1_1_any_of_adebd5437cdb8e0d54e16e97fe26e7e85}{Catch\+::\+Matchers\+::\+Impl\+::\+Generic\+::\+Any\+Of$<$ Expression\+T $>$}, \hyperlink{class_catch_1_1_matchers_1_1_impl_1_1_generic_1_1_all_of_a95231b6a455e1a646d0b54bce55138be}{Catch\+::\+Matchers\+::\+Impl\+::\+Generic\+::\+All\+Of$<$ Expression\+T $>$}, and \hyperlink{class_catch_1_1_matchers_1_1_impl_1_1_generic_1_1_not_a18c49fc6fb73a42d54650dafc18c7db1}{Catch\+::\+Matchers\+::\+Impl\+::\+Generic\+::\+Not$<$ Expression\+T $>$}.
+
+\hypertarget{struct_catch_1_1_matchers_1_1_impl_1_1_matcher_a7ecd56842090611c9dbfc325b42fa942}{}\label{struct_catch_1_1_matchers_1_1_impl_1_1_matcher_a7ecd56842090611c9dbfc325b42fa942} 
+\index{Catch\+::\+Matchers\+::\+Impl\+::\+Matcher@{Catch\+::\+Matchers\+::\+Impl\+::\+Matcher}!operator"!@{operator"!}}
+\index{operator"!@{operator"!}!Catch\+::\+Matchers\+::\+Impl\+::\+Matcher@{Catch\+::\+Matchers\+::\+Impl\+::\+Matcher}}
+\subsubsection{\texorpdfstring{operator"!()}{operator!()}}
+{\footnotesize\ttfamily template$<$typename ExpressionT $>$ \\
+\hyperlink{class_catch_1_1_matchers_1_1_impl_1_1_generic_1_1_not}{Generic\+::\+Not}$<$ ExpressionT $>$ \hyperlink{struct_catch_1_1_matchers_1_1_impl_1_1_matcher}{Catch\+::\+Matchers\+::\+Impl\+::\+Matcher}$<$ ExpressionT $>$\+::operator! (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 1043 of file catch.\+hpp.
+
+\hypertarget{struct_catch_1_1_matchers_1_1_impl_1_1_matcher_adb060f348e3ed404b80209fbc62174e1}{}\label{struct_catch_1_1_matchers_1_1_impl_1_1_matcher_adb060f348e3ed404b80209fbc62174e1} 
+\index{Catch\+::\+Matchers\+::\+Impl\+::\+Matcher@{Catch\+::\+Matchers\+::\+Impl\+::\+Matcher}!operator\&\&@{operator\&\&}}
+\index{operator\&\&@{operator\&\&}!Catch\+::\+Matchers\+::\+Impl\+::\+Matcher@{Catch\+::\+Matchers\+::\+Impl\+::\+Matcher}}
+\subsubsection{\texorpdfstring{operator\&\&()}{operator\&\&()}}
+{\footnotesize\ttfamily template$<$typename ExpressionT$>$ \\
+\hyperlink{class_catch_1_1_matchers_1_1_impl_1_1_generic_1_1_all_of}{Generic\+::\+All\+Of}$<$ExpressionT$>$ \hyperlink{struct_catch_1_1_matchers_1_1_impl_1_1_matcher}{Catch\+::\+Matchers\+::\+Impl\+::\+Matcher}$<$ ExpressionT $>$\+::operator \&\& (\begin{DoxyParamCaption}\item[{\hyperlink{struct_catch_1_1_matchers_1_1_impl_1_1_matcher}{Matcher}$<$ ExpressionT $>$ const \&}]{other }\end{DoxyParamCaption}) const}
+
+\hypertarget{struct_catch_1_1_matchers_1_1_impl_1_1_matcher_a55b1e12315e7a5daf7ce7a11ddfaa295}{}\label{struct_catch_1_1_matchers_1_1_impl_1_1_matcher_a55b1e12315e7a5daf7ce7a11ddfaa295} 
+\index{Catch\+::\+Matchers\+::\+Impl\+::\+Matcher@{Catch\+::\+Matchers\+::\+Impl\+::\+Matcher}!operator\texttt{"|}\texttt{"|}@{operator\texttt{"|}\texttt{"|}}}
+\index{operator\texttt{"|}\texttt{"|}@{operator\texttt{"|}\texttt{"|}}!Catch\+::\+Matchers\+::\+Impl\+::\+Matcher@{Catch\+::\+Matchers\+::\+Impl\+::\+Matcher}}
+\subsubsection{\texorpdfstring{operator\texttt{"|}\texttt{"|}()}{operator||()}}
+{\footnotesize\ttfamily template$<$typename ExpressionT$>$ \\
+\hyperlink{class_catch_1_1_matchers_1_1_impl_1_1_generic_1_1_any_of}{Generic\+::\+Any\+Of}$<$ ExpressionT $>$ \hyperlink{struct_catch_1_1_matchers_1_1_impl_1_1_matcher}{Catch\+::\+Matchers\+::\+Impl\+::\+Matcher}$<$ ExpressionT $>$\+::operator$\vert$$\vert$ (\begin{DoxyParamCaption}\item[{\hyperlink{struct_catch_1_1_matchers_1_1_impl_1_1_matcher}{Matcher}$<$ ExpressionT $>$ const \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 1035 of file catch.\+hpp.
+
+\hypertarget{struct_catch_1_1_matchers_1_1_impl_1_1_matcher_a091bcc37e589967d7e10fc7790d820e2}{}\label{struct_catch_1_1_matchers_1_1_impl_1_1_matcher_a091bcc37e589967d7e10fc7790d820e2} 
+\index{Catch\+::\+Matchers\+::\+Impl\+::\+Matcher@{Catch\+::\+Matchers\+::\+Impl\+::\+Matcher}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!Catch\+::\+Matchers\+::\+Impl\+::\+Matcher@{Catch\+::\+Matchers\+::\+Impl\+::\+Matcher}}
+\subsubsection{\texorpdfstring{to\+String()}{toString()}}
+{\footnotesize\ttfamily template$<$typename ExpressionT$>$ \\
+virtual std\+::string \hyperlink{struct_catch_1_1_matchers_1_1_impl_1_1_matcher}{Catch\+::\+Matchers\+::\+Impl\+::\+Matcher}$<$ ExpressionT $>$\+::to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{struct_catch_1_1_matchers_1_1_impl_1_1_std_string_1_1_ends_with_a2a4675e3d2369d587af36f051fb7964f}{Catch\+::\+Matchers\+::\+Impl\+::\+Std\+String\+::\+Ends\+With}, \hyperlink{struct_catch_1_1_matchers_1_1_impl_1_1_std_string_1_1_starts_with_a85a24e2ac23025edbe31cbf5bb755fb3}{Catch\+::\+Matchers\+::\+Impl\+::\+Std\+String\+::\+Starts\+With}, \hyperlink{struct_catch_1_1_matchers_1_1_impl_1_1_std_string_1_1_contains_aed168ddff5bce9295aec5c7daca89849}{Catch\+::\+Matchers\+::\+Impl\+::\+Std\+String\+::\+Contains}, \hyperlink{struct_catch_1_1_matchers_1_1_impl_1_1_std_string_1_1_equals_ab0d73961b95d9836d77b9e2e94c3790b}{Catch\+::\+Matchers\+::\+Impl\+::\+Std\+String\+::\+Equals}, \hyperlink{class_catch_1_1_matchers_1_1_impl_1_1_generic_1_1_any_of_a331aaf012b133682eadc9ed5342f848a}{Catch\+::\+Matchers\+::\+Impl\+::\+Generic\+::\+Any\+Of$<$ Expression\+T $>$}, \hyperlink{class_catch_1_1_matchers_1_1_impl_1_1_generic_1_1_all_of_a8c8e7742501dc81e51a3c745d6f74119}{Catch\+::\+Matchers\+::\+Impl\+::\+Generic\+::\+All\+Of$<$ Expression\+T $>$}, and \hyperlink{class_catch_1_1_matchers_1_1_impl_1_1_generic_1_1_not_ab970a4a6e58a987451e0b0e0e60a0bff}{Catch\+::\+Matchers\+::\+Impl\+::\+Generic\+::\+Not$<$ Expression\+T $>$}.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lib/\hyperlink{catch_8hpp}{catch.\+hpp}\end{DoxyCompactItemize}

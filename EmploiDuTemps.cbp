@@ -10,6 +10,9 @@
 				<Option output="EmploiDuTemps" prefix_auto="1" extension_auto="1" />
 				<Option type="1" />
 				<Option compiler="gcc" />
+				<Compiler>
+					<Add directory="lib" />
+				</Compiler>
 			</Target>
 		</Build>
 		<Unit filename="cpp/afficheur.cpp" />
@@ -21,6 +24,7 @@
 		<Unit filename="cpp/main.cpp" />
 		<Unit filename="cpp/professeur.cpp" />
 		<Unit filename="cpp/ressource.cpp" />
+		<Unit filename="cpp/salle.cpp" />
 		<Unit filename="lib/afficheur.h" />
 		<Unit filename="lib/afficheurConsole.h" />
 		<Unit filename="lib/cours.h" />
@@ -30,10 +34,20 @@
 		<Unit filename="lib/listeRessources.h" />
 		<Unit filename="lib/professeur.h" />
 		<Unit filename="lib/ressource.h" />
+		<Unit filename="lib/salle.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />
 			<debugger />
+			<DoxyBlocks>
+				<comment_style block="0" line="0" />
+				<doxyfile_project output_language="French" />
+				<doxyfile_build />
+				<doxyfile_warnings />
+				<doxyfile_output />
+				<doxyfile_dot class_diagrams="1" have_dot="1" />
+				<general use_at_in_tags="1" />
+			</DoxyBlocks>
 		</Extensions>
 	</Project>
 </CodeBlocks_project_file>

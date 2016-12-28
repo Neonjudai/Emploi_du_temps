@@ -1,0 +1,24 @@
+<map id="Catch::IShared" name="Catch::IShared">
+<area shape="rect" id="node3" href="$struct_catch_1_1_i_test_case.html" title="Catch::ITestCase" alt="" coords="358,103,481,129"/>
+<area shape="rect" id="node6" href="$struct_catch_1_1_shared_impl.html" title="Catch::SharedImpl\&lt;\l IShared \&gt;" alt="" coords="351,157,488,198"/>
+<area shape="rect" id="node2" href="$class_catch_1_1_non_copyable.html" title="Catch::NonCopyable" alt="" coords="5,135,147,161"/>
+<area shape="rect" id="node4" href="$struct_catch_1_1_shared_impl.html" title="Catch::SharedImpl\&lt;\l ITestCase \&gt;" alt="" coords="554,30,691,71"/>
+<area shape="rect" id="node5" href="$class_catch_1_1_method_test_case.html" title="Catch::MethodTestCase\&lt; C \&gt;" alt="" coords="765,5,960,32"/>
+<area shape="rect" id="node7" href="$struct_catch_1_1_matchers_1_1_impl_1_1_matcher.html" title="Catch::Matchers::Impl\l::Matcher\&lt; ExpressionT \&gt;" alt="" coords="536,157,709,198"/>
+<area shape="rect" id="node15" href="$struct_catch_1_1_matchers_1_1_impl_1_1_matcher.html" title="Catch::Matchers::Impl\l::Matcher\&lt; std::string \&gt;" alt="" coords="543,406,702,447"/>
+<area shape="rect" id="node8" href="$struct_catch_1_1_matchers_1_1_impl_1_1_matcher_impl.html" title="Catch::Matchers::Impl\l::MatcherImpl\&lt; ExpressionT \&gt;" alt="" coords="764,57,961,98"/>
+<area shape="rect" id="node9" href="$struct_catch_1_1_matchers_1_1_impl_1_1_matcher_impl.html" title="MatcherImpl\&lt; AllOf\l\&lt; ExpressionT \&gt;, ExpressionT \&gt;" alt="" coords="757,122,968,163"/>
+<area shape="rect" id="node11" href="$struct_catch_1_1_matchers_1_1_impl_1_1_matcher_impl.html" title="MatcherImpl\&lt; AnyOf\l\&lt; ExpressionT \&gt;, ExpressionT \&gt;" alt="" coords="757,187,968,229"/>
+<area shape="rect" id="node13" href="$struct_catch_1_1_matchers_1_1_impl_1_1_matcher_impl.html" title="MatcherImpl\&lt; Not\&lt; Expression\lT \&gt;, ExpressionT \&gt;" alt="" coords="761,253,964,294"/>
+<area shape="rect" id="node10" href="$class_catch_1_1_matchers_1_1_impl_1_1_generic_1_1_all_of.html" title="Catch::Matchers::Impl\l::Generic::AllOf\&lt; ExpressionT \&gt;" alt="" coords="1020,122,1227,163"/>
+<area shape="rect" id="node12" href="$class_catch_1_1_matchers_1_1_impl_1_1_generic_1_1_any_of.html" title="Catch::Matchers::Impl\l::Generic::AnyOf\&lt; ExpressionT \&gt;" alt="" coords="1016,187,1231,229"/>
+<area shape="rect" id="node14" href="$class_catch_1_1_matchers_1_1_impl_1_1_generic_1_1_not.html" title="Catch::Matchers::Impl\l::Generic::Not\&lt; ExpressionT \&gt;" alt="" coords="1024,253,1223,294"/>
+<area shape="rect" id="node16" href="$struct_catch_1_1_matchers_1_1_impl_1_1_matcher_impl.html" title="Catch::Matchers::Impl\l::MatcherImpl\&lt; Contains,\l std::string \&gt;" alt="" coords="779,319,947,375"/>
+<area shape="rect" id="node18" href="$struct_catch_1_1_matchers_1_1_impl_1_1_matcher_impl.html" title="Catch::Matchers::Impl\l::MatcherImpl\&lt; EndsWith,\l std::string \&gt;" alt="" coords="775,399,950,455"/>
+<area shape="rect" id="node20" href="$struct_catch_1_1_matchers_1_1_impl_1_1_matcher_impl.html" title="Catch::Matchers::Impl\l::MatcherImpl\&lt; Equals,\l std::string \&gt;" alt="" coords="784,479,941,535"/>
+<area shape="rect" id="node22" href="$struct_catch_1_1_matchers_1_1_impl_1_1_matcher_impl.html" title="Catch::Matchers::Impl\l::MatcherImpl\&lt; StartsWith,\l std::string \&gt;" alt="" coords="773,559,952,615"/>
+<area shape="rect" id="node17" href="$struct_catch_1_1_matchers_1_1_impl_1_1_std_string_1_1_contains.html" title="Catch::Matchers::Impl\l::StdString::Contains" alt="" coords="1048,326,1199,367"/>
+<area shape="rect" id="node19" href="$struct_catch_1_1_matchers_1_1_impl_1_1_std_string_1_1_ends_with.html" title="Catch::Matchers::Impl\l::StdString::EndsWith" alt="" coords="1048,406,1199,447"/>
+<area shape="rect" id="node21" href="$struct_catch_1_1_matchers_1_1_impl_1_1_std_string_1_1_equals.html" title="Catch::Matchers::Impl\l::StdString::Equals" alt="" coords="1048,486,1199,527"/>
+<area shape="rect" id="node23" href="$struct_catch_1_1_matchers_1_1_impl_1_1_std_string_1_1_starts_with.html" title="Catch::Matchers::Impl\l::StdString::StartsWith" alt="" coords="1046,566,1201,607"/>
+</map>

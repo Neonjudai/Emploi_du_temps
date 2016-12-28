@@ -1,0 +1,15 @@
+<map id="lib/professeur.h" name="lib/professeur.h">
+<area shape="rect" id="node2" href="$cours_8h.html" title="lib/cours.h" alt="" coords="205,80,288,107"/>
+<area shape="rect" id="node3" href="$afficheur_8h.html" title="Classe virtuelle pure permettant l&#39;affichage. " alt="" coords="21,155,120,181"/>
+<area shape="rect" id="node5" href="$afficheur_console_8h.html" title="Classe virtuelle permettant l&#39;affichage en console. " alt="" coords="150,229,295,256"/>
+<area shape="rect" id="node8" href="$professeur_8cpp.html" title="cpp/professeur.cpp" alt="" coords="553,304,685,331"/>
+<area shape="rect" id="node13" href="$liste_ressources_8h.html" title="lib/listeRessources.h" alt="" coords="449,80,591,107"/>
+<area shape="rect" id="node9" href="$cours_8cpp.html" title="cpp/cours.cpp" alt="" coords="195,155,299,181"/>
+<area shape="rect" id="node10" href="$liste_cours_8h.html" title="lib/listeCours.h" alt="" coords="374,155,482,181"/>
+<area shape="rect" id="node4" href="$afficheur_8cpp.html" title="cpp/afficheur.cpp" alt="" coords="5,229,125,256"/>
+<area shape="rect" id="node6" href="$afficheur_console_8cpp.html" title="cpp/afficheurConsole.cpp" alt="" coords="221,304,387,331"/>
+<area shape="rect" id="node7" href="$horaire_8cpp.html" title="cpp/horaire.cpp" alt="" coords="86,304,197,331"/>
+<area shape="rect" id="node11" href="$liste_cours_8cpp.html" title="cpp/listeCours.cpp" alt="" coords="320,229,451,256"/>
+<area shape="rect" id="node12" href="$main_8cpp.html" title="cpp/main.cpp" alt="" coords="475,229,575,256"/>
+<area shape="rect" id="node14" href="$liste_ressources_8cpp.html" title="cpp/listeRessources.cpp" alt="" coords="557,155,723,181"/>
+</map>

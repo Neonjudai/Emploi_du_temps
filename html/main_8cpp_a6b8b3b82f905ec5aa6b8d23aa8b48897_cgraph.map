@@ -1,0 +1,7 @@
+<map id="ajouterUnCoursConsole" name="ajouterUnCoursConsole">
+<area shape="rect" id="node2" href="$classliste_ressources.html#a9b496a36a9651347734d7895397dde00" title="listeRessources::nombreDe\lProfesseurs" alt="" coords="212,5,395,47"/>
+<area shape="rect" id="node3" href="$classliste_ressources.html#a8459ff3010ad07d1ec5b23d73fad6911" title="listeRessources::afficher\lLesProfesseurs" alt="" coords="221,71,385,112"/>
+<area shape="rect" id="node4" href="$classliste_ressources.html#a1ba16dd4280006301dc94d467b9dddaa" title="listeRessources::position\lDuProfesseur" alt="" coords="219,136,387,177"/>
+<area shape="rect" id="node5" href="$classliste_ressources.html#acd47bea2a7105b73adcf0891b82d2e1c" title="listeRessources::professeur\lNumero" alt="" coords="212,201,395,243"/>
+<area shape="rect" id="node6" href="$classliste_cours.html#aacc38305cfea76d8cc77d710d144ce8b" title="listeCours::ajouterUnCours" alt="" coords="215,267,392,294"/>
+</map>

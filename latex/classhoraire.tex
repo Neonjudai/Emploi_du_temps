@@ -1,0 +1,298 @@
+\hypertarget{classhoraire}{}\section{horaire Class Reference}
+\label{classhoraire}\index{horaire@{horaire}}
+
+
+{\ttfamily \#include $<$horaire.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classhoraire_aa5f11a3d1a68b9ef98e6aed7e3773b29}{horaire} ()=delete
+\item 
+\hyperlink{classhoraire_a1a6d044450099f5e481188c4f51d41ea}{horaire} (int \hyperlink{classhoraire_ae53308a6dd6c802a5f2b21ffc93c0ed4}{semaine}, int \hyperlink{classhoraire_a974c25bda0b56a5abcfa64de32a6ccf0}{jour}, int \hyperlink{classhoraire_a3ddd3f0b63ef3c95802634d9ba072e0a}{heure})
+\item 
+\hyperlink{classhoraire_adbeac30f6f55e50ec7455a2bb52e7b3a}{horaire} (const \hyperlink{classhoraire}{horaire} \&un\+Horaire)=default
+\item 
+void \hyperlink{classhoraire_a8529f03119bbfd87a59a9efad6993f9d}{changer\+Semaine} (int \hyperlink{classhoraire_ae53308a6dd6c802a5f2b21ffc93c0ed4}{semaine})
+\item 
+void \hyperlink{classhoraire_a5f9db9929031e9f94460a81dccf6e273}{changer\+Jour} (int \hyperlink{classhoraire_a974c25bda0b56a5abcfa64de32a6ccf0}{jour})
+\item 
+void \hyperlink{classhoraire_ac4685ee68148ad0d2200f8f188ea1b69}{changer\+Heure} (int \hyperlink{classhoraire_a3ddd3f0b63ef3c95802634d9ba072e0a}{heure})
+\item 
+int \hyperlink{classhoraire_a856d1830c70ff94ebdbaa6c6dcbe6347}{semaine\+Numero} () const
+\item 
+int \hyperlink{classhoraire_a958470c23ace8be3f5b93aab1183ade3}{jour\+Numero} () const
+\item 
+int \hyperlink{classhoraire_a0acafcfdbd8f9bef79e1cdf9fac128fb}{heure\+Numero} () const
+\item 
+int \hyperlink{classhoraire_ae53308a6dd6c802a5f2b21ffc93c0ed4}{semaine} () const
+\item 
+int \hyperlink{classhoraire_a974c25bda0b56a5abcfa64de32a6ccf0}{jour} () const
+\item 
+int \hyperlink{classhoraire_a3ddd3f0b63ef3c95802634d9ba072e0a}{heure} () const
+\item 
+bool \hyperlink{classhoraire_a2298ab292853652b934f7b881114ff12}{operator$<$} (const \hyperlink{classhoraire}{horaire} \&un\+Horaire) const
+\item 
+bool \hyperlink{classhoraire_a17aee5b647b4dff3d516e3fbccfb0d53}{operator$<$=} (const \hyperlink{classhoraire}{horaire} \&un\+Horaire) const
+\item 
+bool \hyperlink{classhoraire_ad6f3361000d688c897eb79a260fc52c8}{operator==} (const \hyperlink{classhoraire}{horaire} \&un\+Horaire) const
+\item 
+bool \hyperlink{classhoraire_ab8bdbbb3d453f6c470c6e3b6110342e2}{operator$>$=} (const \hyperlink{classhoraire}{horaire} \&un\+Horaire) const
+\item 
+bool \hyperlink{classhoraire_aa7d498b4f60474ed5ebb62bcd02cd869}{operator$>$} (const \hyperlink{classhoraire}{horaire} \&un\+Horaire) const
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \hyperlink{classhoraire_a152efd207823bf7d5cfb1dac6312c6b9}{operator$<$$<$} (std\+::ostream \&ost, const \hyperlink{classhoraire}{horaire} \&h)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 7 of file horaire.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classhoraire_aa5f11a3d1a68b9ef98e6aed7e3773b29}{}\label{classhoraire_aa5f11a3d1a68b9ef98e6aed7e3773b29} 
+\index{horaire@{horaire}!horaire@{horaire}}
+\index{horaire@{horaire}!horaire@{horaire}}
+\subsubsection{\texorpdfstring{horaire()}{horaire()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily horaire\+::horaire (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=261pt]{classhoraire_aa5f11a3d1a68b9ef98e6aed7e3773b29_icgraph}
+\end{center}
+\end{figure}
+\hypertarget{classhoraire_a1a6d044450099f5e481188c4f51d41ea}{}\label{classhoraire_a1a6d044450099f5e481188c4f51d41ea} 
+\index{horaire@{horaire}!horaire@{horaire}}
+\index{horaire@{horaire}!horaire@{horaire}}
+\subsubsection{\texorpdfstring{horaire()}{horaire()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily horaire\+::horaire (\begin{DoxyParamCaption}\item[{int}]{semaine,  }\item[{int}]{jour,  }\item[{int}]{heure }\end{DoxyParamCaption})}
+
+
+
+Definition at line 4 of file horaire.\+cpp.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=273pt]{classhoraire_a1a6d044450099f5e481188c4f51d41ea_cgraph}
+\end{center}
+\end{figure}
+\hypertarget{classhoraire_adbeac30f6f55e50ec7455a2bb52e7b3a}{}\label{classhoraire_adbeac30f6f55e50ec7455a2bb52e7b3a} 
+\index{horaire@{horaire}!horaire@{horaire}}
+\index{horaire@{horaire}!horaire@{horaire}}
+\subsubsection{\texorpdfstring{horaire()}{horaire()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily horaire\+::horaire (\begin{DoxyParamCaption}\item[{const \hyperlink{classhoraire}{horaire} \&}]{un\+Horaire }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classhoraire_ac4685ee68148ad0d2200f8f188ea1b69}{}\label{classhoraire_ac4685ee68148ad0d2200f8f188ea1b69} 
+\index{horaire@{horaire}!changer\+Heure@{changer\+Heure}}
+\index{changer\+Heure@{changer\+Heure}!horaire@{horaire}}
+\subsubsection{\texorpdfstring{changer\+Heure()}{changerHeure()}}
+{\footnotesize\ttfamily void horaire\+::changer\+Heure (\begin{DoxyParamCaption}\item[{int}]{heure }\end{DoxyParamCaption})}
+
+
+
+Definition at line 10 of file horaire.\+cpp.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{classhoraire_ac4685ee68148ad0d2200f8f188ea1b69_cgraph}
+\end{center}
+\end{figure}
+\hypertarget{classhoraire_a5f9db9929031e9f94460a81dccf6e273}{}\label{classhoraire_a5f9db9929031e9f94460a81dccf6e273} 
+\index{horaire@{horaire}!changer\+Jour@{changer\+Jour}}
+\index{changer\+Jour@{changer\+Jour}!horaire@{horaire}}
+\subsubsection{\texorpdfstring{changer\+Jour()}{changerJour()}}
+{\footnotesize\ttfamily void horaire\+::changer\+Jour (\begin{DoxyParamCaption}\item[{int}]{jour }\end{DoxyParamCaption})}
+
+
+
+Definition at line 9 of file horaire.\+cpp.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{classhoraire_a5f9db9929031e9f94460a81dccf6e273_cgraph}
+\end{center}
+\end{figure}
+\hypertarget{classhoraire_a8529f03119bbfd87a59a9efad6993f9d}{}\label{classhoraire_a8529f03119bbfd87a59a9efad6993f9d} 
+\index{horaire@{horaire}!changer\+Semaine@{changer\+Semaine}}
+\index{changer\+Semaine@{changer\+Semaine}!horaire@{horaire}}
+\subsubsection{\texorpdfstring{changer\+Semaine()}{changerSemaine()}}
+{\footnotesize\ttfamily void horaire\+::changer\+Semaine (\begin{DoxyParamCaption}\item[{int}]{semaine }\end{DoxyParamCaption})}
+
+
+
+Definition at line 8 of file horaire.\+cpp.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{classhoraire_a8529f03119bbfd87a59a9efad6993f9d_cgraph}
+\end{center}
+\end{figure}
+\hypertarget{classhoraire_a3ddd3f0b63ef3c95802634d9ba072e0a}{}\label{classhoraire_a3ddd3f0b63ef3c95802634d9ba072e0a} 
+\index{horaire@{horaire}!heure@{heure}}
+\index{heure@{heure}!horaire@{horaire}}
+\subsubsection{\texorpdfstring{heure()}{heure()}}
+{\footnotesize\ttfamily int horaire\+::heure (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 19 of file horaire.\+cpp.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classhoraire_a3ddd3f0b63ef3c95802634d9ba072e0a_icgraph}
+\end{center}
+\end{figure}
+\hypertarget{classhoraire_a0acafcfdbd8f9bef79e1cdf9fac128fb}{}\label{classhoraire_a0acafcfdbd8f9bef79e1cdf9fac128fb} 
+\index{horaire@{horaire}!heure\+Numero@{heure\+Numero}}
+\index{heure\+Numero@{heure\+Numero}!horaire@{horaire}}
+\subsubsection{\texorpdfstring{heure\+Numero()}{heureNumero()}}
+{\footnotesize\ttfamily int horaire\+::heure\+Numero (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 15 of file horaire.\+cpp.
+
+\hypertarget{classhoraire_a974c25bda0b56a5abcfa64de32a6ccf0}{}\label{classhoraire_a974c25bda0b56a5abcfa64de32a6ccf0} 
+\index{horaire@{horaire}!jour@{jour}}
+\index{jour@{jour}!horaire@{horaire}}
+\subsubsection{\texorpdfstring{jour()}{jour()}}
+{\footnotesize\ttfamily int horaire\+::jour (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 18 of file horaire.\+cpp.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classhoraire_a974c25bda0b56a5abcfa64de32a6ccf0_icgraph}
+\end{center}
+\end{figure}
+\hypertarget{classhoraire_a958470c23ace8be3f5b93aab1183ade3}{}\label{classhoraire_a958470c23ace8be3f5b93aab1183ade3} 
+\index{horaire@{horaire}!jour\+Numero@{jour\+Numero}}
+\index{jour\+Numero@{jour\+Numero}!horaire@{horaire}}
+\subsubsection{\texorpdfstring{jour\+Numero()}{jourNumero()}}
+{\footnotesize\ttfamily int horaire\+::jour\+Numero (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 14 of file horaire.\+cpp.
+
+\hypertarget{classhoraire_a2298ab292853652b934f7b881114ff12}{}\label{classhoraire_a2298ab292853652b934f7b881114ff12} 
+\index{horaire@{horaire}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!horaire@{horaire}}
+\subsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool horaire\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \hyperlink{classhoraire}{horaire} \&}]{un\+Horaire }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 22 of file horaire.\+cpp.
+
+\hypertarget{classhoraire_a17aee5b647b4dff3d516e3fbccfb0d53}{}\label{classhoraire_a17aee5b647b4dff3d516e3fbccfb0d53} 
+\index{horaire@{horaire}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!horaire@{horaire}}
+\subsubsection{\texorpdfstring{operator$<$=()}{operator<=()}}
+{\footnotesize\ttfamily bool horaire\+::operator$<$= (\begin{DoxyParamCaption}\item[{const \hyperlink{classhoraire}{horaire} \&}]{un\+Horaire }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 31 of file horaire.\+cpp.
+
+\hypertarget{classhoraire_ad6f3361000d688c897eb79a260fc52c8}{}\label{classhoraire_ad6f3361000d688c897eb79a260fc52c8} 
+\index{horaire@{horaire}!operator==@{operator==}}
+\index{operator==@{operator==}!horaire@{horaire}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool horaire\+::operator== (\begin{DoxyParamCaption}\item[{const \hyperlink{classhoraire}{horaire} \&}]{un\+Horaire }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 32 of file horaire.\+cpp.
+
+\hypertarget{classhoraire_aa7d498b4f60474ed5ebb62bcd02cd869}{}\label{classhoraire_aa7d498b4f60474ed5ebb62bcd02cd869} 
+\index{horaire@{horaire}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!horaire@{horaire}}
+\subsubsection{\texorpdfstring{operator$>$()}{operator>()}}
+{\footnotesize\ttfamily bool horaire\+::operator$>$ (\begin{DoxyParamCaption}\item[{const \hyperlink{classhoraire}{horaire} \&}]{un\+Horaire }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 34 of file horaire.\+cpp.
+
+\hypertarget{classhoraire_ab8bdbbb3d453f6c470c6e3b6110342e2}{}\label{classhoraire_ab8bdbbb3d453f6c470c6e3b6110342e2} 
+\index{horaire@{horaire}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!horaire@{horaire}}
+\subsubsection{\texorpdfstring{operator$>$=()}{operator>=()}}
+{\footnotesize\ttfamily bool horaire\+::operator$>$= (\begin{DoxyParamCaption}\item[{const \hyperlink{classhoraire}{horaire} \&}]{un\+Horaire }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 33 of file horaire.\+cpp.
+
+\hypertarget{classhoraire_ae53308a6dd6c802a5f2b21ffc93c0ed4}{}\label{classhoraire_ae53308a6dd6c802a5f2b21ffc93c0ed4} 
+\index{horaire@{horaire}!semaine@{semaine}}
+\index{semaine@{semaine}!horaire@{horaire}}
+\subsubsection{\texorpdfstring{semaine()}{semaine()}}
+{\footnotesize\ttfamily int horaire\+::semaine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 17 of file horaire.\+cpp.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classhoraire_ae53308a6dd6c802a5f2b21ffc93c0ed4_icgraph}
+\end{center}
+\end{figure}
+\hypertarget{classhoraire_a856d1830c70ff94ebdbaa6c6dcbe6347}{}\label{classhoraire_a856d1830c70ff94ebdbaa6c6dcbe6347} 
+\index{horaire@{horaire}!semaine\+Numero@{semaine\+Numero}}
+\index{semaine\+Numero@{semaine\+Numero}!horaire@{horaire}}
+\subsubsection{\texorpdfstring{semaine\+Numero()}{semaineNumero()}}
+{\footnotesize\ttfamily int horaire\+::semaine\+Numero (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 13 of file horaire.\+cpp.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classhoraire_a152efd207823bf7d5cfb1dac6312c6b9}{}\label{classhoraire_a152efd207823bf7d5cfb1dac6312c6b9} 
+\index{horaire@{horaire}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!horaire@{horaire}}
+\subsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{ost,  }\item[{const \hyperlink{classhoraire}{horaire} \&}]{h }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 36 of file horaire.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+lib/\hyperlink{horaire_8h}{horaire.\+h}\item 
+cpp/\hyperlink{horaire_8cpp}{horaire.\+cpp}\end{DoxyCompactItemize}

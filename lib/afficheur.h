@@ -1,5 +1,13 @@
 #ifndef AFFICHEUR_H
 #define AFFICHEUR_H
+
+/**
+ * @file afficheur.h
+ * @brief Classe virtuelle pure permettant l'affichage
+ * @author Olivier Ettlin
+ * @version 1.0
+ */
+
 #include "horaire.h"
 #include "cours.h"
 #include "professeur.h"

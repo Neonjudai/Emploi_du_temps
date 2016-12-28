@@ -1,0 +1,5 @@
+<map id="Catch::Matchers::Impl::Generic::AnyOf::add" name="Catch::Matchers::Impl::Generic::AnyOf::add">
+<area shape="rect" id="node2" href="$class_catch_1_1_matchers_1_1_impl_1_1_generic_1_1_any_of.html#a6dc9aee9a816f66ddc9de0c45c1c9ac1" title="Catch::Matchers::Impl\l::Generic::AnyOf::operator\|\|" alt="" coords="204,5,384,47"/>
+<area shape="rect" id="node3" href="$struct_catch_1_1_matchers_1_1_impl_1_1_matcher.html#a55b1e12315e7a5daf7ce7a11ddfaa295" title="Catch::Matchers::Impl\l::Matcher\&lt; std::string\l \&gt;::operator\|\|" alt="" coords="219,71,369,127"/>
+<area shape="rect" id="node4" href="$namespace_catch_1_1_matchers.html#a9cb139c71b9e391d5fc017764695bf84" title="Catch::Matchers::AnyOf" alt="" coords="213,151,375,178"/>
+</map>
