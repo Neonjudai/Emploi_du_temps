@@ -8,22 +8,22 @@
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{classcours_a64d575197dcd1276d2f460a159b0aa67}{cours} (const \hyperlink{classhoraire}{horaire} \&h, \hyperlink{classprofesseur}{professeur} $\ast$prof)
-\item 
+\begin{DoxyCompactList}\small\item\em Constructeur de l\textquotesingle{}objet cours. \end{DoxyCompactList}\item 
 \hyperlink{classcours_a76210058976f92c2f09b047f68fa2e82}{cours} (int semaine, int jour, int heure, \hyperlink{classprofesseur}{professeur} $\ast$prof)
-\item 
+\begin{DoxyCompactList}\small\item\em Constructeur de l\textquotesingle{}objet cours. \end{DoxyCompactList}\item 
 \hyperlink{classcours_a95b69b7789c5dab7116c0b89d78197ec}{cours} (const \hyperlink{classcours}{cours} \&c)=default
 \end{DoxyCompactItemize}
 \subsection*{Friends}
 \begin{DoxyCompactItemize}
 \item 
 std\+::ostream \& \hyperlink{classcours_aecc19592d3206061c4aefd63e2cf7473}{operator$<$$<$} (std\+::ostream \&ost, const \hyperlink{classcours}{cours} \&c)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Redefinition de l\textquotesingle{}operateur $<$$<$. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 
 
-Definition at line 9 of file cours.\+h.
+Definition at line 17 of file cours.\+h.
 
 
 
@@ -36,7 +36,18 @@ Definition at line 9 of file cours.\+h.
 
 
 
-Definition at line 3 of file cours.\+cpp.
+Constructeur de l\textquotesingle{}objet cours. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em h} & -\/ un objet de type horaire \\
+\hline
+\mbox{\tt in}  & {\em prof} & -\/ un objet de type professeur \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 16 of file cours.\+cpp.
 
 \hypertarget{classcours_a76210058976f92c2f09b047f68fa2e82}{}\label{classcours_a76210058976f92c2f09b047f68fa2e82} 
 \index{cours@{cours}!cours@{cours}}
@@ -46,7 +57,22 @@ Definition at line 3 of file cours.\+cpp.
 
 
 
-Definition at line 6 of file cours.\+cpp.
+Constructeur de l\textquotesingle{}objet cours. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em semaine} & -\/ un entier représentant le numéro de semaine \\
+\hline
+\mbox{\tt in}  & {\em jour} & -\/ un entier représentant un jour \\
+\hline
+\mbox{\tt in}  & {\em heure} & -\/ un entier représentant une plage horaire \\
+\hline
+\mbox{\tt in}  & {\em prof} & -\/ un objet de type professeur \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 26 of file cours.\+cpp.
 
 \hypertarget{classcours_a95b69b7789c5dab7116c0b89d78197ec}{}\label{classcours_a95b69b7789c5dab7116c0b89d78197ec} 
 \index{cours@{cours}!cours@{cours}}
@@ -65,7 +91,21 @@ Definition at line 6 of file cours.\+cpp.
 
 
 
-Definition at line 12 of file cours.\+cpp.
+Redefinition de l\textquotesingle{}operateur $<$$<$. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em c} & -\/ un objet de type cours \\
+\hline
+\mbox{\tt in,out}  & {\em ost} & -\/ un flux de sortie \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ost -\/ le flux de sortie ost 
+\end{DoxyReturn}
+
+
+Definition at line 38 of file cours.\+cpp.
 
 
 

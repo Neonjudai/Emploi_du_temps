@@ -1,8 +1,8 @@
 #include "../lib/afficheurConsole.h"
 
 /**
- *\file afficheurConsole.h
- *\brief Classe virtuelle permettant l'affichage en console
+ *\file afficheurConsole.cpp
+ *\brief Définition des méthodes de la classe afficheurConsole
  *\author Olivier Ettlin
  *\version 1.0
  */
@@ -23,7 +23,11 @@ void afficheurConsole::afficheSemaine(const horaire * h, ostream & ost)
     ost<<h->semaine();
 }
 
-
+/**
+@brief Renvoie dans ost la plage horaire de l'horaire h
+@param[in] h - un objet de type horaire
+@param[out] ost - flux de sortie
+ */
 void afficheurConsole::afficheHeure(const horaire * h, ostream & ost)
 {
     switch (h->heure())
@@ -40,6 +44,11 @@ void afficheurConsole::afficheHeure(const horaire * h, ostream & ost)
 }
 }
 
+/**
+@brief Renvoie dans ost le nom du jour de la semaine de l'horaire h
+@param[in] h - un objet de type horaire
+@param[out] ost - flux de sortie
+ */
 void afficheurConsole::afficheJour(const horaire * h, ostream & ost)
 {
     switch (h->jour())
@@ -61,6 +70,11 @@ void afficheurConsole::afficheJour(const horaire * h, ostream & ost)
 	}
 }
 
+/**
+@brief Renvoie dans ost l'affichage de la semaine, du jour et de l'heure correspondant à l'horaire h
+@param[in] h - un objet de type horaire
+@param[out] ost - flux de sortie
+ */
 void afficheurConsole::afficheHoraire(const horaire * h, ostream & ost)
 {
     ost<<"Semaine "<<std::setw(2);
@@ -71,11 +85,21 @@ void afficheurConsole::afficheHoraire(const horaire * h, ostream & ost)
     afficheHeure(h,ost);
 }
 
+/**
+@brief Renvoie dans ost le nom du professeur du professeur p
+@param[in] p - un objet de type professeur
+@param[out] ost - flux de sortie
+ */
 void afficheurConsole::afficheProfesseur(const professeur * p, ostream & ost)
 {
     ost<<p->nom();
 }
 
+/**
+@brief Renvoie dans ost le .......... du cours c
+@param[in] h - un objet de type cours
+@param[out] ost - flux de sortie
+ */
 void afficheurConsole::afficheCours(const cours * c, ostream & ost)
 {
     // à faire après que le getter de cours ne bug plus

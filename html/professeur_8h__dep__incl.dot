@@ -1,0 +1,37 @@
+digraph "lib/professeur.h"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node3 [label="lib/professeur.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="lib/cours.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$cours_8h.html",tooltip="Définition des méthodes de la classe cours. "];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="lib/afficheur.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$afficheur_8h.html",tooltip="Classe virtuelle pure permettant l&#39;affichage. "];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="cpp/afficheur.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$afficheur_8cpp.html",tooltip="Définition des méthodes de la classe afficheur. "];
+  Node5 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="lib/afficheurConsole.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$afficheur_console_8h.html",tooltip="Définition des méthodes de la classe horaire. "];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="cpp/afficheurConsole.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$afficheur_console_8cpp.html",tooltip="Définition des méthodes de la classe afficheurConsole. "];
+  Node7 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="cpp/horaire.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$horaire_8cpp.html"];
+  Node7 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="cpp/professeur.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$professeur_8cpp.html"];
+  Node4 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="cpp/cours.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$cours_8cpp.html"];
+  Node4 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="lib/listeCours.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$liste_cours_8h.html"];
+  Node12 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="cpp/listeCours.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$liste_cours_8cpp.html"];
+  Node12 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="cpp/main.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8cpp.html"];
+  Node3 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="lib/listeRessources.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$liste_ressources_8h.html"];
+  Node15 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="cpp/listeRessources.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$liste_ressources_8cpp.html"];
+  Node15 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

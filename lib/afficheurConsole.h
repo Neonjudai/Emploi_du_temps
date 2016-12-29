@@ -1,3 +1,10 @@
+/**
+ * @file afficheurConsole.h
+ * @brief Classe permettant l'affichage en mode console
+ * @author Olivier Ettlin
+ * @version 1.0
+ */
+
 #ifndef AFFICHEURCONSOLE_H
 #define AFFICHEURCONSOLE_H
 

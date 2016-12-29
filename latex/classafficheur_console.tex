@@ -32,21 +32,21 @@ virtual \hyperlink{classafficheur_console_a0f902699d385726ea9d9889d37e57558}{$\s
 virtual void \hyperlink{classafficheur_console_a0930128cabb9b2585db0140f7614a3df}{affiche\+Semaine} (const \hyperlink{classhoraire}{horaire} $\ast$h, ostream \&ost) override
 \begin{DoxyCompactList}\small\item\em Renvoie dans ost le numero de la semaine de l\textquotesingle{}horaire h. \end{DoxyCompactList}\item 
 virtual void \hyperlink{classafficheur_console_a842884a9553df737f781d2f8f040d30e}{affiche\+Heure} (const \hyperlink{classhoraire}{horaire} $\ast$h, ostream \&ost) override
-\item 
+\begin{DoxyCompactList}\small\item\em Renvoie dans ost la plage horaire de l\textquotesingle{}horaire h. \end{DoxyCompactList}\item 
 virtual void \hyperlink{classafficheur_console_a9d69206c3cd6409d1437ee546e71cf25}{affiche\+Jour} (const \hyperlink{classhoraire}{horaire} $\ast$h, ostream \&ost) override
-\item 
+\begin{DoxyCompactList}\small\item\em Renvoie dans ost le nom du jour de la semaine de l\textquotesingle{}horaire h. \end{DoxyCompactList}\item 
 virtual void \hyperlink{classafficheur_console_a44e40b275c8b0b1a33cdc5bd46a31cf3}{affiche\+Horaire} (const \hyperlink{classhoraire}{horaire} $\ast$h, ostream \&ost) override
-\item 
+\begin{DoxyCompactList}\small\item\em Renvoie dans ost l\textquotesingle{}affichage de la semaine, du jour et de l\textquotesingle{}heure correspondant à l\textquotesingle{}horaire h. \end{DoxyCompactList}\item 
 virtual void \hyperlink{classafficheur_console_aa178d74ab314df687800c612a3615ed6}{affiche\+Professeur} (const \hyperlink{classprofesseur}{professeur} $\ast$p, ostream \&ost) override
-\item 
+\begin{DoxyCompactList}\small\item\em Renvoie dans ost le nom du professeur du professeur p. \end{DoxyCompactList}\item 
 virtual void \hyperlink{classafficheur_console_aa77bdd8065edd5269f83679490e78dee}{affiche\+Cours} (const \hyperlink{classcours}{cours} $\ast$c, ostream \&ost) override
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Renvoie dans ost le .......... du cours c. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 
 
-Definition at line 11 of file afficheur\+Console.\+h.
+Definition at line 18 of file afficheur\+Console.\+h.
 
 
 
@@ -82,11 +82,22 @@ Definition at line 13 of file afficheur\+Console.\+cpp.
 
 
 
+Renvoie dans ost le .......... du cours c. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em h} & -\/ un objet de type cours \\
+\hline
+\mbox{\tt out}  & {\em ost} & -\/ flux de sortie \\
+\hline
+\end{DoxyParams}
+
+
 Implements \hyperlink{classafficheur_a9d176576ad45c2a07a8a887b853b7edb}{afficheur}.
 
 
 
-Definition at line 79 of file afficheur\+Console.\+cpp.
+Definition at line 103 of file afficheur\+Console.\+cpp.
 
 \hypertarget{classafficheur_console_a842884a9553df737f781d2f8f040d30e}{}\label{classafficheur_console_a842884a9553df737f781d2f8f040d30e} 
 \index{afficheur\+Console@{afficheur\+Console}!affiche\+Heure@{affiche\+Heure}}
@@ -96,11 +107,22 @@ Definition at line 79 of file afficheur\+Console.\+cpp.
 
 
 
+Renvoie dans ost la plage horaire de l\textquotesingle{}horaire h. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em h} & -\/ un objet de type horaire \\
+\hline
+\mbox{\tt out}  & {\em ost} & -\/ flux de sortie \\
+\hline
+\end{DoxyParams}
+
+
 Implements \hyperlink{classafficheur_a3c3ace0f2f01e95a1cc86a0b6c497e34}{afficheur}.
 
 
 
-Definition at line 27 of file afficheur\+Console.\+cpp.
+Definition at line 31 of file afficheur\+Console.\+cpp.
 
 Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
@@ -109,7 +131,8 @@ Here is the call graph for this function\+:\nopagebreak
 \includegraphics[width=314pt]{classafficheur_console_a842884a9553df737f781d2f8f040d30e_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -124,11 +147,22 @@ Here is the caller graph for this function\+:\nopagebreak
 
 
 
+Renvoie dans ost l\textquotesingle{}affichage de la semaine, du jour et de l\textquotesingle{}heure correspondant à l\textquotesingle{}horaire h. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em h} & -\/ un objet de type horaire \\
+\hline
+\mbox{\tt out}  & {\em ost} & -\/ flux de sortie \\
+\hline
+\end{DoxyParams}
+
+
 Implements \hyperlink{classafficheur_aa598626f11775b4c610b8f262017cad7}{afficheur}.
 
 
 
-Definition at line 64 of file afficheur\+Console.\+cpp.
+Definition at line 78 of file afficheur\+Console.\+cpp.
 
 Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
@@ -137,7 +171,8 @@ Here is the call graph for this function\+:\nopagebreak
 \includegraphics[width=350pt]{classafficheur_console_a44e40b275c8b0b1a33cdc5bd46a31cf3_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -152,11 +187,22 @@ Here is the caller graph for this function\+:\nopagebreak
 
 
 
+Renvoie dans ost le nom du jour de la semaine de l\textquotesingle{}horaire h. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em h} & -\/ un objet de type horaire \\
+\hline
+\mbox{\tt out}  & {\em ost} & -\/ flux de sortie \\
+\hline
+\end{DoxyParams}
+
+
 Implements \hyperlink{classafficheur_a0cea335dad556ceba3487ae261b831f9}{afficheur}.
 
 
 
-Definition at line 43 of file afficheur\+Console.\+cpp.
+Definition at line 52 of file afficheur\+Console.\+cpp.
 
 Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
@@ -165,7 +211,8 @@ Here is the call graph for this function\+:\nopagebreak
 \includegraphics[width=324pt]{classafficheur_console_a9d69206c3cd6409d1437ee546e71cf25_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -180,11 +227,22 @@ Here is the caller graph for this function\+:\nopagebreak
 
 
 
+Renvoie dans ost le nom du professeur du professeur p. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em p} & -\/ un objet de type professeur \\
+\hline
+\mbox{\tt out}  & {\em ost} & -\/ flux de sortie \\
+\hline
+\end{DoxyParams}
+
+
 Implements \hyperlink{classafficheur_a54b3e457d56738ed20641e5546872142}{afficheur}.
 
 
 
-Definition at line 74 of file afficheur\+Console.\+cpp.
+Definition at line 93 of file afficheur\+Console.\+cpp.
 
 Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
@@ -232,7 +290,8 @@ Here is the call graph for this function\+:\nopagebreak
 \includegraphics[width=327pt]{classafficheur_console_a0930128cabb9b2585db0140f7614a3df_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode

@@ -1,3 +1,10 @@
+/**
+ * @file cours.h
+ * @brief Classe permettant la gestion des formations
+ * @author Adrien Couchot
+ * @version 1.0
+ */
+
 #ifndef FORMATION_H
 #define FORMATION_H
 

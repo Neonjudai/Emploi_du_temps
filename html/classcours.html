@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.12"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Emploi_du_temps_documentation: cours Class Reference</title>
+<title>Emploi du temps documentation: cours Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Emploi_du_temps_documentation
+   <div id="projectname">Emploi du temps documentation
    </div>
   </td>
  </tr>
@@ -72,8 +72,10 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a64d575197dcd1276d2f460a159b0aa67"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcours.html#a64d575197dcd1276d2f460a159b0aa67">cours</a> (const <a class="el" href="classhoraire.html">horaire</a> &amp;h, <a class="el" href="classprofesseur.html">professeur</a> *prof)</td></tr>
+<tr class="memdesc:a64d575197dcd1276d2f460a159b0aa67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur de l'objet cours.  <a href="#a64d575197dcd1276d2f460a159b0aa67">More...</a><br /></td></tr>
 <tr class="separator:a64d575197dcd1276d2f460a159b0aa67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76210058976f92c2f09b047f68fa2e82"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcours.html#a76210058976f92c2f09b047f68fa2e82">cours</a> (int semaine, int jour, int heure, <a class="el" href="classprofesseur.html">professeur</a> *prof)</td></tr>
+<tr class="memdesc:a76210058976f92c2f09b047f68fa2e82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur de l'objet cours.  <a href="#a76210058976f92c2f09b047f68fa2e82">More...</a><br /></td></tr>
 <tr class="separator:a76210058976f92c2f09b047f68fa2e82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95b69b7789c5dab7116c0b89d78197ec"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcours.html#a95b69b7789c5dab7116c0b89d78197ec">cours</a> (const <a class="el" href="classcours.html">cours</a> &amp;c)=default</td></tr>
 <tr class="separator:a95b69b7789c5dab7116c0b89d78197ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -81,11 +83,12 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:aecc19592d3206061c4aefd63e2cf7473"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcours.html#aecc19592d3206061c4aefd63e2cf7473">operator&lt;&lt;</a> (std::ostream &amp;ost, const <a class="el" href="classcours.html">cours</a> &amp;c)</td></tr>
+<tr class="memdesc:aecc19592d3206061c4aefd63e2cf7473"><td class="mdescLeft">&#160;</td><td class="mdescRight">Redefinition de l'operateur &lt;&lt;.  <a href="#aecc19592d3206061c4aefd63e2cf7473">More...</a><br /></td></tr>
 <tr class="separator:aecc19592d3206061c4aefd63e2cf7473"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="cours_8h_source.html#l00009">9</a> of file <a class="el" href="cours_8h_source.html">cours.h</a>.</p>
+<p>Definition at line <a class="el" href="cours_8h_source.html#l00017">17</a> of file <a class="el" href="cours_8h_source.html">cours.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a64d575197dcd1276d2f460a159b0aa67"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a64d575197dcd1276d2f460a159b0aa67">&sect;&nbsp;</a></span>cours() <span class="overload">[1/3]</span></h2>
@@ -113,7 +116,16 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="cours_8cpp_source.html#l00003">3</a> of file <a class="el" href="cours_8cpp_source.html">cours.cpp</a>.</p>
+<p>Constructeur de l'objet cours. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td>- un objet de type horaire </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">prof</td><td>- un objet de type professeur </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="cours_8cpp_source.html#l00016">16</a> of file <a class="el" href="cours_8cpp_source.html">cours.cpp</a>.</p>
 
 </div>
 </div>
@@ -155,7 +167,18 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="cours_8cpp_source.html#l00006">6</a> of file <a class="el" href="cours_8cpp_source.html">cours.cpp</a>.</p>
+<p>Constructeur de l'objet cours. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">semaine</td><td>- un entier représentant le numéro de semaine </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">jour</td><td>- un entier représentant un jour </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">heure</td><td>- un entier représentant une plage horaire </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">prof</td><td>- un objet de type professeur </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="cours_8cpp_source.html#l00026">26</a> of file <a class="el" href="cours_8cpp_source.html">cours.cpp</a>.</p>
 
 </div>
 </div>
@@ -220,7 +243,17 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="cours_8cpp_source.html#l00012">12</a> of file <a class="el" href="cours_8cpp_source.html">cours.cpp</a>.</p>
+<p>Redefinition de l'operateur &lt;&lt;. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>- un objet de type cours </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">ost</td><td>- un flux de sortie </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>ost - le flux de sortie ost </dd></dl>
+
+<p>Definition at line <a class="el" href="cours_8cpp_source.html#l00038">38</a> of file <a class="el" href="cours_8cpp_source.html">cours.cpp</a>.</p>
 
 </div>
 </div>
