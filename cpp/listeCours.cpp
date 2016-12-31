@@ -1,5 +1,5 @@
 /**
- * @file horaire.cpp
+ * @file listeCours.cpp
  * @brief Definition des methodes de la classe listeCours
  * @author Adrien Couchot
  * @version 1.0

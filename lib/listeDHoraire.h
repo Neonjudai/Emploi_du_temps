@@ -1,3 +1,10 @@
+/**
+ * @file listeDHoraire.h
+ * @brief Classe permettant la gestion de listes d'horaires
+ * @author Adrien Couchot
+ * @version 1.0
+ */
+
 #ifndef LISTEDHORAIRE_H
 #define LISTEDHORAIRE_H
 

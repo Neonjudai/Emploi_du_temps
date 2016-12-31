@@ -1,5 +1,5 @@
 /**
- * @file cours.h
+ * @file formation.h
  * @brief Classe permettant la gestion des formations
  * @author Adrien Couchot
  * @version 1.0

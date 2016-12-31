@@ -1,6 +1,6 @@
 /**
  * @file professeur.cpp
- * @briefDefinition des mthodes de la classe professeur
+ * @brief Definition des methodes de la classe professeur
  * @author Adrien Couchot
  * @version 1.0
  */

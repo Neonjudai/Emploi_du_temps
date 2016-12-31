@@ -20,6 +20,7 @@
 		<Unit filename="cpp/cours.cpp" />
 		<Unit filename="cpp/horaire.cpp" />
 		<Unit filename="cpp/listeCours.cpp" />
+		<Unit filename="cpp/listeDHoraire.cpp" />
 		<Unit filename="cpp/listeRessources.cpp" />
 		<Unit filename="cpp/main.cpp" />
 		<Unit filename="cpp/professeur.cpp" />
@@ -31,6 +32,7 @@
 		<Unit filename="lib/formation.h" />
 		<Unit filename="lib/horaire.h" />
 		<Unit filename="lib/listeCours.h" />
+		<Unit filename="lib/listeDHoraire.h" />
 		<Unit filename="lib/listeRessources.h" />
 		<Unit filename="lib/professeur.h" />
 		<Unit filename="lib/ressource.h" />

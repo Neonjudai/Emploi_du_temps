@@ -1,5 +1,10 @@
 \hypertarget{_test_horaire_8cpp}{}\section{test/\+Test\+Horaire.cpp File Reference}
 \label{_test_horaire_8cpp}\index{test/\+Test\+Horaire.\+cpp@{test/\+Test\+Horaire.\+cpp}}
+
+
+Fichier permettant de tester les methodes de la classe horaire.  
+
+
 {\ttfamily \#include \char`\"{}../lib/catch.\+hpp\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}../lib/horaire.\+h\char`\"{}}\newline
 Include dependency graph for Test\+Horaire.\+cpp\+:\nopagebreak
@@ -19,9 +24,9 @@ Include dependency graph for Test\+Horaire.\+cpp\+:\nopagebreak
 \item 
 \hyperlink{_test_horaire_8cpp_ac983aa100308f1354fea3cdd8d2e85c3}{T\+E\+S\+T\+\_\+\+C\+A\+SE} (\char`\"{}Les horaires sont bien construites\char`\"{}, \char`\"{}\mbox{[}\hyperlink{classhoraire}{horaire}\mbox{]}\char`\"{})
 \item 
-\hyperlink{_test_horaire_8cpp_a95dc30055ab91086b5f5fc12a0420e53}{T\+E\+S\+T\+\_\+\+C\+A\+SE} (\char`\"{}Changement paramètres horaires\char`\"{}, \char`\"{}\mbox{[}\hyperlink{classhoraire}{horaire}\mbox{]}\char`\"{})
+\hyperlink{_test_horaire_8cpp_a2588b1965186c6c2a389d02ae11a03d4}{T\+E\+S\+T\+\_\+\+C\+A\+SE} (\char`\"{}Changement parametres horaires\char`\"{}, \char`\"{}\mbox{[}\hyperlink{classhoraire}{horaire}\mbox{]}\char`\"{})
 \item 
-\hyperlink{_test_horaire_8cpp_a970e41caaeb8798b2b9e6ce932e4b567}{T\+E\+S\+T\+\_\+\+C\+A\+SE} (\char`\"{}Opérateurs\char`\"{}, \char`\"{}\mbox{[}\hyperlink{classhoraire}{horaire}\mbox{]}\char`\"{})
+\hyperlink{_test_horaire_8cpp_adcf564f7d2441d235fec8c42120042e9}{T\+E\+S\+T\+\_\+\+C\+A\+SE} (\char`\"{}Operateurs\char`\"{}, \char`\"{}\mbox{[}\hyperlink{classhoraire}{horaire}\mbox{]}\char`\"{})
 \end{DoxyCompactItemize}
 \subsection*{Variables}
 \begin{DoxyCompactItemize}
@@ -32,6 +37,17 @@ const int \hyperlink{_test_horaire_8cpp_a933af95f4b726cde7aa3272935eb8587}{N\+U\
 \item 
 const int \hyperlink{_test_horaire_8cpp_a0f4ad88f1e5fc3f24e4c088b70a57460}{N\+U\+M\+\_\+\+J\+O\+UR} =1\%7
 \end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Fichier permettant de tester les methodes de la classe horaire. 
+
+\begin{DoxyAuthor}{Author}
+Olivier Ettlin 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
 
 
 \subsection{Macro Definition Documentation}
@@ -54,29 +70,29 @@ Definition at line 1 of file Test\+Horaire.\+cpp.
 \subsubsection{\texorpdfstring{T\+E\+S\+T\+\_\+\+C\+A\+S\+E()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
 {\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}Les horaires sont bien construites\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}horaire\mbox{]} }\end{DoxyParamCaption})}
 
+Tests verifiant la construction des horaires 
 
+Definition at line 18 of file Test\+Horaire.\+cpp.
 
-Definition at line 10 of file Test\+Horaire.\+cpp.
-
-\hypertarget{_test_horaire_8cpp_a95dc30055ab91086b5f5fc12a0420e53}{}\label{_test_horaire_8cpp_a95dc30055ab91086b5f5fc12a0420e53} 
+\hypertarget{_test_horaire_8cpp_a2588b1965186c6c2a389d02ae11a03d4}{}\label{_test_horaire_8cpp_a2588b1965186c6c2a389d02ae11a03d4} 
 \index{Test\+Horaire.\+cpp@{Test\+Horaire.\+cpp}!T\+E\+S\+T\+\_\+\+C\+A\+SE@{T\+E\+S\+T\+\_\+\+C\+A\+SE}}
 \index{T\+E\+S\+T\+\_\+\+C\+A\+SE@{T\+E\+S\+T\+\_\+\+C\+A\+SE}!Test\+Horaire.\+cpp@{Test\+Horaire.\+cpp}}
 \subsubsection{\texorpdfstring{T\+E\+S\+T\+\_\+\+C\+A\+S\+E()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
-{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}Changement paramètres horaires\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}horaire\mbox{]} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}Changement parametres horaires\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}horaire\mbox{]} }\end{DoxyParamCaption})}
 
+Tests verifiant les changements dans les parametres de l\textquotesingle{}objet horaire 
 
+Definition at line 37 of file Test\+Horaire.\+cpp.
 
-Definition at line 28 of file Test\+Horaire.\+cpp.
-
-\hypertarget{_test_horaire_8cpp_a970e41caaeb8798b2b9e6ce932e4b567}{}\label{_test_horaire_8cpp_a970e41caaeb8798b2b9e6ce932e4b567} 
+\hypertarget{_test_horaire_8cpp_adcf564f7d2441d235fec8c42120042e9}{}\label{_test_horaire_8cpp_adcf564f7d2441d235fec8c42120042e9} 
 \index{Test\+Horaire.\+cpp@{Test\+Horaire.\+cpp}!T\+E\+S\+T\+\_\+\+C\+A\+SE@{T\+E\+S\+T\+\_\+\+C\+A\+SE}}
 \index{T\+E\+S\+T\+\_\+\+C\+A\+SE@{T\+E\+S\+T\+\_\+\+C\+A\+SE}!Test\+Horaire.\+cpp@{Test\+Horaire.\+cpp}}
 \subsubsection{\texorpdfstring{T\+E\+S\+T\+\_\+\+C\+A\+S\+E()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
-{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}Opérateurs\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}horaire\mbox{]} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}Operateurs\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}horaire\mbox{]} }\end{DoxyParamCaption})}
 
+Tests verifiant les operateurs 
 
-
-Definition at line 53 of file Test\+Horaire.\+cpp.
+Definition at line 63 of file Test\+Horaire.\+cpp.
 
 
 
@@ -89,7 +105,7 @@ Definition at line 53 of file Test\+Horaire.\+cpp.
 
 
 
-Definition at line 6 of file Test\+Horaire.\+cpp.
+Definition at line 15 of file Test\+Horaire.\+cpp.
 
 \hypertarget{_test_horaire_8cpp_a0f4ad88f1e5fc3f24e4c088b70a57460}{}\label{_test_horaire_8cpp_a0f4ad88f1e5fc3f24e4c088b70a57460} 
 \index{Test\+Horaire.\+cpp@{Test\+Horaire.\+cpp}!N\+U\+M\+\_\+\+J\+O\+UR@{N\+U\+M\+\_\+\+J\+O\+UR}}
@@ -99,7 +115,7 @@ Definition at line 6 of file Test\+Horaire.\+cpp.
 
 
 
-Definition at line 7 of file Test\+Horaire.\+cpp.
+Definition at line 16 of file Test\+Horaire.\+cpp.
 
 \hypertarget{_test_horaire_8cpp_a7dce8b6e4f575fb28d543596061154b5}{}\label{_test_horaire_8cpp_a7dce8b6e4f575fb28d543596061154b5} 
 \index{Test\+Horaire.\+cpp@{Test\+Horaire.\+cpp}!N\+U\+M\+\_\+\+S\+E\+M\+A\+I\+NE@{N\+U\+M\+\_\+\+S\+E\+M\+A\+I\+NE}}
@@ -109,5 +125,5 @@ Definition at line 7 of file Test\+Horaire.\+cpp.
 
 
 
-Definition at line 5 of file Test\+Horaire.\+cpp.
+Definition at line 14 of file Test\+Horaire.\+cpp.
 
