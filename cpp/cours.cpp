@@ -1,7 +1,7 @@
 
 /**
- * @file cours.h
- * @brief Définition des méthodes de la classe cours
+ * @file cours.cpp
+ * @brief Definition des methodes de la classe cours
  * @author Adrien Couchot
  * @version 1.0
  */

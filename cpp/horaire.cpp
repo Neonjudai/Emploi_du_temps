@@ -1,6 +1,6 @@
 /**
- * @file afficheurConsole.h
- * @brief Définition des méthodes de la classe horaire
+ * @file horaire.cpp
+ * @brief Definition des methodes de la classe horaire
  * @author Adrien Couchot
  * @version 1.0
  */
@@ -20,7 +20,7 @@ horaire::horaire(int semaine,int jour, int heure):d_semaine{semaine%52},d_jour{j
 //SET
 
 /**
-  Change la semaine
+  @brief Change la semaine
   @param[in] semaine - entier représentant une semaine
 */
 void horaire::changerSemaine(int semaine)
@@ -29,7 +29,7 @@ void horaire::changerSemaine(int semaine)
 }
 
 /**
-  Change le jour
+  @brief Change le jour
   @param[in] semaine - entier représentant un jour
 */
 void horaire::changerJour(int jour)
@@ -38,7 +38,7 @@ void horaire::changerJour(int jour)
 }
 
 /**
-  Change l'heure
+  @brief Change l'heure
   @param[in] semaine - entier représentant une plage horaire
 */
 void horaire::changerHeure(int heure)
@@ -49,7 +49,7 @@ void horaire::changerHeure(int heure)
 //GET
 
 /**
-  Renvoie le numero de la semaine
+  @brief Renvoie le numero de la semaine
   @return d_semaine - un entier représentant le numero de la semaine
 */
 int			horaire::semaine()	const
@@ -58,7 +58,7 @@ int			horaire::semaine()	const
 }
 
 /**
-  Renvoie le numero du jour
+  @brief Renvoie le numero du jour
   @return d_jour - un entier représentant le numero du jour
 */
 int         horaire::jour() 	const
@@ -67,7 +67,7 @@ int         horaire::jour() 	const
 }
 
 /**
-  Renvoie le numero de l'heure
+  @brief Renvoie le numero de l'heure
   @return d_heure - un entier représentant le numero de l'heure
 */
 int	        horaire::heure() 	const

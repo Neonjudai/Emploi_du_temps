@@ -1,0 +1,114 @@
+\hypertarget{classsalle}{}\section{salle Class Reference}
+\label{classsalle}\index{salle@{salle}}
+
+
+{\ttfamily \#include $<$salle.\+h$>$}
+
+
+
+Inheritance diagram for salle\+:
+% FIG 0
+
+
+Collaboration diagram for salle\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsalle_afff557d088f3a88fea869c69c4a27034}{salle} ()=delete
+\item 
+\hyperlink{classsalle_a31f6417c7498ad8c11ca6d4a5a7fe756}{salle} (string d\+\_\+nom\+Salle)
+\begin{DoxyCompactList}\small\item\em Constructeur de l\textquotesingle{}objet salle. \end{DoxyCompactList}\item 
+\hyperlink{classsalle_ab6c4208e0e55d42c67880fa02e25f245}{salle} (const \hyperlink{classsalle}{salle} \&p)=default
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classsalle_a24d55629351652ce27831ce9ef5194c9}{ressource}
+\item 
+std\+::ostream \& \hyperlink{classsalle_a79ce17cfc24c5a384d69f6269ae2fd36}{operator$<$$<$} (std\+::ostream \&ost, const \hyperlink{classsalle}{salle} \&s)
+\begin{DoxyCompactList}\small\item\em Redefinition de l\textquotesingle{}operateur $<$$<$. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 15 of file salle.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classsalle_afff557d088f3a88fea869c69c4a27034}{}\label{classsalle_afff557d088f3a88fea869c69c4a27034} 
+\index{salle@{salle}!salle@{salle}}
+\index{salle@{salle}!salle@{salle}}
+\subsubsection{\texorpdfstring{salle()}{salle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily salle\+::salle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\hypertarget{classsalle_a31f6417c7498ad8c11ca6d4a5a7fe756}{}\label{classsalle_a31f6417c7498ad8c11ca6d4a5a7fe756} 
+\index{salle@{salle}!salle@{salle}}
+\index{salle@{salle}!salle@{salle}}
+\subsubsection{\texorpdfstring{salle()}{salle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily salle\+::salle (\begin{DoxyParamCaption}\item[{string}]{nom\+Salle }\end{DoxyParamCaption})}
+
+
+
+Constructeur de l\textquotesingle{}objet salle. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em nom\+Salle} & -\/ une chaine de caracteres representant le nom de lasalle \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 20 of file salle.\+cpp.
+
+\hypertarget{classsalle_ab6c4208e0e55d42c67880fa02e25f245}{}\label{classsalle_ab6c4208e0e55d42c67880fa02e25f245} 
+\index{salle@{salle}!salle@{salle}}
+\index{salle@{salle}!salle@{salle}}
+\subsubsection{\texorpdfstring{salle()}{salle()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily salle\+::salle (\begin{DoxyParamCaption}\item[{const \hyperlink{classsalle}{salle} \&}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classsalle_a79ce17cfc24c5a384d69f6269ae2fd36}{}\label{classsalle_a79ce17cfc24c5a384d69f6269ae2fd36} 
+\index{salle@{salle}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!salle@{salle}}
+\subsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{ost,  }\item[{const \hyperlink{classsalle}{salle} \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Redefinition de l\textquotesingle{}operateur $<$$<$. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em s} & -\/ un objet de type salle \\
+\hline
+\mbox{\tt in,out}  & {\em ost} & -\/ un flux de sortie \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ost -\/ un flux de sortie 
+\end{DoxyReturn}
+
+
+Definition at line 39 of file salle.\+cpp.
+
+\hypertarget{classsalle_a24d55629351652ce27831ce9ef5194c9}{}\label{classsalle_a24d55629351652ce27831ce9ef5194c9} 
+\index{salle@{salle}!ressource@{ressource}}
+\index{ressource@{ressource}!salle@{salle}}
+\subsubsection{\texorpdfstring{ressource}{ressource}}
+{\footnotesize\ttfamily friend class \hyperlink{classressource}{ressource}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 16 of file salle.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+lib/\hyperlink{salle_8h}{salle.\+h}\item 
+cpp/\hyperlink{salle_8cpp}{salle.\+cpp}\end{DoxyCompactItemize}

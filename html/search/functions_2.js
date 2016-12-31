@@ -6,7 +6,7 @@ var searchData=
   ['casedstring',['CasedString',['../struct_catch_1_1_matchers_1_1_impl_1_1_std_string_1_1_cased_string.html#aebd017c88423d8a11c62cff85754a22d',1,'Catch::Matchers::Impl::StdString::CasedString']]],
   ['changerheure',['changerHeure',['../classhoraire.html#ac4685ee68148ad0d2200f8f188ea1b69',1,'horaire']]],
   ['changerjour',['changerJour',['../classhoraire.html#a5f9db9929031e9f94460a81dccf6e273',1,'horaire']]],
-  ['changernomsalle',['changernomSalle',['../classsalle.html#acff7bb9d121b2902baf994480c0a915b',1,'salle']]],
+  ['changernom',['changernom',['../classressource.html#a2c2b1bee5ae87b3accdd84c088aef2fd',1,'ressource']]],
   ['changersemaine',['changerSemaine',['../classhoraire.html#a8529f03119bbfd87a59a9efad6993f9d',1,'horaire']]],
   ['cleanup',['cleanUp',['../namespace_catch.html#a0f78e9afdebc6d4512d18e76fbf54b8c',1,'Catch']]],
   ['cleanupcontext',['cleanUpContext',['../namespace_catch.html#ae50508f10ffc4ed873a31a4db4caea16',1,'Catch']]],

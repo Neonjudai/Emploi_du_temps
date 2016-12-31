@@ -1,3 +1,10 @@
+/**
+ * @file ressource.h
+ * @brief Classe permettant la gestion des ressources
+ * @author Adrien Couchot
+ * @version 1.0
+ */
+
 #ifndef RESSOURCE_H
 #define RESSOURCE_H
 
@@ -10,6 +17,7 @@ class ressource{
 		ressource(const ressource & r) =default;
 		//virtual ~ressource()=default;
 		string nom() const;
+		void changernom (const string nom);
 
 		//virtual std::ostream& operator<<(std::ostream & ost)=0; //, const ressource & r
 	private:

@@ -25,7 +25,7 @@ var searchData=
   ['catch_5ftranslate_5fexception',['CATCH_TRANSLATE_EXCEPTION',['../catch_8hpp.html#a094602ff56422c96e501eaaef1ef8c12',1,'catch.hpp']]],
   ['changerheure',['changerHeure',['../classhoraire.html#ac4685ee68148ad0d2200f8f188ea1b69',1,'horaire']]],
   ['changerjour',['changerJour',['../classhoraire.html#a5f9db9929031e9f94460a81dccf6e273',1,'horaire']]],
-  ['changernomsalle',['changernomSalle',['../classsalle.html#acff7bb9d121b2902baf994480c0a915b',1,'salle']]],
+  ['changernom',['changernom',['../classressource.html#a2c2b1bee5ae87b3accdd84c088aef2fd',1,'ressource']]],
   ['changersemaine',['changerSemaine',['../classhoraire.html#a8529f03119bbfd87a59a9efad6993f9d',1,'horaire']]],
   ['check',['CHECK',['../catch_8hpp.html#a4d20f8c0701894cac4dab32c899d9789',1,'catch.hpp']]],
   ['check_5ffalse',['CHECK_FALSE',['../catch_8hpp.html#a8e6db07fea42f6472f431a940ff462bf',1,'catch.hpp']]],

@@ -1,10 +1,60 @@
 \hypertarget{salle_8cpp}{}\section{cpp/salle.cpp File Reference}
 \label{salle_8cpp}\index{cpp/salle.\+cpp@{cpp/salle.\+cpp}}
+
+
+Definition des methodes de la classe salle.  
+
+
 {\ttfamily \#include \char`\"{}../lib/salle.\+h\char`\"{}}\newline
-Include dependency graph for salle.\+cpp\+:\nopagebreak
+{\ttfamily \#include \char`\"{}../lib/afficheur\+Console.\+h\char`\"{}}\newline
+Include dependency graph for salle.\+cpp\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=154pt]{salle_8cpp__incl}
 \end{center}
 \end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \hyperlink{salle_8cpp_a79ce17cfc24c5a384d69f6269ae2fd36}{operator$<$$<$} (std\+::ostream \&ost, const \hyperlink{classsalle}{salle} \&s)
+\begin{DoxyCompactList}\small\item\em Redefinition de l\textquotesingle{}operateur $<$$<$. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Definition des methodes de la classe salle. 
+
+\begin{DoxyAuthor}{Author}
+Olivier Ettlin 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+
+
+\subsection{Function Documentation}
+\hypertarget{salle_8cpp_a79ce17cfc24c5a384d69f6269ae2fd36}{}\label{salle_8cpp_a79ce17cfc24c5a384d69f6269ae2fd36} 
+\index{salle.\+cpp@{salle.\+cpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!salle.\+cpp@{salle.\+cpp}}
+\subsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{ost,  }\item[{const \hyperlink{classsalle}{salle} \&}]{s }\end{DoxyParamCaption})}
+
+
+
+Redefinition de l\textquotesingle{}operateur $<$$<$. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em s} & -\/ un objet de type salle \\
+\hline
+\mbox{\tt in,out}  & {\em ost} & -\/ un flux de sortie \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ost -\/ un flux de sortie 
+\end{DoxyReturn}
+
+
+Definition at line 39 of file salle.\+cpp.
+

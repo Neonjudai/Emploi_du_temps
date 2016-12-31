@@ -14,17 +14,17 @@
 \hyperlink{classhoraire_adbeac30f6f55e50ec7455a2bb52e7b3a}{horaire} (const \hyperlink{classhoraire}{horaire} \&un\+Horaire)=default
 \item 
 void \hyperlink{classhoraire_a8529f03119bbfd87a59a9efad6993f9d}{changer\+Semaine} (int \hyperlink{classhoraire_ae53308a6dd6c802a5f2b21ffc93c0ed4}{semaine})
-\item 
+\begin{DoxyCompactList}\small\item\em Change la semaine. \end{DoxyCompactList}\item 
 void \hyperlink{classhoraire_a5f9db9929031e9f94460a81dccf6e273}{changer\+Jour} (int \hyperlink{classhoraire_a974c25bda0b56a5abcfa64de32a6ccf0}{jour})
-\item 
+\begin{DoxyCompactList}\small\item\em Change le jour. \end{DoxyCompactList}\item 
 void \hyperlink{classhoraire_ac4685ee68148ad0d2200f8f188ea1b69}{changer\+Heure} (int \hyperlink{classhoraire_a3ddd3f0b63ef3c95802634d9ba072e0a}{heure})
-\item 
+\begin{DoxyCompactList}\small\item\em Change l\textquotesingle{}heure. \end{DoxyCompactList}\item 
 int \hyperlink{classhoraire_ae53308a6dd6c802a5f2b21ffc93c0ed4}{semaine} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Renvoie le numero de la semaine. \end{DoxyCompactList}\item 
 int \hyperlink{classhoraire_a974c25bda0b56a5abcfa64de32a6ccf0}{jour} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Renvoie le numero du jour. \end{DoxyCompactList}\item 
 int \hyperlink{classhoraire_a3ddd3f0b63ef3c95802634d9ba072e0a}{heure} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Renvoie le numero de l\textquotesingle{}heure. \end{DoxyCompactList}\item 
 bool \hyperlink{classhoraire_a2298ab292853652b934f7b881114ff12}{operator$<$} (const \hyperlink{classhoraire}{horaire} \&un\+Horaire) const
 \begin{DoxyCompactList}\small\item\em Redefinition de l\textquotesingle{}operateur $<$. \end{DoxyCompactList}\item 
 bool \hyperlink{classhoraire_a17aee5b647b4dff3d516e3fbccfb0d53}{operator$<$=} (const \hyperlink{classhoraire}{horaire} \&un\+Horaire) const
@@ -45,7 +45,7 @@ std\+::ostream \& \hyperlink{classhoraire_a152efd207823bf7d5cfb1dac6312c6b9}{ope
 \subsection{Detailed Description}
 
 
-Definition at line 7 of file horaire.\+h.
+Definition at line 14 of file horaire.\+h.
 
 
 
@@ -56,14 +56,6 @@ Definition at line 7 of file horaire.\+h.
 \subsubsection{\texorpdfstring{horaire()}{horaire()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
 {\footnotesize\ttfamily horaire\+::horaire (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
-Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=261pt]{classhoraire_aa5f11a3d1a68b9ef98e6aed7e3773b29_icgraph}
-\end{center}
-\end{figure}
 \hypertarget{classhoraire_a1a6d044450099f5e481188c4f51d41ea}{}\label{classhoraire_a1a6d044450099f5e481188c4f51d41ea} 
 \index{horaire@{horaire}!horaire@{horaire}}
 \index{horaire@{horaire}!horaire@{horaire}}
@@ -87,13 +79,6 @@ Constructeur de l\textquotesingle{}objet horaire.
 
 Definition at line 17 of file horaire.\+cpp.
 
-Here is the call graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=273pt]{classhoraire_a1a6d044450099f5e481188c4f51d41ea_cgraph}
-\end{center}
-\end{figure}
 \hypertarget{classhoraire_adbeac30f6f55e50ec7455a2bb52e7b3a}{}\label{classhoraire_adbeac30f6f55e50ec7455a2bb52e7b3a} 
 \index{horaire@{horaire}!horaire@{horaire}}
 \index{horaire@{horaire}!horaire@{horaire}}
@@ -109,7 +94,11 @@ Here is the call graph for this function\+:\nopagebreak
 \subsubsection{\texorpdfstring{changer\+Heure()}{changerHeure()}}
 {\footnotesize\ttfamily void horaire\+::changer\+Heure (\begin{DoxyParamCaption}\item[{int}]{heure }\end{DoxyParamCaption})}
 
-Change l\textquotesingle{}heure 
+
+
+Change l\textquotesingle{}heure. 
+
+
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em semaine} & -\/ entier représentant une plage horaire \\
 \hline
@@ -118,20 +107,17 @@ Change l\textquotesingle{}heure
 
 Definition at line 44 of file horaire.\+cpp.
 
-Here is the call graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=304pt]{classhoraire_ac4685ee68148ad0d2200f8f188ea1b69_cgraph}
-\end{center}
-\end{figure}
 \hypertarget{classhoraire_a5f9db9929031e9f94460a81dccf6e273}{}\label{classhoraire_a5f9db9929031e9f94460a81dccf6e273} 
 \index{horaire@{horaire}!changer\+Jour@{changer\+Jour}}
 \index{changer\+Jour@{changer\+Jour}!horaire@{horaire}}
 \subsubsection{\texorpdfstring{changer\+Jour()}{changerJour()}}
 {\footnotesize\ttfamily void horaire\+::changer\+Jour (\begin{DoxyParamCaption}\item[{int}]{jour }\end{DoxyParamCaption})}
 
-Change le jour 
+
+
+Change le jour. 
+
+
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em semaine} & -\/ entier représentant un jour \\
 \hline
@@ -140,20 +126,17 @@ Change le jour
 
 Definition at line 35 of file horaire.\+cpp.
 
-Here is the call graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=288pt]{classhoraire_a5f9db9929031e9f94460a81dccf6e273_cgraph}
-\end{center}
-\end{figure}
 \hypertarget{classhoraire_a8529f03119bbfd87a59a9efad6993f9d}{}\label{classhoraire_a8529f03119bbfd87a59a9efad6993f9d} 
 \index{horaire@{horaire}!changer\+Semaine@{changer\+Semaine}}
 \index{changer\+Semaine@{changer\+Semaine}!horaire@{horaire}}
 \subsubsection{\texorpdfstring{changer\+Semaine()}{changerSemaine()}}
 {\footnotesize\ttfamily void horaire\+::changer\+Semaine (\begin{DoxyParamCaption}\item[{int}]{semaine }\end{DoxyParamCaption})}
 
-Change la semaine 
+
+
+Change la semaine. 
+
+
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em semaine} & -\/ entier représentant une semaine \\
 \hline
@@ -162,55 +145,40 @@ Change la semaine
 
 Definition at line 26 of file horaire.\+cpp.
 
-Here is the call graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=330pt]{classhoraire_a8529f03119bbfd87a59a9efad6993f9d_cgraph}
-\end{center}
-\end{figure}
 \hypertarget{classhoraire_a3ddd3f0b63ef3c95802634d9ba072e0a}{}\label{classhoraire_a3ddd3f0b63ef3c95802634d9ba072e0a} 
 \index{horaire@{horaire}!heure@{heure}}
 \index{heure@{heure}!horaire@{horaire}}
 \subsubsection{\texorpdfstring{heure()}{heure()}}
 {\footnotesize\ttfamily int horaire\+::heure (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-Renvoie le numero de l\textquotesingle{}heure \begin{DoxyReturn}{Returns}
+
+
+Renvoie le numero de l\textquotesingle{}heure. 
+
+\begin{DoxyReturn}{Returns}
 d\+\_\+heure -\/ un entier représentant le numero de l\textquotesingle{}heure 
 \end{DoxyReturn}
 
 
 Definition at line 73 of file horaire.\+cpp.
 
-Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{classhoraire_a3ddd3f0b63ef3c95802634d9ba072e0a_icgraph}
-\end{center}
-\end{figure}
 \hypertarget{classhoraire_a974c25bda0b56a5abcfa64de32a6ccf0}{}\label{classhoraire_a974c25bda0b56a5abcfa64de32a6ccf0} 
 \index{horaire@{horaire}!jour@{jour}}
 \index{jour@{jour}!horaire@{horaire}}
 \subsubsection{\texorpdfstring{jour()}{jour()}}
 {\footnotesize\ttfamily int horaire\+::jour (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-Renvoie le numero du jour \begin{DoxyReturn}{Returns}
+
+
+Renvoie le numero du jour. 
+
+\begin{DoxyReturn}{Returns}
 d\+\_\+jour -\/ un entier représentant le numero du jour 
 \end{DoxyReturn}
 
 
 Definition at line 64 of file horaire.\+cpp.
 
-Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{classhoraire_a974c25bda0b56a5abcfa64de32a6ccf0_icgraph}
-\end{center}
-\end{figure}
 \hypertarget{classhoraire_a2298ab292853652b934f7b881114ff12}{}\label{classhoraire_a2298ab292853652b934f7b881114ff12} 
 \index{horaire@{horaire}!operator$<$@{operator$<$}}
 \index{operator$<$@{operator$<$}!horaire@{horaire}}
@@ -327,21 +295,17 @@ Definition at line 119 of file horaire.\+cpp.
 \subsubsection{\texorpdfstring{semaine()}{semaine()}}
 {\footnotesize\ttfamily int horaire\+::semaine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-Renvoie le numero de la semaine \begin{DoxyReturn}{Returns}
+
+
+Renvoie le numero de la semaine. 
+
+\begin{DoxyReturn}{Returns}
 d\+\_\+semaine -\/ un entier représentant le numero de la semaine 
 \end{DoxyReturn}
 
 
 Definition at line 55 of file horaire.\+cpp.
 
-Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{classhoraire_ae53308a6dd6c802a5f2b21ffc93c0ed4_icgraph}
-\end{center}
-\end{figure}
 
 
 \subsection{Friends And Related Function Documentation}

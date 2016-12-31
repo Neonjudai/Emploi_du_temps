@@ -1,3 +1,10 @@
+/**
+ * @file horaire.h
+ * @brief Classe permettant la gestion des horaires
+ * @author Adrien Couchot
+ * @version 1.0
+ */
+
 #ifndef HORAIRE_H
 #define HORAIRE_H
 

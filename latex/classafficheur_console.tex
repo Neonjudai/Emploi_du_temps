@@ -39,6 +39,8 @@ virtual void \hyperlink{classafficheur_console_a44e40b275c8b0b1a33cdc5bd46a31cf3
 \begin{DoxyCompactList}\small\item\em Renvoie dans ost l\textquotesingle{}affichage de la semaine, du jour et de l\textquotesingle{}heure correspondant à l\textquotesingle{}horaire h. \end{DoxyCompactList}\item 
 virtual void \hyperlink{classafficheur_console_aa178d74ab314df687800c612a3615ed6}{affiche\+Professeur} (const \hyperlink{classprofesseur}{professeur} $\ast$p, ostream \&ost) override
 \begin{DoxyCompactList}\small\item\em Renvoie dans ost le nom du professeur du professeur p. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classafficheur_console_a1da9c74956f87ee2103dae0ca49d58d2}{affiche\+Salle} (const \hyperlink{classsalle}{salle} $\ast$s, ostream \&ost) override
+\begin{DoxyCompactList}\small\item\em Renvoie dans ost le nom de salle de la salle s. \end{DoxyCompactList}\item 
 virtual void \hyperlink{classafficheur_console_aa77bdd8065edd5269f83679490e78dee}{affiche\+Cours} (const \hyperlink{classcours}{cours} $\ast$c, ostream \&ost) override
 \begin{DoxyCompactList}\small\item\em Renvoie dans ost le .......... du cours c. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
@@ -46,7 +48,7 @@ virtual void \hyperlink{classafficheur_console_aa77bdd8065edd5269f83679490e78dee
 \subsection{Detailed Description}
 
 
-Definition at line 18 of file afficheur\+Console.\+h.
+Definition at line 19 of file afficheur\+Console.\+h.
 
 
 
@@ -124,21 +126,6 @@ Implements \hyperlink{classafficheur_a3c3ace0f2f01e95a1cc86a0b6c497e34}{afficheu
 
 Definition at line 31 of file afficheur\+Console.\+cpp.
 
-Here is the call graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=314pt]{classafficheur_console_a842884a9553df737f781d2f8f040d30e_cgraph}
-\end{center}
-\end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{classafficheur_console_a842884a9553df737f781d2f8f040d30e_icgraph}
-\end{center}
-\end{figure}
 \hypertarget{classafficheur_console_a44e40b275c8b0b1a33cdc5bd46a31cf3}{}\label{classafficheur_console_a44e40b275c8b0b1a33cdc5bd46a31cf3} 
 \index{afficheur\+Console@{afficheur\+Console}!affiche\+Horaire@{affiche\+Horaire}}
 \index{affiche\+Horaire@{affiche\+Horaire}!afficheur\+Console@{afficheur\+Console}}
@@ -164,21 +151,6 @@ Implements \hyperlink{classafficheur_aa598626f11775b4c610b8f262017cad7}{afficheu
 
 Definition at line 78 of file afficheur\+Console.\+cpp.
 
-Here is the call graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{classafficheur_console_a44e40b275c8b0b1a33cdc5bd46a31cf3_cgraph}
-\end{center}
-\end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=302pt]{classafficheur_console_a44e40b275c8b0b1a33cdc5bd46a31cf3_icgraph}
-\end{center}
-\end{figure}
 \hypertarget{classafficheur_console_a9d69206c3cd6409d1437ee546e71cf25}{}\label{classafficheur_console_a9d69206c3cd6409d1437ee546e71cf25} 
 \index{afficheur\+Console@{afficheur\+Console}!affiche\+Jour@{affiche\+Jour}}
 \index{affiche\+Jour@{affiche\+Jour}!afficheur\+Console@{afficheur\+Console}}
@@ -204,21 +176,6 @@ Implements \hyperlink{classafficheur_a0cea335dad556ceba3487ae261b831f9}{afficheu
 
 Definition at line 52 of file afficheur\+Console.\+cpp.
 
-Here is the call graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=324pt]{classafficheur_console_a9d69206c3cd6409d1437ee546e71cf25_cgraph}
-\end{center}
-\end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{classafficheur_console_a9d69206c3cd6409d1437ee546e71cf25_icgraph}
-\end{center}
-\end{figure}
 \hypertarget{classafficheur_console_aa178d74ab314df687800c612a3615ed6}{}\label{classafficheur_console_aa178d74ab314df687800c612a3615ed6} 
 \index{afficheur\+Console@{afficheur\+Console}!affiche\+Professeur@{affiche\+Professeur}}
 \index{affiche\+Professeur@{affiche\+Professeur}!afficheur\+Console@{afficheur\+Console}}
@@ -244,20 +201,31 @@ Implements \hyperlink{classafficheur_a54b3e457d56738ed20641e5546872142}{afficheu
 
 Definition at line 93 of file afficheur\+Console.\+cpp.
 
-Here is the call graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=322pt]{classafficheur_console_aa178d74ab314df687800c612a3615ed6_cgraph}
-\end{center}
-\end{figure}
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=302pt]{classafficheur_console_aa178d74ab314df687800c612a3615ed6_icgraph}
-\end{center}
-\end{figure}
+\hypertarget{classafficheur_console_a1da9c74956f87ee2103dae0ca49d58d2}{}\label{classafficheur_console_a1da9c74956f87ee2103dae0ca49d58d2} 
+\index{afficheur\+Console@{afficheur\+Console}!affiche\+Salle@{affiche\+Salle}}
+\index{affiche\+Salle@{affiche\+Salle}!afficheur\+Console@{afficheur\+Console}}
+\subsubsection{\texorpdfstring{affiche\+Salle()}{afficheSalle()}}
+{\footnotesize\ttfamily void afficheur\+Console\+::affiche\+Salle (\begin{DoxyParamCaption}\item[{const \hyperlink{classsalle}{salle} $\ast$}]{s,  }\item[{ostream \&}]{ost }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Renvoie dans ost le nom de salle de la salle s. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em s} & -\/ un objet de type salle \\
+\hline
+\mbox{\tt out}  & {\em ost} & -\/ flux de sortie \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classafficheur_af8b1bc89ba8c0f2acdd9a78f97a2949f}{afficheur}.
+
+
+
+Definition at line 113 of file afficheur\+Console.\+cpp.
+
 \hypertarget{classafficheur_console_a0930128cabb9b2585db0140f7614a3df}{}\label{classafficheur_console_a0930128cabb9b2585db0140f7614a3df} 
 \index{afficheur\+Console@{afficheur\+Console}!affiche\+Semaine@{affiche\+Semaine}}
 \index{affiche\+Semaine@{affiche\+Semaine}!afficheur\+Console@{afficheur\+Console}}
@@ -283,21 +251,6 @@ Implements \hyperlink{classafficheur_a1551534b5916a48d3ea73f0d68929e95}{afficheu
 
 Definition at line 21 of file afficheur\+Console.\+cpp.
 
-Here is the call graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=327pt]{classafficheur_console_a0930128cabb9b2585db0140f7614a3df_cgraph}
-\end{center}
-\end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{classafficheur_console_a0930128cabb9b2585db0140f7614a3df_icgraph}
-\end{center}
-\end{figure}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

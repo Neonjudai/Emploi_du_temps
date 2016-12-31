@@ -8,22 +8,22 @@
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{classliste_cours_af5a10a6e898373e43355b8a29dc20b83}{liste\+Cours} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Constructeur de l\textquotesingle{}objet \hyperlink{classliste_cours}{liste\+Cours}. \end{DoxyCompactList}\item 
 void \hyperlink{classliste_cours_aacc38305cfea76d8cc77d710d144ce8b}{ajouter\+Un\+Cours} (const \hyperlink{classcours}{cours} \&c)
-\item 
+\begin{DoxyCompactList}\small\item\em Ajoute un cours. \end{DoxyCompactList}\item 
 int \hyperlink{classliste_cours_a34b859c2380770eb560c0a6dcf01cc81}{nombre\+De\+Cours} () const
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Renvoie le nombre de cours. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Friends}
 \begin{DoxyCompactItemize}
 \item 
 std\+::ostream \& \hyperlink{classliste_cours_a78ee4cc125386ff5f709ea4ec9438f69}{operator$<$$<$} (std\+::ostream \&ost, const \hyperlink{classliste_cours}{liste\+Cours} \&l)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Redefinition de l\textquotesingle{}operateur $<$$<$. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 
 
-Definition at line 8 of file liste\+Cours.\+h.
+Definition at line 15 of file liste\+Cours.\+h.
 
 
 
@@ -36,7 +36,11 @@ Definition at line 8 of file liste\+Cours.\+h.
 
 
 
-Definition at line 4 of file liste\+Cours.\+cpp.
+Constructeur de l\textquotesingle{}objet \hyperlink{classliste_cours}{liste\+Cours}. 
+
+
+
+Definition at line 14 of file liste\+Cours.\+cpp.
 
 
 
@@ -49,15 +53,17 @@ Definition at line 4 of file liste\+Cours.\+cpp.
 
 
 
-Definition at line 8 of file liste\+Cours.\+cpp.
+Ajoute un cours. 
 
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{classliste_cours_aacc38305cfea76d8cc77d710d144ce8b_icgraph}
-\end{center}
-\end{figure}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em c} & -\/ un objet de type cours \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 22 of file liste\+Cours.\+cpp.
+
 \hypertarget{classliste_cours_a34b859c2380770eb560c0a6dcf01cc81}{}\label{classliste_cours_a34b859c2380770eb560c0a6dcf01cc81} 
 \index{liste\+Cours@{liste\+Cours}!nombre\+De\+Cours@{nombre\+De\+Cours}}
 \index{nombre\+De\+Cours@{nombre\+De\+Cours}!liste\+Cours@{liste\+Cours}}
@@ -66,7 +72,14 @@ Here is the caller graph for this function\+:\nopagebreak
 
 
 
-Definition at line 13 of file liste\+Cours.\+cpp.
+Renvoie le nombre de cours. 
+
+\begin{DoxyReturn}{Returns}
+le nombre de cours 
+\end{DoxyReturn}
+
+
+Definition at line 31 of file liste\+Cours.\+cpp.
 
 
 
@@ -79,7 +92,21 @@ Definition at line 13 of file liste\+Cours.\+cpp.
 
 
 
-Definition at line 16 of file liste\+Cours.\+cpp.
+Redefinition de l\textquotesingle{}operateur $<$$<$. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em l} & -\/ un objet de type \hyperlink{classliste_cours}{liste\+Cours} \\
+\hline
+\mbox{\tt in,out}  & {\em ost} & -\/ un flux de sortie \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ost -\/ un flux de sortie 
+\end{DoxyReturn}
+
+
+Definition at line 42 of file liste\+Cours.\+cpp.
 
 
 

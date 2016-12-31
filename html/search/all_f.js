@@ -26,7 +26,7 @@ var searchData=
   ['require_5fthrows_5fas',['REQUIRE_THROWS_AS',['../catch_8hpp.html#ae24a059e3c28ff3eea69be48282f5f81',1,'catch.hpp']]],
   ['require_5fthrows_5fwith',['REQUIRE_THROWS_WITH',['../catch_8hpp.html#aa39a017db507132071d2819f087b2f28',1,'catch.hpp']]],
   ['reset',['reset',['../class_catch_1_1_ptr.html#af8d0fa7a2cd20842830b354ac31dfe5c',1,'Catch::Ptr::reset()'],['../class_catch_1_1_option.html#a37b4e0e5d4d56296adacd267a616f4e0',1,'Catch::Option::reset()']]],
-  ['ressource',['ressource',['../classressource.html',1,'ressource'],['../classprofesseur.html#a24d55629351652ce27831ce9ef5194c9',1,'professeur::ressource()'],['../classressource.html#a261f4c729d03d562e1d35187999ce4ef',1,'ressource::ressource(string nom)'],['../classressource.html#adccfe979d5ccf07ae4f0cfa944e9f1b0',1,'ressource::ressource(const ressource &amp;r)=default']]],
+  ['ressource',['ressource',['../classressource.html',1,'ressource'],['../classprofesseur.html#a24d55629351652ce27831ce9ef5194c9',1,'professeur::ressource()'],['../classsalle.html#a24d55629351652ce27831ce9ef5194c9',1,'salle::ressource()'],['../classressource.html#a261f4c729d03d562e1d35187999ce4ef',1,'ressource::ressource(string nom)'],['../classressource.html#adccfe979d5ccf07ae4f0cfa944e9f1b0',1,'ressource::ressource(const ressource &amp;r)=default']]],
   ['ressource_2ecpp',['ressource.cpp',['../ressource_8cpp.html',1,'']]],
   ['ressource_2eh',['ressource.h',['../ressource_8h.html',1,'']]],
   ['resultbuilder',['ResultBuilder',['../class_catch_1_1_result_builder.html',1,'Catch']]],

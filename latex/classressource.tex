@@ -6,7 +6,8 @@
 
 
 
-Inheritance diagram for ressource\+:\nopagebreak
+Inheritance diagram for ressource\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -17,17 +18,19 @@ Inheritance diagram for ressource\+:\nopagebreak
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{classressource_a261f4c729d03d562e1d35187999ce4ef}{ressource} (string \hyperlink{classressource_aff712b6d732b3f4091dd29f4349aba85}{nom})
-\item 
+\begin{DoxyCompactList}\small\item\em Constructeur de l\textquotesingle{}objet ressource. \end{DoxyCompactList}\item 
 \hyperlink{classressource_adccfe979d5ccf07ae4f0cfa944e9f1b0}{ressource} (const \hyperlink{classressource}{ressource} \&r)=default
 \item 
 string \hyperlink{classressource_aff712b6d732b3f4091dd29f4349aba85}{nom} () const
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Renvoie le nom de la ressource. \end{DoxyCompactList}\item 
+void \hyperlink{classressource_a2c2b1bee5ae87b3accdd84c088aef2fd}{changernom} (const string \hyperlink{classressource_aff712b6d732b3f4091dd29f4349aba85}{nom})
+\begin{DoxyCompactList}\small\item\em Change le nom de la resource. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 
 
-Definition at line 7 of file ressource.\+h.
+Definition at line 14 of file ressource.\+h.
 
 
 
@@ -40,7 +43,16 @@ Definition at line 7 of file ressource.\+h.
 
 
 
-Definition at line 3 of file ressource.\+cpp.
+Constructeur de l\textquotesingle{}objet ressource. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em nom} & -\/ une chaine de caractere representant le nom de la ressource \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 14 of file ressource.\+cpp.
 
 \hypertarget{classressource_adccfe979d5ccf07ae4f0cfa944e9f1b0}{}\label{classressource_adccfe979d5ccf07ae4f0cfa944e9f1b0} 
 \index{ressource@{ressource}!ressource@{ressource}}
@@ -51,6 +63,25 @@ Definition at line 3 of file ressource.\+cpp.
 
 
 \subsection{Member Function Documentation}
+\hypertarget{classressource_a2c2b1bee5ae87b3accdd84c088aef2fd}{}\label{classressource_a2c2b1bee5ae87b3accdd84c088aef2fd} 
+\index{ressource@{ressource}!changernom@{changernom}}
+\index{changernom@{changernom}!ressource@{ressource}}
+\subsubsection{\texorpdfstring{changernom()}{changernom()}}
+{\footnotesize\ttfamily void ressource\+::changernom (\begin{DoxyParamCaption}\item[{const string}]{nom }\end{DoxyParamCaption})}
+
+
+
+Change le nom de la resource. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em nom} & -\/ une chaine de caractere representant le nom de la ressource \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 29 of file ressource.\+cpp.
+
 \hypertarget{classressource_aff712b6d732b3f4091dd29f4349aba85}{}\label{classressource_aff712b6d732b3f4091dd29f4349aba85} 
 \index{ressource@{ressource}!nom@{nom}}
 \index{nom@{nom}!ressource@{ressource}}
@@ -59,15 +90,15 @@ Definition at line 3 of file ressource.\+cpp.
 
 
 
-Definition at line 5 of file ressource.\+cpp.
+Renvoie le nom de la ressource. 
 
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{classressource_aff712b6d732b3f4091dd29f4349aba85_icgraph}
-\end{center}
-\end{figure}
+\begin{DoxyReturn}{Returns}
+d\+\_\+nom -\/ le nom de la ressource 
+\end{DoxyReturn}
+
+
+Definition at line 20 of file ressource.\+cpp.
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

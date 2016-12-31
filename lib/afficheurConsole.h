@@ -12,6 +12,7 @@
 #include "cours.h"
 #include "professeur.h"
 #include "afficheur.h"
+#include "salle.h"
 
 using std::ostream;
 
@@ -24,6 +25,7 @@ class afficheurConsole : public afficheur{
         virtual void afficheJour(const horaire * h, ostream & ost)override;
         virtual void afficheHoraire(const horaire * h, ostream & ost)override;
         virtual void afficheProfesseur(const professeur * p, ostream & ost)override;
+        virtual void afficheSalle(const salle * s, ostream & ost)override;
         virtual void afficheCours(const cours * c, ostream & ost)override;  // à faire après que les getters de cours ne bug plus
     protected:
     private:

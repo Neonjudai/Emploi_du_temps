@@ -2,7 +2,7 @@
 
 /**
  *\file afficheurConsole.cpp
- *\brief Définition des méthodes de la classe afficheurConsole
+ *\brief Definition des methodes de la classe afficheurConsole
  *\author Olivier Ettlin
  *\version 1.0
  */
@@ -103,4 +103,14 @@ void afficheurConsole::afficheProfesseur(const professeur * p, ostream & ost)
 void afficheurConsole::afficheCours(const cours * c, ostream & ost)
 {
     // à faire après que le getter de cours ne bug plus
+}
+
+/**
+@brief Renvoie dans ost le nom de salle de la salle s
+@param[in] s - un objet de type salle
+@param[out] ost - flux de sortie
+ */
+void afficheurConsole::afficheSalle(const salle * s, ostream & ost)
+{
+    ost<<s->nom();
 }

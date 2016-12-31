@@ -8,28 +8,28 @@
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{classliste_ressources_a3f49a0916898d200295e0e6593253e73}{liste\+Ressources} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Constructeur de l\textquotesingle{}objet \hyperlink{classliste_ressources}{liste\+Ressources}. \end{DoxyCompactList}\item 
 void \hyperlink{classliste_ressources_afb8d1bb96971684ed945622b462fcd5d}{ajouter\+Un\+Professeur} (\hyperlink{classprofesseur}{professeur} r)
-\item 
+\begin{DoxyCompactList}\small\item\em Ajoute un professeur. \end{DoxyCompactList}\item 
 int \hyperlink{classliste_ressources_a9b496a36a9651347734d7895397dde00}{nombre\+De\+Professeurs} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Renvoie le nombre de professeurs. \end{DoxyCompactList}\item 
 \hyperlink{classprofesseur}{professeur} $\ast$ \hyperlink{classliste_ressources_acd47bea2a7105b73adcf0891b82d2e1c}{professeur\+Numero} (int i)
-\item 
+\begin{DoxyCompactList}\small\item\em Renvoie le professeur dont le numero est entre en parametre. \end{DoxyCompactList}\item 
 int \hyperlink{classliste_ressources_a1ba16dd4280006301dc94d467b9dddaa}{position\+Du\+Professeur} (std\+::string nom) const
-\item 
+\begin{DoxyCompactList}\small\item\em Renvoie la position du professeur dont le nom est entre en parametre. \end{DoxyCompactList}\item 
 void \hyperlink{classliste_ressources_a8459ff3010ad07d1ec5b23d73fad6911}{afficher\+Les\+Professeurs} (std\+::ostream \&ost) const
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Affiche les professeurs. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Friends}
 \begin{DoxyCompactItemize}
 \item 
 std\+::ostream \& \hyperlink{classliste_ressources_ad87802e9dc9dc83dfe95474945063d24}{operator$<$$<$} (std\+::ostream \&ost, const \hyperlink{classliste_ressources}{liste\+Ressources} \&l)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Redefinition de l\textquotesingle{}operateur $<$$<$. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 
 
-Definition at line 8 of file liste\+Ressources.\+h.
+Definition at line 15 of file liste\+Ressources.\+h.
 
 
 
@@ -42,7 +42,11 @@ Definition at line 8 of file liste\+Ressources.\+h.
 
 
 
-Definition at line 4 of file liste\+Ressources.\+cpp.
+Constructeur de l\textquotesingle{}objet \hyperlink{classliste_ressources}{liste\+Ressources}. 
+
+
+
+Definition at line 14 of file liste\+Ressources.\+cpp.
 
 
 
@@ -55,32 +59,36 @@ Definition at line 4 of file liste\+Ressources.\+cpp.
 
 
 
-Definition at line 22 of file liste\+Ressources.\+cpp.
+Affiche les professeurs. 
 
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{classliste_ressources_a8459ff3010ad07d1ec5b23d73fad6911_icgraph}
-\end{center}
-\end{figure}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em ost} & -\/ un flux de sortie \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 64 of file liste\+Ressources.\+cpp.
+
 \hypertarget{classliste_ressources_afb8d1bb96971684ed945622b462fcd5d}{}\label{classliste_ressources_afb8d1bb96971684ed945622b462fcd5d} 
 \index{liste\+Ressources@{liste\+Ressources}!ajouter\+Un\+Professeur@{ajouter\+Un\+Professeur}}
 \index{ajouter\+Un\+Professeur@{ajouter\+Un\+Professeur}!liste\+Ressources@{liste\+Ressources}}
 \subsubsection{\texorpdfstring{ajouter\+Un\+Professeur()}{ajouterUnProfesseur()}}
-{\footnotesize\ttfamily void liste\+Ressources\+::ajouter\+Un\+Professeur (\begin{DoxyParamCaption}\item[{\hyperlink{classprofesseur}{professeur}}]{r }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void liste\+Ressources\+::ajouter\+Un\+Professeur (\begin{DoxyParamCaption}\item[{\hyperlink{classprofesseur}{professeur}}]{p }\end{DoxyParamCaption})}
 
 
 
-Definition at line 8 of file liste\+Ressources.\+cpp.
+Ajoute un professeur. 
 
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{classliste_ressources_afb8d1bb96971684ed945622b462fcd5d_icgraph}
-\end{center}
-\end{figure}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em p} & -\/ un objet de type professeur \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 22 of file liste\+Ressources.\+cpp.
+
 \hypertarget{classliste_ressources_a9b496a36a9651347734d7895397dde00}{}\label{classliste_ressources_a9b496a36a9651347734d7895397dde00} 
 \index{liste\+Ressources@{liste\+Ressources}!nombre\+De\+Professeurs@{nombre\+De\+Professeurs}}
 \index{nombre\+De\+Professeurs@{nombre\+De\+Professeurs}!liste\+Ressources@{liste\+Ressources}}
@@ -89,15 +97,15 @@ Here is the caller graph for this function\+:\nopagebreak
 
 
 
-Definition at line 9 of file liste\+Ressources.\+cpp.
+Renvoie le nombre de professeurs. 
 
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{classliste_ressources_a9b496a36a9651347734d7895397dde00_icgraph}
-\end{center}
-\end{figure}
+\begin{DoxyReturn}{Returns}
+le nombre de professeur 
+\end{DoxyReturn}
+
+
+Definition at line 31 of file liste\+Ressources.\+cpp.
+
 \hypertarget{classliste_ressources_a1ba16dd4280006301dc94d467b9dddaa}{}\label{classliste_ressources_a1ba16dd4280006301dc94d467b9dddaa} 
 \index{liste\+Ressources@{liste\+Ressources}!position\+Du\+Professeur@{position\+Du\+Professeur}}
 \index{position\+Du\+Professeur@{position\+Du\+Professeur}!liste\+Ressources@{liste\+Ressources}}
@@ -106,15 +114,20 @@ Here is the caller graph for this function\+:\nopagebreak
 
 
 
-Definition at line 15 of file liste\+Ressources.\+cpp.
+Renvoie la position du professeur dont le nom est entre en parametre. 
 
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{classliste_ressources_a1ba16dd4280006301dc94d467b9dddaa_icgraph}
-\end{center}
-\end{figure}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em nom} & -\/ le nom du professeur \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+la position du professeur dont le nom est entre en parametre 
+\end{DoxyReturn}
+
+
+Definition at line 52 of file liste\+Ressources.\+cpp.
+
 \hypertarget{classliste_ressources_acd47bea2a7105b73adcf0891b82d2e1c}{}\label{classliste_ressources_acd47bea2a7105b73adcf0891b82d2e1c} 
 \index{liste\+Ressources@{liste\+Ressources}!professeur\+Numero@{professeur\+Numero}}
 \index{professeur\+Numero@{professeur\+Numero}!liste\+Ressources@{liste\+Ressources}}
@@ -123,15 +136,20 @@ Here is the caller graph for this function\+:\nopagebreak
 
 
 
-Definition at line 10 of file liste\+Ressources.\+cpp.
+Renvoie le professeur dont le numero est entre en parametre. 
 
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{classliste_ressources_acd47bea2a7105b73adcf0891b82d2e1c_icgraph}
-\end{center}
-\end{figure}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em i} & -\/ le numero du professeur \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+le professeur dont le numero est entre en parametre 
+\end{DoxyReturn}
+
+
+Definition at line 41 of file liste\+Ressources.\+cpp.
+
 
 
 \subsection{Friends And Related Function Documentation}
@@ -143,7 +161,21 @@ Here is the caller graph for this function\+:\nopagebreak
 
 
 
-Definition at line 33 of file liste\+Ressources.\+cpp.
+Redefinition de l\textquotesingle{}operateur $<$$<$. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em l} & -\/ un objet de type \hyperlink{classliste_ressources}{liste\+Ressources} \\
+\hline
+\mbox{\tt in,out}  & {\em ost} & -\/ un flux de sortie \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ost -\/ un flux de sortie 
+\end{DoxyReturn}
+
+
+Definition at line 81 of file liste\+Ressources.\+cpp.
 
 
 

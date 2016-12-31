@@ -4,21 +4,21 @@ digraph "cpp/afficheurConsole.cpp"
   node [fontname="Helvetica",fontsize="10",shape=record];
   Node0 [label="cpp/afficheurConsole.cpp",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
   Node0 -> Node1 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node1 [label="../lib/afficheurConsole.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$afficheur_console_8h.html",tooltip="Définition des méthodes de la classe horaire. "];
+  Node1 [label="../lib/afficheurConsole.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$afficheur_console_8h.html",tooltip="Classe permettant l&#39;affichage en mode console. "];
   Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="horaire.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$horaire_8h.html"];
+  Node2 [label="horaire.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$horaire_8h.html",tooltip="Classe permettant la gestion des horaires. "];
   Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node3 [label="iostream",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
   Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node4 [label="iomanip",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
   Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node5 [label="cours.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$cours_8h.html",tooltip="Définition des méthodes de la classe cours. "];
+  Node5 [label="cours.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$cours_8h.html",tooltip="Classe permettant la gestion des cours. "];
   Node5 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node5 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node6 [label="professeur.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$professeur_8h.html"];
+  Node6 [label="professeur.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$professeur_8h.html",tooltip="Classe permettant la gestion des professeurs. "];
   Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node7 [label="ressource.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$ressource_8h.html"];
+  Node7 [label="ressource.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$ressource_8h.html",tooltip="Classe permettant la gestion des ressources. "];
   Node7 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
@@ -26,4 +26,10 @@ digraph "cpp/afficheurConsole.cpp"
   Node8 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node8 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node8 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="salle.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$salle_8h.html",tooltip="Classe permettant la gestion des salles. "];
+  Node9 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="string",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node9 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
 }

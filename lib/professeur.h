@@ -1,3 +1,10 @@
+/**
+ * @file professeur.h
+ * @brief Classe permettant la gestion des professeurs
+ * @author Adrien Couchot
+ * @version 1.0
+ */
+
 #ifndef PROFESSEUR_H
 #define PROFESSEUR_H
 

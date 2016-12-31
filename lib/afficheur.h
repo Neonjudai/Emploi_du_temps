@@ -13,6 +13,7 @@
 #include "horaire.h"
 #include "cours.h"
 #include "professeur.h"
+#include "salle.h"
 
 using std::ostream;
 
@@ -26,6 +27,7 @@ class afficheur
         virtual void afficheJour(const horaire * h, ostream & ost)=0;
         virtual void afficheHoraire(const horaire * h, ostream & ost)=0;
         virtual void afficheProfesseur(const professeur * p, ostream & ost)=0;
+        virtual void afficheSalle(const salle * s, ostream & ost)=0;
         virtual void afficheCours(const cours * c, ostream & ost)=0;
     protected:
     private:

@@ -26,7 +26,7 @@ Collaboration diagram for professeur\+:\nopagebreak
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{classprofesseur_a3cc95d3ac471e633c318782228a8682e}{professeur} (string \hyperlink{classressource_aff712b6d732b3f4091dd29f4349aba85}{nom})
-\item 
+\begin{DoxyCompactList}\small\item\em Constructeur de l\textquotesingle{}objet professeur. \end{DoxyCompactList}\item 
 \hyperlink{classprofesseur_a652526233e701be639ecb40a73161039}{professeur} (const \hyperlink{classprofesseur}{professeur} \&p)=default
 \end{DoxyCompactItemize}
 \subsection*{Friends}
@@ -35,13 +35,13 @@ Collaboration diagram for professeur\+:\nopagebreak
 class \hyperlink{classprofesseur_a24d55629351652ce27831ce9ef5194c9}{ressource}
 \item 
 std\+::ostream \& \hyperlink{classprofesseur_af2c9e0cbc90dfc33c6edca8c14d7f1bd}{operator$<$$<$} (std\+::ostream \&ost, const \hyperlink{classprofesseur}{professeur} \&p)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Redefinition de l\textquotesingle{}operateur $<$$<$. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 
 
-Definition at line 7 of file professeur.\+h.
+Definition at line 14 of file professeur.\+h.
 
 
 
@@ -54,15 +54,17 @@ Definition at line 7 of file professeur.\+h.
 
 
 
-Definition at line 4 of file professeur.\+cpp.
+Constructeur de l\textquotesingle{}objet professeur. 
 
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=293pt]{classprofesseur_a3cc95d3ac471e633c318782228a8682e_icgraph}
-\end{center}
-\end{figure}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em nom} & -\/ une chaine de caractere representant le nom du professeur \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 15 of file professeur.\+cpp.
+
 \hypertarget{classprofesseur_a652526233e701be639ecb40a73161039}{}\label{classprofesseur_a652526233e701be639ecb40a73161039} 
 \index{professeur@{professeur}!professeur@{professeur}}
 \index{professeur@{professeur}!professeur@{professeur}}
@@ -80,7 +82,21 @@ Here is the caller graph for this function\+:\nopagebreak
 
 
 
-Definition at line 9 of file professeur.\+cpp.
+Redefinition de l\textquotesingle{}operateur $<$$<$. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em p} & -\/ un objet de type professeur \\
+\hline
+\mbox{\tt in,out}  & {\em ost} & -\/ un flux de sortie \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ost -\/ un flux de sortie 
+\end{DoxyReturn}
+
+
+Definition at line 25 of file professeur.\+cpp.
 
 \hypertarget{classprofesseur_a24d55629351652ce27831ce9ef5194c9}{}\label{classprofesseur_a24d55629351652ce27831ce9ef5194c9} 
 \index{professeur@{professeur}!ressource@{ressource}}
@@ -90,7 +106,7 @@ Definition at line 9 of file professeur.\+cpp.
 
 
 
-Definition at line 8 of file professeur.\+h.
+Definition at line 15 of file professeur.\+h.
 
 
 
