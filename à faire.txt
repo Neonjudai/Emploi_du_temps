@@ -1,7 +1,7 @@
-classe salle
 classe formation
 tests pour l'ajout d'un nouveau cours en fonction de ces éléments
-afficher en edten fonction de ET et OU logique
+lecture / ecriture du fichier
+afficher en edt en fonction de ET et OU logique
 interface graphique
 tests
 commentaires

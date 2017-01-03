@@ -23,7 +23,7 @@ class salle: public ressource{
         void changerNombrePlaces( int val);
 
         //GET
-        int nombrePlaces() const
+        int nombrePlaces() const;
         
 		friend std::ostream& operator<<(std::ostream & ost, const salle & s);
 
