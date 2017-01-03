@@ -15,26 +15,20 @@ using std::string;
 class salle: public ressource{
 	friend class ressource;
     public:
-        salle()=delete;
-        salle (string d_nomSalle);
+        salle() =delete;
+        salle (string nomSalle, int taille);
         salle(const salle & p) =default;
-       // salle (int nombrePlaces, string nomSalle, string nomBatiment);
 
         //SET
-        //void changernombrePlaces( int val);
-        //void changernomSalle(string val);
-        //void changernomBatiment(string val);
+        void changerNombrePlaces( int val);
 
         //GET
-        //int nombrePlaces() const { return d_nombrePlaces; }
-       // string nomSalle() const;
-       // string nomBatiment() const { return d_nomBatiment; }
-       friend std::ostream& operator<<(std::ostream & ost, const salle & s);
+        int nombrePlaces() const
+        
+		friend std::ostream& operator<<(std::ostream & ost, const salle & s);
 
     private:
-        // int d_nombrePlaces;
-       // string d_nomSalle;
-        //string d_nomBatiment;
+        int d_nombrePlaces;
 };
 
 #endif // SALLE_H

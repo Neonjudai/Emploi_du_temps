@@ -10,25 +10,18 @@
 
 using std::string;
 
-//salle::salle (int nombrePlaces, string nomSalle, string nomBatiment): d_nombrePlaces{nombrePlaces}, d_nomSalle{nomSalle}, d_nomBatiment{nomBatiment}
-//{}
-
 /**
 @brief Constructeur de l'objet salle
 @param[in] nomSalle - une chaine de caracteres representant le nom de lasalle
  */
-salle::salle (string nomSalle): ressource{nomSalle}
+salle::salle (string nomSalle, int taille): ressource{nomSalle}, d_nombrePlaces{taille}
 {}
 
 //SET
-//void salle::changernombrePlaces( int val) { d_nombrePlaces = val; }
-//void salle::changernomSalle(string val) { d_nomSalle = val; }
-//void salle::changernomBatiment(string val) { d_nomBatiment = val; }
+void salle::changerNombrePlaces( int val) { d_nombrePlaces = val; }
 
 //GET
-//int salle::nombrePlaces() const { return d_nombrePlaces; }
-//string salle::nomSalle() const { return d_nomSalle; }
-//string salle::nomBatiment() const { return d_nomBatiment; }
+int salle::nombrePlaces() const { return d_nombrePlaces; }
 
 /**
 @brief Redefinition de l'operateur <<
