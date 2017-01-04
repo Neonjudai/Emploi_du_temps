@@ -23,9 +23,6 @@ class listeRessources{
 		int positionDuProfesseur(std::string nom) const;
 		void afficherLesProfesseurs(std::ostream & ost) const;
 
-		//Général
-		friend std::ostream& operator<<(std::ostream & ost, const listeRessources & l);
-
 	private:
 		void trier();									//A FAIRE
 		std::vector <professeur> d_listeDesProfesseurs;

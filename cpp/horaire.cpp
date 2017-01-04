@@ -130,18 +130,3 @@ bool horaire::operator> (const horaire & unHoraire) const
 {
     return !(*this<=unHoraire);
 }
-
-/**
-@brief Redefinition de l'operateur <<
-@param[in] h - un objet de type cours
-@param[in, out] ost - un flux de sortie
-@return ost - un flux de sortie
- */
-std::ostream& operator<<(std::ostream & ost, const horaire & h)
-{
-    afficheurConsole aff;
-    horaire * h2 = new horaire (h);
-	aff.afficheHoraire(h2,ost);
-    delete h2;
-	return ost;
-}

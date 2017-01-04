@@ -41,8 +41,6 @@ class horaire{
 		bool operator>=(const horaire & unHoraire) const;
 		bool operator> (const horaire & unHoraire) const;
 
-		friend std::ostream& operator<<(std::ostream & ost, const horaire & h);
-
 	private:
 		int d_semaine;
 		int d_jour;

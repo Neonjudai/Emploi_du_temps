@@ -16,7 +16,6 @@ class professeur : public ressource{
 	public:
 		professeur(string nom);
 		professeur(const professeur & p) =default;
-		friend std::ostream& operator<<(std::ostream & ost, const professeur & p);
 	private:
 };
 #endif

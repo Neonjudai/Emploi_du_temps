@@ -92,7 +92,7 @@ void menuConsole()
 		switch (choix)
 		{
 			case 1:
-				cout<<lR;
+				//cout<<lR;
 				system("pause");
 				break;
 			case 2:

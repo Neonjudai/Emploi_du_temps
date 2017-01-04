@@ -18,8 +18,6 @@ class ressource{
 		//virtual ~ressource()=default;
 		string nom() const;
 		void changernom (const string nom);
-
-		//virtual std::ostream& operator<<(std::ostream & ost)=0; //, const ressource & r
 	private:
 		string d_nom;								//Le nom de la ressource
 };

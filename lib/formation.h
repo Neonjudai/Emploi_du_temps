@@ -23,8 +23,6 @@ class formation : public ressource{
 		
 		//GET
 		int nombreEtudiant() const;
-		
-		friend std::ostream& operator<<(std::ostream& ost, const formation& f);
 	private:
 		int d_nombreEtudiant;
 };

@@ -29,8 +29,6 @@ class cours{
 		//void changerSemaine(int semaine);				//TODO
 		//void changerHeure(int heure);					//TODO
 
-		friend std::ostream& operator<<(std::ostream & ost, const cours & c);
-
 	private:
 		horaire d_horaire;
 		professeur* d_professeur;

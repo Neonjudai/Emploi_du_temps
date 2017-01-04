@@ -28,15 +28,3 @@ cours::cours(int semaine,int jour, int heure, professeur* prof):d_horaire{semain
 
 //GET
 horaire cours::horaireDuCours() const {return d_horaire;}
-
-/**
-@brief Redefinition de l'operateur <<
-@param[in] c - un objet de type cours
-@param[in, out] ost - un flux de sortie
-@return ost - le flux de sortie ost
- */
-std::ostream& operator<<(std::ostream & ost, const cours & c)
-{
-	ost<<c.d_horaire<<" avec "<<*(c.d_professeur);
-	return ost;
-}

@@ -67,38 +67,6 @@ void listeRessources::afficherLesProfesseurs(std::ostream & ost) const
 	if (!d_listeDesProfesseurs.size()) ost<<"...Aucun professeur enregistre"<<std::endl;
 	else for (int i=0; i<d_listeDesProfesseurs.size();++i)
 	{
-		ost<<d_listeDesProfesseurs[i]<<std::endl;
+		//ost<<d_listeDesProfesseurs[i]<<std::endl;
 	}
-}
-
-//Général
-/**
-@brief Redefinition de l'operateur <<
-@param[in] l - un objet de type listeRessources
-@param[in, out] ost - un flux de sortie
-@return ost - un flux de sortie
- */
-std::ostream& operator<<(std::ostream & ost, const listeRessources & l)
-{
-	system("cls");
-	ost<<"Liste des ressources"<<std::endl;
-	ost<<"Professeurs :"<<std::endl;
-	if (!l.d_listeDesProfesseurs.size()) ost<<"...Aucun professeur enregistre"<<std::endl;
-	else for (int i=0; i<l.d_listeDesProfesseurs.size();++i)
-	{
-		ost<<l.d_listeDesProfesseurs[i]<<std::endl;
-	}
-	/*ost<<"Salles :"<<std::endl;
-	if (!l.l.d_listeDesSalles.size()) ost<<"...Aucune salle enregistree"<<std::endl;
-	else for (int i=0; i<l.d_listeDesSalles.size();++i)
-	{
-		ost<<l.d_listeDesSalles[i]<<std::endl;
-	}
-	ost<<"Formations :"<<std::endl;
-	if (!l.d_listeDesFormations.size()) ost<<"...Aucune formation enregistree"<<std::endl;
-	else for (int i=0; i<l.d_listeDesFormations.size();++i)
-	{
-		ost<<l.d_listeDesFormations[i]<<std::endl;
-	}**/
-	ost<<std::endl;
 }

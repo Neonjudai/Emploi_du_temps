@@ -24,8 +24,6 @@ class salle: public ressource{
 
         //GET
         int nombrePlaces() const;
-        
-		friend std::ostream& operator<<(std::ostream & ost, const salle & s);
 
     private:
         int d_nombrePlaces;
