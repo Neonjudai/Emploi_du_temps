@@ -7,11 +7,15 @@
  *\version 1.0
  */
 
+/**
+@brief Constructeur de l'objet afficheurConsole
+@param[out] ost - flux d'écriture
+ */
 afficheurConsole::afficheurConsole(ostream & ost):d_ost{&ost}
 {}
 
 /**
-@brief Destructeur virtuel de l'objet afficheurConsole
+@brief Destructeur de l'objet afficheurConsole
  */
 afficheurConsole::~afficheurConsole()
 {delete d_ost;}
@@ -19,7 +23,6 @@ afficheurConsole::~afficheurConsole()
 /**
 @brief Renvoie dans ost le numero de la semaine de l'horaire h
 @param[in] h - un objet de type horaire
-@param[out] ost - flux de sortie
  */
 void afficheurConsole::afficheSemaine(const horaire & h)
 {
@@ -29,7 +32,6 @@ void afficheurConsole::afficheSemaine(const horaire & h)
 /**
 @brief Renvoie dans ost la plage horaire de l'horaire h
 @param[in] h - un objet de type horaire
-@param[out] ost - flux de sortie
  */
 void afficheurConsole::afficheHeure(const horaire & h)
 {
@@ -50,7 +52,6 @@ void afficheurConsole::afficheHeure(const horaire & h)
 /**
 @brief Renvoie dans ost le nom du jour de la semaine de l'horaire h
 @param[in] h - un objet de type horaire
-@param[out] ost - flux de sortie
  */
 void afficheurConsole::afficheJour(const horaire & h)
 {
@@ -76,7 +77,6 @@ void afficheurConsole::afficheJour(const horaire & h)
 /**
 @brief Renvoie dans ost l'affichage de la semaine, du jour et de l'heure correspondant à l'horaire h
 @param[in] h - un objet de type horaire
-@param[out] ost - flux de sortie
  */
 void afficheurConsole::afficheHoraire(const horaire & h)
 {
@@ -91,7 +91,6 @@ void afficheurConsole::afficheHoraire(const horaire & h)
 /**
 @brief Renvoie dans ost le nom du professeur du professeur p
 @param[in] p - un objet de type professeur
-@param[out] ost - flux de sortie
  */
 void afficheurConsole::afficheProfesseur(const professeur & p)
 {
@@ -101,7 +100,6 @@ void afficheurConsole::afficheProfesseur(const professeur & p)
 /**
 @brief Renvoie dans ost le .......... du cours c
 @param[in] h - un objet de type cours
-@param[out] ost - flux de sortie
  */
 void afficheurConsole::afficheCours(const cours & c)
 {
@@ -111,7 +109,6 @@ void afficheurConsole::afficheCours(const cours & c)
 /**
 @brief Renvoie dans ost le nom de salle de la salle s
 @param[in] s - un objet de type salle
-@param[out] ost - flux de sortie
  */
 void afficheurConsole::afficheSalle(const salle & s)
 {
