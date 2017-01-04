@@ -7,20 +7,23 @@
  *\version 1.0
  */
 
+afficheurConsole::afficheurConsole(ostream & ost):d_ost{&ost}
+{}
+
 /**
 @brief Destructeur virtuel de l'objet afficheurConsole
  */
 afficheurConsole::~afficheurConsole()
-{}
+{delete d_ost;}
 
 /**
 @brief Renvoie dans ost le numero de la semaine de l'horaire h
 @param[in] h - un objet de type horaire
 @param[out] ost - flux de sortie
  */
-void afficheurConsole::afficheSemaine(const horaire * h, ostream & ost)
+void afficheurConsole::afficheSemaine(const horaire & h)
 {
-    ost<<h->semaine();
+    *d_ost<<h.semaine();
 }
 
 /**
@@ -28,18 +31,18 @@ void afficheurConsole::afficheSemaine(const horaire * h, ostream & ost)
 @param[in] h - un objet de type horaire
 @param[out] ost - flux de sortie
  */
-void afficheurConsole::afficheHeure(const horaire * h, ostream & ost)
+void afficheurConsole::afficheHeure(const horaire & h)
 {
-    switch (h->heure())
+    switch (h.heure())
 	{
 		case 0:
-			ost<<"8h    a 10h  ";
+			*d_ost<<"8h    a 10h  ";
 		case 1:
-			ost<<"10h15 a 12h15";
+			*d_ost<<"10h15 a 12h15";
 		case 2:
-			ost<<"13h30 a 15h30";
+			*d_ost<<"13h30 a 15h30";
 		case 3:
-			ost<<"15h45 a 17h45";
+			*d_ost<<"15h45 a 17h45";
 
 }
 }
@@ -49,24 +52,24 @@ void afficheurConsole::afficheHeure(const horaire * h, ostream & ost)
 @param[in] h - un objet de type horaire
 @param[out] ost - flux de sortie
  */
-void afficheurConsole::afficheJour(const horaire * h, ostream & ost)
+void afficheurConsole::afficheJour(const horaire & h)
 {
-    switch (h->jour())
+    switch (h.jour())
 	{
 		case 0:
-			ost<<"Lundi   ";
+			*d_ost<<"Lundi   ";
 		case 1:
-			ost<<"Mardi   ";
+			*d_ost<<"Mardi   ";
 		case 2:
-			ost<<"Mercredi";
+			*d_ost<<"Mercredi";
 		case 3:
-			ost<<"Jeudi   ";
+			*d_ost<<"Jeudi   ";
 		case 4:
-			ost<<"Vendredi";
+			*d_ost<<"Vendredi";
 		case 5:
-			ost<<"Samedi  ";
+			*d_ost<<"Samedi  ";
 		case 6:
-			ost<<"Dimanche";
+			*d_ost<<"Dimanche";
 	}
 }
 
@@ -75,14 +78,14 @@ void afficheurConsole::afficheJour(const horaire * h, ostream & ost)
 @param[in] h - un objet de type horaire
 @param[out] ost - flux de sortie
  */
-void afficheurConsole::afficheHoraire(const horaire * h, ostream & ost)
+void afficheurConsole::afficheHoraire(const horaire & h)
 {
-    ost<<"Semaine "<<std::setw(2);
-    afficheSemaine(h,ost);
-    ost<<" le ";
-    afficheJour(h,ost);
-    ost<<" de ";
-    afficheHeure(h,ost);
+    *d_ost<<"Semaine "<<std::setw(2);
+    afficheSemaine(h);
+    *d_ost<<" le ";
+    afficheJour(h);
+    *d_ost<<" de ";
+    afficheHeure(h);
 }
 
 /**
@@ -90,9 +93,9 @@ void afficheurConsole::afficheHoraire(const horaire * h, ostream & ost)
 @param[in] p - un objet de type professeur
 @param[out] ost - flux de sortie
  */
-void afficheurConsole::afficheProfesseur(const professeur * p, ostream & ost)
+void afficheurConsole::afficheProfesseur(const professeur & p)
 {
-    ost<<p->nom();
+    *d_ost<<p.nom();
 }
 
 /**
@@ -100,7 +103,7 @@ void afficheurConsole::afficheProfesseur(const professeur * p, ostream & ost)
 @param[in] h - un objet de type cours
 @param[out] ost - flux de sortie
  */
-void afficheurConsole::afficheCours(const cours * c, ostream & ost)
+void afficheurConsole::afficheCours(const cours & c)
 {
     // à faire après que le getter de cours ne bug plus
 }
@@ -110,7 +113,7 @@ void afficheurConsole::afficheCours(const cours * c, ostream & ost)
 @param[in] s - un objet de type salle
 @param[out] ost - flux de sortie
  */
-void afficheurConsole::afficheSalle(const salle * s, ostream & ost)
+void afficheurConsole::afficheSalle(const salle & s)
 {
-    ost<<s->nom();
+    *d_ost<<s.nom();
 }

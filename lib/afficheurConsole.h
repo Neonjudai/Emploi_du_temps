@@ -16,19 +16,22 @@
 
 using std::ostream;
 
-class afficheurConsole : public afficheur{
+class afficheurConsole{
     public:
-        afficheurConsole()=default;
-        virtual ~afficheurConsole();
-        virtual void afficheSemaine(const horaire * h, ostream & ost) override;
-        virtual void afficheHeure(const horaire * h, ostream & ost)override;
-        virtual void afficheJour(const horaire * h, ostream & ost)override;
-        virtual void afficheHoraire(const horaire * h, ostream & ost)override;
-        virtual void afficheProfesseur(const professeur * p, ostream & ost)override;
-        virtual void afficheSalle(const salle * s, ostream & ost)override;
-        virtual void afficheCours(const cours * c, ostream & ost)override;  // à faire après que les getters de cours ne bug plus
+        afficheurConsole()=delete;
+        afficheurConsole(ostream & ost);
+        ~afficheurConsole();
+        
+        void afficheSemaine	(const horaire & h);
+        void afficheHeure	(const horaire & h);
+        void afficheJour	(const horaire & h);
+        void afficheHoraire	(const horaire & h);
+        void afficheProfesseur(const professeur & p);
+        void afficheSalle	(const salle & s);
+        void afficheCours	(const cours & c);  // à faire après que les getters de cours ne bug plus
     protected:
     private:
+    	ostream *d_ost;
 };
 
 #endif // AFFICHEURCONSOLE_H

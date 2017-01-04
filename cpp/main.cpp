@@ -1,5 +1,3 @@
-
-
 #include <iostream>
 #include <cstdlib>
 
@@ -96,7 +94,7 @@ void menuConsole()
 				system("pause");
 				break;
 			case 2:
-				cout<<lC;
+				//cout<<lC;
 				system("pause");
 				break;
 			case 3:
