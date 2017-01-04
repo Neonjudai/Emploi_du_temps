@@ -27,7 +27,7 @@ cours::cours(int semaine,int jour, int heure, professeur* prof):d_horaire{semain
 {}
 
 //GET
-//horaire cours::horaire() const {return d_horaire;}	BUG
+horaire cours::horaireDuCours() const {return d_horaire;}
 
 /**
 @brief Redefinition de l'operateur <<

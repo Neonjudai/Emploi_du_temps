@@ -22,7 +22,7 @@ class cours{
 		//~cours();												//inutile, listeRessource s'occupe des deletes.
 
 		//GET
-		//horaire horaire() const;								//BUG ?
+		horaire horaireDuCours() const;
 
 		//SET
 		//void changerHoraire(const horaire & h);		//TODO

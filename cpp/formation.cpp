@@ -29,7 +29,7 @@ void formation::changerNombreEtudiant(int nombreEtudiant)
 @brief renvoie le nombre d'etudiant dans la formation
 @return d_nombreEtudiant - le nombre d'etudiant
 */
-int formation::nombreEtudiant()
+int formation::nombreEtudiant() const
 {
 	return d_nombreEtudiant;
 }
