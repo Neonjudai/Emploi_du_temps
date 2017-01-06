@@ -11,23 +11,39 @@
 #include <vector>
 #include <iostream>
 #include "professeur.h"
+#include "salle.h"
+#include "formation.h"
 
 class listeRessources{
 	public:
 		listeRessources();
 
-		//Concerne les professeurs
+		//professeur
 		void ajouterUnProfesseur(professeur r);
 		int nombreDeProfesseurs() const;
-		professeur* professeurNumero(int i);
-		int positionDuProfesseur(std::string nom) const;
-		void afficherLesProfesseurs(std::ostream & ost) const;
-
+		professeur* professeurNumeroP(int i);
+		professeur professeurNumero(int i) const;
+		int positionProfesseur(std::string nom) const;
+		
+		//salle
+		void ajouterUneSalle(salle s);
+		int nombreDeSalles() const;
+		salle* salleNumeroP(int i);
+		salle salleNumero(int i) const;
+		int positionSalle(std::string nom) const;
+		
+		//formation
+		void ajouterUneFormation(formation f);
+		int nombreDeFormations() const;
+		formation* formationNumeroP(int i);
+		formation formationNumero(int i) const;
+		int positionFormation(std::string nom) const;
+		
 	private:
 		void trier();									//A FAIRE
 		std::vector <professeur> d_listeDesProfesseurs;
-		//std::vector <salle> d_listeDesSalles;
-		//std::vector <formation> d_listeDesFormations;
+		std::vector <salle> d_listeDesSalles;
+		std::vector <formation> d_listeDesFormations;
 
 };
 #endif

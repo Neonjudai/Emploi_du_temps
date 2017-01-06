@@ -13,25 +13,26 @@
 
 #include "horaire.h"
 #include "professeur.h"
+#include "salle.h"
+#include "formation.h"
 
 class cours{
 	public:
-		cours(const horaire & h, professeur* prof);				// OK
-		cours(int semaine,int jour, int heure, professeur* prof);	// OK
-		cours(const cours & c) =default;						// OK
-		//~cours();												//inutile, listeRessource s'occupe des deletes.
+		cours(const horaire & h, professeur * prof);					// Ajouter salle,formation
+		cours(const cours & c) =default;							// OK
+		//~cours();													//inutile, listeRessource s'occupe des deletes.
 
 		//GET
 		horaire horaireDuCours() const;
-
-		//SET
-		//void changerHoraire(const horaire & h);		//TODO
-		//void changerSemaine(int semaine);				//TODO
-		//void changerHeure(int heure);					//TODO
+		professeur professeurDuCours() const;
+		salle salleDuCours() const;					//TODO
+		formation formationDuCours() const;			//TODO
 
 	private:
 		horaire d_horaire;
 		professeur* d_professeur;
+		salle* d_salle;
+		formation* d_formation;
 
 };
 #endif
