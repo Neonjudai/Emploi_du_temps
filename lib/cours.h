@@ -18,15 +18,15 @@
 
 class cours{
 	public:
-		cours(const horaire & h, professeur * prof);					// Ajouter salle,formation
+		cours(const horaire & h, professeur * p, salle * s, formation * f);
 		cours(const cours & c) =default;							// OK
 		//~cours();													//inutile, listeRessource s'occupe des deletes.
 
 		//GET
-		horaire horaireDuCours() const;
-		professeur professeurDuCours() const;
-		salle salleDuCours() const;					//TODO
-		formation formationDuCours() const;			//TODO
+		horaire 	horaireDuCours() const;
+		professeur 	professeurDuCours() const;
+		salle 		salleDuCours() const;
+		formation 	formationDuCours() const;
 
 	private:
 		horaire d_horaire;

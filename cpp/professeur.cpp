@@ -12,6 +12,4 @@
 @brief Constructeur de l'objet professeur
 @param[in] nom - une chaine de caractere representant le nom du professeur
  */
-professeur::professeur(string nom):ressource{nom}
-{
-}
+professeur::professeur(string nom):ressource{nom} {}

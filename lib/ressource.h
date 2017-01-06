@@ -15,7 +15,8 @@ class ressource{
 	public:
 		ressource(string nom);
 		ressource(const ressource & r) =default;
-		//virtual ~ressource()=default;
+		bool operator==(const ressource & r) const;
+		
 		string nom() const;
 		void changernom (const string nom);
 	private:

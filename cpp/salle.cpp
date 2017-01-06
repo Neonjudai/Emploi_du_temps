@@ -14,11 +14,10 @@ using std::string;
 @brief Constructeur de l'objet salle
 @param[in] nomSalle - une chaine de caracteres representant le nom de lasalle
  */
-salle::salle (string nomSalle, int taille): ressource{nomSalle}, d_nombrePlaces{taille}
-{}
+salle::salle (string nomSalle, int taille): ressource{nomSalle}, d_nombrePlaces{taille} {}
 
 //SET
-void salle::changerNombrePlaces( int val) { d_nombrePlaces = val; }
+void salle::changerNombrePlaces(int val) {d_nombrePlaces = val;}
 
 //GET
-int salle::nombrePlaces() const { return d_nombrePlaces; }
+int salle::nombrePlaces() const {return d_nombrePlaces;}

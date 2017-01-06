@@ -13,20 +13,16 @@
  */
 ressource::ressource(const string nom):d_nom{nom} {}
 
+bool ressource::operator==(const ressource & r) const {return d_nom==r.nom();}
+
 /**
   @brief Renvoie le nom de la ressource
   @return d_nom - le nom de la ressource
 */
-string ressource::nom() const
-{
-    return d_nom;
-}
+string ressource::nom() const {return d_nom;}
 
 /**
 @brief Change le nom de la resource
 @param[in] nom - une chaine de caractere representant le nom de la ressource
  */
-void ressource::changernom(const string nom)
-{
-    d_nom=nom;
-}
+void ressource::changernom(const string nom) {d_nom=nom;}

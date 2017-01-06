@@ -19,6 +19,7 @@
 
 using std::ostream;
 using std::endl;
+using std::cin;
 
 class afficheurConsole{
     public:
@@ -27,6 +28,7 @@ class afficheurConsole{
         ~afficheurConsole();
         
         void afficher(string s, int sautLigne = 0);
+        void afficherMenu();
         
         //Cours
         void afficherCours	(const cours & c);  // Requiert get de cours
@@ -42,22 +44,24 @@ class afficheurConsole{
         
         //listeCours
         void afficherLesCours(const listeCours & lC);
+        int ajouterUnCours(listeCours &lC,listeRessources &lR);
         
-        //listeDHoraire
-                
         //listeRessources
         void afficherLesRessources(const listeRessources & lR);
         void afficherLesProfesseurs(const listeRessources & lR);
         void afficherLesSalles(const listeRessources & lR);
         void afficherLesFormations(const listeRessources & lR);
+        
+        int ajouterUnProf(listeRessources &lR, afficheurConsole & aC);
+        int ajouterUneSalle(listeRessources &lR, afficheurConsole & aC);
+        int ajouterUneFormation(listeRessources &lR, afficheurConsole & aC);
 		        
         //professeur
         void afficherProfesseur(const professeur & p);
         
         //salle
         void afficherSalle	(const salle & s);
-    
-	protected:
+        
     private:
     	ostream *d_ost;
 };

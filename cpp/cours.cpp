@@ -13,11 +13,10 @@
 @param[in] h - un objet de type horaire
 @param[in] prof - un objet de type professeur
  */
-cours::cours(const horaire & h, professeur * prof):d_horaire{h},d_professeur{prof}
-{}
+cours::cours(const horaire & h, professeur * p, salle * s, formation * f):d_horaire{h},d_professeur{p},d_salle{s},d_formation{f} {}
 
 //GET
-horaire cours::horaireDuCours() const {return d_horaire;}
-professeur cours::professeurDuCours() const {return *d_professeur;}
-//salle* cours::salleDuCours() const {return d_salle;}
-//formation* cours::formationDuCours() const {return d_formation;}
+horaire 	cours::horaireDuCours() 	const {return d_horaire;}
+professeur 	cours::professeurDuCours() 	const {return *d_professeur;}
+salle 		cours::salleDuCours() 		const {return *d_salle;}
+formation 	cours::formationDuCours() 	const {return *d_formation;}

@@ -19,12 +19,13 @@ class listeCours{
 		void ajouterUnCours(const cours & c);
 		int nombreDeCours() const;
 		cours coursNumero(int i) const;
+		bool estPossible(const cours & c) const;
 
 	private:
 		std::vector <cours> d_listeDesCours;
 		
-		void trier();
 		//QuickSort
+		void trier();
 		void QuickSort(int gauche, int droite);
 		int partition(int gauche, int droite);
 
