@@ -7,6 +7,8 @@ var searchData=
   ['changerheure',['changerHeure',['../classhoraire.html#ac4685ee68148ad0d2200f8f188ea1b69',1,'horaire']]],
   ['changerjour',['changerJour',['../classhoraire.html#a5f9db9929031e9f94460a81dccf6e273',1,'horaire']]],
   ['changernom',['changernom',['../classressource.html#a2c2b1bee5ae87b3accdd84c088aef2fd',1,'ressource']]],
+  ['changernombreetudiant',['changerNombreEtudiant',['../classformation.html#abe934ed262e616341b9d168bd2faf8bb',1,'formation']]],
+  ['changernombreplaces',['changerNombrePlaces',['../classsalle.html#af124e39993d346b2f24444f0cd1f9a3c',1,'salle']]],
   ['changersemaine',['changerSemaine',['../classhoraire.html#a8529f03119bbfd87a59a9efad6993f9d',1,'horaire']]],
   ['cleanup',['cleanUp',['../namespace_catch.html#a0f78e9afdebc6d4512d18e76fbf54b8c',1,'Catch']]],
   ['cleanupcontext',['cleanUpContext',['../namespace_catch.html#ae50508f10ffc4ed873a31a4db4caea16',1,'Catch']]],
@@ -17,7 +19,8 @@ var searchData=
   ['convert',['convert',['../struct_catch_1_1_detail_1_1_string_maker_base.html#a8eb9f635dc413a5758e22614bafaf1a3',1,'Catch::Detail::StringMakerBase::convert()'],['../struct_catch_1_1_detail_1_1_string_maker_base_3_01true_01_4.html#af9b5fdf7fddd8c5c873caa819e5f00f6',1,'Catch::Detail::StringMakerBase&lt; true &gt;::convert()'],['../struct_catch_1_1_string_maker_3_01_t_01_5_01_4.html#a2adbc75c99d71b8323f4052bcb0815c9',1,'Catch::StringMaker&lt; T * &gt;::convert()'],['../struct_catch_1_1_string_maker_3_01_r_01_c_1_1_5_01_4.html#af69c15e0b406e945777137fe4a333731',1,'Catch::StringMaker&lt; R C::* &gt;::convert()']]],
   ['copyablestream',['CopyableStream',['../struct_catch_1_1_copyable_stream.html#a5a61d0da675ae00cd46efaef4c445cdd',1,'Catch::CopyableStream::CopyableStream()'],['../struct_catch_1_1_copyable_stream.html#a0e72dc16240653f52c17106f4bf34da8',1,'Catch::CopyableStream::CopyableStream(CopyableStream const &amp;other)']]],
   ['counts',['Counts',['../struct_catch_1_1_counts.html#aab9092ce70d4b0179cc743555d2fc39b',1,'Catch::Counts']]],
-  ['cours',['cours',['../classcours.html#a64d575197dcd1276d2f460a159b0aa67',1,'cours::cours(const horaire &amp;h, professeur *prof)'],['../classcours.html#a76210058976f92c2f09b047f68fa2e82',1,'cours::cours(int semaine, int jour, int heure, professeur *prof)'],['../classcours.html#a95b69b7789c5dab7116c0b89d78197ec',1,'cours::cours(const cours &amp;c)=default']]],
+  ['cours',['cours',['../classcours.html#a97d927797b98f0f6986461e85757d23c',1,'cours::cours(const horaire &amp;h, professeur *p, salle *s, formation *f)'],['../classcours.html#a95b69b7789c5dab7116c0b89d78197ec',1,'cours::cours(const cours &amp;c)=default']]],
+  ['coursnumero',['coursNumero',['../classliste_cours.html#ac00615f15632669bf44424e960c95edd',1,'listeCours']]],
   ['creategeneratorsfortest',['createGeneratorsForTest',['../namespace_catch.html#a3d93b31e88fd01ee9e0d20757ff64eab',1,'Catch']]],
   ['createstream',['createStream',['../namespace_catch.html#ad7591011c5d99d59504ecd3384001c3e',1,'Catch']]],
   ['custom',['custom',['../class_catch_1_1_detail_1_1_approx.html#aaf86dc0ee92272ac2d9839197a07951d',1,'Catch::Detail::Approx']]]

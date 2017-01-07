@@ -12,19 +12,11 @@
 void \hyperlink{classliste_cours_aacc38305cfea76d8cc77d710d144ce8b}{ajouter\+Un\+Cours} (const \hyperlink{classcours}{cours} \&c)
 \begin{DoxyCompactList}\small\item\em Ajoute un cours. \end{DoxyCompactList}\item 
 int \hyperlink{classliste_cours_a34b859c2380770eb560c0a6dcf01cc81}{nombre\+De\+Cours} () const
-\begin{DoxyCompactList}\small\item\em Renvoie le nombre de cours. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\subsection*{Friends}
-\begin{DoxyCompactItemize}
-\item 
-std\+::ostream \& \hyperlink{classliste_cours_a78ee4cc125386ff5f709ea4ec9438f69}{operator$<$$<$} (std\+::ostream \&ost, const \hyperlink{classliste_cours}{liste\+Cours} \&l)
-\begin{DoxyCompactList}\small\item\em Redefinition de l\textquotesingle{}operateur $<$$<$. \end{DoxyCompactList}\end{DoxyCompactItemize}
-
-
-\subsection{Detailed Description}
-
-
-Definition at line 15 of file liste\+Cours.\+h.
-
+\begin{DoxyCompactList}\small\item\em Renvoie le nombre de cours. \end{DoxyCompactList}\item 
+\hyperlink{classcours}{cours} \hyperlink{classliste_cours_ac00615f15632669bf44424e960c95edd}{cours\+Numero} (int i) const
+\begin{DoxyCompactList}\small\item\em Renvoie le cours dont le numero correspond a l\textquotesingle{}entier entre en parametre. \end{DoxyCompactList}\item 
+bool \hyperlink{classliste_cours_ab66777592d4693d8db47e756dfe61878}{est\+Possible} (const \hyperlink{classcours}{cours} \&c) const
+\begin{DoxyCompactList}\small\item\em Verifie si le cours peut etre ajoute a d\+\_\+liste\+Des\+Cours. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Constructor \& Destructor Documentation}
@@ -37,10 +29,6 @@ Definition at line 15 of file liste\+Cours.\+h.
 
 
 Constructeur de l\textquotesingle{}objet \hyperlink{classliste_cours}{liste\+Cours}. 
-
-
-
-Definition at line 14 of file liste\+Cours.\+cpp.
 
 
 
@@ -60,10 +48,45 @@ Ajoute un cours.
 \mbox{\tt in}  & {\em c} & -\/ un objet de type cours \\
 \hline
 \end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classliste_cours_aacc38305cfea76d8cc77d710d144ce8b_icgraph}
+\end{center}
+\end{figure}
+\hypertarget{classliste_cours_ac00615f15632669bf44424e960c95edd}{}\label{classliste_cours_ac00615f15632669bf44424e960c95edd} 
+\index{liste\+Cours@{liste\+Cours}!cours\+Numero@{cours\+Numero}}
+\index{cours\+Numero@{cours\+Numero}!liste\+Cours@{liste\+Cours}}
+\subsubsection{\texorpdfstring{cours\+Numero()}{coursNumero()}}
+{\footnotesize\ttfamily \hyperlink{classcours}{cours} liste\+Cours\+::cours\+Numero (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption}) const}
 
 
-Definition at line 22 of file liste\+Cours.\+cpp.
 
+Renvoie le cours dont le numero correspond a l\textquotesingle{}entier entre en parametre. 
+
+\begin{DoxyReturn}{Returns}
+d\+\_\+liste\+Des\+Cours\mbox{[}i\mbox{]} -\/ un objet de type cours 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 0
+\hypertarget{classliste_cours_ab66777592d4693d8db47e756dfe61878}{}\label{classliste_cours_ab66777592d4693d8db47e756dfe61878} 
+\index{liste\+Cours@{liste\+Cours}!est\+Possible@{est\+Possible}}
+\index{est\+Possible@{est\+Possible}!liste\+Cours@{liste\+Cours}}
+\subsubsection{\texorpdfstring{est\+Possible()}{estPossible()}}
+{\footnotesize\ttfamily bool liste\+Cours\+::est\+Possible (\begin{DoxyParamCaption}\item[{const \hyperlink{classcours}{cours} \&}]{c }\end{DoxyParamCaption}) const}
+
+
+
+Verifie si le cours peut etre ajoute a d\+\_\+liste\+Des\+Cours. 
+
+\begin{DoxyReturn}{Returns}
+true -\/ le cours peut etre ajoute 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 1
+Here is the caller graph for this function\+:
+% FIG 2
 \hypertarget{classliste_cours_a34b859c2380770eb560c0a6dcf01cc81}{}\label{classliste_cours_a34b859c2380770eb560c0a6dcf01cc81} 
 \index{liste\+Cours@{liste\+Cours}!nombre\+De\+Cours@{nombre\+De\+Cours}}
 \index{nombre\+De\+Cours@{nombre\+De\+Cours}!liste\+Cours@{liste\+Cours}}
@@ -77,37 +100,8 @@ Renvoie le nombre de cours.
 \begin{DoxyReturn}{Returns}
 le nombre de cours 
 \end{DoxyReturn}
-
-
-Definition at line 31 of file liste\+Cours.\+cpp.
-
-
-
-\subsection{Friends And Related Function Documentation}
-\hypertarget{classliste_cours_a78ee4cc125386ff5f709ea4ec9438f69}{}\label{classliste_cours_a78ee4cc125386ff5f709ea4ec9438f69} 
-\index{liste\+Cours@{liste\+Cours}!operator$<$$<$@{operator$<$$<$}}
-\index{operator$<$$<$@{operator$<$$<$}!liste\+Cours@{liste\+Cours}}
-\subsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
-{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{ost,  }\item[{const \hyperlink{classliste_cours}{liste\+Cours} \&}]{l }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
-
-
-
-Redefinition de l\textquotesingle{}operateur $<$$<$. 
-
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em l} & -\/ un objet de type \hyperlink{classliste_cours}{liste\+Cours} \\
-\hline
-\mbox{\tt in,out}  & {\em ost} & -\/ un flux de sortie \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-ost -\/ un flux de sortie 
-\end{DoxyReturn}
-
-
-Definition at line 42 of file liste\+Cours.\+cpp.
-
+Here is the caller graph for this function\+:
+% FIG 3
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

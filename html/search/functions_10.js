@@ -1,6 +1,9 @@
 var searchData=
 [
-  ['salle',['salle',['../classsalle.html#afff557d088f3a88fea869c69c4a27034',1,'salle::salle()=delete'],['../classsalle.html#a31f6417c7498ad8c11ca6d4a5a7fe756',1,'salle::salle(string d_nomSalle)'],['../classsalle.html#ab6c4208e0e55d42c67880fa02e25f245',1,'salle::salle(const salle &amp;p)=default']]],
+  ['salle',['salle',['../classsalle.html#afff557d088f3a88fea869c69c4a27034',1,'salle::salle()=delete'],['../classsalle.html#ace93788308dff32bd4a8e8baad4c51ec',1,'salle::salle(string nomSalle, int taille)'],['../classsalle.html#ab6c4208e0e55d42c67880fa02e25f245',1,'salle::salle(const salle &amp;p)=default']]],
+  ['salleducours',['salleDuCours',['../classcours.html#af98361045fec0b63de23c45d3853fb57',1,'cours']]],
+  ['sallenumero',['salleNumero',['../classliste_ressources.html#ae49f2ce49be854dda108840fd3d26112',1,'listeRessources']]],
+  ['sallenumerop',['salleNumeroP',['../classliste_ressources.html#a1badd55beb2e05645cc17d488fd0a3b9',1,'listeRessources']]],
   ['scale',['scale',['../class_catch_1_1_detail_1_1_approx.html#acd80f0737bf38112beacd5ca95bef113',1,'Catch::Detail::Approx']]],
   ['scopedmessage',['ScopedMessage',['../class_catch_1_1_scoped_message.html#a5cc59f0f2ebe840e6607f83004d49a17',1,'Catch::ScopedMessage::ScopedMessage(MessageBuilder const &amp;builder)'],['../class_catch_1_1_scoped_message.html#ae03a17fd47220d563d4abc73e7518e29',1,'Catch::ScopedMessage::ScopedMessage(ScopedMessage const &amp;other)']]],
   ['section',['Section',['../class_catch_1_1_section.html#a68fd4e51e8981aaa7ddb00d8a6abd099',1,'Catch::Section']]],

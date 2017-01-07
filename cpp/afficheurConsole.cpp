@@ -1,4 +1,5 @@
 #include "../lib/afficheurConsole.h"
+#include <cstdlib>
 
 /**
  *\file afficheurConsole.cpp
@@ -27,6 +28,9 @@ void afficheurConsole::afficher(string s, int sautLigne)
 	}
 }
 
+/**
+@brief Affichage des menus
+ */
 void afficheurConsole::afficherMenu()
 {	system("cls");
 	afficher("Menu :");

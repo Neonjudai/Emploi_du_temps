@@ -28,8 +28,16 @@ void listeCours::ajouterUnCours(const cours & c)
 */
 int listeCours::nombreDeCours() const {return d_listeDesCours.size();}
 
+/**
+  @brief Renvoie le cours dont le numero correspond a l'entier entre en parametre
+  @return d_listeDesCours[i] - un objet de type cours
+*/
 cours listeCours::coursNumero(int i) const {return d_listeDesCours[i];}
 
+/**
+  @brief Verifie si le cours peut etre ajoute a d_listeDesCours
+  @return true - le cours peut etre ajoute
+*/
 bool listeCours::estPossible(const cours & c) const
 {	int i=0;
 	while (i<d_listeDesCours.size() && d_listeDesCours[i].horaireDuCours()<=c.horaireDuCours()) i++;
@@ -44,8 +52,16 @@ bool listeCours::estPossible(const cours & c) const
 
 //QuickSort
 
+/**
+  @brief Trie la liste de cours via la methode QuickSort(int gauche, int droite)
+*/
 void listeCours::trier() {QuickSort(0, d_listeDesCours.size());}
 
+/**
+  @brief Algorithme de trie QuickSort adapte a listeCours
+  @param[in] gauche - entier
+  @param[in] droite - entier
+*/
 void listeCours::QuickSort(int gauche, int droite)
 {	int r;
 	if (gauche<droite)
@@ -55,6 +71,11 @@ void listeCours::QuickSort(int gauche, int droite)
 	}
 }
 
+/**
+  @brief Partitionne d_listeDesCours
+  @param[in] gauche - entier
+  @param[in] droite - entier
+*/
 int listeCours::partition(int gauche, int droite)
 {	horaire x = d_listeDesCours[gauche].horaireDuCours();
 	int i = gauche;

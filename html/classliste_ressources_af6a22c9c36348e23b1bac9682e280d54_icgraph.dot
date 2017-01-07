@@ -1,0 +1,18 @@
+digraph "listeRessources::professeurNumero"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node69 [label="listeRessources::professeur\lNumero",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node69 -> Node70 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node70 [label="afficheurConsole::afficher\lLesProfesseurs",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classafficheur_console.html#a800c6da422bccdf2fdcaadcdafe4bbd6"];
+  Node70 -> Node71 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node71 [label="afficheurConsole::ajouter\lUnCours",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classafficheur_console.html#a49b72edf4baf8f7ec4898b61c48212fa"];
+  Node71 -> Node72 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node72 [label="menu",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8cpp.html#aaeb94d4bc6770f26e4bcfb2f9fcc9b15"];
+  Node72 -> Node73 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node73 [label="main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4"];
+  Node70 -> Node74 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node74 [label="afficheurConsole::afficher\lLesRessources",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classafficheur_console.html#a88dc8bce2d36314f98b1ba21e8e9b214"];
+  Node74 -> Node72 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

@@ -25,37 +25,88 @@ Collaboration diagram for formation\+:\nopagebreak
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classformation_af34ced9e0539ebc32d9f87a79e3b383a}{formation} (const string \&\hyperlink{classressource_aff712b6d732b3f4091dd29f4349aba85}{nom}, int \hyperlink{classformation_ad2cf7556c2c72212e1305a287ce25580}{nombre\+D\+Etudiant})
+\hyperlink{classformation_ad20a90943dd2ef544b970d1bd440000f}{formation} (const string \&nom\+Formation, int \hyperlink{classformation_a917c18b3f7439abad5114b5a89b1a01a}{nombre\+Etudiant})
+\begin{DoxyCompactList}\small\item\em Constructeur de l\textquotesingle{}objet formation. \end{DoxyCompactList}\item 
+\hyperlink{classformation_ada1d251270861261f2bc09f6dc5f99fd}{formation} ()=delete
 \item 
-int \hyperlink{classformation_ad2cf7556c2c72212e1305a287ce25580}{nombre\+D\+Etudiant} () const
-\end{DoxyCompactItemize}
-
-
-\subsection{Detailed Description}
-
-
-Definition at line 15 of file formation.\+h.
-
+\hyperlink{classformation_ac1dee8c42dcaad6c1f35b74b4c71b26f}{formation} (const \hyperlink{classformation}{formation} \&f)=default
+\item 
+void \hyperlink{classformation_abe934ed262e616341b9d168bd2faf8bb}{changer\+Nombre\+Etudiant} (int \hyperlink{classformation_a917c18b3f7439abad5114b5a89b1a01a}{nombre\+Etudiant})
+\begin{DoxyCompactList}\small\item\em Modifie le nombre d\textquotesingle{}etudiant dans la formation. \end{DoxyCompactList}\item 
+int \hyperlink{classformation_a917c18b3f7439abad5114b5a89b1a01a}{nombre\+Etudiant} () const
+\begin{DoxyCompactList}\small\item\em Renvoie le nombre d\textquotesingle{}etudiant dans la formation. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{classformation_af34ced9e0539ebc32d9f87a79e3b383a}{}\label{classformation_af34ced9e0539ebc32d9f87a79e3b383a} 
+\hypertarget{classformation_ad20a90943dd2ef544b970d1bd440000f}{}\label{classformation_ad20a90943dd2ef544b970d1bd440000f} 
 \index{formation@{formation}!formation@{formation}}
 \index{formation@{formation}!formation@{formation}}
-\subsubsection{\texorpdfstring{formation()}{formation()}}
-{\footnotesize\ttfamily formation\+::formation (\begin{DoxyParamCaption}\item[{const string \&}]{nom,  }\item[{int}]{nombre\+D\+Etudiant }\end{DoxyParamCaption})}
+\subsubsection{\texorpdfstring{formation()}{formation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily formation\+::formation (\begin{DoxyParamCaption}\item[{const string \&}]{nom\+Formation,  }\item[{int}]{nombre\+Etudiant }\end{DoxyParamCaption})}
+
+
+
+Constructeur de l\textquotesingle{}objet formation. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em nom\+Formation} & -\/ nom de la formation \\
+\hline
+\mbox{\tt in}  & {\em nombre\+Etudiant} & -\/ Nombre d\textquotesingle{}etudiant dans la formation \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 0
+\hypertarget{classformation_ada1d251270861261f2bc09f6dc5f99fd}{}\label{classformation_ada1d251270861261f2bc09f6dc5f99fd} 
+\index{formation@{formation}!formation@{formation}}
+\index{formation@{formation}!formation@{formation}}
+\subsubsection{\texorpdfstring{formation()}{formation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily formation\+::formation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\hypertarget{classformation_ac1dee8c42dcaad6c1f35b74b4c71b26f}{}\label{classformation_ac1dee8c42dcaad6c1f35b74b4c71b26f} 
+\index{formation@{formation}!formation@{formation}}
+\index{formation@{formation}!formation@{formation}}
+\subsubsection{\texorpdfstring{formation()}{formation()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily formation\+::formation (\begin{DoxyParamCaption}\item[{const \hyperlink{classformation}{formation} \&}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
 
 
 
 \subsection{Member Function Documentation}
-\hypertarget{classformation_ad2cf7556c2c72212e1305a287ce25580}{}\label{classformation_ad2cf7556c2c72212e1305a287ce25580} 
-\index{formation@{formation}!nombre\+D\+Etudiant@{nombre\+D\+Etudiant}}
-\index{nombre\+D\+Etudiant@{nombre\+D\+Etudiant}!formation@{formation}}
-\subsubsection{\texorpdfstring{nombre\+D\+Etudiant()}{nombreDEtudiant()}}
-{\footnotesize\ttfamily int formation\+::nombre\+D\+Etudiant (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+\hypertarget{classformation_abe934ed262e616341b9d168bd2faf8bb}{}\label{classformation_abe934ed262e616341b9d168bd2faf8bb} 
+\index{formation@{formation}!changer\+Nombre\+Etudiant@{changer\+Nombre\+Etudiant}}
+\index{changer\+Nombre\+Etudiant@{changer\+Nombre\+Etudiant}!formation@{formation}}
+\subsubsection{\texorpdfstring{changer\+Nombre\+Etudiant()}{changerNombreEtudiant()}}
+{\footnotesize\ttfamily void formation\+::changer\+Nombre\+Etudiant (\begin{DoxyParamCaption}\item[{int}]{nombre\+Etudiant }\end{DoxyParamCaption})}
 
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+Modifie le nombre d\textquotesingle{}etudiant dans la formation. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em nombre\+Etudiant} & -\/ le nombre d\textquotesingle{}etudiant \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 1
+\hypertarget{classformation_a917c18b3f7439abad5114b5a89b1a01a}{}\label{classformation_a917c18b3f7439abad5114b5a89b1a01a} 
+\index{formation@{formation}!nombre\+Etudiant@{nombre\+Etudiant}}
+\index{nombre\+Etudiant@{nombre\+Etudiant}!formation@{formation}}
+\subsubsection{\texorpdfstring{nombre\+Etudiant()}{nombreEtudiant()}}
+{\footnotesize\ttfamily int formation\+::nombre\+Etudiant (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Renvoie le nombre d\textquotesingle{}etudiant dans la formation. 
+
+\begin{DoxyReturn}{Returns}
+d\+\_\+nombre\+Etudiant -\/ le nombre d\textquotesingle{}etudiant 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 2
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-lib/\hyperlink{formation_8h}{formation.\+h}\end{DoxyCompactItemize}
+lib/\hyperlink{formation_8h}{formation.\+h}\item 
+cpp/\hyperlink{formation_8cpp}{formation.\+cpp}\end{DoxyCompactItemize}

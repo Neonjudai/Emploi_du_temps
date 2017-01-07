@@ -28,7 +28,7 @@ var searchData=
   ['matcherimpl_3c_20startswith_2c_20std_3a_3astring_20_3e',['MatcherImpl&lt; StartsWith, std::string &gt;',['../struct_catch_1_1_matchers_1_1_impl_1_1_matcher_impl.html',1,'Catch::Matchers::Impl']]],
   ['matchtest',['matchTest',['../namespace_catch.html#aadef80fbc6bc84589777a462770cef49',1,'Catch']]],
   ['mayfail',['MayFail',['../struct_catch_1_1_test_case_info.html#a39b232f74b4a7a6f2183b96759027eacadf1873d3271121cb9f52d7df45b416ca',1,'Catch::TestCaseInfo']]],
-  ['menuconsole',['menuConsole',['../main_8cpp.html#ac5eb0c28639532914d27f7cd1ce37c80',1,'main.cpp']]],
+  ['menu',['menu',['../main_8cpp.html#aaeb94d4bc6770f26e4bcfb2f9fcc9b15',1,'main.cpp']]],
   ['message',['message',['../struct_catch_1_1_assertion_result_data.html#ac34215803c4c4a88f795879f61c1f7b4',1,'Catch::AssertionResultData::message()'],['../struct_catch_1_1_message_info.html#ab6cd06e050bf426c6577502a5c50e256',1,'Catch::MessageInfo::message()']]],
   ['messagebuilder',['MessageBuilder',['../struct_catch_1_1_message_builder.html#ab0c6378e722680bf58852c6ee2b6e724',1,'Catch::MessageBuilder']]],
   ['messagebuilder',['MessageBuilder',['../struct_catch_1_1_message_builder.html',1,'Catch']]],

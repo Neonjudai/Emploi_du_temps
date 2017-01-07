@@ -17,24 +17,19 @@ Collaboration diagram for salle\+:
 \item 
 \hyperlink{classsalle_afff557d088f3a88fea869c69c4a27034}{salle} ()=delete
 \item 
-\hyperlink{classsalle_a31f6417c7498ad8c11ca6d4a5a7fe756}{salle} (string d\+\_\+nom\+Salle)
+\hyperlink{classsalle_ace93788308dff32bd4a8e8baad4c51ec}{salle} (string nom\+Salle, int taille)
 \begin{DoxyCompactList}\small\item\em Constructeur de l\textquotesingle{}objet salle. \end{DoxyCompactList}\item 
 \hyperlink{classsalle_ab6c4208e0e55d42c67880fa02e25f245}{salle} (const \hyperlink{classsalle}{salle} \&p)=default
-\end{DoxyCompactItemize}
+\item 
+void \hyperlink{classsalle_af124e39993d346b2f24444f0cd1f9a3c}{changer\+Nombre\+Places} (int val)
+\begin{DoxyCompactList}\small\item\em Change le nombre de places. \end{DoxyCompactList}\item 
+int \hyperlink{classsalle_a9f8186e0dee9859a2bc08938cce0174f}{nombre\+Places} () const
+\begin{DoxyCompactList}\small\item\em Renvoie le nombre de places. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Friends}
 \begin{DoxyCompactItemize}
 \item 
 class \hyperlink{classsalle_a24d55629351652ce27831ce9ef5194c9}{ressource}
-\item 
-std\+::ostream \& \hyperlink{classsalle_a79ce17cfc24c5a384d69f6269ae2fd36}{operator$<$$<$} (std\+::ostream \&ost, const \hyperlink{classsalle}{salle} \&s)
-\begin{DoxyCompactList}\small\item\em Redefinition de l\textquotesingle{}operateur $<$$<$. \end{DoxyCompactList}\end{DoxyCompactItemize}
-
-
-\subsection{Detailed Description}
-
-
-Definition at line 15 of file salle.\+h.
-
+\end{DoxyCompactItemize}
 
 
 \subsection{Constructor \& Destructor Documentation}
@@ -44,11 +39,11 @@ Definition at line 15 of file salle.\+h.
 \subsubsection{\texorpdfstring{salle()}{salle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
 {\footnotesize\ttfamily salle\+::salle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
-\hypertarget{classsalle_a31f6417c7498ad8c11ca6d4a5a7fe756}{}\label{classsalle_a31f6417c7498ad8c11ca6d4a5a7fe756} 
+\hypertarget{classsalle_ace93788308dff32bd4a8e8baad4c51ec}{}\label{classsalle_ace93788308dff32bd4a8e8baad4c51ec} 
 \index{salle@{salle}!salle@{salle}}
 \index{salle@{salle}!salle@{salle}}
 \subsubsection{\texorpdfstring{salle()}{salle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
-{\footnotesize\ttfamily salle\+::salle (\begin{DoxyParamCaption}\item[{string}]{nom\+Salle }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily salle\+::salle (\begin{DoxyParamCaption}\item[{string}]{nom\+Salle,  }\item[{int}]{taille }\end{DoxyParamCaption})}
 
 
 
@@ -59,10 +54,6 @@ Constructeur de l\textquotesingle{}objet salle.
 \mbox{\tt in}  & {\em nom\+Salle} & -\/ une chaine de caracteres representant le nom de lasalle \\
 \hline
 \end{DoxyParams}
-
-
-Definition at line 20 of file salle.\+cpp.
-
 \hypertarget{classsalle_ab6c4208e0e55d42c67880fa02e25f245}{}\label{classsalle_ab6c4208e0e55d42c67880fa02e25f245} 
 \index{salle@{salle}!salle@{salle}}
 \index{salle@{salle}!salle@{salle}}
@@ -71,40 +62,45 @@ Definition at line 20 of file salle.\+cpp.
 
 
 
-\subsection{Friends And Related Function Documentation}
-\hypertarget{classsalle_a79ce17cfc24c5a384d69f6269ae2fd36}{}\label{classsalle_a79ce17cfc24c5a384d69f6269ae2fd36} 
-\index{salle@{salle}!operator$<$$<$@{operator$<$$<$}}
-\index{operator$<$$<$@{operator$<$$<$}!salle@{salle}}
-\subsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
-{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{ost,  }\item[{const \hyperlink{classsalle}{salle} \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+\subsection{Member Function Documentation}
+\hypertarget{classsalle_af124e39993d346b2f24444f0cd1f9a3c}{}\label{classsalle_af124e39993d346b2f24444f0cd1f9a3c} 
+\index{salle@{salle}!changer\+Nombre\+Places@{changer\+Nombre\+Places}}
+\index{changer\+Nombre\+Places@{changer\+Nombre\+Places}!salle@{salle}}
+\subsubsection{\texorpdfstring{changer\+Nombre\+Places()}{changerNombrePlaces()}}
+{\footnotesize\ttfamily void salle\+::changer\+Nombre\+Places (\begin{DoxyParamCaption}\item[{int}]{val }\end{DoxyParamCaption})}
 
 
 
-Redefinition de l\textquotesingle{}operateur $<$$<$. 
+Change le nombre de places. 
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em s} & -\/ un objet de type salle \\
-\hline
-\mbox{\tt in,out}  & {\em ost} & -\/ un flux de sortie \\
+\mbox{\tt in}  & {\em val} & -\/ entier représentant le nombre de places \\
 \hline
 \end{DoxyParams}
+\hypertarget{classsalle_a9f8186e0dee9859a2bc08938cce0174f}{}\label{classsalle_a9f8186e0dee9859a2bc08938cce0174f} 
+\index{salle@{salle}!nombre\+Places@{nombre\+Places}}
+\index{nombre\+Places@{nombre\+Places}!salle@{salle}}
+\subsubsection{\texorpdfstring{nombre\+Places()}{nombrePlaces()}}
+{\footnotesize\ttfamily int salle\+::nombre\+Places (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Renvoie le nombre de places. 
+
 \begin{DoxyReturn}{Returns}
-ost -\/ un flux de sortie 
+d\+\_\+nombre\+Places -\/ un entier représentant le nombre de places 
 \end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 2
 
 
-Definition at line 39 of file salle.\+cpp.
-
+\subsection{Friends And Related Function Documentation}
 \hypertarget{classsalle_a24d55629351652ce27831ce9ef5194c9}{}\label{classsalle_a24d55629351652ce27831ce9ef5194c9} 
 \index{salle@{salle}!ressource@{ressource}}
 \index{ressource@{ressource}!salle@{salle}}
 \subsubsection{\texorpdfstring{ressource}{ressource}}
 {\footnotesize\ttfamily friend class \hyperlink{classressource}{ressource}\hspace{0.3cm}{\ttfamily [friend]}}
-
-
-
-Definition at line 16 of file salle.\+h.
 
 
 

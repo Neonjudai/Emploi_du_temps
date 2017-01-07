@@ -2,6 +2,7 @@
 \label{main_8cpp}\index{cpp/main.\+cpp@{cpp/main.\+cpp}}
 {\ttfamily \#include $<$iostream$>$}\newline
 {\ttfamily \#include $<$cstdlib$>$}\newline
+{\ttfamily \#include \char`\"{}../lib/afficheur\+Console.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}../lib/liste\+Cours.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}../lib/liste\+Ressources.\+h\char`\"{}}\newline
 Include dependency graph for main.\+cpp\+:\nopagebreak
@@ -14,66 +15,28 @@ Include dependency graph for main.\+cpp\+:\nopagebreak
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-int \hyperlink{main_8cpp_af8d69182520060bcd45d24f548e34c53}{ajouter\+Un\+Prof\+Console} (\hyperlink{classliste_ressources}{liste\+Ressources} \&lR)
-\item 
-int \hyperlink{main_8cpp_a6b8b3b82f905ec5aa6b8d23aa8b48897}{ajouter\+Un\+Cours\+Console} (\hyperlink{classliste_cours}{liste\+Cours} \&lC, \hyperlink{classliste_ressources}{liste\+Ressources} \&lR)
-\item 
-void \hyperlink{main_8cpp_aea49e3846dcc5c3c36c15f70cb38f2f4}{afficher\+Menu\+Console} ()
-\item 
-void \hyperlink{main_8cpp_ac5eb0c28639532914d27f7cd1ce37c80}{menu\+Console} ()
+void \hyperlink{main_8cpp_aaeb94d4bc6770f26e4bcfb2f9fcc9b15}{menu} (\hyperlink{classafficheur_console}{afficheur\+Console} \&aC)
 \item 
 int \hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
 \end{DoxyCompactItemize}
 
 
 \subsection{Function Documentation}
-\hypertarget{main_8cpp_aea49e3846dcc5c3c36c15f70cb38f2f4}{}\label{main_8cpp_aea49e3846dcc5c3c36c15f70cb38f2f4} 
-\index{main.\+cpp@{main.\+cpp}!afficher\+Menu\+Console@{afficher\+Menu\+Console}}
-\index{afficher\+Menu\+Console@{afficher\+Menu\+Console}!main.\+cpp@{main.\+cpp}}
-\subsubsection{\texorpdfstring{afficher\+Menu\+Console()}{afficherMenuConsole()}}
-{\footnotesize\ttfamily void afficher\+Menu\+Console (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-
-
-Definition at line 68 of file main.\+cpp.
-
-\hypertarget{main_8cpp_a6b8b3b82f905ec5aa6b8d23aa8b48897}{}\label{main_8cpp_a6b8b3b82f905ec5aa6b8d23aa8b48897} 
-\index{main.\+cpp@{main.\+cpp}!ajouter\+Un\+Cours\+Console@{ajouter\+Un\+Cours\+Console}}
-\index{ajouter\+Un\+Cours\+Console@{ajouter\+Un\+Cours\+Console}!main.\+cpp@{main.\+cpp}}
-\subsubsection{\texorpdfstring{ajouter\+Un\+Cours\+Console()}{ajouterUnCoursConsole()}}
-{\footnotesize\ttfamily int ajouter\+Un\+Cours\+Console (\begin{DoxyParamCaption}\item[{\hyperlink{classliste_cours}{liste\+Cours} \&}]{lC,  }\item[{\hyperlink{classliste_ressources}{liste\+Ressources} \&}]{lR }\end{DoxyParamCaption})}
-
-
-
-Definition at line 44 of file main.\+cpp.
-
-\hypertarget{main_8cpp_af8d69182520060bcd45d24f548e34c53}{}\label{main_8cpp_af8d69182520060bcd45d24f548e34c53} 
-\index{main.\+cpp@{main.\+cpp}!ajouter\+Un\+Prof\+Console@{ajouter\+Un\+Prof\+Console}}
-\index{ajouter\+Un\+Prof\+Console@{ajouter\+Un\+Prof\+Console}!main.\+cpp@{main.\+cpp}}
-\subsubsection{\texorpdfstring{ajouter\+Un\+Prof\+Console()}{ajouterUnProfConsole()}}
-{\footnotesize\ttfamily int ajouter\+Un\+Prof\+Console (\begin{DoxyParamCaption}\item[{\hyperlink{classliste_ressources}{liste\+Ressources} \&}]{lR }\end{DoxyParamCaption})}
-
-
-
-Definition at line 29 of file main.\+cpp.
-
 \hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{}\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
 \index{main.\+cpp@{main.\+cpp}!main@{main}}
 \index{main@{main}!main.\+cpp@{main.\+cpp}}
 \subsubsection{\texorpdfstring{main()}{main()}}
 {\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+Here is the call graph for this function\+:
+% FIG 0
+\hypertarget{main_8cpp_aaeb94d4bc6770f26e4bcfb2f9fcc9b15}{}\label{main_8cpp_aaeb94d4bc6770f26e4bcfb2f9fcc9b15} 
+\index{main.\+cpp@{main.\+cpp}!menu@{menu}}
+\index{menu@{menu}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{menu()}{menu()}}
+{\footnotesize\ttfamily void menu (\begin{DoxyParamCaption}\item[{\hyperlink{classafficheur_console}{afficheur\+Console} \&}]{aC }\end{DoxyParamCaption})}
 
-
-Definition at line 117 of file main.\+cpp.
-
-\hypertarget{main_8cpp_ac5eb0c28639532914d27f7cd1ce37c80}{}\label{main_8cpp_ac5eb0c28639532914d27f7cd1ce37c80} 
-\index{main.\+cpp@{main.\+cpp}!menu\+Console@{menu\+Console}}
-\index{menu\+Console@{menu\+Console}!main.\+cpp@{main.\+cpp}}
-\subsubsection{\texorpdfstring{menu\+Console()}{menuConsole()}}
-{\footnotesize\ttfamily void menu\+Console (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-
-
-Definition at line 82 of file main.\+cpp.
-
+Here is the call graph for this function\+:
+% FIG 1
+Here is the caller graph for this function\+:
+% FIG 2

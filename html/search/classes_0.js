@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['afficheur',['afficheur',['../classafficheur.html',1,'']]],
   ['afficheurconsole',['afficheurConsole',['../classafficheur_console.html',1,'']]],
   ['allof',['AllOf',['../class_catch_1_1_matchers_1_1_impl_1_1_generic_1_1_all_of.html',1,'Catch::Matchers::Impl::Generic']]],
   ['anyof',['AnyOf',['../class_catch_1_1_matchers_1_1_impl_1_1_generic_1_1_any_of.html',1,'Catch::Matchers::Impl::Generic']]],

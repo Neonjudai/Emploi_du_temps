@@ -13,16 +13,16 @@
 			</Target>
 		</Build>
 		<Unit filename="Donnees/data.txt" />
-		<Unit filename="cpp/afficheur.cpp" />
 		<Unit filename="cpp/afficheurConsole.cpp" />
 		<Unit filename="cpp/cours.cpp" />
+		<Unit filename="cpp/formation.cpp" />
 		<Unit filename="cpp/horaire.cpp" />
 		<Unit filename="cpp/listeCours.cpp" />
 		<Unit filename="cpp/listeDHoraire.cpp" />
 		<Unit filename="cpp/listeRessources.cpp" />
 		<Unit filename="cpp/professeur.cpp" />
 		<Unit filename="cpp/ressource.cpp" />
-		<Unit filename="lib/afficheur.h" />
+		<Unit filename="cpp/salle.cpp" />
 		<Unit filename="lib/afficheurConsole.h" />
 		<Unit filename="lib/catch.hpp" />
 		<Unit filename="lib/cours.h" />

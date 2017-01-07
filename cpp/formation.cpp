@@ -1,7 +1,7 @@
 /**
 	* @file formation.cpp
 	* @brief Definition des methodes de la classe formation
-	* @autor Hicham Chouhad
+	* @author Hicham Chouhad
 	* @version 1.0
 */
 
@@ -22,7 +22,7 @@ formation::formation(const string& nomFormation, int nombreEtudiant) : ressource
 void formation::changerNombreEtudiant(int nombreEtudiant) {d_nombreEtudiant = nombreEtudiant;}
 
 /**
-@brief renvoie le nombre d'etudiant dans la formation
+@brief Renvoie le nombre d'etudiant dans la formation
 @return d_nombreEtudiant - le nombre d'etudiant
 */
 int formation::nombreEtudiant() const {return d_nombreEtudiant;}

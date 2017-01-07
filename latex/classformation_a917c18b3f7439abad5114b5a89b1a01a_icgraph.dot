@@ -1,0 +1,29 @@
+digraph "formation::nombreEtudiant"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node11 [label="formation::nombreEtudiant",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node11 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node12 [label="afficheurConsole::afficher\lFormation",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classafficheur_console.html#a7329605c0c533c5306bf14b6fbe47358"];
+  Node12 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node13 [label="afficheurConsole::afficher\lCours",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classafficheur_console.html#adef955f54d12ed2c99311f94920306a4",tooltip="Renvoie dans ost le .......... du cours c. "];
+  Node13 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node14 [label="afficheurConsole::afficher\lLesCours",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classafficheur_console.html#a259f4fe7ffe96d1ab0a6b5bc01c2f618"];
+  Node14 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node15 [label="menu",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8cpp.html#aaeb94d4bc6770f26e4bcfb2f9fcc9b15"];
+  Node15 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node16 [label="main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4"];
+  Node12 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node17 [label="afficheurConsole::afficher\lLesFormations",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classafficheur_console.html#a8f9fbf20b142d1805a0418f24b30c273"];
+  Node17 -> Node18 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node18 [label="afficheurConsole::ajouter\lUnCours",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classafficheur_console.html#a49b72edf4baf8f7ec4898b61c48212fa"];
+  Node18 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node17 -> Node19 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node19 [label="afficheurConsole::afficher\lLesRessources",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classafficheur_console.html#a88dc8bce2d36314f98b1ba21e8e9b214"];
+  Node19 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node11 -> Node20 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node20 [label="formation::formation",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classformation.html#ad20a90943dd2ef544b970d1bd440000f",tooltip="Constructeur de l&#39;objet formation. "];
+  Node11 -> Node21 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node21 [label="formation::changerNombre\lEtudiant",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classformation.html#abe934ed262e616341b9d168bd2faf8bb",tooltip="Modifie le nombre d&#39;etudiant dans la formation. "];
+}

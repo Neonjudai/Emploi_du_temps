@@ -7,32 +7,26 @@
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classcours_a64d575197dcd1276d2f460a159b0aa67}{cours} (const \hyperlink{classhoraire}{horaire} \&h, \hyperlink{classprofesseur}{professeur} $\ast$prof)
-\begin{DoxyCompactList}\small\item\em Constructeur de l\textquotesingle{}objet cours. \end{DoxyCompactList}\item 
-\hyperlink{classcours_a76210058976f92c2f09b047f68fa2e82}{cours} (int semaine, int jour, int heure, \hyperlink{classprofesseur}{professeur} $\ast$prof)
+\hyperlink{classcours_a97d927797b98f0f6986461e85757d23c}{cours} (const \hyperlink{classhoraire}{horaire} \&h, \hyperlink{classprofesseur}{professeur} $\ast$p, \hyperlink{classsalle}{salle} $\ast$s, \hyperlink{classformation}{formation} $\ast$f)
 \begin{DoxyCompactList}\small\item\em Constructeur de l\textquotesingle{}objet cours. \end{DoxyCompactList}\item 
 \hyperlink{classcours_a95b69b7789c5dab7116c0b89d78197ec}{cours} (const \hyperlink{classcours}{cours} \&c)=default
-\end{DoxyCompactItemize}
-\subsection*{Friends}
-\begin{DoxyCompactItemize}
 \item 
-std\+::ostream \& \hyperlink{classcours_aecc19592d3206061c4aefd63e2cf7473}{operator$<$$<$} (std\+::ostream \&ost, const \hyperlink{classcours}{cours} \&c)
-\begin{DoxyCompactList}\small\item\em Redefinition de l\textquotesingle{}operateur $<$$<$. \end{DoxyCompactList}\end{DoxyCompactItemize}
-
-
-\subsection{Detailed Description}
-
-
-Definition at line 17 of file cours.\+h.
-
+\hyperlink{classhoraire}{horaire} \hyperlink{classcours_af09cffcbd77d17a2100bdacf0f1fb2a9}{horaire\+Du\+Cours} () const
+\begin{DoxyCompactList}\small\item\em Renvoie l\textquotesingle{}horaire du cours. \end{DoxyCompactList}\item 
+\hyperlink{classprofesseur}{professeur} \hyperlink{classcours_a84b7b5ac9221a3edcaf142c8b28152cb}{professeur\+Du\+Cours} () const
+\begin{DoxyCompactList}\small\item\em Renvoie le professeur lie a un cours. \end{DoxyCompactList}\item 
+\hyperlink{classsalle}{salle} \hyperlink{classcours_af98361045fec0b63de23c45d3853fb57}{salle\+Du\+Cours} () const
+\begin{DoxyCompactList}\small\item\em Renvoie la salle lie a un cours. \end{DoxyCompactList}\item 
+\hyperlink{classformation}{formation} \hyperlink{classcours_a6f2b466ed292ca0152a90c34509be8af}{formation\+Du\+Cours} () const
+\begin{DoxyCompactList}\small\item\em Renvoie la formation lie a un cours. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{classcours_a64d575197dcd1276d2f460a159b0aa67}{}\label{classcours_a64d575197dcd1276d2f460a159b0aa67} 
+\hypertarget{classcours_a97d927797b98f0f6986461e85757d23c}{}\label{classcours_a97d927797b98f0f6986461e85757d23c} 
 \index{cours@{cours}!cours@{cours}}
 \index{cours@{cours}!cours@{cours}}
-\subsubsection{\texorpdfstring{cours()}{cours()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
-{\footnotesize\ttfamily cours\+::cours (\begin{DoxyParamCaption}\item[{const \hyperlink{classhoraire}{horaire} \&}]{h,  }\item[{\hyperlink{classprofesseur}{professeur} $\ast$}]{prof }\end{DoxyParamCaption})}
+\subsubsection{\texorpdfstring{cours()}{cours()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily cours\+::cours (\begin{DoxyParamCaption}\item[{const \hyperlink{classhoraire}{horaire} \&}]{h,  }\item[{\hyperlink{classprofesseur}{professeur} $\ast$}]{p,  }\item[{\hyperlink{classsalle}{salle} $\ast$}]{s,  }\item[{\hyperlink{classformation}{formation} $\ast$}]{f }\end{DoxyParamCaption})}
 
 
 
@@ -45,68 +39,75 @@ Constructeur de l\textquotesingle{}objet cours.
 \mbox{\tt in}  & {\em prof} & -\/ un objet de type professeur \\
 \hline
 \end{DoxyParams}
-
-
-Definition at line 16 of file cours.\+cpp.
-
-\hypertarget{classcours_a76210058976f92c2f09b047f68fa2e82}{}\label{classcours_a76210058976f92c2f09b047f68fa2e82} 
-\index{cours@{cours}!cours@{cours}}
-\index{cours@{cours}!cours@{cours}}
-\subsubsection{\texorpdfstring{cours()}{cours()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
-{\footnotesize\ttfamily cours\+::cours (\begin{DoxyParamCaption}\item[{int}]{semaine,  }\item[{int}]{jour,  }\item[{int}]{heure,  }\item[{\hyperlink{classprofesseur}{professeur} $\ast$}]{prof }\end{DoxyParamCaption})}
-
-
-
-Constructeur de l\textquotesingle{}objet cours. 
-
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em semaine} & -\/ un entier représentant le numéro de semaine \\
-\hline
-\mbox{\tt in}  & {\em jour} & -\/ un entier représentant un jour \\
-\hline
-\mbox{\tt in}  & {\em heure} & -\/ un entier représentant une plage horaire \\
-\hline
-\mbox{\tt in}  & {\em prof} & -\/ un objet de type professeur \\
-\hline
-\end{DoxyParams}
-
-
-Definition at line 26 of file cours.\+cpp.
-
 \hypertarget{classcours_a95b69b7789c5dab7116c0b89d78197ec}{}\label{classcours_a95b69b7789c5dab7116c0b89d78197ec} 
 \index{cours@{cours}!cours@{cours}}
 \index{cours@{cours}!cours@{cours}}
-\subsubsection{\texorpdfstring{cours()}{cours()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+\subsubsection{\texorpdfstring{cours()}{cours()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily cours\+::cours (\begin{DoxyParamCaption}\item[{const \hyperlink{classcours}{cours} \&}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
 
 
 
-\subsection{Friends And Related Function Documentation}
-\hypertarget{classcours_aecc19592d3206061c4aefd63e2cf7473}{}\label{classcours_aecc19592d3206061c4aefd63e2cf7473} 
-\index{cours@{cours}!operator$<$$<$@{operator$<$$<$}}
-\index{operator$<$$<$@{operator$<$$<$}!cours@{cours}}
-\subsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
-{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{ost,  }\item[{const \hyperlink{classcours}{cours} \&}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+\subsection{Member Function Documentation}
+\hypertarget{classcours_a6f2b466ed292ca0152a90c34509be8af}{}\label{classcours_a6f2b466ed292ca0152a90c34509be8af} 
+\index{cours@{cours}!formation\+Du\+Cours@{formation\+Du\+Cours}}
+\index{formation\+Du\+Cours@{formation\+Du\+Cours}!cours@{cours}}
+\subsubsection{\texorpdfstring{formation\+Du\+Cours()}{formationDuCours()}}
+{\footnotesize\ttfamily \hyperlink{classformation}{formation} cours\+::formation\+Du\+Cours (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 
 
-Redefinition de l\textquotesingle{}operateur $<$$<$. 
+Renvoie la formation lie a un cours. 
 
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em c} & -\/ un objet de type cours \\
-\hline
-\mbox{\tt in,out}  & {\em ost} & -\/ un flux de sortie \\
-\hline
-\end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-ost -\/ le flux de sortie ost 
+d\+\_\+formation -\/ un objet de type horaire 
 \end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 0
+\hypertarget{classcours_af09cffcbd77d17a2100bdacf0f1fb2a9}{}\label{classcours_af09cffcbd77d17a2100bdacf0f1fb2a9} 
+\index{cours@{cours}!horaire\+Du\+Cours@{horaire\+Du\+Cours}}
+\index{horaire\+Du\+Cours@{horaire\+Du\+Cours}!cours@{cours}}
+\subsubsection{\texorpdfstring{horaire\+Du\+Cours()}{horaireDuCours()}}
+{\footnotesize\ttfamily \hyperlink{classhoraire}{horaire} cours\+::horaire\+Du\+Cours (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 
-Definition at line 38 of file cours.\+cpp.
 
+Renvoie l\textquotesingle{}horaire du cours. 
+
+\begin{DoxyReturn}{Returns}
+d\+\_\+horaire -\/ un objet de type horaire 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 1
+\hypertarget{classcours_a84b7b5ac9221a3edcaf142c8b28152cb}{}\label{classcours_a84b7b5ac9221a3edcaf142c8b28152cb} 
+\index{cours@{cours}!professeur\+Du\+Cours@{professeur\+Du\+Cours}}
+\index{professeur\+Du\+Cours@{professeur\+Du\+Cours}!cours@{cours}}
+\subsubsection{\texorpdfstring{professeur\+Du\+Cours()}{professeurDuCours()}}
+{\footnotesize\ttfamily \hyperlink{classprofesseur}{professeur} cours\+::professeur\+Du\+Cours (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Renvoie le professeur lie a un cours. 
+
+\begin{DoxyReturn}{Returns}
+d\+\_\+professeur -\/ un objet de type horaire 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 2
+\hypertarget{classcours_af98361045fec0b63de23c45d3853fb57}{}\label{classcours_af98361045fec0b63de23c45d3853fb57} 
+\index{cours@{cours}!salle\+Du\+Cours@{salle\+Du\+Cours}}
+\index{salle\+Du\+Cours@{salle\+Du\+Cours}!cours@{cours}}
+\subsubsection{\texorpdfstring{salle\+Du\+Cours()}{salleDuCours()}}
+{\footnotesize\ttfamily \hyperlink{classsalle}{salle} cours\+::salle\+Du\+Cours (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Renvoie la salle lie a un cours. 
+
+\begin{DoxyReturn}{Returns}
+d\+\_\+salle -\/ un objet de type horaire 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 3
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
