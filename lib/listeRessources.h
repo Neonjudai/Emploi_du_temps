@@ -13,6 +13,8 @@
 #include "professeur.h"
 #include "salle.h"
 #include "formation.h"
+#include "listeCours.h"
+#include "cours.h"
 
 class listeRessources{
 	public:
@@ -24,6 +26,8 @@ class listeRessources{
 		professeur* professeurNumeroP(int i);
 		professeur professeurNumero(int i) const;
 		int positionProfesseur(std::string nom) const;
+		bool professeurAUnCours(const listeCours & listeDeCours, const std::string & nomDuProfesseur);
+		void supprimerUnProfesseur(const std::string & nomDuProfesseur);
 		
 		//salle
 		void ajouterUneSalle(salle s);
@@ -31,6 +35,8 @@ class listeRessources{
 		salle* salleNumeroP(int i);
 		salle salleNumero(int i) const;
 		int positionSalle(std::string nom) const;
+		bool salleAUnCours(const listeCours & listeDeCours, const std::string & nomDeLaSalle);
+		void supprimerUneSalle(const std::string & nomDeLaSalle);
 		
 		//formation
 		void ajouterUneFormation(formation f);
@@ -38,6 +44,8 @@ class listeRessources{
 		formation* formationNumeroP(int i);
 		formation formationNumero(int i) const;
 		int positionFormation(std::string nom) const;
+		bool formationAUnCours(const listeCours & listeDeCours, const std::string & nomDeLaFormation);
+		void supprimerUneFormation(const std::string & nomDeLaFormation);
 		
 	private:
 		void trier();									//A FAIRE

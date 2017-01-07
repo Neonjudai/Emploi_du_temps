@@ -21,6 +21,9 @@ class listeCours{
 		cours coursNumero(int i) const;
 		bool estPossible(const cours & c) const;
 
+		int numeroDeCours(const horaire& horaire, const professeur& professeur, const salle& salle, const formation& formation) const;
+		void supprimerUnCours(int i);
+
 	private:
 		std::vector <cours> d_listeDesCours;
 		

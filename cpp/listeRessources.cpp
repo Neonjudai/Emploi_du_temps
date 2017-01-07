@@ -61,6 +61,24 @@ int listeRessources::positionProfesseur(std::string nom) const
 	return i;
 }
 
+bool listeRessources::professeurAUnCours(const listeCours & listeDeCours, const std::string & nomDuProfesseur)
+{
+	bool aUnCours = false;
+	for (int i = 0; i < nombreDeProfesseurs() && !aUnCours; i++)
+	{
+		if (listeDeCours.coursNumero(i).professeurDuCours() == professeurNumero(positionProfesseur(nomDuProfesseur)))
+		{
+			aUnCours = true;
+		}
+	}
+	return aUnCours;
+}
+
+void listeRessources::supprimerUnProfesseur(const std::string & nomDuProfesseur)
+{
+	d_listeDesProfesseurs.erase(d_listeDesProfesseurs.begin() + positionProfesseur(nomDuProfesseur));
+}
+
 //-------------------------------------------------------------------
 //--------------------salle------------------------------------------
 //-------------------------------------------------------------------
@@ -107,6 +125,25 @@ int listeRessources::positionSalle(std::string nom) const
 	while (i<d_listeDesSalles.size() && d_listeDesSalles[i].nom() != nom) i++;
 	if (i==d_listeDesSalles.size()) return -1;
 	return i;
+}
+
+
+bool listeRessources::salleAUnCours(const listeCours & listeDeCours, const std::string & nomDeLaSalle)
+{
+	bool aUnCours = false;
+	for (int i = 0; i < nombreDeSalles() && !aUnCours; i++)
+	{
+		if (listeDeCours.coursNumero(i).salleDuCours == salleNumero(positionSalle(nomDeLaSalle)))
+		{
+			aUnCours = true;
+		}
+	}
+	return aUnCours;
+}
+
+void listeRessources::supprimerUneSalle(const std::string & nomDeLaSalle)
+{
+	d_listeDesSalles.erase(d_listeDesSalles.begin() + positionSalle(nomDeLaSalle));
 }
 
 //-------------------------------------------------------------------
@@ -156,4 +193,22 @@ int listeRessources::positionFormation(std::string nom) const
 	while (i<d_listeDesFormations.size() && d_listeDesFormations[i].nom() != nom) i++;
 	if (i==d_listeDesFormations.size()) return -1;
 	return i;
+}
+
+bool listeRessources::formationAUnCours(const listeCours & listeDeCours, const std::string & nomDeLaFormation)
+{
+	bool aUnCours = false;
+	for (int i = 0; i < nombreDeFormations() && !aUnCours; i++)
+	{
+		if (listeDeCours.coursNumero(i).formationDuCours() == formationNumero(positionFormation(nomDeLaFormation)))
+		{
+			aUnCours = true;
+		}
+	}
+	return aUnCours;
+}
+
+void listeRessources::supprimerUneFormation(const std::string & nomDeLaFormation)
+{
+	d_listeDesFormations.erase(d_listeDesFormations.begin() + positionFormation(nomDeLaFormation));
 }

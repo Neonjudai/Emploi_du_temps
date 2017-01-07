@@ -50,6 +50,26 @@ bool listeCours::estPossible(const cours & c) const
 	}return true;
 }
 
+int listeCours::numeroDeCours(const horaire & horaire, const professeur & professeur, const salle & salle, const formation & formation) const
+{
+	int numero = -1;
+	for (int i = 0; i < nombreDeCours() && numero == -1; i++)
+	{
+		if (d_listeDesCours[i].horaireDuCours().heure() == horaire.heure() && d_listeDesCours[i].horaireDuCours().jour() == horaire.jour() && d_listeDesCours[i].professeurDuCours() == professeur && d_listeDesCours[i].salleDuCours() == salle && d_listeDesCours[i].formationDuCours() == formation)
+		{
+			numero = i;
+		}
+	}
+
+	return numero;
+}
+
+void listeCours::supprimerUnCours(int i)
+  {
+	  d_listeDesCours.erase(d_listeDesCours.begin() + i);
+	  trier();
+  }
+
 //QuickSort
 
 /**
