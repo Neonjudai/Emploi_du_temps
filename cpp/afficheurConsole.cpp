@@ -386,7 +386,7 @@ void afficheurConsole::afficherSalle(const salle & s) {*d_ost<<s.nom()<<" avec "
 void afficheurConsole::afficherParProfesseur(const professeur& professeur, const listeCours& lC, int semaine = -1)
 {
 	*d_ost << "Liste des cours du professeur " << professeur.nom();
-	if (semaine >= 0)
+	if (semaine > 0)
 		*d_ost << " pour la semaine " << semaine;
 	*d_ost << std::endl;
 	if (!lC.nombreDeCours()) *d_ost << "...Aucun cours enregistre pour cette personne" << std::endl;
@@ -416,7 +416,7 @@ void afficheurConsole::afficherParProfesseur(const professeur& professeur, const
 void afficheurConsole::afficherParFormation(const formation& formation, const listeCours& lC, int semaine)
 {
 	*d_ost << "Liste des cours de la formation " << formation.nom();
-	if (semaine >= 0)
+	if (semaine > 0)
 		*d_ost << " pour la semaine " << semaine;
 	*d_ost << std::endl;
 	if (!lC.nombreDeCours()) *d_ost << "...Aucun cours enregistre pour cette formation" << std::endl;
@@ -446,7 +446,7 @@ void afficheurConsole::afficherParFormation(const formation& formation, const li
 void afficheurConsole::afficherParSalle(const salle& salle, const listeCours& lC, int semaine)
 {
 	*d_ost << "Liste des cours de la salle " << salle.nom();
-	if (semaine >= 0)
+	if (semaine > 0)
 		*d_ost << " pour la semaine " << semaine;
 	*d_ost << std::endl;
 	if (!lC.nombreDeCours()) *d_ost << "...Aucun cours enregistre pour cette salle" << std::endl;
