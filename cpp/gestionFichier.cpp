@@ -20,7 +20,7 @@ bool gestionFichier::lectureDesDonnees(listeCours &LC, listeRessources &LR)
 	lecture.close();
 	lecture.open(d_nomFichier.c_str());
 	if (lecture.good())
-		fonctionne = lectureDesCours(LC, lecture);
+		fonctionne = lectureDesCours(LC,LR, lecture);
 	if (lecture.is_open())
 		lecture.close();
 	return fonctionne;
@@ -81,18 +81,18 @@ bool gestionFichier::lectureDesCours(listeCours &LC, listeRessources &LR, ifstre
 }
 
 
-bool gestionFichier::ecritureDesCours(listeCours LC, ofstream &ecriture)
+bool gestionFichier::ecritureDesCours(const listeCours & LC, ofstream &ecriture)
 {
 	ecriture << "//Cours Nsemaine Njour(0-6) Nheure(1-4) 'nomformation' 'nomprofesseur' 'nomsalle'" << endl;
 	for (int CoursN = 0; CoursN < LC.nombreDeCours(); CoursN++)
 	{
 		ecriture << "cours " << LC.coursNumero(CoursN).horaireDuCours().semaine() << ' ' << LC.coursNumero(CoursN).horaireDuCours().jour() << ' ' << LC.coursNumero(CoursN).horaireDuCours().heure() << ' ';
-		ecriture << " " << LC.coursNumero(CoursN).formationDuCours().nom() << " " << LC.coursNumero(CoursN).professeurDuCours().nom() << " " << LC.coursNumero(CoursN).salleDuCours().nom << " " << endl;
+		ecriture << " " << LC.coursNumero(CoursN).formationDuCours().nom() << " " << LC.coursNumero(CoursN).professeurDuCours().nom() << " " << LC.coursNumero(CoursN).salleDuCours().nom() << " " << endl;
 	}
 	return ecriture.good();
 }
 
-bool gestionFichier::ecritureDesRessources(listeRessources LR, ofstream &ecriture)
+bool gestionFichier::ecritureDesRessources(const listeRessources & LR, ofstream &ecriture)
 {
 	ecriture << "//Formation 'nomformation' NbEleve" << endl;
 	for (int FormationN = 0; FormationN < LR.nombreDeFormations(); FormationN++)
@@ -112,7 +112,7 @@ bool gestionFichier::ecritureDesRessources(listeRessources LR, ofstream &ecritur
 	return ecriture.good();
 }
 
-bool gestionFichier::ecritureDesDonnees(listeCours LC, listeRessources LR)
+bool gestionFichier::ecritureDesDonnees(const listeCours & LC, const  listeRessources & LR)
 {
 	bool fonctionne;
 	viderLeFichier();

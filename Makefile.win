@@ -4,8 +4,8 @@
 CPP      = g++.exe
 CC       = gcc.exe
 WINDRES  = windres.exe
-OBJ      = cpp/cours.o cpp/horaire.o cpp/listeCours.o cpp/listeRessources.o cpp/professeur.o cpp/ressource.o cpp/main.o cpp/afficheurConsole.o cpp/salle.o cpp/formation.o
-LINKOBJ  = cpp/cours.o cpp/horaire.o cpp/listeCours.o cpp/listeRessources.o cpp/professeur.o cpp/ressource.o cpp/main.o cpp/afficheurConsole.o cpp/salle.o cpp/formation.o
+OBJ      = cpp/cours.o cpp/horaire.o cpp/listeCours.o cpp/listeRessources.o cpp/professeur.o cpp/ressource.o cpp/main.o cpp/afficheurConsole.o cpp/salle.o cpp/formation.o cpp/gestionFichier.o
+LINKOBJ  = cpp/cours.o cpp/horaire.o cpp/listeCours.o cpp/listeRessources.o cpp/professeur.o cpp/ressource.o cpp/main.o cpp/afficheurConsole.o cpp/salle.o cpp/formation.o cpp/gestionFichier.o
 LIBS     = -L"D:/p/Dev-Cpp/MinGW64/gcc-6-win64/lib" -L"D:/p/Dev-Cpp/MinGW64/gcc-6-win64/x86_64-w64-mingw32/lib" -static-libstdc++ -static-libgcc
 INCS     = -I"D:/p/Dev-Cpp/MinGW64/gcc-6-win64/include" -I"D:/p/Dev-Cpp/MinGW64/gcc-6-win64/x86_64-w64-mingw32/include" -I"D:/p/Dev-Cpp/MinGW64/gcc-6-win64/lib/gcc/x86_64-w64-mingw32/6.2.1/include"
 CXXINCS  = -I"D:/p/Dev-Cpp/MinGW64/gcc-6-win64/include" -I"D:/p/Dev-Cpp/MinGW64/gcc-6-win64/x86_64-w64-mingw32/include" -I"D:/p/Dev-Cpp/MinGW64/gcc-6-win64/lib/gcc/x86_64-w64-mingw32/6.2.1/include"
@@ -53,3 +53,6 @@ cpp/salle.o: cpp/salle.cpp
 
 cpp/formation.o: cpp/formation.cpp
 	$(CPP) -c cpp/formation.cpp -o cpp/formation.o $(CXXFLAGS)
+
+cpp/gestionFichier.o: cpp/gestionFichier.cpp
+	$(CPP) -c cpp/gestionFichier.cpp -o cpp/gestionFichier.o $(CXXFLAGS)

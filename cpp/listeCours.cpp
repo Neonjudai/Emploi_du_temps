@@ -38,16 +38,16 @@ cours listeCours::coursNumero(int i) const {return d_listeDesCours[i];}
   @brief Verifie si le cours peut etre ajoute a d_listeDesCours
   @return true - le cours peut etre ajoute
 */
-bool listeCours::estPossible(const cours & c) const
+int listeCours::estPossible(const cours & c) const
 {	int i=0;
 	while (i<d_listeDesCours.size() && d_listeDesCours[i].horaireDuCours()<=c.horaireDuCours()) i++;
 	while (i<d_listeDesCours.size() && d_listeDesCours[i].horaireDuCours()==c.horaireDuCours())
 	{
-		if (d_listeDesCours[i].professeurDuCours() 	== c.professeurDuCours()) 	return false;
-		if (d_listeDesCours[i].salleDuCours() 		== c.salleDuCours()) 		return false;
-		if (d_listeDesCours[i].formationDuCours()	== c.formationDuCours()) 	return false;
+		if (d_listeDesCours[i].professeurDuCours() 	== c.professeurDuCours()) 	return -5;
+		if (d_listeDesCours[i].salleDuCours() 		== c.salleDuCours()) 		return -6;
+		if (d_listeDesCours[i].formationDuCours()	== c.formationDuCours()) 	return -7;
 		i++;
-	}return true;
+	}return 0;
 }
 
 int listeCours::numeroDeCours(const horaire & horaire, const professeur & professeur, const salle & salle, const formation & formation) const
@@ -55,7 +55,10 @@ int listeCours::numeroDeCours(const horaire & horaire, const professeur & profes
 	int numero = -1;
 	for (int i = 0; i < nombreDeCours() && numero == -1; i++)
 	{
-		if (d_listeDesCours[i].horaireDuCours().heure() == horaire.heure() && d_listeDesCours[i].horaireDuCours().jour() == horaire.jour() && d_listeDesCours[i].professeurDuCours() == professeur && d_listeDesCours[i].salleDuCours() == salle && d_listeDesCours[i].formationDuCours() == formation)
+		if (d_listeDesCours[i].horaireDuCours() == horaire && 
+			d_listeDesCours[i].professeurDuCours() == professeur && 
+			d_listeDesCours[i].salleDuCours() == salle && 
+			d_listeDesCours[i].formationDuCours() == formation)
 		{
 			numero = i;
 		}

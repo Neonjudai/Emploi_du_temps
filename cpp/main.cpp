@@ -4,6 +4,7 @@
 #include "../lib/afficheurConsole.h"
 #include "../lib/listeCours.h"
 #include "../lib/listeRessources.h"
+#include "../lib/gestionFichier.h"
 
 using std::cout;
 using std::cin;
@@ -32,15 +33,9 @@ void menu(afficheurConsole & aC)
 	int codeErreur;
 	listeCours lC;
 	listeRessources lR;
-	//lire data, remplir lC et lR;
+	gestionFichier gF("Donnees/data.txt");
 	
-	//POUR TESTER SEULEMENT
-	lR.ajouterUnProfesseur(professeur{"PT"});
-	lR.ajouterUneSalle(salle{"ST",14});
-	lR.ajouterUneFormation(formation{"FT",10});
-	cours c{{0,0,0},lR.professeurNumeroP(0),lR.salleNumeroP(0),lR.formationNumeroP(0)};
-	lC.ajouterUnCours(c);
-	//FIN
+	if(!gF.lectureDesDonnees(lC, lR)) aC.afficher("Erreur lors de la lecture du fichier.",1);
 	
 	int choix;
 	do
@@ -78,11 +73,18 @@ void menu(afficheurConsole & aC)
 				else if (codeErreur==-1) 	aC.afficher("Erreur : Ce professeur n'existe pas.",1);
 				else if (codeErreur==-2) 	aC.afficher("Erreur : Cette salle n'existe pas.",1);
 				else if (codeErreur==-3) 	aC.afficher("Erreur : Cette formation n'existe pas.",1);
-				else if (codeErreur==-4) 	aC.afficher("Erreur : Une ressource est deja occupee.",1);
-				else if (codeErreur==-5) 	aC.afficher("Erreur : Pas assez de place pour les etudiants.",1);
+				else if (codeErreur==-4) 	aC.afficher("Erreur : Pas assez de place pour les etudiants.",1);
+				else if (codeErreur==-5) 	aC.afficher("Erreur : Professeur deja occupe.",1);
+				else if (codeErreur==-6) 	aC.afficher("Erreur : Salle deja occupe.",1);
+				else if (codeErreur==-7) 	aC.afficher("Erreur : Formation deja occupe.",1);
 				break;
 		}
 	if (codeErreur != 0) system("pause");
 	}while (choix!=0);
-	//sauvegarder lC et lR;
+	
+	if(!gF.ecritureDesDonnees(lC, lR))
+	{
+		aC.afficher("Erreur lors de l'ecriture du fichier.",1);
+		system("pause");
+	}
 }

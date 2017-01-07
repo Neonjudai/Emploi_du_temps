@@ -1,20 +1,14 @@
-//Une ligne qui commence par // est une ligne de commentaire
-//formation "nomformation" nbélève
-formation "informatique" 28
-formation "physique" 15
-formation "mathématique" 4
-formation "chimie" -5
+// INFO : Stockage des données
+//Formation 'nomformation' NbEleve
+formation A 1
 
-//professeur "nomprofesseur"
-professeur "Sait Tout"
-professeur "Trop Rapide"
-professeur "Patient"
+//Professeur 'nomprofesseur'
+professeur A 
 
-//salle "nomsalle" nbplaces
-salle "301"
-salle "Trop grande"
-salle "21"
+//Salle 'nomsalle' NbPlaces
+salle A 1
 
-//cours nsemaine njour(0-6) nheure(1-4) "nomformation" "nomprofesseur" "nomsalle"
-cours 35 0 1 "informatique" "Sait Tout" "21"
-cours 12 2 4 "mathématique" "Trop Rapide" "Trop grande"
+//Cours Nsemaine Njour(0-6) Nheure(1-4) 'nomformation' 'nomprofesseur' 'nomsalle'
+cours 0 0 0  A A A 
+cours 0 0 0  A A A 
+cours 0 0 0  A A A 

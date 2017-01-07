@@ -19,7 +19,7 @@ class listeCours{
 		void ajouterUnCours(const cours & c);
 		int nombreDeCours() const;
 		cours coursNumero(int i) const;
-		bool estPossible(const cours & c) const;
+		int estPossible(const cours & c) const;
 
 		int numeroDeCours(const horaire& horaire, const professeur& professeur, const salle& salle, const formation& formation) const;
 		void supprimerUnCours(int i);

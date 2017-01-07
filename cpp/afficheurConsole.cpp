@@ -184,9 +184,11 @@ int afficheurConsole::ajouterUnCours(listeCours &lC,listeRessources &lR)
 	//Création du cours
 	cours CoursaTester{{semaine, jour, heure},lR.professeurNumeroP(professeurPosition),lR.salleNumeroP(sallePosition),lR.formationNumeroP(formationPosition)};
 	//Teste
-	if (lC.estPossible(CoursaTester)) return -4; 			//Code Erreur : Ressource non disponible
+	int succes = lC.estPossible(CoursaTester); 			//Code Erreur : Ressource non disponible
+	if (succes !=0) return succes;
 	//Ajout du cours
 	lC.ajouterUnCours(CoursaTester);
+	return 0;
 }
 
 //-------------------------------------------------------------------

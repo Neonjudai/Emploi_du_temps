@@ -15,16 +15,16 @@ public:
 
 	void viderLeFichier();
 	bool lectureDesDonnees(listeCours &LC, listeRessources &LR);
-	bool ecritureDesDonnees(listeCours LC, listeRessources LR);
+	bool ecritureDesDonnees(const listeCours &LC,const listeRessources &LR);
 
 private:
 	string d_nomFichier;
 
-	bool lectureDesCours(listeCours &LC, listeRessources &LR, ifstream &lecture);
-	bool lectureDesRessources(listeRessources &LR, ifstream &lecture);
+	bool lectureDesCours		(listeCours &LC, listeRessources &LR, ifstream &lecture);
+	bool lectureDesRessources	(listeRessources &LR, ifstream &lecture);
 
-	bool ecritureDesCours(listeCours LC, ofstream &ecriture);
-	bool ecritureDesRessources(listeRessources LR, ofstream &ecriture);
+	bool ecritureDesCours		(const listeCours & LC, ofstream &ecriture);
+	bool ecritureDesRessources	(const listeRessources & LR, ofstream &ecriture);
 };
 
 #endif

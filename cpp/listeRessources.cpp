@@ -133,7 +133,7 @@ bool listeRessources::salleAUnCours(const listeCours & listeDeCours, const std::
 	bool aUnCours = false;
 	for (int i = 0; i < nombreDeSalles() && !aUnCours; i++)
 	{
-		if (listeDeCours.coursNumero(i).salleDuCours == salleNumero(positionSalle(nomDeLaSalle)))
+		if (listeDeCours.coursNumero(i).salleDuCours() == salleNumero(positionSalle(nomDeLaSalle)))
 		{
 			aUnCours = true;
 		}
