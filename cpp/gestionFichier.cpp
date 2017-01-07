@@ -58,13 +58,14 @@ bool gestionFichier::lectureDesRessources(listeRessources &LR, ifstream &lecture
 
 bool gestionFichier::lectureDesCours(listeCours &LC, listeRessources &LR, ifstream &lecture)
 {
-	char curseur;
 	string lectureMot = "", nomformation, nomprofesseur, nomsalle;
 	int semaine, jour, heure;
 	if (lecture.good())
-		while (lecture.good())
+	{
+		lecture >> lectureMot;
+		while (lecture.good() && !(lecture.eof()))
 		{
-			lecture >> lectureMot;
+			
 			if (lectureMot == "cours")
 			{
 				lecture >> semaine >> jour >> heure >> nomformation >> nomprofesseur >> nomsalle;
@@ -74,7 +75,10 @@ bool gestionFichier::lectureDesCours(listeCours &LC, listeRessources &LR, ifstre
 									LR.formationNumeroP(LR.positionFormation(nomformation))
 								});
 			}
+			lecture >> lectureMot;
 		}
+	}
+		
 	else
 		return false;
 	return true;

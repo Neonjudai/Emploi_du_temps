@@ -35,7 +35,11 @@ void menu(afficheurConsole & aC)
 	listeRessources lR;
 	gestionFichier gF("Donnees/data.txt");
 	
-	if(!gF.lectureDesDonnees(lC, lR)) aC.afficher("Erreur lors de la lecture du fichier.",1);
+	if(!gF.lectureDesDonnees(lC, lR))
+	{
+		aC.afficher("Erreur lors de la lecture du fichier.",1);
+		system("pause");
+	}
 	
 	int choix;
 	do
