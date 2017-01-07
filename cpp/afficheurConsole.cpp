@@ -8,6 +8,8 @@
  *\version 1.0
  */
 
+const int T_AFFICHAGE = 119;
+
 /**
 @brief Constructeur de l'objet afficheurConsole
 @param[out] ost - flux d'écriture
@@ -58,7 +60,10 @@ void afficheurConsole::afficherCours(const cours & c)
     for (int i=0;i<16-c.professeurDuCours().nom().length();i++) *d_ost<<' ';
     *d_ost<<"| ";
     afficherFormation(c.formationDuCours());
-    for (int i=0;i<16-c.professeurDuCours().nom().length();i++) *d_ost<<' ';
+    for (int i=0;i<15-c.formationDuCours().nom().length();i++) *d_ost<<' ';
+    *d_ost<<"| ";
+    afficherSalle(c.salleDuCours());
+    for (int i=0;i<11-c.salleDuCours().nom().length();i++) *d_ost<<' ';
     *d_ost<<"| ";
 }
 
@@ -127,15 +132,18 @@ void afficheurConsole::afficherLesCours(const listeCours & lC)
 	if (!lC.nombreDeCours()) *d_ost<<"...Aucun cours enregistre"<<std::endl;
 	else
 	{
-		*d_ost<<"__________________________________________________________________________________________"<<endl;
-		*d_ost<<"Semaine | Jour     | Horaire       | Professeur      | Salle           | Formation       |"<<endl;
-		*d_ost<<"------------------------------------------------------------------------------------------"<<endl;
+		for (int i=0;i<T_AFFICHAGE;i++) *d_ost<<"_";
+		*d_ost<<endl;
+		*d_ost<<"Semaine | Jour     | Horaire       | Professeur      | Formation                         | Salle                      |"<<endl;
+		for (int i=0;i<T_AFFICHAGE;i++) *d_ost<<"-";
+		*d_ost<<endl;
 		for (int i=0; i<lC.nombreDeCours();++i)
 		{
 			afficherCours(lC.coursNumero(i));
 			*d_ost<<std::endl;
 		}
-		*d_ost<<"------------------------------------------------------------------------------------------"<<endl;
+		for (int i=0;i<T_AFFICHAGE;i++) *d_ost<<"-";
+		*d_ost<<endl;
 	}
 }
 
