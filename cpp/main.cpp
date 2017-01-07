@@ -58,15 +58,15 @@ void menu(afficheurConsole & aC)
 				system("pause");
 				break;
 			case 3:
-				codeErreur=aC.ajouterUnProf(lR,aC);
+				codeErreur=aC.ajouterUnProf(lR);
 				if (codeErreur==-1) aC.afficher("Ce nom de professeur est deja utilise.",1);
 				break;
 			case 4:
-				codeErreur=aC.ajouterUneSalle(lR,aC);
+				codeErreur=aC.ajouterUneSalle(lR);
 				if (codeErreur==-1) aC.afficher("Ce nom de salle est deja utilise.",1);
 				break;
 			case 5:
-				codeErreur=aC.ajouterUneFormation(lR,aC);
+				codeErreur=aC.ajouterUneFormation(lR);
 				if (codeErreur==-1) aC.afficher("Ce nom de formation est deja utilise.",1);
 				break;
 			case 6:
@@ -81,6 +81,29 @@ void menu(afficheurConsole & aC)
 				else if (codeErreur==-5) 	aC.afficher("Erreur : Professeur deja occupe.",1);
 				else if (codeErreur==-6) 	aC.afficher("Erreur : Salle deja occupe.",1);
 				else if (codeErreur==-7) 	aC.afficher("Erreur : Formation deja occupe.",1);
+				break;
+			case 7:
+				codeErreur=aC.supprimerUnProf(lR,lC);
+				if (codeErreur==-1) aC.afficher("Ce professeur n'existe pas.",1);
+				if (codeErreur==-2) aC.afficher("Ce professeur est requis pour un cours.",1);
+				break;
+			case 8:
+				codeErreur=aC.supprimerUneSalle(lR,lC);
+				if (codeErreur==-1) aC.afficher("Cette salle n'existe pas.",1);
+				if (codeErreur==-2) aC.afficher("Cette salle est requise pour un cours.",1);
+				break;
+			case 9:
+				codeErreur=aC.supprimerUneFormation(lR,lC);
+				if (codeErreur==-1) aC.afficher("Cette formation n'existe pas.",1);
+				if (codeErreur==-2) aC.afficher("Cette formation est requise pour un cours.",1);
+				break;
+			case 10:
+				codeErreur=aC.supprimerUnCours(lC,lR);
+				if (codeErreur==-1) 		aC.afficher("Erreur : Ce professeur n'existe pas.",1);
+				else if (codeErreur==-2) 	aC.afficher("Erreur : Cette salle n'existe pas.",1);
+				else if (codeErreur==-3) 	aC.afficher("Erreur : Cette formation n'existe pas.",1);
+				else if (codeErreur==1) 	aC.afficher("Il n'y a aucun cours a supprimer.",1);
+				else if (codeErreur==2) 	aC.afficher("Ce cours n'existe pas.",1);
 				break;
 		}
 	if (codeErreur != 0) system("pause");

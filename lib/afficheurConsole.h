@@ -12,7 +12,6 @@
 #include "formation.h"
 #include "horaire.h"
 #include "listeCours.h"
-#include "listeDHoraire.h"
 #include "listeRessources.h"
 #include "professeur.h"
 #include "salle.h"
@@ -45,6 +44,7 @@ class afficheurConsole{
         //listeCours
         void afficherLesCours(const listeCours & lC);
         int ajouterUnCours(listeCours &lC,listeRessources &lR);
+        int supprimerUnCours(listeCours &lC,listeRessources &lR);
         
         //listeRessources
         void afficherLesRessources(const listeRessources & lR);
@@ -52,10 +52,13 @@ class afficheurConsole{
         void afficherLesSalles(const listeRessources & lR);
         void afficherLesFormations(const listeRessources & lR);
         
-        int ajouterUnProf(listeRessources &lR, afficheurConsole & aC);
-        int ajouterUneSalle(listeRessources &lR, afficheurConsole & aC);
-        int ajouterUneFormation(listeRessources &lR, afficheurConsole & aC);
-		        
+        int ajouterUnProf(listeRessources &lR);
+        int ajouterUneSalle(listeRessources &lR);
+        int ajouterUneFormation(listeRessources &lR);
+		
+		int supprimerUnProf(listeRessources &lR, const listeCours & lC);
+		int supprimerUneSalle(listeRessources &lR, const listeCours & lC);
+		int supprimerUneFormation(listeRessources &lR, const listeCours & lC);
         //professeur
         void afficherProfesseur(const professeur & p);
         

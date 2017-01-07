@@ -3,7 +3,6 @@
 
 #include <iostream>
 #include "listeCours.h"
-#include "listeDHoraire.h"
 #include "listeRessources.h"
 #include <fstream>
 using namespace std;

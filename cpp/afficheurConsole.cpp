@@ -37,13 +37,17 @@ void afficheurConsole::afficherMenu()
 {	system("cls");
 	afficher("Menu :");
 	afficher("endl");
-	afficher("0. Quitter et Sauvegarder",1);
 	afficher("1. Afficher les ressources",1);
 	afficher("2. Afficher les cours",1);
 	afficher("3. Ajouter un professeur",1);
 	afficher("4. Ajouter une salle",1);
 	afficher("5. Ajouter une formation",1);
 	afficher("6. Ajouter un cours",1);
+	afficher("7. Supprimer un professeur",1);
+	afficher("8. Supprimer une salle",1);
+	afficher("9. Supprimer une formation",1);
+	afficher("10. Supprimer un cours",1);
+	afficher("0. Quitter et Sauvegarder",1);
 }
 
 //-------------------------------------------------------------------
@@ -191,6 +195,44 @@ int afficheurConsole::ajouterUnCours(listeCours &lC,listeRessources &lR)
 	return 0;
 }
 
+int afficheurConsole::supprimerUnCours(listeCours &lC,listeRessources &lR)
+{	if (lC.nombreDeCours()<1) return 1;						//Code Erreur : Aucun cours
+	system("cls");
+	afficherLesCours(lC);
+	afficher("Choisissez le cours a supprimer",1);
+	string nom;
+	//Professeur
+	afficher("Nom du professeur ");
+	cin>>nom;
+	int professeurPosition=lR.positionProfesseur(nom);
+	if (-1==professeurPosition) return -1; 					//Code Erreur : Professeur inexistant
+	//Salle
+	afficher("Nom de la Salle ");
+	cin>>nom;
+	int sallePosition=lR.positionSalle(nom);
+	if (-1==sallePosition) return -2; 						//Code Erreur : Salle inexistante
+	//Formation
+	afficher("Nom de la Formation ");
+	cin>>nom;
+	int formationPosition=lR.positionFormation(nom);
+	if (-1==formationPosition) return -3; 					//Code Erreur : Formation inexistante
+	//Horaire
+	int semaine, jour, heure;
+	afficher("Entrer le numero de la semaine : ");
+	cin>>semaine;
+	afficher("Entrer le numero du jour       : ");
+	cin>>jour;
+	afficher("Entrer le numero de l'heure    : ");
+	cin>>heure;
+	int numero=lC.numeroDeCours(	{semaine,jour,heure},
+									lR.professeurNumero(professeurPosition),
+									lR.salleNumero(sallePosition),
+									lR.formationNumero(formationPosition));
+	if (numero==-1) return 2;
+	lC.supprimerUnCours(numero);							//Code Erreur : Cours non existant
+	return 0;
+}
+
 //-------------------------------------------------------------------
 //--------------------listeRessources--------------------------------
 //-------------------------------------------------------------------
@@ -234,9 +276,9 @@ void afficheurConsole::afficherLesFormations(const listeRessources & lR)
 	}
 }
 
-int afficheurConsole::ajouterUnProf(listeRessources &lR, afficheurConsole & aC)
+int afficheurConsole::ajouterUnProf(listeRessources &lR)
 {	string nom;
-	aC.afficher("Nom du professeur a ajouter ");
+	afficher("Nom du professeur a ajouter ");
 	cin>>nom;
 	int dejaPresent=lR.positionProfesseur(nom);
 	if (-1==dejaPresent)
@@ -247,15 +289,27 @@ int afficheurConsole::ajouterUnProf(listeRessources &lR, afficheurConsole & aC)
 	return -1;	//Code Erreur : Prof existe deja
 }
 
-int afficheurConsole::ajouterUneSalle(listeRessources &lR, afficheurConsole & aC)
+int afficheurConsole::supprimerUnProf(listeRessources &lR, const listeCours & lC)
 {	string nom;
-	aC.afficher("Nom de la salle a ajouter ");
+	afficherLesProfesseurs(lR);
+	afficher("Nom du professeur a supprimer ");
+	cin>>nom;
+	int position=lR.positionProfesseur(nom);
+	if (-1==position) 					return -1;	//Code Erreur : Prof n'existe pas
+	if (lR.professeurAUnCours(lC,nom))	return -2;	//Code Erreur : Le prof est requis pour un cours
+	lR.supprimerUnProfesseur(nom);
+	return 0;
+}
+
+int afficheurConsole::ajouterUneSalle(listeRessources &lR)
+{	string nom;
+	afficher("Nom de la salle a ajouter ");
 	cin>>nom;
 	int dejaPresent=lR.positionSalle(nom);
 	if (-1==dejaPresent)
 	{
 		int taille;
-		aC.afficher("Taille de la salle ");
+		afficher("Taille de la salle ");
 		cin>>taille;
 		lR.ajouterUneSalle(salle{nom,taille});
 		return 0;
@@ -263,20 +317,44 @@ int afficheurConsole::ajouterUneSalle(listeRessources &lR, afficheurConsole & aC
 	return -1;	//Code Erreur : Salle existe deja
 }
 
-int afficheurConsole::ajouterUneFormation(listeRessources &lR, afficheurConsole & aC)
+int afficheurConsole::supprimerUneSalle(listeRessources &lR, const listeCours & lC)
 {	string nom;
-	aC.afficher("Nom de la formation a ajouter ");
+	afficherLesSalles(lR);
+	afficher("Nom de la salle a supprimer ");
+	cin>>nom;
+	int position=lR.positionSalle(nom);
+	if (-1==position) 					return -1;	//Code Erreur : Salle n'existe pas
+	if (lR.salleAUnCours(lC,nom))	return -2;	//Code Erreur : Salle est requis pour un cours
+	lR.supprimerUneSalle(nom);
+	return 0;
+}
+
+int afficheurConsole::ajouterUneFormation(listeRessources &lR)
+{	string nom;
+	afficher("Nom de la formation a ajouter ");
 	cin>>nom;
 	int dejaPresent=lR.positionFormation(nom);
 	if (-1==dejaPresent)
 	{
 		int taille;
-		aC.afficher("Nombre d'etudiants dans la formation ");
+		afficher("Nombre d'etudiants dans la formation ");
 		cin>>taille;
 		lR.ajouterUneFormation(formation{nom,taille});
 		return 0;
 	}
 	return -1;	//Code Erreur : Formation existe deja
+}
+
+int afficheurConsole::supprimerUneFormation(listeRessources &lR, const listeCours & lC)
+{	string nom;
+	afficherLesFormations(lR);
+	afficher("Nom de la formation a supprimer ");
+	cin>>nom;
+	int position=lR.positionFormation(nom);
+	if (-1==position) 					return -1;	//Code Erreur : Formation n'existe pas
+	if (lR.formationAUnCours(lC,nom))	return -2;	//Code Erreur : Formation est requis pour un cours
+	lR.supprimerUneFormation(nom);
+	return 0;
 }
 
 //-------------------------------------------------------------------

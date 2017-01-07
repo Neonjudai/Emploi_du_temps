@@ -53,12 +53,12 @@ int listeCours::estPossible(const cours & c) const
 int listeCours::numeroDeCours(const horaire & horaire, const professeur & professeur, const salle & salle, const formation & formation) const
 {
 	int numero = -1;
-	for (int i = 0; i < nombreDeCours() && numero == -1; i++)
+	for (int i = 0; i < d_listeDesCours.size() && numero == -1; i++)
 	{
-		if (d_listeDesCours[i].horaireDuCours() == horaire && 
-			d_listeDesCours[i].professeurDuCours() == professeur && 
-			d_listeDesCours[i].salleDuCours() == salle && 
-			d_listeDesCours[i].formationDuCours() == formation)
+		if (d_listeDesCours[i].horaireDuCours() 	== horaire 		&& 
+			d_listeDesCours[i].professeurDuCours() 	== professeur	&& 
+			d_listeDesCours[i].salleDuCours() 		== salle 		&& 
+			d_listeDesCours[i].formationDuCours() 	== formation)
 		{
 			numero = i;
 		}

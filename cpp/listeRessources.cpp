@@ -64,7 +64,7 @@ int listeRessources::positionProfesseur(std::string nom) const
 bool listeRessources::professeurAUnCours(const listeCours & listeDeCours, const std::string & nomDuProfesseur)
 {
 	bool aUnCours = false;
-	for (int i = 0; i < nombreDeProfesseurs() && !aUnCours; i++)
+	for (int i = 0; i < listeDeCours.nombreDeCours() && !aUnCours; i++)
 	{
 		if (listeDeCours.coursNumero(i).professeurDuCours() == professeurNumero(positionProfesseur(nomDuProfesseur)))
 		{
@@ -131,7 +131,7 @@ int listeRessources::positionSalle(std::string nom) const
 bool listeRessources::salleAUnCours(const listeCours & listeDeCours, const std::string & nomDeLaSalle)
 {
 	bool aUnCours = false;
-	for (int i = 0; i < nombreDeSalles() && !aUnCours; i++)
+	for (int i = 0; i < listeDeCours.nombreDeCours() && !aUnCours; i++)
 	{
 		if (listeDeCours.coursNumero(i).salleDuCours() == salleNumero(positionSalle(nomDeLaSalle)))
 		{
@@ -198,7 +198,7 @@ int listeRessources::positionFormation(std::string nom) const
 bool listeRessources::formationAUnCours(const listeCours & listeDeCours, const std::string & nomDeLaFormation)
 {
 	bool aUnCours = false;
-	for (int i = 0; i < nombreDeFormations() && !aUnCours; i++)
+	for (int i = 0; i < listeDeCours.nombreDeCours() && !aUnCours; i++)
 	{
 		if (listeDeCours.coursNumero(i).formationDuCours() == formationNumero(positionFormation(nomDeLaFormation)))
 		{
