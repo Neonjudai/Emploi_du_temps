@@ -4,9 +4,9 @@ formation A 1
 
 //Professeur 'nomprofesseur'
 professeur A 
+professeur B 
 
 //Salle 'nomsalle' NbPlaces
 salle A 1
 
 //Cours Nsemaine Njour(0-6) Nheure(1-4) 'nomformation' 'nomprofesseur' 'nomsalle'
-cours 0 0 0  A A A 

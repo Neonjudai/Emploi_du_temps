@@ -114,4 +114,7 @@ void menu(afficheurConsole & aC)
 		aC.afficher("Erreur lors de l'ecriture du fichier.",1);
 		system("pause");
 	}
+	
+	aC.afficher("Fin...",1);
+	system("pause");
 }
