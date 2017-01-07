@@ -376,3 +376,99 @@ void afficheurConsole::afficherProfesseur(const professeur & p) {*d_ost<<p.nom()
 @param[in] s - un objet de type salle
  */
 void afficheurConsole::afficherSalle(const salle & s) {*d_ost<<s.nom()<<" avec "<<s.nombrePlaces()<<" places.";}
+
+
+
+
+
+
+
+void afficheurConsole::afficherParProfesseur(const professeur& professeur, const listeCours& lC, int semaine = -1)
+{
+	*d_ost << "Liste des cours du professeur " << professeur.nom();
+	if (semaine >= 0)
+		*d_ost << " pour la semaine " << semaine;
+	*d_ost << std::endl;
+	if (!lC.nombreDeCours()) *d_ost << "...Aucun cours enregistre pour cette personne" << std::endl;
+	else
+	{
+		for (int i = 0; i < T_AFFICHAGE; i++) *d_ost << "_";
+		*d_ost << endl;
+		*d_ost << "Semaine | Jour     | Horaire       | Professeur      | Formation                         | Salle                      |" << endl;
+		for (int i = 0; i<T_AFFICHAGE; i++) *d_ost << "-";
+		*d_ost << endl;
+		for (int i = 0; i<lC.nombreDeCours(); ++i)
+		{
+			if (lC.coursNumero(i).professeurDuCours() == professeur)
+			{
+				if (semaine != -1 || lC.coursNumero(i).horaireDuCours().semaine() == semaine)
+				{
+					afficherCours(lC.coursNumero(i));
+					*d_ost << std::endl;
+				}
+			}
+		}
+		for (int i = 0; i<T_AFFICHAGE; i++) *d_ost << "-";
+		*d_ost << endl;
+	}
+}
+
+void afficheurConsole::afficherParFormation(const formation& formation, const listeCours& lC, int semaine)
+{
+	*d_ost << "Liste des cours de la formation " << formation.nom();
+	if (semaine >= 0)
+		*d_ost << " pour la semaine " << semaine;
+	*d_ost << std::endl;
+	if (!lC.nombreDeCours()) *d_ost << "...Aucun cours enregistre pour cette formation" << std::endl;
+	else
+	{
+		for (int i = 0; i < T_AFFICHAGE; i++) *d_ost << "_";
+		*d_ost << endl;
+		*d_ost << "Semaine | Jour     | Horaire       | Professeur      | Formation                         | Salle                      |" << endl;
+		for (int i = 0; i<T_AFFICHAGE; i++) *d_ost << "-";
+		*d_ost << endl;
+		for (int i = 0; i<lC.nombreDeCours(); ++i)
+		{
+			if (lC.coursNumero(i).formationDuCours() == formation)
+			{
+				if (semaine != -1 || lC.coursNumero(i).horaireDuCours().semaine() == semaine)
+				{
+					afficherCours(lC.coursNumero(i));
+					*d_ost << std::endl;
+				}
+			}
+		}
+		for (int i = 0; i<T_AFFICHAGE; i++) *d_ost << "-";
+		*d_ost << endl;
+	}
+}
+
+void afficheurConsole::afficherParSalle(const salle& salle, const listeCours& lC, int semaine)
+{
+	*d_ost << "Liste des cours de la salle " << salle.nom();
+	if (semaine >= 0)
+		*d_ost << " pour la semaine " << semaine;
+	*d_ost << std::endl;
+	if (!lC.nombreDeCours()) *d_ost << "...Aucun cours enregistre pour cette salle" << std::endl;
+	else
+	{
+		for (int i = 0; i < T_AFFICHAGE; i++) *d_ost << "_";
+		*d_ost << endl;
+		*d_ost << "Semaine | Jour     | Horaire       | Professeur      | Formation                         | Salle                      |" << endl;
+		for (int i = 0; i<T_AFFICHAGE; i++) *d_ost << "-";
+		*d_ost << endl;
+		for (int i = 0; i<lC.nombreDeCours(); ++i)
+		{
+			if (lC.coursNumero(i).salleDuCours() == salle)
+			{
+				if (semaine != -1 || lC.coursNumero(i).horaireDuCours().semaine() == semaine)
+				{
+					afficherCours(lC.coursNumero(i));
+					*d_ost << std::endl;
+				}
+			}
+		}
+		for (int i = 0; i<T_AFFICHAGE; i++) *d_ost << "-";
+		*d_ost << endl;
+	}
+}

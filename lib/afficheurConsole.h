@@ -64,6 +64,13 @@ class afficheurConsole{
         
         //salle
         void afficherSalle	(const salle & s);
+
+
+
+		//A RANGER
+		void afficherParProfesseur(const professeur& professeur, const listeCours& lC, int semaine);
+		void afficherParFormation(const formation& formation, const listeCours& lC, int semaine);
+		void afficherParSalle(const salle& salle, const listeCours& lC, int semaine);
         
     private:
     	ostream *d_ost;
