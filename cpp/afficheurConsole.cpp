@@ -47,6 +47,9 @@ void afficheurConsole::afficherMenu()
 	afficher("8. Supprimer une salle",1);
 	afficher("9. Supprimer une formation",1);
 	afficher("10. Supprimer un cours",1);
+	afficher("11. Afficher les cours du professeur",1);
+	afficher("12. Afficher les cours de la salle",1);
+	afficher("13. Afficher les cours de la formation",1);
 	afficher("0. Quitter et Sauvegarder",1);
 }
 
@@ -422,7 +425,7 @@ void afficheurConsole::afficherParProfesseur(const professeur& professeur, const
 		{
 			if (lC.coursNumero(i).professeurDuCours() == professeur)
 			{
-				if (semaine != -1 || lC.coursNumero(i).horaireDuCours().semaine() == semaine)
+				if (semaine == -1 || lC.coursNumero(i).horaireDuCours().semaine() == semaine)
 				{
 					afficherCours(lC.coursNumero(i));
 					*d_ost << std::endl;
@@ -458,7 +461,7 @@ void afficheurConsole::afficherParFormation(const formation& formation, const li
 		{
 			if (lC.coursNumero(i).formationDuCours() == formation)
 			{
-				if (semaine != -1 || lC.coursNumero(i).horaireDuCours().semaine() == semaine)
+				if (semaine == -1 || lC.coursNumero(i).horaireDuCours().semaine() == semaine)
 				{
 					afficherCours(lC.coursNumero(i));
 					*d_ost << std::endl;
@@ -494,7 +497,7 @@ void afficheurConsole::afficherParSalle(const salle& salle, const listeCours& lC
 		{
 			if (lC.coursNumero(i).salleDuCours() == salle)
 			{
-				if (semaine != -1 || lC.coursNumero(i).horaireDuCours().semaine() == semaine)
+				if (semaine == -1 || lC.coursNumero(i).horaireDuCours().semaine() == semaine)
 				{
 					afficherCours(lC.coursNumero(i));
 					*d_ost << std::endl;
@@ -504,6 +507,54 @@ void afficheurConsole::afficherParSalle(const salle& salle, const listeCours& lC
 		for (int i = 0; i<T_AFFICHAGE; i++) *d_ost << "-";
 		*d_ost << endl;
 	}
+}
+
+int afficheurConsole::afficherCoursDuProf(const listeRessources &lR,const listeCours& lC)
+{	string nom;
+	afficherLesProfesseurs(lR);
+	afficher("Nom du professeur dont on veut afficher l'emploi du temps ");
+	cin>>nom;
+	int position=lR.positionProfesseur(nom);
+	if (-1==position) 					return -1;	//Code Erreur : Prof n'existe pas
+	if (lC.nombreDeCours()<1)			return -2;	//Code Erreur : Pas de cours
+	afficher("Semaine a afficher (-1 pour toutes) ");
+	int semaine;
+	cin>>semaine;
+	afficherParProfesseur(lR.professeurNumero(position),lC,semaine);
+	system("pause");
+	return 0;
+}
+
+int afficheurConsole::afficherCoursDeSalle(const listeRessources &lR,const listeCours& lC)
+{	string nom;
+	afficherLesSalles(lR);
+	afficher("Nom de la salle dont on veut afficher l'emploi du temps ");
+	cin>>nom;
+	int position=lR.positionSalle(nom);
+	if (-1==position) 					return -1;	//Code Erreur : Salle n'existe pas
+	if (lC.nombreDeCours()<1)			return -2;	//Code Erreur : Pas de cours
+	afficher("Semaine a afficher (-1 pour toutes) ");
+	int semaine;
+	cin>>semaine;
+	afficherParSalle(lR.salleNumero(position),lC,semaine);
+	system("pause");
+	return 0;
+}
+
+int afficheurConsole::afficherCoursDeFormation(const listeRessources &lR,const listeCours& lC)
+{	string nom;
+	afficherLesFormations(lR);
+	afficher("Nom de la formation dont on veut afficher l'emploi du temps ");
+	cin>>nom;
+	int position=lR.positionFormation(nom);
+	if (-1==position) 					return -1;	//Code Erreur : Formation n'existe pas
+	if (lC.nombreDeCours()<1)			return -2;	//Code Erreur : Pas de cours
+	afficher("Semaine a afficher (-1 pour toutes) ");
+	int semaine;
+	cin>>semaine;
+	afficherParFormation(lR.formationNumero(position),lC,semaine);
+	system("pause");
+	return 0;
 }
 
 /**

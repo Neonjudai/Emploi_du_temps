@@ -36,7 +36,7 @@ cours listeCours::coursNumero(int i) const {return d_listeDesCours[i];}
 
 /**
   @brief Verifie si le cours peut etre ajoute a d_listeDesCours
-  @return true - le cours peut etre ajoute
+  @return 0 - le cours peut etre ajoute
 */
 int listeCours::estPossible(const cours & c) const
 {	int i=0;

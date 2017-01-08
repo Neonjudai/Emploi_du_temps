@@ -69,6 +69,10 @@ class afficheurConsole{
 		void afficherParProfesseur(const professeur& professeur, const listeCours& lC, int semaine);
 		void afficherParFormation(const formation& formation, const listeCours& lC, int semaine);
 		void afficherParSalle(const salle& salle, const listeCours& lC, int semaine);
+		
+		int afficherCoursDuProf(const listeRessources &lR,const listeCours& lC);
+		int afficherCoursDeSalle(const listeRessources &lR,const listeCours& lC);
+		int afficherCoursDeFormation(const listeRessources &lR,const listeCours& lC);
 
 		//conditions multiples
 		void afficherParRessources(const std::vector<ressource> &r, const listeCours &lC);
