@@ -15,6 +15,7 @@
 #include "listeRessources.h"
 #include "professeur.h"
 #include "salle.h"
+#include "gestionFichier.h"
 
 using std::ostream;
 using std::endl;
@@ -25,6 +26,7 @@ class afficheurConsole{
         afficheurConsole()=delete;
         afficheurConsole(ostream & ost);
         ~afficheurConsole();
+        void menu();
         
         void afficher(string s, int sautLigne = 0);
         void afficherMenu();

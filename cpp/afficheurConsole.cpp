@@ -53,6 +53,112 @@ void afficheurConsole::afficherMenu()
 	afficher("0. Quitter et Sauvegarder",1);
 }
 
+void afficheurConsole::menu()
+{
+	int codeErreur;
+	listeCours lC;
+	listeRessources lR;
+	gestionFichier gF("Donnees/data.txt");
+	
+	if(!gF.lectureDesDonnees(lC, lR))
+	{
+		afficher("Erreur lors de la lecture du fichier.",1);
+		system("pause");
+	}
+	
+	int choix;
+	do
+	{
+		codeErreur=0;
+		afficherMenu();
+		cin>>choix;
+		switch (choix)
+		{
+			case 1:
+				afficherLesRessources(lR);
+				system("pause");
+				break;
+			case 2:
+				afficherLesCours(lC);
+				system("pause");
+				break;
+			case 3:
+				codeErreur=ajouterUnProf(lR);
+				if (codeErreur==-1) afficher("Erreur : Ce nom de professeur est deja utilise.",1);
+				break;
+			case 4:
+				codeErreur=ajouterUneSalle(lR);
+				if (codeErreur==-1) afficher("Erreur : Ce nom de salle est deja utilise.",1);
+				break;
+			case 5:
+				codeErreur=ajouterUneFormation(lR);
+				if (codeErreur==-1) afficher("Erreur : Ce nom de formation est deja utilise.",1);
+				break;
+			case 6:
+				codeErreur=ajouterUnCours(lC,lR);
+				if (codeErreur==1) 			afficher("Erreur : Vous devez d'abord ajouter un professeur.",1);
+				else if (codeErreur==2) 	afficher("Erreur : Vous devez d'abord ajouter une salle.",1);
+				else if (codeErreur==3) 	afficher("Erreur : Vous devez d'abord ajouter une formation.",1);
+				else if (codeErreur==-1) 	afficher("Erreur : Ce professeur n'existe pas.",1);
+				else if (codeErreur==-2) 	afficher("Erreur : Cette salle n'existe pas.",1);
+				else if (codeErreur==-3) 	afficher("Erreur : Cette formation n'existe pas.",1);
+				else if (codeErreur==-4) 	afficher("Erreur : Pas assez de place pour les etudiants.",1);
+				else if (codeErreur==-5) 	afficher("Erreur : Professeur deja occupe.",1);
+				else if (codeErreur==-6) 	afficher("Erreur : Salle deja occupe.",1);
+				else if (codeErreur==-7) 	afficher("Erreur : Formation deja occupe.",1);
+				break;
+			case 7:
+				codeErreur=supprimerUnProf(lR,lC);
+				if (codeErreur==-1) afficher("Erreur : Ce professeur n'existe pas.",1);
+				if (codeErreur==-2) afficher("Erreur : Ce professeur est requis pour un cours.",1);
+				break;
+			case 8:
+				codeErreur=supprimerUneSalle(lR,lC);
+				if (codeErreur==-1) afficher("Erreur : Cette salle n'existe pas.",1);
+				if (codeErreur==-2) afficher("Erreur : Cette salle est requise pour un cours.",1);
+				break;
+			case 9:
+				codeErreur=supprimerUneFormation(lR,lC);
+				if (codeErreur==-1) afficher("Erreur : Cette formation n'existe pas.",1);
+				if (codeErreur==-2) afficher("Erreur : Cette formation est requise pour un cours.",1);
+				break;
+			case 10:
+				codeErreur=supprimerUnCours(lC,lR);
+				if (codeErreur==-1) 		afficher("Erreur : Ce professeur n'existe pas.",1);
+				else if (codeErreur==-2) 	afficher("Erreur : Cette salle n'existe pas.",1);
+				else if (codeErreur==-3) 	afficher("Erreur : Cette formation n'existe pas.",1);
+				else if (codeErreur==1) 	afficher("Erreur : Il n'y a aucun cours a supprimer.",1);
+				else if (codeErreur==2) 	afficher("Erreur : Ce cours n'existe pas.",1);
+				break;
+			case 11:
+				codeErreur=afficherCoursDuProf(lR,lC);
+				if (codeErreur==-1) 		afficher("Erreur : Ce professeur n'existe pas.",1);
+				if (codeErreur==-2) 		afficher("Erreur : Aucun cours enregistre.",1);
+				break;
+			case 12:
+				codeErreur=afficherCoursDeSalle(lR,lC);
+				if (codeErreur==-1) 		afficher("Erreur : Cette salle n'existe pas.",1);
+				if (codeErreur==-2) 		afficher("Erreur : Aucun cours enregistre.",1);
+				break;
+			case 13:
+				codeErreur=afficherCoursDeFormation(lR,lC);
+				if (codeErreur==-1) 		afficher("Erreur : Cette formation n'existe pas.",1);
+				if (codeErreur==-2) 		afficher("Erreur : Aucun cours enregistre.",1);
+				break;
+		}
+	if (codeErreur != 0) system("pause");
+	}while (choix!=0);
+	
+	if(!gF.ecritureDesDonnees(lC, lR))
+	{
+		afficher("Erreur lors de l'ecriture du fichier.",1);
+		system("pause");
+	}
+	
+	afficher("Fin...",1);
+	system("pause");
+}
+
 //-------------------------------------------------------------------
 //--------------------Cours------------------------------------------
 //-------------------------------------------------------------------
