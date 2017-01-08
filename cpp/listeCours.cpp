@@ -40,7 +40,7 @@ cours listeCours::coursNumero(int i) const {return d_listeDesCours[i];}
 */
 int listeCours::estPossible(const cours & c) const
 {	int i=0;
-	while (i<d_listeDesCours.size() && d_listeDesCours[i].horaireDuCours()<=c.horaireDuCours()) i++;
+	while (i<d_listeDesCours.size() && d_listeDesCours[i].horaireDuCours()< c.horaireDuCours()) i++;
 	while (i<d_listeDesCours.size() && d_listeDesCours[i].horaireDuCours()==c.horaireDuCours())
 	{
 		if (d_listeDesCours[i].professeurDuCours() 	== c.professeurDuCours()) 	return -5;
