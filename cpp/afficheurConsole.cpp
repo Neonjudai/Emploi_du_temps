@@ -531,7 +531,7 @@ void afficheurConsole::afficherParRessources(const std::vector<ressource> &r, co
 			conditions = true;
 			for (int j = 0; j < r.size() && conditions; j++)
 			{
-				if (r[j].nom() != lC.coursNumero(i).formationDuCours().nom() && r[j].nom() != lC.coursNumero(i).professeurDuCours().nom() && r[j].nom() != lC.coursNumero(i).salleDuCours().nom())
+				if (r[j] != lC.coursNumero(i).formationDuCours() && r[j] != lC.coursNumero(i).professeurDuCours() && r[j] != lC.coursNumero(i).salleDuCours())
 					conditions = false;
 			}
 			if (conditions)

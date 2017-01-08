@@ -16,7 +16,7 @@ class ressource{
 		ressource(string nom);
 		ressource(const ressource & r) =default;
 		bool operator==(const ressource & r) const;
-		bool operator==(const ressource & r) const;
+		bool operator!=(const ressource & r) const;
 		
 		string nom() const;
 		void changernom (const string nom);
