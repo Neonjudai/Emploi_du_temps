@@ -50,6 +50,14 @@ int listeCours::estPossible(const cours & c) const
 	}return 0;
 }
 
+/**
+	@brief Determines dans la liste de cours la position du cours dans cette liste, renvoyant -1 s'il n'a pas ete trouve
+	@param[in] horaire 		- objet de type horaire 
+	@param[in] professeur 	- objet de type professeur
+	@param[in] salle		- objet de type salle
+	@param[in] formation	- objet de type formation
+	@return numero			- entier retournant lindice du cours dans la liste de cours
+*/
 int listeCours::numeroDeCours(const horaire & horaire, const professeur & professeur, const salle & salle, const formation & formation) const
 {
 	int numero = -1;
@@ -67,6 +75,10 @@ int listeCours::numeroDeCours(const horaire & horaire, const professeur & profes
 	return numero;
 }
 
+/**
+	@brief supprimes un cours dans la liste de cours
+	@param[in] i - lindice du cours dans la liste de cours
+*/
 void listeCours::supprimerUnCours(int i)
   {
 	  d_listeDesCours.erase(d_listeDesCours.begin() + i);

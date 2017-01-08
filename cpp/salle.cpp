@@ -1,8 +1,8 @@
 /**
- *\file salle.cpp
- *\brief Definition des methodes de la classe salle
- *\author Olivier Ettlin
- *\version 1.0
+ * @file salle.cpp
+ * @brief Definition des methodes de la classe salle
+ * @author Olivier Ettlin
+ * @version 1.0
  */
 
 #include "../lib/salle.h"
@@ -12,7 +12,8 @@ using std::string;
 
 /**
 @brief Constructeur de l'objet salle
-@param[in] nomSalle - une chaine de caracteres representant le nom de lasalle
+@param[in] nomSalle - une chaine de caracteres representant le nom de la salle
+@param[in] taille - capacite de la salle, nombre detudiants quelle peut acceuillir 
  */
 salle::salle (string nomSalle, int taille): ressource{nomSalle}, d_nombrePlaces{taille} {}
 

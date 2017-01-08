@@ -48,7 +48,6 @@ class listeRessources{
 		void supprimerUneFormation(const std::string & nomDeLaFormation);
 		
 	private:
-		void trier();									//A FAIRE
 		std::vector <professeur> d_listeDesProfesseurs;
 		std::vector <salle> d_listeDesSalles;
 		std::vector <formation> d_listeDesFormations;

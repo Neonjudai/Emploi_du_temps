@@ -61,6 +61,12 @@ int listeRessources::positionProfesseur(std::string nom) const
 	return i;
 }
 
+/**
+	@brief verifies si le professeur a un cours prevu
+	@param[in] listeDeCours 	- objet de type listeCours
+	@param[in] nomDuProfesseur 	- chaine de caractere correspondant au nom du professeur
+	@return aUnCours			- retournes vrai si le professeur a un cours
+*/
 bool listeRessources::professeurAUnCours(const listeCours & listeDeCours, const std::string & nomDuProfesseur)
 {
 	bool aUnCours = false;
@@ -74,6 +80,10 @@ bool listeRessources::professeurAUnCours(const listeCours & listeDeCours, const 
 	return aUnCours;
 }
 
+/**
+	@brief supprimes un professeur
+	@param[in] nomDuProfesseur - chaine de caractere representant le nom du professeur a supprimer
+*/
 void listeRessources::supprimerUnProfesseur(const std::string & nomDuProfesseur)
 {
 	d_listeDesProfesseurs.erase(d_listeDesProfesseurs.begin() + positionProfesseur(nomDuProfesseur));
@@ -127,7 +137,12 @@ int listeRessources::positionSalle(std::string nom) const
 	return i;
 }
 
-
+/**
+	@brief verifies si un cours a lieu dans la salle
+	@param[in] listeDeCours 	- objet de type listeCours
+	@param[in] nomDeLaSalle 	- chaine de caractere correspondant au nom de la salle
+	@return aUnCours			- retournes vrai si un cours a lieu dans la salle
+*/
 bool listeRessources::salleAUnCours(const listeCours & listeDeCours, const std::string & nomDeLaSalle)
 {
 	bool aUnCours = false;
@@ -141,6 +156,10 @@ bool listeRessources::salleAUnCours(const listeCours & listeDeCours, const std::
 	return aUnCours;
 }
 
+/**
+	@brief supprimes une salle
+	@param[in] nomDeLaSalle - chaine de caractere representant le nom de la salle a supprimer
+*/
 void listeRessources::supprimerUneSalle(const std::string & nomDeLaSalle)
 {
 	d_listeDesSalles.erase(d_listeDesSalles.begin() + positionSalle(nomDeLaSalle));
@@ -195,6 +214,12 @@ int listeRessources::positionFormation(std::string nom) const
 	return i;
 }
 
+/**
+	@brief verifies sila formation a un cours
+	@param[in] listeDeCours 	- objet de type listeCours
+	@param[in] nomDeLaFormation - chaine de caractere correspondant au nom de la formation
+	@return aUnCours			- retournes vrai si la formation a un cours
+*/
 bool listeRessources::formationAUnCours(const listeCours & listeDeCours, const std::string & nomDeLaFormation)
 {
 	bool aUnCours = false;
@@ -208,6 +233,10 @@ bool listeRessources::formationAUnCours(const listeCours & listeDeCours, const s
 	return aUnCours;
 }
 
+/**
+	@brief supprimes la formation
+	@param[in] nomDeLaFormation - chaine de caractere representant le nom de la formation a supprimer
+*/
 void listeRessources::supprimerUneFormation(const std::string & nomDeLaFormation)
 {
 	d_listeDesFormations.erase(d_listeDesFormations.begin() + positionFormation(nomDeLaFormation));
