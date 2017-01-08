@@ -41,3 +41,4 @@ TEST_CASE("Modification dans listeCours", "[listeCours]")
 	}
 
 }
+/** Tests sur l'ajout et suppression de cours, tout en verifiant s'ils sont possible */
