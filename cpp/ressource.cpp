@@ -14,6 +14,7 @@
 ressource::ressource(const string nom):d_nom{nom} {}
 
 bool ressource::operator==(const ressource & r) const {return d_nom==r.nom();}
+bool ressource::operator!=(const ressource & r) const {return d_nom!=r.nom();}
 
 /**
   @brief Renvoie le nom de la ressource
