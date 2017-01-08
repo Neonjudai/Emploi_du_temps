@@ -1,9 +1,15 @@
 #include "../lib/gestionFichier.h"
 
+/**
+@brief Constructeur de l'objet gestionFichier
+@param[in] nomFichier - nom du fichier en string
+*/
 gestionFichier::gestionFichier(const std::string &nomFichier) : d_nomFichier{nomFichier}
 {}
 
-
+/**
+@brief Enleve tous les caractères du fichier d_nomFichier
+*/
 void gestionFichier::viderLeFichier()
 {
 	ofstream ecriture;
@@ -11,6 +17,15 @@ void gestionFichier::viderLeFichier()
 	ecriture.close();
 }
 
+//-------------------------------------------------------------------
+//--------------------Lecture----------------------------------------
+//-------------------------------------------------------------------
+
+/**
+@brief Lit le fichier d_nomFichier pour récupérer la liste de Cours, Formation, Salle et Professeur dans LC et LR
+@param[out] LC - objet de type listeCours 
+@param[out] LR - objet de type listeRessources
+*/
 bool gestionFichier::lectureDesDonnees(listeCours &LC, listeRessources &LR)
 {
 	bool fonctionne;
@@ -20,12 +35,17 @@ bool gestionFichier::lectureDesDonnees(listeCours &LC, listeRessources &LR)
 	lecture.close();
 	lecture.open(d_nomFichier.c_str());
 	if (lecture.good())
-		fonctionne = lectureDesCours(LC,LR, lecture);
+		fonctionne = lectureDesCours(LC, LR, lecture);
 	if (lecture.is_open())
 		lecture.close();
 	return fonctionne;
 }
 
+/**
+@brief Lit le fichier d_nomFichier pour récupérer la liste des ressources
+@param[out] LR - objet de type listeRessources
+@param[in] ifstream - flux de lecture ifstream
+*/
 bool gestionFichier::lectureDesRessources(listeRessources &LR, ifstream &lecture)
 {
 	char curseur;
@@ -56,6 +76,12 @@ bool gestionFichier::lectureDesRessources(listeRessources &LR, ifstream &lecture
 	return true;
 }
 
+/**
+@brief Lit le fichier d_nomFichier pour récupérer la liste des ressources
+@param[out] LC - objet de type listeCours
+@param[out] LR - objet de type listeRessources
+@param[in] ifstream - flux de lecture ifstream 
+*/
 bool gestionFichier::lectureDesCours(listeCours &LC, listeRessources &LR, ifstream &lecture)
 {
 	string lectureMot = "", nomformation, nomprofesseur, nomsalle;
@@ -65,26 +91,56 @@ bool gestionFichier::lectureDesCours(listeCours &LC, listeRessources &LR, ifstre
 		lecture >> lectureMot;
 		while (lecture.good() && !(lecture.eof()))
 		{
-			
+
 			if (lectureMot == "cours")
 			{
 				lecture >> semaine >> jour >> heure >> nomformation >> nomprofesseur >> nomsalle;
-				LC.ajouterUnCours({ {semaine,jour,heure},
-									LR.professeurNumeroP(LR.positionProfesseur(nomprofesseur)),
-									LR.salleNumeroP(LR.positionSalle(nomsalle)),
-									LR.formationNumeroP(LR.positionFormation(nomformation))
-								});
+				LC.ajouterUnCours({ { semaine,jour,heure },
+					LR.professeurNumeroP(LR.positionProfesseur(nomprofesseur)),
+					LR.salleNumeroP(LR.positionSalle(nomsalle)),
+					LR.formationNumeroP(LR.positionFormation(nomformation))
+				});
 			}
 			lecture >> lectureMot;
 		}
 	}
-		
+
 	else
 		return false;
 	return true;
 }
 
+//-------------------------------------------------------------------
+//--------------------Ecriture---------------------------------------
+//-------------------------------------------------------------------
 
+/**
+@brief Ecrit dans le fichier d_nomFichier les Cours, Formation, Salle et Professeur
+@param[in] LC - objet de type listeCours
+@param[in] LR - objet de type listeRessources
+*/
+bool gestionFichier::ecritureDesDonnees(const listeCours & LC, const  listeRessources & LR)
+{
+	bool fonctionne;
+	viderLeFichier();
+	ofstream ecriture(d_nomFichier.c_str());
+	if (ecriture.good())
+	{
+		ecriture << "// INFO : Stockage des données" << endl;
+		fonctionne = ecritureDesRessources(LR, ecriture);
+		ecriture << endl;
+		fonctionne = fonctionne && ecritureDesCours(LC, ecriture);
+	}
+	if (ecriture.is_open())
+		ecriture.close();
+	return fonctionne;
+}
+
+/**
+@brief Ecrit dans le fichier d_nomFichier les Cours, Formation, Salle et Professeur
+@param[in] LC - objet de type listeCours
+@param[in] ecriture - flux d'écriture ofstream
+*/
 bool gestionFichier::ecritureDesCours(const listeCours & LC, ofstream &ecriture)
 {
 	ecriture << "//Cours Nsemaine Njour(0-6) Nheure(1-4) 'nomformation' 'nomprofesseur' 'nomsalle'" << endl;
@@ -96,6 +152,11 @@ bool gestionFichier::ecritureDesCours(const listeCours & LC, ofstream &ecriture)
 	return ecriture.good();
 }
 
+/**
+@brief Ecrit dans le fichier d_nomFichier les Cours, Formation, Salle et Professeur
+@param[in] LR - objet de type listeRessources
+@param[in] ecriture - flux d'écriture ofstream
+*/
 bool gestionFichier::ecritureDesRessources(const listeRessources & LR, ofstream &ecriture)
 {
 	ecriture << "//Formation 'nomformation' NbEleve" << endl;
@@ -114,21 +175,4 @@ bool gestionFichier::ecritureDesRessources(const listeRessources & LR, ofstream 
 		ecriture << "salle " << LR.salleNumero(SalleN).nom() << " " << LR.salleNumero(SalleN).nombrePlaces() << endl;
 	}
 	return ecriture.good();
-}
-
-bool gestionFichier::ecritureDesDonnees(const listeCours & LC, const  listeRessources & LR)
-{
-	bool fonctionne;
-	viderLeFichier();
-	ofstream ecriture(d_nomFichier.c_str());
-	if (ecriture.good())
-	{
-		ecriture << "// INFO : Stockage des données" << endl;
-		fonctionne = ecritureDesRessources(LR, ecriture);
-		ecriture << endl;
-		fonctionne = fonctionne && ecritureDesCours(LC, ecriture);
-	}
-	if (ecriture.is_open())
-		ecriture.close();
-	return fonctionne;
 }

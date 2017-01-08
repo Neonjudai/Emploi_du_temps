@@ -61,13 +61,13 @@ void afficheurConsole::afficherMenu()
 void afficheurConsole::afficherCours(const cours & c)
 {   afficherHoraire(c.horaireDuCours());
     afficherProfesseur(c.professeurDuCours());
-    for (int i=0;i<16-c.professeurDuCours().nom().length();i++) *d_ost<<' ';
+    for (unsigned int i=0;i<16-c.professeurDuCours().nom().length();i++) *d_ost<<' ';
     *d_ost<<"| ";
     afficherFormation(c.formationDuCours());
-    for (int i=0;i<15-c.formationDuCours().nom().length();i++) *d_ost<<' ';
+    for (unsigned int i=0;i<15-c.formationDuCours().nom().length();i++) *d_ost<<' ';
     *d_ost<<"| ";
     afficherSalle(c.salleDuCours());
-    for (int i=0;i<11-c.salleDuCours().nom().length();i++) *d_ost<<' ';
+    for (unsigned int i=0;i<11-c.salleDuCours().nom().length();i++) *d_ost<<' ';
     *d_ost<<"| ";
 }
 
@@ -131,6 +131,11 @@ void afficheurConsole::afficherHoraire(const horaire & h)
 //-------------------------------------------------------------------
 //--------------------listeCours-------------------------------------
 //-------------------------------------------------------------------
+
+/**
+@brief Renvoie dans ost les cours de la liste de ressources
+@param[in] lC - un objet de type listeCours
+*/
 void afficheurConsole::afficherLesCours(const listeCours & lC)
 {	*d_ost<<"Liste des cours :"<<std::endl;
 	if (!lC.nombreDeCours()) *d_ost<<"...Aucun cours enregistre"<<std::endl;
@@ -237,12 +242,20 @@ int afficheurConsole::supprimerUnCours(listeCours &lC,listeRessources &lR)
 //--------------------listeRessources--------------------------------
 //-------------------------------------------------------------------
 
+/**
+@brief Affiches les professeurs, les salles et les formations liés à la liste de ressources
+@param[in] lR - un objet de type listeRessources
+*/
 void afficheurConsole::afficherLesRessources(const listeRessources & lR)
 {	afficherLesProfesseurs(lR);
 	afficherLesSalles(lR);
 	afficherLesFormations(lR);
 }
 
+/**
+@brief Renvoie dans ost les professeurs de la liste de ressources
+@param[in] lR - un objet de type listeRessources
+*/
 void afficheurConsole::afficherLesProfesseurs(const listeRessources & lR)
 {	*d_ost<<"Liste des professeurs :"<<std::endl;
 	if (!lR.nombreDeProfesseurs()) *d_ost<<"...Aucun professeur enregistre"<<std::endl;
@@ -254,6 +267,10 @@ void afficheurConsole::afficherLesProfesseurs(const listeRessources & lR)
 	}
 }
 
+/**
+@brief Renvoie dans ost les salles de la liste de ressources
+@param[in] lR - un objet de type listeRessources
+*/
 void afficheurConsole::afficherLesSalles(const listeRessources & lR)
 {	*d_ost<<"Liste des salles :"<<std::endl;
 	if (!lR.nombreDeSalles()) *d_ost<<"...Aucune salle enregistree"<<std::endl;
@@ -265,6 +282,10 @@ void afficheurConsole::afficherLesSalles(const listeRessources & lR)
 	}
 }
 
+/**
+@brief Renvoie dans ost les formations de la liste de ressources
+@param[in] lR - un objet de type listeRessources
+*/
 void afficheurConsole::afficherLesFormations(const listeRessources & lR)
 {	*d_ost<<"Liste des formations :"<<std::endl;
 	if (!lR.nombreDeFormations()) *d_ost<<"...Aucune formation enregistree"<<std::endl;
@@ -377,12 +398,12 @@ void afficheurConsole::afficherProfesseur(const professeur & p) {*d_ost<<p.nom()
  */
 void afficheurConsole::afficherSalle(const salle & s) {*d_ost<<s.nom()<<" avec "<<s.nombrePlaces()<<" places.";}
 
-
-
-
-
-
-
+/**
+@brief Renvoie dans ost les cours concernant le professeur
+@param[in] professeur - un objet de type professeur
+@param[in] lC - un objet de type listeCours
+@param[in] semaine - un objet de type int
+*/
 void afficheurConsole::afficherParProfesseur(const professeur& professeur, const listeCours& lC, int semaine = -1)
 {
 	*d_ost << "Liste des cours du professeur " << professeur.nom();
@@ -413,6 +434,12 @@ void afficheurConsole::afficherParProfesseur(const professeur& professeur, const
 	}
 }
 
+/**
+@brief Renvoie dans ost les cours concernant la formation
+@param[in] formation - un objet de type formation
+@param[in] lC - un objet de type listeCours
+@param[in] semaine - un objet de type int
+*/
 void afficheurConsole::afficherParFormation(const formation& formation, const listeCours& lC, int semaine)
 {
 	*d_ost << "Liste des cours de la formation " << formation.nom();
@@ -443,6 +470,12 @@ void afficheurConsole::afficherParFormation(const formation& formation, const li
 	}
 }
 
+/**
+@brief Renvoie dans ost les cours concernant la salle
+@param[in] salle - un objet de type salle
+@param[in] lC - un objet de type listeCours
+@param[in] semaine - un objet de type int
+*/
 void afficheurConsole::afficherParSalle(const salle& salle, const listeCours& lC, int semaine)
 {
 	*d_ost << "Liste des cours de la salle " << salle.nom();
@@ -472,3 +505,5 @@ void afficheurConsole::afficherParSalle(const salle& salle, const listeCours& lC
 		*d_ost << endl;
 	}
 }
+
+

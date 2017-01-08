@@ -12,16 +12,19 @@ class gestionFichier
 public:
 	gestionFichier(const string &nomFichier);
 
-	void viderLeFichier();
 	bool lectureDesDonnees(listeCours &LC, listeRessources &LR);
 	bool ecritureDesDonnees(const listeCours &LC,const listeRessources &LR);
 
 private:
 	string d_nomFichier;
 
+	void viderLeFichier();
+
+	//Lecture
 	bool lectureDesCours		(listeCours &LC, listeRessources &LR, ifstream &lecture);
 	bool lectureDesRessources	(listeRessources &LR, ifstream &lecture);
 
+	//Ecriture
 	bool ecritureDesCours		(const listeCours & LC, ofstream &ecriture);
 	bool ecritureDesRessources	(const listeRessources & LR, ofstream &ecriture);
 };
