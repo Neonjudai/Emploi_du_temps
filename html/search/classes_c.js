@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['registrarfortagaliases',['RegistrarForTagAliases',['../struct_catch_1_1_registrar_for_tag_aliases.html',1,'Catch']]],
-  ['ressource',['ressource',['../classressource.html',1,'']]],
-  ['resultbuilder',['ResultBuilder',['../class_catch_1_1_result_builder.html',1,'Catch']]],
-  ['resultdisposition',['ResultDisposition',['../struct_catch_1_1_result_disposition.html',1,'Catch']]],
-  ['resultwas',['ResultWas',['../struct_catch_1_1_result_was.html',1,'Catch']]]
+  ['pluralise',['pluralise',['../struct_catch_1_1pluralise.html',1,'Catch']]],
+  ['professeur',['professeur',['../classprofesseur.html',1,'']]],
+  ['ptr',['Ptr',['../class_catch_1_1_ptr.html',1,'Catch']]],
+  ['ptr_3c_20catch_3a_3aitestcase_20_3e',['Ptr&lt; Catch::ITestCase &gt;',['../class_catch_1_1_ptr.html',1,'Catch']]],
+  ['ptr_3c_20catch_3a_3amatchers_3a_3aimpl_3a_3amatcher_3c_20expressiont_20_3e_20_3e',['Ptr&lt; Catch::Matchers::Impl::Matcher&lt; ExpressionT &gt; &gt;',['../class_catch_1_1_ptr.html',1,'Catch']]]
 ];

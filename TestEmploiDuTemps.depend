@@ -198,16 +198,15 @@
 	<string>
 	"ressource.h"
 
-1483779369 source:c:\users\olivier\documents\uha\l3\v2\qualité de programmation\emploi_du_temps\emploi_du_temps\cpp\afficheurconsole.cpp
+1483893051 source:c:\users\olivier\documents\uha\l3\v2\qualité de programmation\emploi_du_temps\emploi_du_temps\cpp\afficheurconsole.cpp
 	"../lib/afficheurConsole.h"
 	<cstdlib>
 
-1483778787 c:\users\olivier\documents\uha\l3\v2\qualité de programmation\emploi_du_temps\emploi_du_temps\lib\afficheurconsole.h
+1483893052 c:\users\olivier\documents\uha\l3\v2\qualité de programmation\emploi_du_temps\emploi_du_temps\lib\afficheurconsole.h
 	"cours.h"
 	"formation.h"
 	"horaire.h"
 	"listeCours.h"
-	"listeDHoraire.h"
 	"listeRessources.h"
 	"professeur.h"
 	"salle.h"
@@ -229,14 +228,14 @@
 1483778787 c:\users\olivier\documents\uha\l3\v2\qualité de programmation\emploi_du_temps\emploi_du_temps\lib\ressource.h
 	<iostream>
 
-1483778787 c:\users\olivier\documents\uha\l3\v2\qualité de programmation\emploi_du_temps\emploi_du_temps\lib\salle.h
+1483902424 c:\users\olivier\documents\uha\l3\v2\qualité de programmation\emploi_du_temps\emploi_du_temps\lib\salle.h
 	<string>
 	"ressource.h"
 
 1483778787 c:\users\olivier\documents\uha\l3\v2\qualité de programmation\emploi_du_temps\emploi_du_temps\lib\formation.h
 	"ressource.h"
 
-1483778787 c:\users\olivier\documents\uha\l3\v2\qualité de programmation\emploi_du_temps\emploi_du_temps\lib\listecours.h
+1483893052 c:\users\olivier\documents\uha\l3\v2\qualité de programmation\emploi_du_temps\emploi_du_temps\lib\listecours.h
 	<vector>
 	<iostream>
 	"cours.h"
@@ -245,32 +244,34 @@
 	<vector>
 	"horaire.h"
 
-1483778787 c:\users\olivier\documents\uha\l3\v2\qualité de programmation\emploi_du_temps\emploi_du_temps\lib\listeressources.h
+1483893052 c:\users\olivier\documents\uha\l3\v2\qualité de programmation\emploi_du_temps\emploi_du_temps\lib\listeressources.h
 	<vector>
 	<iostream>
 	"professeur.h"
 	"salle.h"
 	"formation.h"
+	"listeCours.h"
+	"cours.h"
 
-1483778784 source:c:\users\olivier\documents\uha\l3\v2\qualité de programmation\emploi_du_temps\emploi_du_temps\cpp\cours.cpp
+1483780977 source:c:\users\olivier\documents\uha\l3\v2\qualité de programmation\emploi_du_temps\emploi_du_temps\cpp\cours.cpp
 	"../lib/cours.h"
 
-1483778784 source:c:\users\olivier\documents\uha\l3\v2\qualité de programmation\emploi_du_temps\emploi_du_temps\cpp\formation.cpp
+1483893051 source:c:\users\olivier\documents\uha\l3\v2\qualité de programmation\emploi_du_temps\emploi_du_temps\cpp\formation.cpp
 	"../lib/formation.h"
 	"../lib/afficheurConsole.h"
 
-1483778784 source:c:\users\olivier\documents\uha\l3\v2\qualité de programmation\emploi_du_temps\emploi_du_temps\cpp\horaire.cpp
+1483893038 source:c:\users\olivier\documents\uha\l3\v2\qualité de programmation\emploi_du_temps\emploi_du_temps\cpp\horaire.cpp
 	"../lib/horaire.h"
 	"../lib/afficheurConsole.h"
 
-1483778784 source:c:\users\olivier\documents\uha\l3\v2\qualité de programmation\emploi_du_temps\emploi_du_temps\cpp\listecours.cpp
+1483893051 source:c:\users\olivier\documents\uha\l3\v2\qualité de programmation\emploi_du_temps\emploi_du_temps\cpp\listecours.cpp
 	"../lib/listeCours.h"
 	<cstdlib>
 
 1483778784 source:c:\users\olivier\documents\uha\l3\v2\qualité de programmation\emploi_du_temps\emploi_du_temps\cpp\listedhoraire.cpp
 	"../lib/listeDHoraire.h"
 
-1483778784 source:c:\users\olivier\documents\uha\l3\v2\qualité de programmation\emploi_du_temps\emploi_du_temps\cpp\listeressources.cpp
+1483893051 source:c:\users\olivier\documents\uha\l3\v2\qualité de programmation\emploi_du_temps\emploi_du_temps\cpp\listeressources.cpp
 	"../lib/listeRessources.h"
 	<cstdlib>
 
@@ -281,11 +282,11 @@
 1483778784 source:c:\users\olivier\documents\uha\l3\v2\qualité de programmation\emploi_du_temps\emploi_du_temps\cpp\ressource.cpp
 	"../lib/ressource.h"
 
-1483778784 source:c:\users\olivier\documents\uha\l3\v2\qualité de programmation\emploi_du_temps\emploi_du_temps\cpp\salle.cpp
+1483903008 source:c:\users\olivier\documents\uha\l3\v2\qualité de programmation\emploi_du_temps\emploi_du_temps\cpp\salle.cpp
 	"../lib/salle.h"
 	"../lib/afficheurConsole.h"
 
-1483778787 source:c:\users\olivier\documents\uha\l3\v2\qualité de programmation\emploi_du_temps\emploi_du_temps\test\testhoraire.cpp
+1483896472 source:c:\users\olivier\documents\uha\l3\v2\qualité de programmation\emploi_du_temps\emploi_du_temps\test\testhoraire.cpp
 	"../lib/catch.hpp"
 	"../lib/horaire.h"
 
@@ -404,6 +405,34 @@
 	<iomanip>
 	<assert.h>
 
-1483778787 source:c:\users\olivier\documents\uha\l3\v2\qualité de programmation\emploi_du_temps\emploi_du_temps\test\testmain.cpp
+1483895020 source:c:\users\olivier\documents\uha\l3\v2\qualité de programmation\emploi_du_temps\emploi_du_temps\test\testmain.cpp
+
+1483903587 source:c:\users\olivier\documents\uha\l3\v2\qualité de programmation\emploi_du_temps\emploi_du_temps\cpp\gestionfichier.cpp
+	"../lib/gestionFichier.h"
+
+1483903587 c:\users\olivier\documents\uha\l3\v2\qualité de programmation\emploi_du_temps\emploi_du_temps\lib\gestionfichier.h
 	<iostream>
+	"listeCours.h"
+	"listeRessources.h"
+	<fstream>
+
+1483902943 source:c:\users\olivier\documents\uha\l3\v2\qualité de programmation\emploi_du_temps\emploi_du_temps\test\testcours.cpp
+	"../lib/catch.hpp"
+	"../lib/cours.h"
+
+1483896906 source:c:\users\olivier\documents\uha\l3\v2\qualité de programmation\emploi_du_temps\emploi_du_temps\test\testformation.cpp
+	"../lib/catch.hpp"
+	"../lib/formation.h"
+
+1483896101 source:c:\users\olivier\documents\uha\l3\v2\qualité de programmation\emploi_du_temps\emploi_du_temps\test\testsalle.cpp
+	"../lib/catch.hpp"
+	"../lib/salle.h"
+
+1483896787 source:c:\users\olivier\documents\uha\l3\v2\qualité de programmation\emploi_du_temps\emploi_du_temps\test\testprofesseur.cpp
+	"../lib/catch.hpp"
+	"../lib/professeur.h"
+
+1483896962 source:c:\users\olivier\documents\uha\l3\v2\qualité de programmation\emploi_du_temps\emploi_du_temps\test\testressource.cpp
+	"../lib/catch.hpp"
+	"../lib/ressource.h"
 

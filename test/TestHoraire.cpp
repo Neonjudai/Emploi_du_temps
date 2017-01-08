@@ -1,5 +1,6 @@
 #define CATCH_CONFIG_MAIN
 
+
 /**
  * @file TestHoraire.cpp
  * @brief Fichier permettant de tester les methodes de la classe horaire
@@ -15,17 +16,17 @@ const int NUM_SEMAINE=2%52;
 const int NUM_HEURE=8%4;
 const int NUM_JOUR=1%7;
 
-TEST_CASE ("Les horaires sont bien construites", "[horaire]")
+TEST_CASE ("Construction des horaires", "[horaire]")
 {
 	horaire h1{NUM_SEMAINE, NUM_JOUR, NUM_HEURE};
-	SECTION("Le numero de semaine, le numero de jour et le numero d'heure sont correctes")
+	SECTION(" Vérification du numero de semaine, du numero de jour et du numero d'heure")
     {
 		REQUIRE(h1.semaine()==NUM_SEMAINE);
 		REQUIRE(h1.heure()==NUM_HEURE);
 		REQUIRE(h1.jour()==NUM_JOUR);
 	}
 	horaire h2{h1};
-	SECTION("Le numero de semaine, le numero de jour et le numero d'heure sont correctes")
+	SECTION("Vérification du numero de semaine, du numero de jour et du numero d'heure")
     {
 		REQUIRE(h2.semaine()== h1.semaine());
 		REQUIRE(h2.jour()==h1.jour());

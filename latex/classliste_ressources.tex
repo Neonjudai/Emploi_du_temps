@@ -19,6 +19,10 @@ int \hyperlink{classliste_ressources_a9b496a36a9651347734d7895397dde00}{nombre\+
 \begin{DoxyCompactList}\small\item\em Renvoie le professeur dont le numero est entre en parametre. \end{DoxyCompactList}\item 
 int \hyperlink{classliste_ressources_a1d7b514a5f879849283a5326bd102d9c}{position\+Professeur} (std\+::string nom) const
 \begin{DoxyCompactList}\small\item\em Renvoie la position du professeur dont le nom est entre en parametre. \end{DoxyCompactList}\item 
+bool \hyperlink{classliste_ressources_a9500ccbddb1b0a65fbc2819dcfba3fb4}{professeur\+A\+Un\+Cours} (const \hyperlink{classliste_cours}{liste\+Cours} \&liste\+De\+Cours, const std\+::string \&nom\+Du\+Professeur)
+\begin{DoxyCompactList}\small\item\em verifies si le professeur a un cours prevu \end{DoxyCompactList}\item 
+void \hyperlink{classliste_ressources_acf367bf8942e1578db883d066f1e0cf3}{supprimer\+Un\+Professeur} (const std\+::string \&nom\+Du\+Professeur)
+\begin{DoxyCompactList}\small\item\em supprimes un professeur \end{DoxyCompactList}\item 
 void \hyperlink{classliste_ressources_ae5c412bcd7a536081d98181e836d578b}{ajouter\+Une\+Salle} (\hyperlink{classsalle}{salle} s)
 \begin{DoxyCompactList}\small\item\em Ajoute une salle. \end{DoxyCompactList}\item 
 int \hyperlink{classliste_ressources_a1a7f82a289bda61cf08485e92dd32b2e}{nombre\+De\+Salles} () const
@@ -29,6 +33,10 @@ int \hyperlink{classliste_ressources_a1a7f82a289bda61cf08485e92dd32b2e}{nombre\+
 \begin{DoxyCompactList}\small\item\em Renvoie la salle dont le numero est entre en parametre. \end{DoxyCompactList}\item 
 int \hyperlink{classliste_ressources_ad4f9c36ed425f2a3d4ca161abd6198da}{position\+Salle} (std\+::string nom) const
 \begin{DoxyCompactList}\small\item\em Renvoie la position de la salle dont le nom est entre en parametre. \end{DoxyCompactList}\item 
+bool \hyperlink{classliste_ressources_a83834356f61b0106d3b2157afc363dc5}{salle\+A\+Un\+Cours} (const \hyperlink{classliste_cours}{liste\+Cours} \&liste\+De\+Cours, const std\+::string \&nom\+De\+La\+Salle)
+\begin{DoxyCompactList}\small\item\em verifies si un cours a lieu dans la salle \end{DoxyCompactList}\item 
+void \hyperlink{classliste_ressources_a364c27cbbbaa542d110d744e016cf092}{supprimer\+Une\+Salle} (const std\+::string \&nom\+De\+La\+Salle)
+\begin{DoxyCompactList}\small\item\em supprimes une salle \end{DoxyCompactList}\item 
 void \hyperlink{classliste_ressources_a3b12d0a99dedc81a6a9ddfde375f3c3e}{ajouter\+Une\+Formation} (\hyperlink{classformation}{formation} f)
 \begin{DoxyCompactList}\small\item\em Ajoute une formation. \end{DoxyCompactList}\item 
 int \hyperlink{classliste_ressources_a332aca734617587a463197043a058b02}{nombre\+De\+Formations} () const
@@ -38,7 +46,11 @@ int \hyperlink{classliste_ressources_a332aca734617587a463197043a058b02}{nombre\+
 \hyperlink{classformation}{formation} \hyperlink{classliste_ressources_aa0dc7c74caa61d02294c51fb79f7abe7}{formation\+Numero} (int i) const
 \begin{DoxyCompactList}\small\item\em Renvoie la formation dont le numero est entre en parametre. \end{DoxyCompactList}\item 
 int \hyperlink{classliste_ressources_a1649d1144f57339c52731acf2d5cfa51}{position\+Formation} (std\+::string nom) const
-\begin{DoxyCompactList}\small\item\em Renvoie la position de la formation dont le nom est entre en parametre. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Renvoie la position de la formation dont le nom est entre en parametre. \end{DoxyCompactList}\item 
+bool \hyperlink{classliste_ressources_adca8580fb284edf37def6b5f650ea6a9}{formation\+A\+Un\+Cours} (const \hyperlink{classliste_cours}{liste\+Cours} \&liste\+De\+Cours, const std\+::string \&nom\+De\+La\+Formation)
+\begin{DoxyCompactList}\small\item\em verifies sila formation a un cours \end{DoxyCompactList}\item 
+void \hyperlink{classliste_ressources_a898637edf00749de0460b3ce07168a71}{supprimer\+Une\+Formation} (const std\+::string \&nom\+De\+La\+Formation)
+\begin{DoxyCompactList}\small\item\em supprimes la formation \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Constructor \& Destructor Documentation}
@@ -111,6 +123,30 @@ Here is the caller graph for this function\+:\nopagebreak
 \includegraphics[width=350pt]{classliste_ressources_afb8d1bb96971684ed945622b462fcd5d_icgraph}
 \end{center}
 \end{figure}
+\hypertarget{classliste_ressources_adca8580fb284edf37def6b5f650ea6a9}{}\label{classliste_ressources_adca8580fb284edf37def6b5f650ea6a9} 
+\index{liste\+Ressources@{liste\+Ressources}!formation\+A\+Un\+Cours@{formation\+A\+Un\+Cours}}
+\index{formation\+A\+Un\+Cours@{formation\+A\+Un\+Cours}!liste\+Ressources@{liste\+Ressources}}
+\subsubsection{\texorpdfstring{formation\+A\+Un\+Cours()}{formationAUnCours()}}
+{\footnotesize\ttfamily bool liste\+Ressources\+::formation\+A\+Un\+Cours (\begin{DoxyParamCaption}\item[{const \hyperlink{classliste_cours}{liste\+Cours} \&}]{liste\+De\+Cours,  }\item[{const std\+::string \&}]{nom\+De\+La\+Formation }\end{DoxyParamCaption})}
+
+
+
+verifies sila formation a un cours 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em liste\+De\+Cours} & -\/ objet de type \hyperlink{classliste_cours}{liste\+Cours} \\
+\hline
+\mbox{\tt in}  & {\em nom\+De\+La\+Formation} & -\/ chaine de caractere correspondant au nom de la formation \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a\+Un\+Cours -\/ retournes vrai si la formation a un cours 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 2
+Here is the caller graph for this function\+:
+% FIG 3
 \hypertarget{classliste_ressources_aa0dc7c74caa61d02294c51fb79f7abe7}{}\label{classliste_ressources_aa0dc7c74caa61d02294c51fb79f7abe7} 
 \index{liste\+Ressources@{liste\+Ressources}!formation\+Numero@{formation\+Numero}}
 \index{formation\+Numero@{formation\+Numero}!liste\+Ressources@{liste\+Ressources}}
@@ -130,7 +166,7 @@ Renvoie la formation dont le numero est entre en parametre.
 la formation dont le numero est entre en parametre 
 \end{DoxyReturn}
 Here is the caller graph for this function\+:
-% FIG 2
+% FIG 4
 \hypertarget{classliste_ressources_a71ef69325d349c087c995f5aac9b9f27}{}\label{classliste_ressources_a71ef69325d349c087c995f5aac9b9f27} 
 \index{liste\+Ressources@{liste\+Ressources}!formation\+NumeroP@{formation\+NumeroP}}
 \index{formation\+NumeroP@{formation\+NumeroP}!liste\+Ressources@{liste\+Ressources}}
@@ -150,7 +186,7 @@ Renvoie la formation dont le numero est entre en parametre.
 la formation$\ast$ dont le numero est entre en parametre 
 \end{DoxyReturn}
 Here is the caller graph for this function\+:
-% FIG 3
+% FIG 5
 \hypertarget{classliste_ressources_a332aca734617587a463197043a058b02}{}\label{classliste_ressources_a332aca734617587a463197043a058b02} 
 \index{liste\+Ressources@{liste\+Ressources}!nombre\+De\+Formations@{nombre\+De\+Formations}}
 \index{nombre\+De\+Formations@{nombre\+De\+Formations}!liste\+Ressources@{liste\+Ressources}}
@@ -165,7 +201,7 @@ Renvoie le nombre de formations.
 le nombre de formation 
 \end{DoxyReturn}
 Here is the caller graph for this function\+:
-% FIG 4
+% FIG 6
 \hypertarget{classliste_ressources_a9b496a36a9651347734d7895397dde00}{}\label{classliste_ressources_a9b496a36a9651347734d7895397dde00} 
 \index{liste\+Ressources@{liste\+Ressources}!nombre\+De\+Professeurs@{nombre\+De\+Professeurs}}
 \index{nombre\+De\+Professeurs@{nombre\+De\+Professeurs}!liste\+Ressources@{liste\+Ressources}}
@@ -200,7 +236,7 @@ Renvoie le nombre de salles.
 le nombre de salle 
 \end{DoxyReturn}
 Here is the caller graph for this function\+:
-% FIG 5
+% FIG 7
 \hypertarget{classliste_ressources_a1649d1144f57339c52731acf2d5cfa51}{}\label{classliste_ressources_a1649d1144f57339c52731acf2d5cfa51} 
 \index{liste\+Ressources@{liste\+Ressources}!position\+Formation@{position\+Formation}}
 \index{position\+Formation@{position\+Formation}!liste\+Ressources@{liste\+Ressources}}
@@ -220,7 +256,7 @@ Renvoie la position de la formation dont le nom est entre en parametre.
 la position de la formation dont le nom est entre en parametre 
 \end{DoxyReturn}
 Here is the caller graph for this function\+:
-% FIG 6
+% FIG 8
 \hypertarget{classliste_ressources_a1d7b514a5f879849283a5326bd102d9c}{}\label{classliste_ressources_a1d7b514a5f879849283a5326bd102d9c} 
 \index{liste\+Ressources@{liste\+Ressources}!position\+Professeur@{position\+Professeur}}
 \index{position\+Professeur@{position\+Professeur}!liste\+Ressources@{liste\+Ressources}}
@@ -240,7 +276,7 @@ Renvoie la position du professeur dont le nom est entre en parametre.
 la position du professeur dont le nom est entre en parametre 
 \end{DoxyReturn}
 Here is the caller graph for this function\+:
-% FIG 7
+% FIG 9
 \hypertarget{classliste_ressources_ad4f9c36ed425f2a3d4ca161abd6198da}{}\label{classliste_ressources_ad4f9c36ed425f2a3d4ca161abd6198da} 
 \index{liste\+Ressources@{liste\+Ressources}!position\+Salle@{position\+Salle}}
 \index{position\+Salle@{position\+Salle}!liste\+Ressources@{liste\+Ressources}}
@@ -260,7 +296,31 @@ Renvoie la position de la salle dont le nom est entre en parametre.
 la position de la salle dont le nom est entre en parametre 
 \end{DoxyReturn}
 Here is the caller graph for this function\+:
-% FIG 8
+% FIG 10
+\hypertarget{classliste_ressources_a9500ccbddb1b0a65fbc2819dcfba3fb4}{}\label{classliste_ressources_a9500ccbddb1b0a65fbc2819dcfba3fb4} 
+\index{liste\+Ressources@{liste\+Ressources}!professeur\+A\+Un\+Cours@{professeur\+A\+Un\+Cours}}
+\index{professeur\+A\+Un\+Cours@{professeur\+A\+Un\+Cours}!liste\+Ressources@{liste\+Ressources}}
+\subsubsection{\texorpdfstring{professeur\+A\+Un\+Cours()}{professeurAUnCours()}}
+{\footnotesize\ttfamily bool liste\+Ressources\+::professeur\+A\+Un\+Cours (\begin{DoxyParamCaption}\item[{const \hyperlink{classliste_cours}{liste\+Cours} \&}]{liste\+De\+Cours,  }\item[{const std\+::string \&}]{nom\+Du\+Professeur }\end{DoxyParamCaption})}
+
+
+
+verifies si le professeur a un cours prevu 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em liste\+De\+Cours} & -\/ objet de type \hyperlink{classliste_cours}{liste\+Cours} \\
+\hline
+\mbox{\tt in}  & {\em nom\+Du\+Professeur} & -\/ chaine de caractere correspondant au nom du professeur \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a\+Un\+Cours -\/ retournes vrai si le professeur a un cours 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 11
+Here is the caller graph for this function\+:
+% FIG 12
 \hypertarget{classliste_ressources_af6a22c9c36348e23b1bac9682e280d54}{}\label{classliste_ressources_af6a22c9c36348e23b1bac9682e280d54} 
 \index{liste\+Ressources@{liste\+Ressources}!professeur\+Numero@{professeur\+Numero}}
 \index{professeur\+Numero@{professeur\+Numero}!liste\+Ressources@{liste\+Ressources}}
@@ -280,7 +340,7 @@ Renvoie le professeur dont le numero est entre en parametre.
 le professeur dont le numero est entre en parametre 
 \end{DoxyReturn}
 Here is the caller graph for this function\+:
-% FIG 9
+% FIG 13
 \hypertarget{classliste_ressources_a48e60720782a54d95bbc708cac235951}{}\label{classliste_ressources_a48e60720782a54d95bbc708cac235951} 
 \index{liste\+Ressources@{liste\+Ressources}!professeur\+NumeroP@{professeur\+NumeroP}}
 \index{professeur\+NumeroP@{professeur\+NumeroP}!liste\+Ressources@{liste\+Ressources}}
@@ -300,7 +360,31 @@ Renvoie le professeur dont le numero est entre en parametre.
 le professeur$\ast$ dont le numero est entre en parametre 
 \end{DoxyReturn}
 Here is the caller graph for this function\+:
-% FIG 10
+% FIG 14
+\hypertarget{classliste_ressources_a83834356f61b0106d3b2157afc363dc5}{}\label{classliste_ressources_a83834356f61b0106d3b2157afc363dc5} 
+\index{liste\+Ressources@{liste\+Ressources}!salle\+A\+Un\+Cours@{salle\+A\+Un\+Cours}}
+\index{salle\+A\+Un\+Cours@{salle\+A\+Un\+Cours}!liste\+Ressources@{liste\+Ressources}}
+\subsubsection{\texorpdfstring{salle\+A\+Un\+Cours()}{salleAUnCours()}}
+{\footnotesize\ttfamily bool liste\+Ressources\+::salle\+A\+Un\+Cours (\begin{DoxyParamCaption}\item[{const \hyperlink{classliste_cours}{liste\+Cours} \&}]{liste\+De\+Cours,  }\item[{const std\+::string \&}]{nom\+De\+La\+Salle }\end{DoxyParamCaption})}
+
+
+
+verifies si un cours a lieu dans la salle 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em liste\+De\+Cours} & -\/ objet de type \hyperlink{classliste_cours}{liste\+Cours} \\
+\hline
+\mbox{\tt in}  & {\em nom\+De\+La\+Salle} & -\/ chaine de caractere correspondant au nom de la salle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a\+Un\+Cours -\/ retournes vrai si un cours a lieu dans la salle 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 15
+Here is the caller graph for this function\+:
+% FIG 16
 \hypertarget{classliste_ressources_ae49f2ce49be854dda108840fd3d26112}{}\label{classliste_ressources_ae49f2ce49be854dda108840fd3d26112} 
 \index{liste\+Ressources@{liste\+Ressources}!salle\+Numero@{salle\+Numero}}
 \index{salle\+Numero@{salle\+Numero}!liste\+Ressources@{liste\+Ressources}}
@@ -320,7 +404,7 @@ Renvoie la salle dont le numero est entre en parametre.
 la salle dont le numero est entre en parametre 
 \end{DoxyReturn}
 Here is the caller graph for this function\+:
-% FIG 11
+% FIG 17
 \hypertarget{classliste_ressources_a1badd55beb2e05645cc17d488fd0a3b9}{}\label{classliste_ressources_a1badd55beb2e05645cc17d488fd0a3b9} 
 \index{liste\+Ressources@{liste\+Ressources}!salle\+NumeroP@{salle\+NumeroP}}
 \index{salle\+NumeroP@{salle\+NumeroP}!liste\+Ressources@{liste\+Ressources}}
@@ -340,7 +424,64 @@ Renvoie la salle dont le numero est entre en parametre.
 la salle$\ast$ dont le numero est entre en parametre 
 \end{DoxyReturn}
 Here is the caller graph for this function\+:
-% FIG 12
+% FIG 18
+\hypertarget{classliste_ressources_a898637edf00749de0460b3ce07168a71}{}\label{classliste_ressources_a898637edf00749de0460b3ce07168a71} 
+\index{liste\+Ressources@{liste\+Ressources}!supprimer\+Une\+Formation@{supprimer\+Une\+Formation}}
+\index{supprimer\+Une\+Formation@{supprimer\+Une\+Formation}!liste\+Ressources@{liste\+Ressources}}
+\subsubsection{\texorpdfstring{supprimer\+Une\+Formation()}{supprimerUneFormation()}}
+{\footnotesize\ttfamily void liste\+Ressources\+::supprimer\+Une\+Formation (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{nom\+De\+La\+Formation }\end{DoxyParamCaption})}
+
+
+
+supprimes la formation 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em nom\+De\+La\+Formation} & -\/ chaine de caractere representant le nom de la formation a supprimer \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 19
+Here is the caller graph for this function\+:
+% FIG 20
+\hypertarget{classliste_ressources_a364c27cbbbaa542d110d744e016cf092}{}\label{classliste_ressources_a364c27cbbbaa542d110d744e016cf092} 
+\index{liste\+Ressources@{liste\+Ressources}!supprimer\+Une\+Salle@{supprimer\+Une\+Salle}}
+\index{supprimer\+Une\+Salle@{supprimer\+Une\+Salle}!liste\+Ressources@{liste\+Ressources}}
+\subsubsection{\texorpdfstring{supprimer\+Une\+Salle()}{supprimerUneSalle()}}
+{\footnotesize\ttfamily void liste\+Ressources\+::supprimer\+Une\+Salle (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{nom\+De\+La\+Salle }\end{DoxyParamCaption})}
+
+
+
+supprimes une salle 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em nom\+De\+La\+Salle} & -\/ chaine de caractere representant le nom de la salle a supprimer \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 21
+Here is the caller graph for this function\+:
+% FIG 22
+\hypertarget{classliste_ressources_acf367bf8942e1578db883d066f1e0cf3}{}\label{classliste_ressources_acf367bf8942e1578db883d066f1e0cf3} 
+\index{liste\+Ressources@{liste\+Ressources}!supprimer\+Un\+Professeur@{supprimer\+Un\+Professeur}}
+\index{supprimer\+Un\+Professeur@{supprimer\+Un\+Professeur}!liste\+Ressources@{liste\+Ressources}}
+\subsubsection{\texorpdfstring{supprimer\+Un\+Professeur()}{supprimerUnProfesseur()}}
+{\footnotesize\ttfamily void liste\+Ressources\+::supprimer\+Un\+Professeur (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{nom\+Du\+Professeur }\end{DoxyParamCaption})}
+
+
+
+supprimes un professeur 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em nom\+Du\+Professeur} & -\/ chaine de caractere representant le nom du professeur a supprimer \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 23
+Here is the caller graph for this function\+:
+% FIG 24
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

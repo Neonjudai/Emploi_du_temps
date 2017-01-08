@@ -1,3 +1,10 @@
+/**
+ * @file gestionFichier.cpp
+ * @brief Classe permettant la lecture et l'ecriture des donnees
+ * @author Benjamin Bunner
+ * @version 1.0
+ */
+
 #include "../lib/gestionFichier.h"
 
 /**
@@ -23,7 +30,7 @@ void gestionFichier::viderLeFichier()
 
 /**
 @brief Lit le fichier d_nomFichier pour récupérer la liste de Cours, Formation, Salle et Professeur dans LC et LR
-@param[out] LC - objet de type listeCours 
+@param[out] LC - objet de type listeCours
 @param[out] LR - objet de type listeRessources
 */
 bool gestionFichier::lectureDesDonnees(listeCours &LC, listeRessources &LR)
@@ -80,7 +87,7 @@ bool gestionFichier::lectureDesRessources(listeRessources &LR, ifstream &lecture
 @brief Lit le fichier d_nomFichier pour récupérer la liste des ressources
 @param[out] LC - objet de type listeCours
 @param[out] LR - objet de type listeRessources
-@param[in] ifstream - flux de lecture ifstream 
+@param[in] ifstream - flux de lecture ifstream
 */
 bool gestionFichier::lectureDesCours(listeCours &LC, listeRessources &LR, ifstream &lecture)
 {

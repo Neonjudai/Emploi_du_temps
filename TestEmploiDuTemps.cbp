@@ -16,9 +16,9 @@
 		<Unit filename="cpp/afficheurConsole.cpp" />
 		<Unit filename="cpp/cours.cpp" />
 		<Unit filename="cpp/formation.cpp" />
+		<Unit filename="cpp/gestionFichier.cpp" />
 		<Unit filename="cpp/horaire.cpp" />
 		<Unit filename="cpp/listeCours.cpp" />
-		<Unit filename="cpp/listeDHoraire.cpp" />
 		<Unit filename="cpp/listeRessources.cpp" />
 		<Unit filename="cpp/professeur.cpp" />
 		<Unit filename="cpp/ressource.cpp" />
@@ -27,15 +27,19 @@
 		<Unit filename="lib/catch.hpp" />
 		<Unit filename="lib/cours.h" />
 		<Unit filename="lib/formation.h" />
+		<Unit filename="lib/gestionFichier.h" />
 		<Unit filename="lib/horaire.h" />
 		<Unit filename="lib/listeCours.h" />
-		<Unit filename="lib/listeDHoraire.h" />
 		<Unit filename="lib/listeRessources.h" />
 		<Unit filename="lib/professeur.h" />
 		<Unit filename="lib/ressource.h" />
 		<Unit filename="lib/salle.h" />
+		<Unit filename="test/TestCours.cpp" />
+		<Unit filename="test/TestFormation.cpp" />
 		<Unit filename="test/TestHoraire.cpp" />
-		<Unit filename="test/TestMain.cpp" />
+		<Unit filename="test/TestProfesseur.cpp" />
+		<Unit filename="test/TestRessource.cpp" />
+		<Unit filename="test/TestSalle.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

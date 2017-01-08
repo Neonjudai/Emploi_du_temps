@@ -1,5 +1,6 @@
 var menudata={children:[
 {text:'Main Page',url:'index.html'},
+{text:'Related Pages',url:'pages.html'},
 {text:'Namespaces',url:'namespaces.html',children:[
 {text:'Namespace List',url:'namespaces.html'},
 {text:'Namespace Members',url:'namespacemembers.html',children:[
@@ -119,9 +120,11 @@ var menudata={children:[
 {text:'c',url:'globals.html#index_c'},
 {text:'f',url:'globals.html#index_f'},
 {text:'g',url:'globals.html#index_g'},
+{text:'h',url:'globals.html#index_h'},
 {text:'i',url:'globals.html#index_i'},
 {text:'m',url:'globals.html#index_m'},
 {text:'n',url:'globals.html#index_n'},
+{text:'p',url:'globals.html#index_p'},
 {text:'r',url:'globals.html#index_r'},
 {text:'s',url:'globals.html#index_s'},
 {text:'t',url:'globals.html#index_t'},

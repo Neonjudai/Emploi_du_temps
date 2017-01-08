@@ -82,9 +82,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac00615f15632669bf44424e960c95edd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcours.html">cours</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classliste_cours.html#ac00615f15632669bf44424e960c95edd">coursNumero</a> (int i) const</td></tr>
 <tr class="memdesc:ac00615f15632669bf44424e960c95edd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renvoie le cours dont le numero correspond a l'entier entre en parametre.  <a href="#ac00615f15632669bf44424e960c95edd">More...</a><br /></td></tr>
 <tr class="separator:ac00615f15632669bf44424e960c95edd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab66777592d4693d8db47e756dfe61878"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classliste_cours.html#ab66777592d4693d8db47e756dfe61878">estPossible</a> (const <a class="el" href="classcours.html">cours</a> &amp;c) const</td></tr>
-<tr class="memdesc:ab66777592d4693d8db47e756dfe61878"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifie si le cours peut etre ajoute a d_listeDesCours.  <a href="#ab66777592d4693d8db47e756dfe61878">More...</a><br /></td></tr>
-<tr class="separator:ab66777592d4693d8db47e756dfe61878"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a788e1017848b813a450a6156dd043a7a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classliste_cours.html#a788e1017848b813a450a6156dd043a7a">estPossible</a> (const <a class="el" href="classcours.html">cours</a> &amp;c) const</td></tr>
+<tr class="memdesc:a788e1017848b813a450a6156dd043a7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifie si le cours peut etre ajoute a d_listeDesCours.  <a href="#a788e1017848b813a450a6156dd043a7a">More...</a><br /></td></tr>
+<tr class="separator:a788e1017848b813a450a6156dd043a7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71e0b3dd96c917afdb8206a43b0f83bd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classliste_cours.html#a71e0b3dd96c917afdb8206a43b0f83bd">numeroDeCours</a> (const <a class="el" href="classhoraire.html">horaire</a> &amp;<a class="el" href="classhoraire.html">horaire</a>, const <a class="el" href="classprofesseur.html">professeur</a> &amp;<a class="el" href="classprofesseur.html">professeur</a>, const <a class="el" href="classsalle.html">salle</a> &amp;<a class="el" href="classsalle.html">salle</a>, const <a class="el" href="classformation.html">formation</a> &amp;<a class="el" href="classformation.html">formation</a>) const</td></tr>
+<tr class="memdesc:a71e0b3dd96c917afdb8206a43b0f83bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines dans la liste de cours la position du cours dans cette liste, renvoyant -1 s'il n'a pas ete trouve.  <a href="#a71e0b3dd96c917afdb8206a43b0f83bd">More...</a><br /></td></tr>
+<tr class="separator:a71e0b3dd96c917afdb8206a43b0f83bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a772f9af062114a9b5f2420e3bbe3e675"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classliste_cours.html#a772f9af062114a9b5f2420e3bbe3e675">supprimerUnCours</a> (int i)</td></tr>
+<tr class="memdesc:a772f9af062114a9b5f2420e3bbe3e675"><td class="mdescLeft">&#160;</td><td class="mdescRight">supprimes un cours dans la liste de cours  <a href="#a772f9af062114a9b5f2420e3bbe3e675">More...</a><br /></td></tr>
+<tr class="separator:a772f9af062114a9b5f2420e3bbe3e675"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af5a10a6e898373e43355b8a29dc20b83"></a>
@@ -170,14 +176,14 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="ab66777592d4693d8db47e756dfe61878"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab66777592d4693d8db47e756dfe61878">&sect;&nbsp;</a></span>estPossible()</h2>
+<a id="a788e1017848b813a450a6156dd043a7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a788e1017848b813a450a6156dd043a7a">&sect;&nbsp;</a></span>estPossible()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool listeCours::estPossible </td>
+          <td class="memname">int listeCours::estPossible </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classcours.html">cours</a> &amp;&#160;</td>
           <td class="paramname"><em>c</em></td><td>)</td>
@@ -191,13 +197,13 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classliste_cours_ab66777592d4693d8db47e756dfe61878_cgraph.png" border="0" usemap="#classliste_cours_ab66777592d4693d8db47e756dfe61878_cgraph" alt=""/></div>
+<div class="center"><img src="classliste_cours_a788e1017848b813a450a6156dd043a7a_cgraph.png" border="0" usemap="#classliste_cours_a788e1017848b813a450a6156dd043a7a_cgraph" alt=""/></div>
 <!-- MAP 1 -->
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classliste_cours_ab66777592d4693d8db47e756dfe61878_icgraph.png" border="0" usemap="#classliste_cours_ab66777592d4693d8db47e756dfe61878_icgraph" alt=""/></div>
+<div class="center"><img src="classliste_cours_a788e1017848b813a450a6156dd043a7a_icgraph.png" border="0" usemap="#classliste_cours_a788e1017848b813a450a6156dd043a7a_icgraph" alt=""/></div>
 <!-- MAP 2 -->
 </div>
 
@@ -225,6 +231,96 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classliste_cours_a34b859c2380770eb560c0a6dcf01cc81_icgraph.png" border="0" usemap="#classliste_cours_a34b859c2380770eb560c0a6dcf01cc81_icgraph" alt=""/></div>
 <!-- MAP 3 -->
+</div>
+
+</div>
+</div>
+<a id="a71e0b3dd96c917afdb8206a43b0f83bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71e0b3dd96c917afdb8206a43b0f83bd">&sect;&nbsp;</a></span>numeroDeCours()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int listeCours::numeroDeCours </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classhoraire.html">horaire</a> &amp;&#160;</td>
+          <td class="paramname"><em>horaire</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classprofesseur.html">professeur</a> &amp;&#160;</td>
+          <td class="paramname"><em>professeur</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classsalle.html">salle</a> &amp;&#160;</td>
+          <td class="paramname"><em>salle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classformation.html">formation</a> &amp;&#160;</td>
+          <td class="paramname"><em>formation</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Determines dans la liste de cours la position du cours dans cette liste, renvoyant -1 s'il n'a pas ete trouve. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">horaire</td><td>- objet de type horaire </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">professeur</td><td>- objet de type professeur </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">salle</td><td>- objet de type salle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">formation</td><td>- objet de type formation </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>numero - entier retournant lindice du cours dans la liste de cours </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classliste_cours_a71e0b3dd96c917afdb8206a43b0f83bd_icgraph.png" border="0" usemap="#classliste_cours_a71e0b3dd96c917afdb8206a43b0f83bd_icgraph" alt=""/></div>
+<!-- MAP 4 -->
+</div>
+
+</div>
+</div>
+<a id="a772f9af062114a9b5f2420e3bbe3e675"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a772f9af062114a9b5f2420e3bbe3e675">&sect;&nbsp;</a></span>supprimerUnCours()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void listeCours::supprimerUnCours </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>supprimes un cours dans la liste de cours </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">i</td><td>- lindice du cours dans la liste de cours </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classliste_cours_a772f9af062114a9b5f2420e3bbe3e675_icgraph.png" border="0" usemap="#classliste_cours_a772f9af062114a9b5f2420e3bbe3e675_icgraph" alt=""/></div>
+<!-- MAP 5 -->
 </div>
 
 </div>

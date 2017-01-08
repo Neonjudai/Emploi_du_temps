@@ -1,8 +1,11 @@
 var searchData=
 [
-  ['pluralise',['pluralise',['../struct_catch_1_1pluralise.html',1,'Catch']]],
-  ['professeur',['professeur',['../classprofesseur.html',1,'']]],
-  ['ptr',['Ptr',['../class_catch_1_1_ptr.html',1,'Catch']]],
-  ['ptr_3c_20catch_3a_3aitestcase_20_3e',['Ptr&lt; Catch::ITestCase &gt;',['../class_catch_1_1_ptr.html',1,'Catch']]],
-  ['ptr_3c_20catch_3a_3amatchers_3a_3aimpl_3a_3amatcher_3c_20expressiont_20_3e_20_3e',['Ptr&lt; Catch::Matchers::Impl::Matcher&lt; ExpressionT &gt; &gt;',['../class_catch_1_1_ptr.html',1,'Catch']]]
+  ['operatortraits',['OperatorTraits',['../struct_catch_1_1_internal_1_1_operator_traits.html',1,'Catch::Internal']]],
+  ['operatortraits_3c_20isequalto_20_3e',['OperatorTraits&lt; IsEqualTo &gt;',['../struct_catch_1_1_internal_1_1_operator_traits_3_01_is_equal_to_01_4.html',1,'Catch::Internal']]],
+  ['operatortraits_3c_20isgreaterthan_20_3e',['OperatorTraits&lt; IsGreaterThan &gt;',['../struct_catch_1_1_internal_1_1_operator_traits_3_01_is_greater_than_01_4.html',1,'Catch::Internal']]],
+  ['operatortraits_3c_20isgreaterthanorequalto_20_3e',['OperatorTraits&lt; IsGreaterThanOrEqualTo &gt;',['../struct_catch_1_1_internal_1_1_operator_traits_3_01_is_greater_than_or_equal_to_01_4.html',1,'Catch::Internal']]],
+  ['operatortraits_3c_20islessthan_20_3e',['OperatorTraits&lt; IsLessThan &gt;',['../struct_catch_1_1_internal_1_1_operator_traits_3_01_is_less_than_01_4.html',1,'Catch::Internal']]],
+  ['operatortraits_3c_20islessthanorequalto_20_3e',['OperatorTraits&lt; IsLessThanOrEqualTo &gt;',['../struct_catch_1_1_internal_1_1_operator_traits_3_01_is_less_than_or_equal_to_01_4.html',1,'Catch::Internal']]],
+  ['operatortraits_3c_20isnotequalto_20_3e',['OperatorTraits&lt; IsNotEqualTo &gt;',['../struct_catch_1_1_internal_1_1_operator_traits_3_01_is_not_equal_to_01_4.html',1,'Catch::Internal']]],
+  ['option',['Option',['../class_catch_1_1_option.html',1,'Catch']]]
 ];

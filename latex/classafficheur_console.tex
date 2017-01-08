@@ -30,27 +30,41 @@ void \hyperlink{classafficheur_console_a473e26b25b3943f4ccd583c2d82e28d6}{affich
 void \hyperlink{classafficheur_console_a4d390448b296830fdeb20b49d9656d8e}{afficher\+Horaire} (const \hyperlink{classhoraire}{horaire} \&h)
 \begin{DoxyCompactList}\small\item\em Renvoie dans ost l\textquotesingle{}affichage de la semaine, du jour et de l\textquotesingle{}heure correspondant à l\textquotesingle{}horaire h. \end{DoxyCompactList}\item 
 void \hyperlink{classafficheur_console_a259f4fe7ffe96d1ab0a6b5bc01c2f618}{afficher\+Les\+Cours} (const \hyperlink{classliste_cours}{liste\+Cours} \&lC)
-\item 
+\begin{DoxyCompactList}\small\item\em Renvoie dans ost les cours de la liste de ressources. \end{DoxyCompactList}\item 
 int \hyperlink{classafficheur_console_a49b72edf4baf8f7ec4898b61c48212fa}{ajouter\+Un\+Cours} (\hyperlink{classliste_cours}{liste\+Cours} \&lC, \hyperlink{classliste_ressources}{liste\+Ressources} \&lR)
 \item 
+int \hyperlink{classafficheur_console_a7ef9576e86f204f1d184a1b4b0556593}{supprimer\+Un\+Cours} (\hyperlink{classliste_cours}{liste\+Cours} \&lC, \hyperlink{classliste_ressources}{liste\+Ressources} \&lR)
+\item 
 void \hyperlink{classafficheur_console_a88dc8bce2d36314f98b1ba21e8e9b214}{afficher\+Les\+Ressources} (const \hyperlink{classliste_ressources}{liste\+Ressources} \&lR)
-\item 
+\begin{DoxyCompactList}\small\item\em Affiches les professeurs, les salles et les formations liés à la liste de ressources. \end{DoxyCompactList}\item 
 void \hyperlink{classafficheur_console_a800c6da422bccdf2fdcaadcdafe4bbd6}{afficher\+Les\+Professeurs} (const \hyperlink{classliste_ressources}{liste\+Ressources} \&lR)
-\item 
+\begin{DoxyCompactList}\small\item\em Renvoie dans ost les professeurs de la liste de ressources. \end{DoxyCompactList}\item 
 void \hyperlink{classafficheur_console_a63019a39487a95a38e72113d799406d1}{afficher\+Les\+Salles} (const \hyperlink{classliste_ressources}{liste\+Ressources} \&lR)
-\item 
+\begin{DoxyCompactList}\small\item\em Renvoie dans ost les salles de la liste de ressources. \end{DoxyCompactList}\item 
 void \hyperlink{classafficheur_console_a8f9fbf20b142d1805a0418f24b30c273}{afficher\+Les\+Formations} (const \hyperlink{classliste_ressources}{liste\+Ressources} \&lR)
+\begin{DoxyCompactList}\small\item\em Renvoie dans ost les formations de la liste de ressources. \end{DoxyCompactList}\item 
+int \hyperlink{classafficheur_console_ac3c741ace89754d281e173f461ea4869}{ajouter\+Un\+Prof} (\hyperlink{classliste_ressources}{liste\+Ressources} \&lR)
 \item 
-int \hyperlink{classafficheur_console_a595631c2119915610187597410406de2}{ajouter\+Un\+Prof} (\hyperlink{classliste_ressources}{liste\+Ressources} \&lR, \hyperlink{classafficheur_console}{afficheur\+Console} \&aC)
+int \hyperlink{classafficheur_console_a4375a85818c816d7bc1ef3bf01880801}{ajouter\+Une\+Salle} (\hyperlink{classliste_ressources}{liste\+Ressources} \&lR)
 \item 
-int \hyperlink{classafficheur_console_a8d960816ca055b68ccb7b6b430fdc010}{ajouter\+Une\+Salle} (\hyperlink{classliste_ressources}{liste\+Ressources} \&lR, \hyperlink{classafficheur_console}{afficheur\+Console} \&aC)
+int \hyperlink{classafficheur_console_a664854d719be3d4c9e724993dab7b7e7}{ajouter\+Une\+Formation} (\hyperlink{classliste_ressources}{liste\+Ressources} \&lR)
 \item 
-int \hyperlink{classafficheur_console_afc7875525901a8fe2f4b1a41e431f3be}{ajouter\+Une\+Formation} (\hyperlink{classliste_ressources}{liste\+Ressources} \&lR, \hyperlink{classafficheur_console}{afficheur\+Console} \&aC)
+int \hyperlink{classafficheur_console_a09a9d2f45d682b9a6fc970e18510157e}{supprimer\+Un\+Prof} (\hyperlink{classliste_ressources}{liste\+Ressources} \&lR, const \hyperlink{classliste_cours}{liste\+Cours} \&lC)
+\item 
+int \hyperlink{classafficheur_console_abeab0582c5350e514ed4937244cf0dfa}{supprimer\+Une\+Salle} (\hyperlink{classliste_ressources}{liste\+Ressources} \&lR, const \hyperlink{classliste_cours}{liste\+Cours} \&lC)
+\item 
+int \hyperlink{classafficheur_console_a74bb005f3fb1022ebf5813624dab4ca6}{supprimer\+Une\+Formation} (\hyperlink{classliste_ressources}{liste\+Ressources} \&lR, const \hyperlink{classliste_cours}{liste\+Cours} \&lC)
 \item 
 void \hyperlink{classafficheur_console_afbb988d4ec6d7ebad225f3353fb3045f}{afficher\+Professeur} (const \hyperlink{classprofesseur}{professeur} \&p)
 \begin{DoxyCompactList}\small\item\em Renvoie dans ost le nom du professeur du professeur p. \end{DoxyCompactList}\item 
 void \hyperlink{classafficheur_console_a475772836928606a2c7dec66c4ab9ff3}{afficher\+Salle} (const \hyperlink{classsalle}{salle} \&s)
-\begin{DoxyCompactList}\small\item\em Renvoie dans ost le nom de salle de la salle s. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Renvoie dans ost le nom de salle de la salle s. \end{DoxyCompactList}\item 
+void \hyperlink{classafficheur_console_ab79b003631074793d79076c43c1dca30}{afficher\+Par\+Professeur} (const \hyperlink{classprofesseur}{professeur} \&\hyperlink{classprofesseur}{professeur}, const \hyperlink{classliste_cours}{liste\+Cours} \&lC, int semaine)
+\begin{DoxyCompactList}\small\item\em Renvoie dans ost les cours concernant le professeur. \end{DoxyCompactList}\item 
+void \hyperlink{classafficheur_console_a04f141c9b980d8fe4ff3fe7caaadc1f9}{afficher\+Par\+Formation} (const \hyperlink{classformation}{formation} \&\hyperlink{classformation}{formation}, const \hyperlink{classliste_cours}{liste\+Cours} \&lC, int semaine)
+\begin{DoxyCompactList}\small\item\em Renvoie dans ost les cours concernant la formation. \end{DoxyCompactList}\item 
+void \hyperlink{classafficheur_console_a38850a957a9c743a783cd957c1bbb408}{afficher\+Par\+Salle} (const \hyperlink{classsalle}{salle} \&\hyperlink{classsalle}{salle}, const \hyperlink{classliste_cours}{liste\+Cours} \&lC, int semaine)
+\begin{DoxyCompactList}\small\item\em Renvoie dans ost les cours concernant la salle. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Constructor \& Destructor Documentation}
@@ -188,6 +202,15 @@ Here is the caller graph for this function\+:
 \subsubsection{\texorpdfstring{afficher\+Les\+Cours()}{afficherLesCours()}}
 {\footnotesize\ttfamily void afficheur\+Console\+::afficher\+Les\+Cours (\begin{DoxyParamCaption}\item[{const \hyperlink{classliste_cours}{liste\+Cours} \&}]{lC }\end{DoxyParamCaption})}
 
+
+
+Renvoie dans ost les cours de la liste de ressources. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em lC} & -\/ un objet de type \hyperlink{classliste_cours}{liste\+Cours} \\
+\hline
+\end{DoxyParams}
 Here is the call graph for this function\+:
 % FIG 11
 Here is the caller graph for this function\+:
@@ -198,6 +221,15 @@ Here is the caller graph for this function\+:
 \subsubsection{\texorpdfstring{afficher\+Les\+Formations()}{afficherLesFormations()}}
 {\footnotesize\ttfamily void afficheur\+Console\+::afficher\+Les\+Formations (\begin{DoxyParamCaption}\item[{const \hyperlink{classliste_ressources}{liste\+Ressources} \&}]{lR }\end{DoxyParamCaption})}
 
+
+
+Renvoie dans ost les formations de la liste de ressources. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em lR} & -\/ un objet de type \hyperlink{classliste_ressources}{liste\+Ressources} \\
+\hline
+\end{DoxyParams}
 Here is the call graph for this function\+:
 % FIG 13
 Here is the caller graph for this function\+:
@@ -208,6 +240,15 @@ Here is the caller graph for this function\+:
 \subsubsection{\texorpdfstring{afficher\+Les\+Professeurs()}{afficherLesProfesseurs()}}
 {\footnotesize\ttfamily void afficheur\+Console\+::afficher\+Les\+Professeurs (\begin{DoxyParamCaption}\item[{const \hyperlink{classliste_ressources}{liste\+Ressources} \&}]{lR }\end{DoxyParamCaption})}
 
+
+
+Renvoie dans ost les professeurs de la liste de ressources. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em lR} & -\/ un objet de type \hyperlink{classliste_ressources}{liste\+Ressources} \\
+\hline
+\end{DoxyParams}
 Here is the call graph for this function\+:
 % FIG 15
 Here is the caller graph for this function\+:
@@ -218,6 +259,15 @@ Here is the caller graph for this function\+:
 \subsubsection{\texorpdfstring{afficher\+Les\+Ressources()}{afficherLesRessources()}}
 {\footnotesize\ttfamily void afficheur\+Console\+::afficher\+Les\+Ressources (\begin{DoxyParamCaption}\item[{const \hyperlink{classliste_ressources}{liste\+Ressources} \&}]{lR }\end{DoxyParamCaption})}
 
+
+
+Affiches les professeurs, les salles et les formations liés à la liste de ressources. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em lR} & -\/ un objet de type \hyperlink{classliste_ressources}{liste\+Ressources} \\
+\hline
+\end{DoxyParams}
 Here is the call graph for this function\+:
 % FIG 17
 Here is the caller graph for this function\+:
@@ -228,6 +278,15 @@ Here is the caller graph for this function\+:
 \subsubsection{\texorpdfstring{afficher\+Les\+Salles()}{afficherLesSalles()}}
 {\footnotesize\ttfamily void afficheur\+Console\+::afficher\+Les\+Salles (\begin{DoxyParamCaption}\item[{const \hyperlink{classliste_ressources}{liste\+Ressources} \&}]{lR }\end{DoxyParamCaption})}
 
+
+
+Renvoie dans ost les salles de la liste de ressources. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em lR} & -\/ un objet de type \hyperlink{classliste_ressources}{liste\+Ressources} \\
+\hline
+\end{DoxyParams}
 Here is the call graph for this function\+:
 % FIG 19
 Here is the caller graph for this function\+:
@@ -246,6 +305,69 @@ Here is the call graph for this function\+:
 % FIG 21
 Here is the caller graph for this function\+:
 % FIG 22
+\hypertarget{classafficheur_console_a04f141c9b980d8fe4ff3fe7caaadc1f9}{}\label{classafficheur_console_a04f141c9b980d8fe4ff3fe7caaadc1f9} 
+\index{afficheur\+Console@{afficheur\+Console}!afficher\+Par\+Formation@{afficher\+Par\+Formation}}
+\index{afficher\+Par\+Formation@{afficher\+Par\+Formation}!afficheur\+Console@{afficheur\+Console}}
+\subsubsection{\texorpdfstring{afficher\+Par\+Formation()}{afficherParFormation()}}
+{\footnotesize\ttfamily void afficheur\+Console\+::afficher\+Par\+Formation (\begin{DoxyParamCaption}\item[{const \hyperlink{classformation}{formation} \&}]{formation,  }\item[{const \hyperlink{classliste_cours}{liste\+Cours} \&}]{lC,  }\item[{int}]{semaine }\end{DoxyParamCaption})}
+
+
+
+Renvoie dans ost les cours concernant la formation. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em formation} & -\/ un objet de type formation \\
+\hline
+\mbox{\tt in}  & {\em lC} & -\/ un objet de type \hyperlink{classliste_cours}{liste\+Cours} \\
+\hline
+\mbox{\tt in}  & {\em semaine} & -\/ un objet de type int \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 23
+\hypertarget{classafficheur_console_ab79b003631074793d79076c43c1dca30}{}\label{classafficheur_console_ab79b003631074793d79076c43c1dca30} 
+\index{afficheur\+Console@{afficheur\+Console}!afficher\+Par\+Professeur@{afficher\+Par\+Professeur}}
+\index{afficher\+Par\+Professeur@{afficher\+Par\+Professeur}!afficheur\+Console@{afficheur\+Console}}
+\subsubsection{\texorpdfstring{afficher\+Par\+Professeur()}{afficherParProfesseur()}}
+{\footnotesize\ttfamily void afficheur\+Console\+::afficher\+Par\+Professeur (\begin{DoxyParamCaption}\item[{const \hyperlink{classprofesseur}{professeur} \&}]{professeur,  }\item[{const \hyperlink{classliste_cours}{liste\+Cours} \&}]{lC,  }\item[{int}]{semaine = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+
+
+Renvoie dans ost les cours concernant le professeur. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em professeur} & -\/ un objet de type professeur \\
+\hline
+\mbox{\tt in}  & {\em lC} & -\/ un objet de type \hyperlink{classliste_cours}{liste\+Cours} \\
+\hline
+\mbox{\tt in}  & {\em semaine} & -\/ un objet de type int \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 24
+\hypertarget{classafficheur_console_a38850a957a9c743a783cd957c1bbb408}{}\label{classafficheur_console_a38850a957a9c743a783cd957c1bbb408} 
+\index{afficheur\+Console@{afficheur\+Console}!afficher\+Par\+Salle@{afficher\+Par\+Salle}}
+\index{afficher\+Par\+Salle@{afficher\+Par\+Salle}!afficheur\+Console@{afficheur\+Console}}
+\subsubsection{\texorpdfstring{afficher\+Par\+Salle()}{afficherParSalle()}}
+{\footnotesize\ttfamily void afficheur\+Console\+::afficher\+Par\+Salle (\begin{DoxyParamCaption}\item[{const \hyperlink{classsalle}{salle} \&}]{salle,  }\item[{const \hyperlink{classliste_cours}{liste\+Cours} \&}]{lC,  }\item[{int}]{semaine }\end{DoxyParamCaption})}
+
+
+
+Renvoie dans ost les cours concernant la salle. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em salle} & -\/ un objet de type salle \\
+\hline
+\mbox{\tt in}  & {\em lC} & -\/ un objet de type \hyperlink{classliste_cours}{liste\+Cours} \\
+\hline
+\mbox{\tt in}  & {\em semaine} & -\/ un objet de type int \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 25
 \hypertarget{classafficheur_console_afbb988d4ec6d7ebad225f3353fb3045f}{}\label{classafficheur_console_afbb988d4ec6d7ebad225f3353fb3045f} 
 \index{afficheur\+Console@{afficheur\+Console}!afficher\+Professeur@{afficher\+Professeur}}
 \index{afficher\+Professeur@{afficher\+Professeur}!afficheur\+Console@{afficheur\+Console}}
@@ -262,9 +384,9 @@ Renvoie dans ost le nom du professeur du professeur p.
 \hline
 \end{DoxyParams}
 Here is the call graph for this function\+:
-% FIG 23
+% FIG 26
 Here is the caller graph for this function\+:
-% FIG 24
+% FIG 27
 \hypertarget{classafficheur_console_a475772836928606a2c7dec66c4ab9ff3}{}\label{classafficheur_console_a475772836928606a2c7dec66c4ab9ff3} 
 \index{afficheur\+Console@{afficheur\+Console}!afficher\+Salle@{afficher\+Salle}}
 \index{afficher\+Salle@{afficher\+Salle}!afficheur\+Console@{afficheur\+Console}}
@@ -281,9 +403,9 @@ Renvoie dans ost le nom de salle de la salle s.
 \hline
 \end{DoxyParams}
 Here is the call graph for this function\+:
-% FIG 25
+% FIG 28
 Here is the caller graph for this function\+:
-% FIG 26
+% FIG 29
 \hypertarget{classafficheur_console_abfe04587616b0cfa166a2a374febab9e}{}\label{classafficheur_console_abfe04587616b0cfa166a2a374febab9e} 
 \index{afficheur\+Console@{afficheur\+Console}!afficher\+Semaine@{afficher\+Semaine}}
 \index{afficher\+Semaine@{afficher\+Semaine}!afficheur\+Console@{afficheur\+Console}}
@@ -300,9 +422,9 @@ Renvoie dans ost le numero de la semaine de l\textquotesingle{}horaire h.
 \hline
 \end{DoxyParams}
 Here is the call graph for this function\+:
-% FIG 27
+% FIG 30
 Here is the caller graph for this function\+:
-% FIG 28
+% FIG 31
 \hypertarget{classafficheur_console_a49b72edf4baf8f7ec4898b61c48212fa}{}\label{classafficheur_console_a49b72edf4baf8f7ec4898b61c48212fa} 
 \index{afficheur\+Console@{afficheur\+Console}!ajouter\+Un\+Cours@{ajouter\+Un\+Cours}}
 \index{ajouter\+Un\+Cours@{ajouter\+Un\+Cours}!afficheur\+Console@{afficheur\+Console}}
@@ -310,39 +432,79 @@ Here is the caller graph for this function\+:
 {\footnotesize\ttfamily int afficheur\+Console\+::ajouter\+Un\+Cours (\begin{DoxyParamCaption}\item[{\hyperlink{classliste_cours}{liste\+Cours} \&}]{lC,  }\item[{\hyperlink{classliste_ressources}{liste\+Ressources} \&}]{lR }\end{DoxyParamCaption})}
 
 Here is the call graph for this function\+:
-% FIG 29
+% FIG 32
 Here is the caller graph for this function\+:
-% FIG 30
-\hypertarget{classafficheur_console_afc7875525901a8fe2f4b1a41e431f3be}{}\label{classafficheur_console_afc7875525901a8fe2f4b1a41e431f3be} 
+% FIG 33
+\hypertarget{classafficheur_console_a664854d719be3d4c9e724993dab7b7e7}{}\label{classafficheur_console_a664854d719be3d4c9e724993dab7b7e7} 
 \index{afficheur\+Console@{afficheur\+Console}!ajouter\+Une\+Formation@{ajouter\+Une\+Formation}}
 \index{ajouter\+Une\+Formation@{ajouter\+Une\+Formation}!afficheur\+Console@{afficheur\+Console}}
 \subsubsection{\texorpdfstring{ajouter\+Une\+Formation()}{ajouterUneFormation()}}
-{\footnotesize\ttfamily int afficheur\+Console\+::ajouter\+Une\+Formation (\begin{DoxyParamCaption}\item[{\hyperlink{classliste_ressources}{liste\+Ressources} \&}]{lR,  }\item[{\hyperlink{classafficheur_console}{afficheur\+Console} \&}]{aC }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily int afficheur\+Console\+::ajouter\+Une\+Formation (\begin{DoxyParamCaption}\item[{\hyperlink{classliste_ressources}{liste\+Ressources} \&}]{lR }\end{DoxyParamCaption})}
 
 Here is the call graph for this function\+:
-% FIG 31
+% FIG 34
 Here is the caller graph for this function\+:
-% FIG 32
-\hypertarget{classafficheur_console_a8d960816ca055b68ccb7b6b430fdc010}{}\label{classafficheur_console_a8d960816ca055b68ccb7b6b430fdc010} 
+% FIG 35
+\hypertarget{classafficheur_console_a4375a85818c816d7bc1ef3bf01880801}{}\label{classafficheur_console_a4375a85818c816d7bc1ef3bf01880801} 
 \index{afficheur\+Console@{afficheur\+Console}!ajouter\+Une\+Salle@{ajouter\+Une\+Salle}}
 \index{ajouter\+Une\+Salle@{ajouter\+Une\+Salle}!afficheur\+Console@{afficheur\+Console}}
 \subsubsection{\texorpdfstring{ajouter\+Une\+Salle()}{ajouterUneSalle()}}
-{\footnotesize\ttfamily int afficheur\+Console\+::ajouter\+Une\+Salle (\begin{DoxyParamCaption}\item[{\hyperlink{classliste_ressources}{liste\+Ressources} \&}]{lR,  }\item[{\hyperlink{classafficheur_console}{afficheur\+Console} \&}]{aC }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily int afficheur\+Console\+::ajouter\+Une\+Salle (\begin{DoxyParamCaption}\item[{\hyperlink{classliste_ressources}{liste\+Ressources} \&}]{lR }\end{DoxyParamCaption})}
 
 Here is the call graph for this function\+:
-% FIG 33
+% FIG 36
 Here is the caller graph for this function\+:
-% FIG 34
-\hypertarget{classafficheur_console_a595631c2119915610187597410406de2}{}\label{classafficheur_console_a595631c2119915610187597410406de2} 
+% FIG 37
+\hypertarget{classafficheur_console_ac3c741ace89754d281e173f461ea4869}{}\label{classafficheur_console_ac3c741ace89754d281e173f461ea4869} 
 \index{afficheur\+Console@{afficheur\+Console}!ajouter\+Un\+Prof@{ajouter\+Un\+Prof}}
 \index{ajouter\+Un\+Prof@{ajouter\+Un\+Prof}!afficheur\+Console@{afficheur\+Console}}
 \subsubsection{\texorpdfstring{ajouter\+Un\+Prof()}{ajouterUnProf()}}
-{\footnotesize\ttfamily int afficheur\+Console\+::ajouter\+Un\+Prof (\begin{DoxyParamCaption}\item[{\hyperlink{classliste_ressources}{liste\+Ressources} \&}]{lR,  }\item[{\hyperlink{classafficheur_console}{afficheur\+Console} \&}]{aC }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily int afficheur\+Console\+::ajouter\+Un\+Prof (\begin{DoxyParamCaption}\item[{\hyperlink{classliste_ressources}{liste\+Ressources} \&}]{lR }\end{DoxyParamCaption})}
 
 Here is the call graph for this function\+:
-% FIG 35
+% FIG 38
 Here is the caller graph for this function\+:
-% FIG 36
+% FIG 39
+\hypertarget{classafficheur_console_a7ef9576e86f204f1d184a1b4b0556593}{}\label{classafficheur_console_a7ef9576e86f204f1d184a1b4b0556593} 
+\index{afficheur\+Console@{afficheur\+Console}!supprimer\+Un\+Cours@{supprimer\+Un\+Cours}}
+\index{supprimer\+Un\+Cours@{supprimer\+Un\+Cours}!afficheur\+Console@{afficheur\+Console}}
+\subsubsection{\texorpdfstring{supprimer\+Un\+Cours()}{supprimerUnCours()}}
+{\footnotesize\ttfamily int afficheur\+Console\+::supprimer\+Un\+Cours (\begin{DoxyParamCaption}\item[{\hyperlink{classliste_cours}{liste\+Cours} \&}]{lC,  }\item[{\hyperlink{classliste_ressources}{liste\+Ressources} \&}]{lR }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+% FIG 40
+Here is the caller graph for this function\+:
+% FIG 41
+\hypertarget{classafficheur_console_a74bb005f3fb1022ebf5813624dab4ca6}{}\label{classafficheur_console_a74bb005f3fb1022ebf5813624dab4ca6} 
+\index{afficheur\+Console@{afficheur\+Console}!supprimer\+Une\+Formation@{supprimer\+Une\+Formation}}
+\index{supprimer\+Une\+Formation@{supprimer\+Une\+Formation}!afficheur\+Console@{afficheur\+Console}}
+\subsubsection{\texorpdfstring{supprimer\+Une\+Formation()}{supprimerUneFormation()}}
+{\footnotesize\ttfamily int afficheur\+Console\+::supprimer\+Une\+Formation (\begin{DoxyParamCaption}\item[{\hyperlink{classliste_ressources}{liste\+Ressources} \&}]{lR,  }\item[{const \hyperlink{classliste_cours}{liste\+Cours} \&}]{lC }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+% FIG 42
+Here is the caller graph for this function\+:
+% FIG 43
+\hypertarget{classafficheur_console_abeab0582c5350e514ed4937244cf0dfa}{}\label{classafficheur_console_abeab0582c5350e514ed4937244cf0dfa} 
+\index{afficheur\+Console@{afficheur\+Console}!supprimer\+Une\+Salle@{supprimer\+Une\+Salle}}
+\index{supprimer\+Une\+Salle@{supprimer\+Une\+Salle}!afficheur\+Console@{afficheur\+Console}}
+\subsubsection{\texorpdfstring{supprimer\+Une\+Salle()}{supprimerUneSalle()}}
+{\footnotesize\ttfamily int afficheur\+Console\+::supprimer\+Une\+Salle (\begin{DoxyParamCaption}\item[{\hyperlink{classliste_ressources}{liste\+Ressources} \&}]{lR,  }\item[{const \hyperlink{classliste_cours}{liste\+Cours} \&}]{lC }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+% FIG 44
+Here is the caller graph for this function\+:
+% FIG 45
+\hypertarget{classafficheur_console_a09a9d2f45d682b9a6fc970e18510157e}{}\label{classafficheur_console_a09a9d2f45d682b9a6fc970e18510157e} 
+\index{afficheur\+Console@{afficheur\+Console}!supprimer\+Un\+Prof@{supprimer\+Un\+Prof}}
+\index{supprimer\+Un\+Prof@{supprimer\+Un\+Prof}!afficheur\+Console@{afficheur\+Console}}
+\subsubsection{\texorpdfstring{supprimer\+Un\+Prof()}{supprimerUnProf()}}
+{\footnotesize\ttfamily int afficheur\+Console\+::supprimer\+Un\+Prof (\begin{DoxyParamCaption}\item[{\hyperlink{classliste_ressources}{liste\+Ressources} \&}]{lR,  }\item[{const \hyperlink{classliste_cours}{liste\+Cours} \&}]{lC }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+% FIG 46
+Here is the caller graph for this function\+:
+% FIG 47
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

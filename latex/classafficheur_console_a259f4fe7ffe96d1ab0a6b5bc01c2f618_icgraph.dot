@@ -3,9 +3,12 @@ digraph "afficheurConsole::afficherLesCours"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node91 [label="afficheurConsole::afficher\lLesCours",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node91 -> Node92 [dir="back",color="midnightblue",fontsize="10",style="solid"];
-  Node92 [label="menu",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8cpp.html#aaeb94d4bc6770f26e4bcfb2f9fcc9b15"];
-  Node92 -> Node93 [dir="back",color="midnightblue",fontsize="10",style="solid"];
-  Node93 [label="main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4"];
+  Node122 [label="afficheurConsole::afficher\lLesCours",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node122 -> Node123 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node123 [label="afficheurConsole::supprimer\lUnCours",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classafficheur_console.html#a7ef9576e86f204f1d184a1b4b0556593"];
+  Node123 -> Node124 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node124 [label="menu",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8cpp.html#aaeb94d4bc6770f26e4bcfb2f9fcc9b15"];
+  Node124 -> Node125 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node125 [label="main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4"];
+  Node122 -> Node124 [dir="back",color="midnightblue",fontsize="10",style="solid"];
 }

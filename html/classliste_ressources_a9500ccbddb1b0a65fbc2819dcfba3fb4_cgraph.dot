@@ -1,0 +1,17 @@
+digraph "listeRessources::professeurAUnCours"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node117 [label="listeRessources::professeur\lAUnCours",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node117 -> Node118 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node118 [label="listeCours::nombreDeCours",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classliste_cours.html#a34b859c2380770eb560c0a6dcf01cc81",tooltip="Renvoie le nombre de cours. "];
+  Node117 -> Node119 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node119 [label="listeCours::coursNumero",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classliste_cours.html#ac00615f15632669bf44424e960c95edd",tooltip="Renvoie le cours dont le numero correspond a l&#39;entier entre en parametre. "];
+  Node117 -> Node120 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node120 [label="cours::professeurDuCours",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcours.html#a84b7b5ac9221a3edcaf142c8b28152cb",tooltip="Renvoie le professeur lie a un cours. "];
+  Node117 -> Node121 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node121 [label="listeRessources::professeur\lNumero",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classliste_ressources.html#af6a22c9c36348e23b1bac9682e280d54",tooltip="Renvoie le professeur dont le numero est entre en parametre. "];
+  Node117 -> Node122 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node122 [label="listeRessources::position\lProfesseur",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classliste_ressources.html#a1d7b514a5f879849283a5326bd102d9c",tooltip="Renvoie la position du professeur dont le nom est entre en parametre. "];
+}

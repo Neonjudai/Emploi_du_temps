@@ -1,0 +1,84 @@
+\hypertarget{classgestion_fichier}{}\section{gestion\+Fichier Class Reference}
+\label{classgestion_fichier}\index{gestion\+Fichier@{gestion\+Fichier}}
+
+
+{\ttfamily \#include $<$gestion\+Fichier.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgestion_fichier_ae4bb18203e3d651e1c409b29cc9928d4}{gestion\+Fichier} (const string \&nom\+Fichier)
+\begin{DoxyCompactList}\small\item\em Constructeur de l\textquotesingle{}objet \hyperlink{classgestion_fichier}{gestion\+Fichier}. \end{DoxyCompactList}\item 
+bool \hyperlink{classgestion_fichier_ae02156fdd93090fe5298f89ac6517827}{lecture\+Des\+Donnees} (\hyperlink{classliste_cours}{liste\+Cours} \&LC, \hyperlink{classliste_ressources}{liste\+Ressources} \&LR)
+\begin{DoxyCompactList}\small\item\em Lit le fichier d\+\_\+nom\+Fichier pour récupérer la liste de Cours, Formation, Salle et Professeur dans LC et LR. \end{DoxyCompactList}\item 
+bool \hyperlink{classgestion_fichier_a4d20b3a03ae8cfce6889d2f2f5cad478}{ecriture\+Des\+Donnees} (const \hyperlink{classliste_cours}{liste\+Cours} \&LC, const \hyperlink{classliste_ressources}{liste\+Ressources} \&LR)
+\begin{DoxyCompactList}\small\item\em Ecrit dans le fichier d\+\_\+nom\+Fichier les Cours, Formation, Salle et Professeur. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classgestion_fichier_ae4bb18203e3d651e1c409b29cc9928d4}{}\label{classgestion_fichier_ae4bb18203e3d651e1c409b29cc9928d4} 
+\index{gestion\+Fichier@{gestion\+Fichier}!gestion\+Fichier@{gestion\+Fichier}}
+\index{gestion\+Fichier@{gestion\+Fichier}!gestion\+Fichier@{gestion\+Fichier}}
+\subsubsection{\texorpdfstring{gestion\+Fichier()}{gestionFichier()}}
+{\footnotesize\ttfamily gestion\+Fichier\+::gestion\+Fichier (\begin{DoxyParamCaption}\item[{const string \&}]{nom\+Fichier }\end{DoxyParamCaption})}
+
+
+
+Constructeur de l\textquotesingle{}objet \hyperlink{classgestion_fichier}{gestion\+Fichier}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em nom\+Fichier} & -\/ nom du fichier en string \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classgestion_fichier_a4d20b3a03ae8cfce6889d2f2f5cad478}{}\label{classgestion_fichier_a4d20b3a03ae8cfce6889d2f2f5cad478} 
+\index{gestion\+Fichier@{gestion\+Fichier}!ecriture\+Des\+Donnees@{ecriture\+Des\+Donnees}}
+\index{ecriture\+Des\+Donnees@{ecriture\+Des\+Donnees}!gestion\+Fichier@{gestion\+Fichier}}
+\subsubsection{\texorpdfstring{ecriture\+Des\+Donnees()}{ecritureDesDonnees()}}
+{\footnotesize\ttfamily bool gestion\+Fichier\+::ecriture\+Des\+Donnees (\begin{DoxyParamCaption}\item[{const \hyperlink{classliste_cours}{liste\+Cours} \&}]{LC,  }\item[{const \hyperlink{classliste_ressources}{liste\+Ressources} \&}]{LR }\end{DoxyParamCaption})}
+
+
+
+Ecrit dans le fichier d\+\_\+nom\+Fichier les Cours, Formation, Salle et Professeur. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em LC} & -\/ objet de type \hyperlink{classliste_cours}{liste\+Cours} \\
+\hline
+\mbox{\tt in}  & {\em LR} & -\/ objet de type \hyperlink{classliste_ressources}{liste\+Ressources} \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 0
+Here is the caller graph for this function\+:
+% FIG 1
+\hypertarget{classgestion_fichier_ae02156fdd93090fe5298f89ac6517827}{}\label{classgestion_fichier_ae02156fdd93090fe5298f89ac6517827} 
+\index{gestion\+Fichier@{gestion\+Fichier}!lecture\+Des\+Donnees@{lecture\+Des\+Donnees}}
+\index{lecture\+Des\+Donnees@{lecture\+Des\+Donnees}!gestion\+Fichier@{gestion\+Fichier}}
+\subsubsection{\texorpdfstring{lecture\+Des\+Donnees()}{lectureDesDonnees()}}
+{\footnotesize\ttfamily bool gestion\+Fichier\+::lecture\+Des\+Donnees (\begin{DoxyParamCaption}\item[{\hyperlink{classliste_cours}{liste\+Cours} \&}]{LC,  }\item[{\hyperlink{classliste_ressources}{liste\+Ressources} \&}]{LR }\end{DoxyParamCaption})}
+
+
+
+Lit le fichier d\+\_\+nom\+Fichier pour récupérer la liste de Cours, Formation, Salle et Professeur dans LC et LR. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em LC} & -\/ objet de type \hyperlink{classliste_cours}{liste\+Cours} \\
+\hline
+\mbox{\tt out}  & {\em LR} & -\/ objet de type \hyperlink{classliste_ressources}{liste\+Ressources} \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 2
+Here is the caller graph for this function\+:
+% FIG 3
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+lib/\hyperlink{gestion_fichier_8h}{gestion\+Fichier.\+h}\item 
+cpp/\hyperlink{gestion_fichier_8cpp}{gestion\+Fichier.\+cpp}\end{DoxyCompactItemize}

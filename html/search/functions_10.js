@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['salle',['salle',['../classsalle.html#afff557d088f3a88fea869c69c4a27034',1,'salle::salle()=delete'],['../classsalle.html#ace93788308dff32bd4a8e8baad4c51ec',1,'salle::salle(string nomSalle, int taille)'],['../classsalle.html#ab6c4208e0e55d42c67880fa02e25f245',1,'salle::salle(const salle &amp;p)=default']]],
+  ['salle',['salle',['../classsalle.html#afff557d088f3a88fea869c69c4a27034',1,'salle::salle()=delete'],['../classsalle.html#ace93788308dff32bd4a8e8baad4c51ec',1,'salle::salle(string nomSalle, int taille)'],['../classsalle.html#ab867869e43a98e8ba90195dbc4c2362c',1,'salle::salle(const salle &amp;s)=default']]],
+  ['salleauncours',['salleAUnCours',['../classliste_ressources.html#a83834356f61b0106d3b2157afc363dc5',1,'listeRessources']]],
   ['salleducours',['salleDuCours',['../classcours.html#af98361045fec0b63de23c45d3853fb57',1,'cours']]],
   ['sallenumero',['salleNumero',['../classliste_ressources.html#ae49f2ce49be854dda108840fd3d26112',1,'listeRessources']]],
   ['sallenumerop',['salleNumeroP',['../classliste_ressources.html#a1badd55beb2e05645cc17d488fd0a3b9',1,'listeRessources']]],
@@ -32,6 +33,10 @@ var searchData=
   ['start',['start',['../class_catch_1_1_timer.html#a0a56e879e43f36c102bf9ea8b5fc8b72',1,'Catch::Timer']]],
   ['startswith',['StartsWith',['../struct_catch_1_1_matchers_1_1_impl_1_1_std_string_1_1_starts_with.html#a0db1bd8876219464ae60346c9525bcf6',1,'Catch::Matchers::Impl::StdString::StartsWith::StartsWith(std::string const &amp;substr, CaseSensitive::Choice caseSensitivity=CaseSensitive::Yes)'],['../struct_catch_1_1_matchers_1_1_impl_1_1_std_string_1_1_starts_with.html#a5526cb587632e7e46253d6f60ae01098',1,'Catch::Matchers::Impl::StdString::StartsWith::StartsWith(StartsWith const &amp;other)'],['../namespace_catch.html#a695f62327be0676e046291eeaae15110',1,'Catch::startsWith()'],['../namespace_catch_1_1_matchers.html#a9b6a7704df7d0717dc6686fd2055ffea',1,'Catch::Matchers::StartsWith(std::string const &amp;substr)'],['../namespace_catch_1_1_matchers.html#a031985c11b8c8bb62585b3904f9fd2b0',1,'Catch::Matchers::StartsWith(const char *substr)']]],
   ['succeeded',['succeeded',['../class_catch_1_1_assertion_result.html#ac5cc872b721d5fb65d87221d30b22fdd',1,'Catch::AssertionResult']]],
-  ['supprimerunhoraire',['supprimerUnHoraire',['../classliste_d_horaire.html#ad7e5d53b1c64285c908f9fe2e60aa61f',1,'listeDHoraire']]],
+  ['supprimeruncours',['supprimerUnCours',['../classafficheur_console.html#a7ef9576e86f204f1d184a1b4b0556593',1,'afficheurConsole::supprimerUnCours()'],['../classliste_cours.html#a772f9af062114a9b5f2420e3bbe3e675',1,'listeCours::supprimerUnCours()']]],
+  ['supprimeruneformation',['supprimerUneFormation',['../classafficheur_console.html#a74bb005f3fb1022ebf5813624dab4ca6',1,'afficheurConsole::supprimerUneFormation()'],['../classliste_ressources.html#a898637edf00749de0460b3ce07168a71',1,'listeRessources::supprimerUneFormation()']]],
+  ['supprimerunesalle',['supprimerUneSalle',['../classafficheur_console.html#abeab0582c5350e514ed4937244cf0dfa',1,'afficheurConsole::supprimerUneSalle()'],['../classliste_ressources.html#a364c27cbbbaa542d110d744e016cf092',1,'listeRessources::supprimerUneSalle()']]],
+  ['supprimerunprof',['supprimerUnProf',['../classafficheur_console.html#a09a9d2f45d682b9a6fc970e18510157e',1,'afficheurConsole']]],
+  ['supprimerunprofesseur',['supprimerUnProfesseur',['../classliste_ressources.html#acf367bf8942e1578db883d066f1e0cf3',1,'listeRessources']]],
   ['swap',['swap',['../class_catch_1_1_ptr.html#a172bf8b4e71e26a5a4d92f5b02158b50',1,'Catch::Ptr::swap()'],['../class_catch_1_1_test_case.html#aee38f908faf10b905b209ca388275413',1,'Catch::TestCase::swap()']]]
 ];

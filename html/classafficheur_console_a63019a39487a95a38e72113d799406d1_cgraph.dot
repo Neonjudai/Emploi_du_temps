@@ -3,15 +3,15 @@ digraph "afficheurConsole::afficherLesSalles"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node134 [label="afficheurConsole::afficher\lLesSalles",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node134 -> Node135 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node135 [label="listeRessources::nombreDe\lSalles",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classliste_ressources.html#a1a7f82a289bda61cf08485e92dd32b2e",tooltip="Renvoie le nombre de salles. "];
-  Node134 -> Node136 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node136 [label="afficheurConsole::afficher\lSalle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classafficheur_console.html#a475772836928606a2c7dec66c4ab9ff3",tooltip="Renvoie dans ost le nom de salle de la salle s. "];
-  Node136 -> Node137 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node137 [label="ressource::nom",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classressource.html#aff712b6d732b3f4091dd29f4349aba85",tooltip="Renvoie le nom de la ressource. "];
-  Node136 -> Node138 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node138 [label="salle::nombrePlaces",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsalle.html#a9f8186e0dee9859a2bc08938cce0174f",tooltip="Renvoie le nombre de places. "];
-  Node134 -> Node139 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node139 [label="listeRessources::salleNumero",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classliste_ressources.html#ae49f2ce49be854dda108840fd3d26112",tooltip="Renvoie la salle dont le numero est entre en parametre. "];
+  Node168 [label="afficheurConsole::afficher\lLesSalles",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node168 -> Node169 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node169 [label="listeRessources::nombreDe\lSalles",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classliste_ressources.html#a1a7f82a289bda61cf08485e92dd32b2e",tooltip="Renvoie le nombre de salles. "];
+  Node168 -> Node170 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node170 [label="afficheurConsole::afficher\lSalle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classafficheur_console.html#a475772836928606a2c7dec66c4ab9ff3",tooltip="Renvoie dans ost le nom de salle de la salle s. "];
+  Node170 -> Node171 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node171 [label="ressource::nom",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classressource.html#aff712b6d732b3f4091dd29f4349aba85",tooltip="Renvoie le nom de la ressource. "];
+  Node170 -> Node172 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node172 [label="salle::nombrePlaces",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsalle.html#a9f8186e0dee9859a2bc08938cce0174f",tooltip="Renvoie le nombre de places. "];
+  Node168 -> Node173 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node173 [label="listeRessources::salleNumero",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classliste_ressources.html#ae49f2ce49be854dda108840fd3d26112",tooltip="Renvoie la salle dont le numero est entre en parametre. "];
 }

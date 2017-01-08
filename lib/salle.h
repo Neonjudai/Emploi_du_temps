@@ -17,7 +17,7 @@ class salle: public ressource{
     public:
         salle() =delete;
         salle (string nomSalle, int taille);
-        salle(const salle & p) =default;
+        salle(const salle & s)=default;
 
         //SET
         void changerNombrePlaces( int val);

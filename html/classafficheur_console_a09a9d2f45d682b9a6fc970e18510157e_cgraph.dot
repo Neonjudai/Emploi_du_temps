@@ -1,0 +1,34 @@
+digraph "afficheurConsole::supprimerUnProf"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node415 [label="afficheurConsole::supprimer\lUnProf",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node415 -> Node416 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node416 [label="afficheurConsole::afficher\lLesProfesseurs",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classafficheur_console.html#a800c6da422bccdf2fdcaadcdafe4bbd6",tooltip="Renvoie dans ost les professeurs de la liste de ressources. "];
+  Node416 -> Node417 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node417 [label="listeRessources::nombreDe\lProfesseurs",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classliste_ressources.html#a9b496a36a9651347734d7895397dde00",tooltip="Renvoie le nombre de professeurs. "];
+  Node416 -> Node418 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node418 [label="afficheurConsole::afficher\lProfesseur",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classafficheur_console.html#afbb988d4ec6d7ebad225f3353fb3045f",tooltip="Renvoie dans ost le nom du professeur du professeur p. "];
+  Node418 -> Node419 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node419 [label="ressource::nom",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classressource.html#aff712b6d732b3f4091dd29f4349aba85",tooltip="Renvoie le nom de la ressource. "];
+  Node416 -> Node420 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node420 [label="listeRessources::professeur\lNumero",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classliste_ressources.html#af6a22c9c36348e23b1bac9682e280d54",tooltip="Renvoie le professeur dont le numero est entre en parametre. "];
+  Node415 -> Node421 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node421 [label="afficheurConsole::afficher",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classafficheur_console.html#a6b77fbeb61624d075a0b352c9ca27792"];
+  Node415 -> Node422 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node422 [label="listeRessources::position\lProfesseur",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classliste_ressources.html#a1d7b514a5f879849283a5326bd102d9c",tooltip="Renvoie la position du professeur dont le nom est entre en parametre. "];
+  Node415 -> Node423 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node423 [label="listeRessources::professeur\lAUnCours",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classliste_ressources.html#a9500ccbddb1b0a65fbc2819dcfba3fb4",tooltip="verifies si le professeur a un cours prevu "];
+  Node423 -> Node424 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node424 [label="listeCours::nombreDeCours",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classliste_cours.html#a34b859c2380770eb560c0a6dcf01cc81",tooltip="Renvoie le nombre de cours. "];
+  Node423 -> Node425 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node425 [label="listeCours::coursNumero",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classliste_cours.html#ac00615f15632669bf44424e960c95edd",tooltip="Renvoie le cours dont le numero correspond a l&#39;entier entre en parametre. "];
+  Node423 -> Node426 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node426 [label="cours::professeurDuCours",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcours.html#a84b7b5ac9221a3edcaf142c8b28152cb",tooltip="Renvoie le professeur lie a un cours. "];
+  Node423 -> Node420 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node423 -> Node422 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node415 -> Node427 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node427 [label="listeRessources::supprimer\lUnProfesseur",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classliste_ressources.html#acf367bf8942e1578db883d066f1e0cf3",tooltip="supprimes un professeur "];
+  Node427 -> Node422 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

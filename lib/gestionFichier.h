@@ -1,3 +1,11 @@
+
+/**
+ * @file gestionFichier.h
+ * @brief Definition des methodes de la classe gestionFichier
+ * @author Benjamin Bunner
+ * @version 1.0
+ */
+
 #ifndef GESTIONFICHIER_H
 #define GESTIONFICHIER_H
 

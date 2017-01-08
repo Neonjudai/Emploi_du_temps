@@ -1,0 +1,36 @@
+digraph "afficheurConsole::supprimerUneFormation"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node381 [label="afficheurConsole::supprimer\lUneFormation",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node381 -> Node382 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node382 [label="afficheurConsole::afficher\lLesFormations",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classafficheur_console.html#a8f9fbf20b142d1805a0418f24b30c273",tooltip="Renvoie dans ost les formations de la liste de ressources. "];
+  Node382 -> Node383 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node383 [label="listeRessources::nombreDe\lFormations",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classliste_ressources.html#a332aca734617587a463197043a058b02",tooltip="Renvoie le nombre de formations. "];
+  Node382 -> Node384 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node384 [label="afficheurConsole::afficher\lFormation",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classafficheur_console.html#a7329605c0c533c5306bf14b6fbe47358"];
+  Node384 -> Node385 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node385 [label="ressource::nom",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classressource.html#aff712b6d732b3f4091dd29f4349aba85",tooltip="Renvoie le nom de la ressource. "];
+  Node384 -> Node386 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node386 [label="formation::nombreEtudiant",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classformation.html#a917c18b3f7439abad5114b5a89b1a01a",tooltip="Renvoie le nombre d&#39;etudiant dans la formation. "];
+  Node382 -> Node387 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node387 [label="listeRessources::formation\lNumero",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classliste_ressources.html#aa0dc7c74caa61d02294c51fb79f7abe7",tooltip="Renvoie la formation dont le numero est entre en parametre. "];
+  Node381 -> Node388 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node388 [label="afficheurConsole::afficher",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classafficheur_console.html#a6b77fbeb61624d075a0b352c9ca27792"];
+  Node381 -> Node389 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node389 [label="listeRessources::position\lFormation",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classliste_ressources.html#a1649d1144f57339c52731acf2d5cfa51",tooltip="Renvoie la position de la formation dont le nom est entre en parametre. "];
+  Node381 -> Node390 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node390 [label="listeRessources::formation\lAUnCours",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classliste_ressources.html#adca8580fb284edf37def6b5f650ea6a9",tooltip="verifies sila formation a un cours "];
+  Node390 -> Node391 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node391 [label="listeCours::nombreDeCours",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classliste_cours.html#a34b859c2380770eb560c0a6dcf01cc81",tooltip="Renvoie le nombre de cours. "];
+  Node390 -> Node392 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node392 [label="listeCours::coursNumero",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classliste_cours.html#ac00615f15632669bf44424e960c95edd",tooltip="Renvoie le cours dont le numero correspond a l&#39;entier entre en parametre. "];
+  Node390 -> Node393 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node393 [label="cours::formationDuCours",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcours.html#a6f2b466ed292ca0152a90c34509be8af",tooltip="Renvoie la formation lie a un cours. "];
+  Node390 -> Node387 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node390 -> Node389 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node381 -> Node394 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node394 [label="listeRessources::supprimer\lUneFormation",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classliste_ressources.html#a898637edf00749de0460b3ce07168a71",tooltip="supprimes la formation "];
+  Node394 -> Node389 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

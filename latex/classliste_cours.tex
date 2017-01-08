@@ -15,8 +15,12 @@ int \hyperlink{classliste_cours_a34b859c2380770eb560c0a6dcf01cc81}{nombre\+De\+C
 \begin{DoxyCompactList}\small\item\em Renvoie le nombre de cours. \end{DoxyCompactList}\item 
 \hyperlink{classcours}{cours} \hyperlink{classliste_cours_ac00615f15632669bf44424e960c95edd}{cours\+Numero} (int i) const
 \begin{DoxyCompactList}\small\item\em Renvoie le cours dont le numero correspond a l\textquotesingle{}entier entre en parametre. \end{DoxyCompactList}\item 
-bool \hyperlink{classliste_cours_ab66777592d4693d8db47e756dfe61878}{est\+Possible} (const \hyperlink{classcours}{cours} \&c) const
-\begin{DoxyCompactList}\small\item\em Verifie si le cours peut etre ajoute a d\+\_\+liste\+Des\+Cours. \end{DoxyCompactList}\end{DoxyCompactItemize}
+int \hyperlink{classliste_cours_a788e1017848b813a450a6156dd043a7a}{est\+Possible} (const \hyperlink{classcours}{cours} \&c) const
+\begin{DoxyCompactList}\small\item\em Verifie si le cours peut etre ajoute a d\+\_\+liste\+Des\+Cours. \end{DoxyCompactList}\item 
+int \hyperlink{classliste_cours_a71e0b3dd96c917afdb8206a43b0f83bd}{numero\+De\+Cours} (const \hyperlink{classhoraire}{horaire} \&\hyperlink{classhoraire}{horaire}, const \hyperlink{classprofesseur}{professeur} \&\hyperlink{classprofesseur}{professeur}, const \hyperlink{classsalle}{salle} \&\hyperlink{classsalle}{salle}, const \hyperlink{classformation}{formation} \&\hyperlink{classformation}{formation}) const
+\begin{DoxyCompactList}\small\item\em Determines dans la liste de cours la position du cours dans cette liste, renvoyant -\/1 s\textquotesingle{}il n\textquotesingle{}a pas ete trouve. \end{DoxyCompactList}\item 
+void \hyperlink{classliste_cours_a772f9af062114a9b5f2420e3bbe3e675}{supprimer\+Un\+Cours} (int i)
+\begin{DoxyCompactList}\small\item\em supprimes un cours dans la liste de cours \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Constructor \& Destructor Documentation}
@@ -70,11 +74,11 @@ d\+\_\+liste\+Des\+Cours\mbox{[}i\mbox{]} -\/ un objet de type cours
 \end{DoxyReturn}
 Here is the caller graph for this function\+:
 % FIG 0
-\hypertarget{classliste_cours_ab66777592d4693d8db47e756dfe61878}{}\label{classliste_cours_ab66777592d4693d8db47e756dfe61878} 
+\hypertarget{classliste_cours_a788e1017848b813a450a6156dd043a7a}{}\label{classliste_cours_a788e1017848b813a450a6156dd043a7a} 
 \index{liste\+Cours@{liste\+Cours}!est\+Possible@{est\+Possible}}
 \index{est\+Possible@{est\+Possible}!liste\+Cours@{liste\+Cours}}
 \subsubsection{\texorpdfstring{est\+Possible()}{estPossible()}}
-{\footnotesize\ttfamily bool liste\+Cours\+::est\+Possible (\begin{DoxyParamCaption}\item[{const \hyperlink{classcours}{cours} \&}]{c }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily int liste\+Cours\+::est\+Possible (\begin{DoxyParamCaption}\item[{const \hyperlink{classcours}{cours} \&}]{c }\end{DoxyParamCaption}) const}
 
 
 
@@ -102,6 +106,49 @@ le nombre de cours
 \end{DoxyReturn}
 Here is the caller graph for this function\+:
 % FIG 3
+\hypertarget{classliste_cours_a71e0b3dd96c917afdb8206a43b0f83bd}{}\label{classliste_cours_a71e0b3dd96c917afdb8206a43b0f83bd} 
+\index{liste\+Cours@{liste\+Cours}!numero\+De\+Cours@{numero\+De\+Cours}}
+\index{numero\+De\+Cours@{numero\+De\+Cours}!liste\+Cours@{liste\+Cours}}
+\subsubsection{\texorpdfstring{numero\+De\+Cours()}{numeroDeCours()}}
+{\footnotesize\ttfamily int liste\+Cours\+::numero\+De\+Cours (\begin{DoxyParamCaption}\item[{const \hyperlink{classhoraire}{horaire} \&}]{horaire,  }\item[{const \hyperlink{classprofesseur}{professeur} \&}]{professeur,  }\item[{const \hyperlink{classsalle}{salle} \&}]{salle,  }\item[{const \hyperlink{classformation}{formation} \&}]{formation }\end{DoxyParamCaption}) const}
+
+
+
+Determines dans la liste de cours la position du cours dans cette liste, renvoyant -\/1 s\textquotesingle{}il n\textquotesingle{}a pas ete trouve. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em horaire} & -\/ objet de type horaire \\
+\hline
+\mbox{\tt in}  & {\em professeur} & -\/ objet de type professeur \\
+\hline
+\mbox{\tt in}  & {\em salle} & -\/ objet de type salle \\
+\hline
+\mbox{\tt in}  & {\em formation} & -\/ objet de type formation \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+numero -\/ entier retournant lindice du cours dans la liste de cours 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 4
+\hypertarget{classliste_cours_a772f9af062114a9b5f2420e3bbe3e675}{}\label{classliste_cours_a772f9af062114a9b5f2420e3bbe3e675} 
+\index{liste\+Cours@{liste\+Cours}!supprimer\+Un\+Cours@{supprimer\+Un\+Cours}}
+\index{supprimer\+Un\+Cours@{supprimer\+Un\+Cours}!liste\+Cours@{liste\+Cours}}
+\subsubsection{\texorpdfstring{supprimer\+Un\+Cours()}{supprimerUnCours()}}
+{\footnotesize\ttfamily void liste\+Cours\+::supprimer\+Un\+Cours (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+supprimes un cours dans la liste de cours 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em i} & -\/ lindice du cours dans la liste de cours \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+% FIG 5
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
