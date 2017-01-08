@@ -22,6 +22,19 @@ TEST_CASE("Tests sur les professeurs", "[listeRessources]")
 		REQUIRE(lr.professeurNumero(0) == p);
 	}
 
+	listeCours lc;
+	horaire h{ 1, 1, 1 };
+	professeur * p1 = new professeur{ p };
+	salle * s = new salle{ "37", 37 };
+	formation * f = new formation{ "L3", 20 };
+	cours c{ h, p1, s, f };
+
+	lc.ajouterUnCours(c);
+
+	SECTION("Verification du professeur ayant un cours")
+	{
+		REQUIRE(lr.professeurAUnCours(lc, p.nom()));
+	}
 	lr.supprimerUnProfesseur(p.nom());
 	SECTION("Suppression d'un professeur")
 	{
@@ -44,6 +57,19 @@ TEST_CASE("Tests sur les salles", "[listeRessources]")
 		REQUIRE(lr.salleNumero(0) == s);
 	}
 
+	listeCours lc;
+	horaire h{ 1, 1, 1 };
+	professeur * p = new professeur{ "Dupond" };
+	salle * s1 = new salle{ s };
+	formation * f = new formation{ "L3", 20 };
+	cours c{ h, p, s1, f };
+
+	lc.ajouterUnCours(c);
+
+	SECTION("Verification de cours ayant lieu dans la salle")
+	{
+		REQUIRE(lr.salleAUnCours(lc, s.nom()));
+	}
 	lr.supprimerUneSalle(s.nom());
 	SECTION("Suppression d'une salle")
 	{
@@ -65,6 +91,20 @@ TEST_CASE("Tests sur les formations", "[listeRessources]")
 	{
 		REQUIRE(lr.nombreDeFormations() > 0);
 		REQUIRE(lr.formationNumero(0) == f);
+	}
+
+	listeCours lc;
+	horaire h{ 1, 1, 1 };
+	professeur * p = new professeur{ "Dupond" };
+	salle * s = new salle{ "37", 37 };
+	formation * f1 = new formation{ f };
+	cours c{ h, p, s, f1 };
+
+	lc.ajouterUnCours(c);
+
+	SECTION("Verification du professeur ayant un cours")
+	{
+		REQUIRE(lr.formationAUnCours(lc, f.nom()));
 	}
 
 	lr.supprimerUneFormation(f.nom());
