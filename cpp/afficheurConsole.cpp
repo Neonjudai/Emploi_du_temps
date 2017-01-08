@@ -506,4 +506,41 @@ void afficheurConsole::afficherParSalle(const salle& salle, const listeCours& lC
 	}
 }
 
+/**
+@brief Renvoie dans ost les cours concernant toutes les ressources mises en paramètre
+@param[in] r - un objet de type vecteur de ressource
+@param[in] lC - un objet de type listeCours
+*/
+void afficheurConsole::afficherParRessources(const std::vector<ressource> &r, const listeCours &lC)
+{
+	bool conditions;
+	if (r.size() != 0)
+	{
+		*d_ost << "Liste des cours avec les conditions :";
+		for (int i = 0; i < r.size(); i++)
+			*d_ost << " - " << r[i].nom();
+		*d_ost << std::endl;
 
+		for (int i = 0; i < T_AFFICHAGE; i++) *d_ost << "_";
+		*d_ost << endl;
+		*d_ost << "Semaine | Jour     | Horaire       | Professeur      | Formation                         | Salle                      |" << endl;
+		for (int i = 0; i<T_AFFICHAGE; i++) *d_ost << "-";
+		*d_ost << endl;
+		for (int i = 0; i<lC.nombreDeCours(); ++i)
+		{
+			conditions = true;
+			for (int j = 0; j < r.size() && conditions; j++)
+			{
+				if (r[j].nom() != lC.coursNumero(i).formationDuCours().nom() && r[j].nom() != lC.coursNumero(i).professeurDuCours().nom() && r[j].nom() != lC.coursNumero(i).salleDuCours().nom())
+					conditions = false;
+			}
+			if (conditions)
+			{
+				afficherCours(lC.coursNumero(i));
+				*d_ost << std::endl;
+			}
+		}
+		for (int i = 0; i<T_AFFICHAGE; i++) *d_ost << "-";
+		*d_ost << endl;
+	}
+}
