@@ -12,9 +12,8 @@
 #include "ressource.h"
 
 class professeur : public ressource{
-	friend class ressource;
 	public:
-		professeur(string nom);
+		professeur(const string & nom);
 		professeur(const professeur & p) =default;
 	private:
 };

@@ -10,13 +10,11 @@
 #include <string>
 #include "ressource.h"
 
-using std::string;
 
 class salle: public ressource{
-	friend class ressource;
     public:
         salle() =delete;
-        salle (string nomSalle, int taille);
+        salle (const string & nomSalle, int taille);
         salle(const salle & s)=default;
 
         //SET

@@ -110,6 +110,7 @@ void listeCours::QuickSort(int gauche, int droite)
   @brief Partitionne d_listeDesCours
   @param[in] gauche - entier
   @param[in] droite - entier
+  @return i 
 */
 int listeCours::partition(int gauche, int droite)
 {	horaire x = d_listeDesCours[gauche].horaireDuCours();

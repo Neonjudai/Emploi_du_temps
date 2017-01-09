@@ -9,7 +9,7 @@
 #include <cstdlib>
 
 /**
-@brief Constructeur de l'objet listeRessources
+	@brief Constructeur de l'objet listeRessources
  */
 listeRessources::listeRessources() {}
 
@@ -21,7 +21,7 @@ listeRessources::listeRessources() {}
   @brief Ajoute un professeur
   @param[in] p - un objet de type professeur
 */
-void listeRessources::ajouterUnProfesseur(professeur p) {d_listeDesProfesseurs.push_back(p);}
+void listeRessources::ajouterUnProfesseur(const professeur & p) {d_listeDesProfesseurs.push_back(p);}
 
 /**
   @brief Renvoie le nombre de professeurs
@@ -35,8 +35,9 @@ int listeRessources::nombreDeProfesseurs() const {return d_listeDesProfesseurs.s
   @return le professeur* dont le numero est entre en parametre
 */
 professeur* listeRessources::professeurNumeroP(int i)
-{	if (i<d_listeDesProfesseurs.size()) return &d_listeDesProfesseurs[i];
-	return &d_listeDesProfesseurs[d_listeDesProfesseurs.size()]; //Doit faire crash, n'est jamais appelé
+{	
+	if (i<d_listeDesProfesseurs.size()) return &d_listeDesProfesseurs[i];
+		return &d_listeDesProfesseurs[d_listeDesProfesseurs.size()]; 
 }
 
 /**
@@ -45,17 +46,19 @@ professeur* listeRessources::professeurNumeroP(int i)
   @return le professeur dont le numero est entre en parametre
 */
 professeur listeRessources::professeurNumero(int i) const
-{	if (i<d_listeDesProfesseurs.size()) return d_listeDesProfesseurs[i];
-	return d_listeDesProfesseurs[d_listeDesProfesseurs.size()]; //Doit faire crash, n'est jamais appelé
+{	
+	if (i<d_listeDesProfesseurs.size()) return d_listeDesProfesseurs[i];
+		return d_listeDesProfesseurs[d_listeDesProfesseurs.size()]; 
 }
 
 /**
   @brief Renvoie la position du professeur dont le nom est entre en parametre
   @param[in] nom - le nom du professeur
-  @return la position du professeur dont le nom est entre en parametre
+  @return la position du professeur dont le nom est entre en parametre, -1 s'il n'est pas trouve
 */
-int listeRessources::positionProfesseur(std::string nom) const
-{	int i=0;
+int listeRessources::positionProfesseur(const std::string & nom) const
+{	
+	int i=0;
 	while (i<d_listeDesProfesseurs.size() && d_listeDesProfesseurs[i].nom() != nom) i++;
 	if (i==d_listeDesProfesseurs.size()) return -1;
 	return i;
@@ -67,7 +70,7 @@ int listeRessources::positionProfesseur(std::string nom) const
 	@param[in] nomDuProfesseur 	- chaine de caractere correspondant au nom du professeur
 	@return aUnCours			- retournes vrai si le professeur a un cours
 */
-bool listeRessources::professeurAUnCours(const listeCours & listeDeCours, const std::string & nomDuProfesseur)
+bool listeRessources::professeurAUnCours(const listeCours & listeDeCours, const std::string & nomDuProfesseur) const
 {
 	bool aUnCours = false;
 	for (int i = 0; i < listeDeCours.nombreDeCours() && !aUnCours; i++)
@@ -97,7 +100,7 @@ void listeRessources::supprimerUnProfesseur(const std::string & nomDuProfesseur)
   @brief Ajoute une salle
   @param[in] s - un objet de type salle
 */
-void listeRessources::ajouterUneSalle(salle s) {d_listeDesSalles.push_back(s);}
+void listeRessources::ajouterUneSalle(const salle & s) {d_listeDesSalles.push_back(s);}
 
 /**
   @brief Renvoie le nombre de salles
@@ -111,8 +114,9 @@ int listeRessources::nombreDeSalles() const {return d_listeDesSalles.size();}
   @return la salle* dont le numero est entre en parametre
 */
 salle* listeRessources::salleNumeroP(int i)
-{	if (i<d_listeDesSalles.size()) return &d_listeDesSalles[i];
-	return &d_listeDesSalles[d_listeDesSalles.size()]; //Doit faire crash, n'est jamais appelé
+{	
+	if (i<d_listeDesSalles.size()) return &d_listeDesSalles[i];
+	return &d_listeDesSalles[d_listeDesSalles.size()];
 }
 
 /**
@@ -121,16 +125,17 @@ salle* listeRessources::salleNumeroP(int i)
   @return la salle dont le numero est entre en parametre
 */
 salle listeRessources::salleNumero(int i) const
-{	if (i<d_listeDesSalles.size()) return d_listeDesSalles[i];
-	return d_listeDesSalles[d_listeDesSalles.size()]; //Doit faire crash, n'est jamais appelé
+{	
+	if (i<d_listeDesSalles.size()) return d_listeDesSalles[i];
+	return d_listeDesSalles[d_listeDesSalles.size()];
 }
 
 /**
   @brief Renvoie la position de la salle dont le nom est entre en parametre
   @param[in] nom - le nom de la salle
-  @return la position de la salle dont le nom est entre en parametre
+  @return la position de la salle dont le nom est entre en parametre, -1 si la salle n'est pas trouve
 */
-int listeRessources::positionSalle(std::string nom) const
+int listeRessources::positionSalle(const std::string & nom) const
 {	int i=0;
 	while (i<d_listeDesSalles.size() && d_listeDesSalles[i].nom() != nom) i++;
 	if (i==d_listeDesSalles.size()) return -1;
@@ -143,7 +148,7 @@ int listeRessources::positionSalle(std::string nom) const
 	@param[in] nomDeLaSalle 	- chaine de caractere correspondant au nom de la salle
 	@return aUnCours			- retournes vrai si un cours a lieu dans la salle
 */
-bool listeRessources::salleAUnCours(const listeCours & listeDeCours, const std::string & nomDeLaSalle)
+bool listeRessources::salleAUnCours(const listeCours & listeDeCours, const std::string & nomDeLaSalle) const
 {
 	bool aUnCours = false;
 	for (int i = 0; i < listeDeCours.nombreDeCours() && !aUnCours; i++)
@@ -173,7 +178,7 @@ void listeRessources::supprimerUneSalle(const std::string & nomDeLaSalle)
   @brief Ajoute une formation
   @param[in] f - un objet de type formation
 */
-void listeRessources::ajouterUneFormation(formation f) {d_listeDesFormations.push_back(f);}
+void listeRessources::ajouterUneFormation(const formation & f) {d_listeDesFormations.push_back(f);}
 
 /**
   @brief Renvoie le nombre de formations
@@ -187,8 +192,9 @@ int listeRessources::nombreDeFormations() const {return d_listeDesFormations.siz
   @return la formation* dont le numero est entre en parametre
 */
 formation* listeRessources::formationNumeroP(int i)
-{	if (i<d_listeDesFormations.size()) return &d_listeDesFormations[i];
-	return &d_listeDesFormations[d_listeDesFormations.size()]; //Doit faire crash, n'est jamais appelé
+{	
+	if (i<d_listeDesFormations.size()) return &d_listeDesFormations[i];
+	return &d_listeDesFormations[d_listeDesFormations.size()];
 }
 
 
@@ -198,29 +204,31 @@ formation* listeRessources::formationNumeroP(int i)
   @return la formation dont le numero est entre en parametre
 */
 formation listeRessources::formationNumero(int i) const
-{	if (i<d_listeDesFormations.size()) return d_listeDesFormations[i];
-	return d_listeDesFormations[d_listeDesFormations.size()]; //Doit faire crash, n'est jamais appelé
+{	
+	if (i<d_listeDesFormations.size()) return d_listeDesFormations[i];
+	return d_listeDesFormations[d_listeDesFormations.size()]; 
 }
 
 /**
   @brief Renvoie la position de la formation dont le nom est entre en parametre
   @param[in] nom - le nom de la formation
-  @return la position de la formation dont le nom est entre en parametre
+  @return la position de la formation dont le nom est entre en parametre, -1 si la formation n'est pas trouve
 */
-int listeRessources::positionFormation(std::string nom) const
-{	int i=0;
+int listeRessources::positionFormation(const std::string & nom) const
+{	
+	int i=0;
 	while (i<d_listeDesFormations.size() && d_listeDesFormations[i].nom() != nom) i++;
 	if (i==d_listeDesFormations.size()) return -1;
 	return i;
 }
 
 /**
-	@brief verifies sila formation a un cours
+	@brief verifies si la formation a un cours
 	@param[in] listeDeCours 	- objet de type listeCours
 	@param[in] nomDeLaFormation - chaine de caractere correspondant au nom de la formation
 	@return aUnCours			- retournes vrai si la formation a un cours
 */
-bool listeRessources::formationAUnCours(const listeCours & listeDeCours, const std::string & nomDeLaFormation)
+bool listeRessources::formationAUnCours(const listeCours & listeDeCours, const std::string & nomDeLaFormation) const
 {
 	bool aUnCours = false;
 	for (int i = 0; i < listeDeCours.nombreDeCours() && !aUnCours; i++)

@@ -10,13 +10,12 @@
 
 #include "ressource.h"
 
-using std::string;
 
 class formation : public ressource{
 	public:
 		formation(const string & nomFormation, int nombreEtudiant);
 		formation() = delete;
-		formation(const formation &f) = default;
+		formation(const formation & f) = default;
 		
 		//SET
 		void changerNombreEtudiant(int nombreEtudiant);

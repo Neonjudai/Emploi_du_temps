@@ -13,7 +13,7 @@
 	@param[in] nomFormation - nom de la formation
 	@param[in] nombreEtudiant - Nombre d'etudiant dans la formation
 */
-formation::formation(const string& nomFormation, int nombreEtudiant) : ressource{nomFormation}, d_nombreEtudiant{nombreEtudiant} {}
+formation::formation(const string & nomFormation, int nombreEtudiant) : ressource{nomFormation}, d_nombreEtudiant{nombreEtudiant} {}
 
 /**
 	@brief Modifie le nombre d'etudiant dans la formation

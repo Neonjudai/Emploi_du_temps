@@ -28,7 +28,7 @@ class afficheurConsole{
         ~afficheurConsole();
         void menu();
         
-        void afficher(string s, int sautLigne = 0);
+        void afficher(const string & s, int sautLigne = 0);
         void afficherMenu();
         
         //Cours

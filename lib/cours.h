@@ -19,8 +19,7 @@
 class cours{
 	public:
 		cours(const horaire & h, professeur * p, salle * s, formation * f);
-		cours(const cours & c) =default;							// OK
-		//~cours();													//inutile, listeRessource s'occupe des deletes.
+		cours(const cours & c) =default;
 
 		//GET
 		horaire 	horaireDuCours() const;
@@ -29,10 +28,10 @@ class cours{
 		formation 	formationDuCours() const;
 
 	private:
-		horaire d_horaire;
+		horaire		d_horaire;
 		professeur* d_professeur;
-		salle* d_salle;
-		formation* d_formation;
+		salle*		d_salle;
+		formation*	d_formation;
 
 };
 #endif

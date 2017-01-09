@@ -2,10 +2,10 @@
 #include <cstdlib>
 
 /**
- *\file afficheurConsole.cpp
- *\brief Definition des methodes de la classe afficheurConsole
- *\author Olivier Ettlin
- *\version 1.0
+ * @file afficheurConsole.cpp
+ * @brief Definition des methodes de la classe afficheurConsole
+ * @author Olivier Ettlin
+ * @version 1.0
  */
 
 const int T_AFFICHAGE = 119;
@@ -21,7 +21,12 @@ afficheurConsole::afficheurConsole(ostream & ost):d_ost{&ost} {}
  */
 afficheurConsole::~afficheurConsole() {d_ost=0;}
 
-void afficheurConsole::afficher(string s, int sautLigne)
+/**
+	@brief affiche ce que contient le flux ost
+	@param[in] s - chaine de caractere
+	@param[in] sautLigne - entier
+*/
+void afficheurConsole::afficher(const string & s, int sautLigne)
 {	if (s=="endl") *d_ost<<endl;
 	else
 	{
@@ -53,6 +58,9 @@ void afficheurConsole::afficherMenu()
 	afficher("0. Quitter et Sauvegarder",1);
 }
 
+/**
+	@brief gestion des menus
+*/
 void afficheurConsole::menu()
 {
 	int codeErreur;
@@ -183,7 +191,10 @@ void afficheurConsole::afficherCours(const cours & c)
 //-------------------------------------------------------------------
 //--------------------Formation--------------------------------------
 //-------------------------------------------------------------------
-
+/**
+	@brief Renvoie dans ost le nom et le nombre d'etudiant dans la formation
+	@param[in] f - un objet de type formation
+*/
 void afficheurConsole::afficherFormation(const formation & f) {*d_ost<<f.nom()<<" avec "<<f.nombreEtudiant()<<" etudiants.";}
 
 //-------------------------------------------------------------------
@@ -265,6 +276,12 @@ void afficheurConsole::afficherLesCours(const listeCours & lC)
 	}
 }
 
+/**
+	@brief ajout d'un cours
+	@param[out] lC - objet de type listeCours
+	@param[out] lR - objet de type listeRessources
+	@return 0 si l'ajout a ete effectue
+*/
 int afficheurConsole::ajouterUnCours(listeCours &lC,listeRessources &lR)
 {	system("cls");
 	//Test initial
@@ -309,6 +326,12 @@ int afficheurConsole::ajouterUnCours(listeCours &lC,listeRessources &lR)
 	return 0;
 }
 
+/**
+	@brief supprime un cours
+	@param[out] lC - objet de type listeCours
+	@param[out] lR - objet de type listeRessources
+	@return 0 si la suppression a ete effectue
+*/
 int afficheurConsole::supprimerUnCours(listeCours &lC,listeRessources &lR)
 {	if (lC.nombreDeCours()<1) return 1;						//Code Erreur : Aucun cours
 	system("cls");
@@ -406,6 +429,11 @@ void afficheurConsole::afficherLesFormations(const listeRessources & lR)
 	}
 }
 
+/**
+	@brief ajout d'un professeur
+	@param[out] lR - objet de type listeRessources
+	@return retournes 0 si le professeur a bien ete ajoute
+*/
 int afficheurConsole::ajouterUnProf(listeRessources &lR)
 {	string nom;
 	afficher("Nom du professeur a ajouter ");
@@ -419,6 +447,12 @@ int afficheurConsole::ajouterUnProf(listeRessources &lR)
 	return -1;	//Code Erreur : Prof existe deja
 }
 
+/**
+	@brief supprime un professeur
+	@param[out] lR - objet de type listeRessources
+	@param[in] lC - objet de type listeCours
+	@return 0 si le professeur a bien ete supprime
+*/
 int afficheurConsole::supprimerUnProf(listeRessources &lR, const listeCours & lC)
 {	string nom;
 	afficherLesProfesseurs(lR);
@@ -431,6 +465,11 @@ int afficheurConsole::supprimerUnProf(listeRessources &lR, const listeCours & lC
 	return 0;
 }
 
+/**
+	@brief ajout d'une salle
+	@param[out] lR - objet de type listeRessources
+	@return 0 si la salle a bien ete ajoute
+*/
 int afficheurConsole::ajouterUneSalle(listeRessources &lR)
 {	string nom;
 	afficher("Nom de la salle a ajouter ");
@@ -446,7 +485,12 @@ int afficheurConsole::ajouterUneSalle(listeRessources &lR)
 	}
 	return -1;	//Code Erreur : Salle existe deja
 }
-
+/**
+	@brief supprime une salle
+	@param[out] lR - objet de type listeRessources
+	@param[in] lC - objet de type listeCours
+	@return 0 si la salle a bien ete supprime
+*/
 int afficheurConsole::supprimerUneSalle(listeRessources &lR, const listeCours & lC)
 {	string nom;
 	afficherLesSalles(lR);
@@ -459,6 +503,11 @@ int afficheurConsole::supprimerUneSalle(listeRessources &lR, const listeCours & 
 	return 0;
 }
 
+/**
+	@brief ajout d'une formation
+	@param[out] lR - objet de type listeRessources
+	@return 0 si la formation a bien ete ajoute
+*/
 int afficheurConsole::ajouterUneFormation(listeRessources &lR)
 {	string nom;
 	afficher("Nom de la formation a ajouter ");
@@ -475,6 +524,12 @@ int afficheurConsole::ajouterUneFormation(listeRessources &lR)
 	return -1;	//Code Erreur : Formation existe deja
 }
 
+/**
+	@brief supprime une formation
+	@param[out] lR - objet de type listeRessources
+	@param[in] lC - objet de type listeCours
+	@return 0 si la formation a bien ete supprime
+*/
 int afficheurConsole::supprimerUneFormation(listeRessources &lR, const listeCours & lC)
 {	string nom;
 	afficherLesFormations(lR);
@@ -615,6 +670,12 @@ void afficheurConsole::afficherParSalle(const salle& salle, const listeCours& lC
 	}
 }
 
+/**
+	@brief affiche l'emploi du temps d'un professeur
+	@param[in] lR - objet de type listeRessources
+	@param[in] lC - objet de type listeCours
+	@return 0 si il est possible d'afficher les cours du professeur
+*/
 int afficheurConsole::afficherCoursDuProf(const listeRessources &lR,const listeCours& lC)
 {	string nom;
 	afficherLesProfesseurs(lR);
@@ -631,6 +692,12 @@ int afficheurConsole::afficherCoursDuProf(const listeRessources &lR,const listeC
 	return 0;
 }
 
+/**
+	@brief affiche l'emploi du temps pour tous les cours ayant lieu dans la salle
+	@param[in] lR - objet de type listeRessources
+	@param[in] lC - objet de type listeCours
+	@return 0 si les cours presents dans la salle peuvent etre affiche
+*/
 int afficheurConsole::afficherCoursDeSalle(const listeRessources &lR,const listeCours& lC)
 {	string nom;
 	afficherLesSalles(lR);
@@ -647,6 +714,12 @@ int afficheurConsole::afficherCoursDeSalle(const listeRessources &lR,const liste
 	return 0;
 }
 
+/**
+	@brief affiche l'emploi du temps pour tous les cours de la formation
+	@param[in] lR - objet de type listeRessources
+	@param[in] lC - objet de type listeCours
+	@return 0 si les cours de la formation peuvent bien etre affiche
+*/
 int afficheurConsole::afficherCoursDeFormation(const listeRessources &lR,const listeCours& lC)
 {	string nom;
 	afficherLesFormations(lR);

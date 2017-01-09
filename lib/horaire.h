@@ -24,11 +24,6 @@ class horaire{
 		void changerHeure(int heure);
 
 		//GET
-		/*
-		int semaineNumero() const;
-		int jourNumero() const;
-		int heureNumero() const;
-        */
 		int semaine() const;
 		int jour() const;
 		int heure() const;
